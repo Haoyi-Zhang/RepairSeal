@@ -1,0 +1,142 @@
+{
+  "acceptance_misuse_attempts": 95,
+  "acceptance_misuse_rejections": 95,
+  "accepted": 95,
+  "certificate_bytes": {
+    "max": 22342,
+    "median": 15213.0,
+    "min": 8994,
+    "p25": 13351.0,
+    "p75": 16420.75
+  },
+  "deterministic_indexes": {
+    "acceptance_misuse_sha256": "f049e5dfb7a73ddc963dc35f786b0ea5d4b540070cc127da7f47760c43dceb9c",
+    "refutation_controls_sha256": "9deccb661b1d39dac0f10f57cbf6342cad0b15819e27ed0b5da7eda2a7024058",
+    "refutation_witnesses_sha256": "3774490cc45088491befa26e54acd735905a271bba65f44ec08712624a80c151",
+    "results_sha256": "98032ba9f56429d651a472e0fd8651d32897b35a7d21d2f37e54c801198c2a81"
+  },
+  "fixture_families": 20,
+  "fixture_requests": 80,
+  "generated_at_utc": "2026-09-19T16:24:07Z",
+  "node_count": {
+    "max": 51,
+    "median": 40.0,
+    "min": 21,
+    "p25": 35.0,
+    "p75": 41.0
+  },
+  "oracle_agreements": 380,
+  "oracle_disagreements": 0,
+  "outcome": "PASS",
+  "peak_rss_kib": 105184,
+  "proof_operation_counts_all": {
+    "proof_cells": 224127
+  },
+  "proof_operation_counts_correct": {
+    "proof_cells": 45198
+  },
+  "recursive_rebuild_operation_counts_correct": {
+    "proof_cells": 45198,
+    "rebuild_cells": 309582
+  },
+  "refutation_certificate_bytes": {
+    "max": 699,
+    "median": 667,
+    "min": 659,
+    "p25": 659,
+    "p75": 672
+  },
+  "refutation_checked_cells": {
+    "max": 51,
+    "median": 40,
+    "min": 29,
+    "p25": 39,
+    "p75": 43
+  },
+  "refutation_full_proof_cells": {
+    "max": 4131,
+    "median": 3240,
+    "min": 2349,
+    "p25": 3159,
+    "p75": 3483
+  },
+  "refutation_tamper_attempts": 2850,
+  "refutation_tamper_rejections": 2850,
+  "refutation_witness_agreements": 285,
+  "refutation_witnesses": 285,
+  "refutation_work": {
+    "all_one_point": true,
+    "median_cell_reduction_factor": 81.0
+  },
+  "refuted": 285,
+  "schema": "structured-study-v2",
+  "scope": "20 designed C-fragment fixture families plus 300 deterministic generated stress requests; stress requests are not Codeflaws.",
+  "stress_requests": 300,
+  "tamper_attempts": 6000,
+  "tamper_rejections": 6000,
+  "timing_ms": {
+    "one_point_refutation": {
+      "max": 1.327489,
+      "median": 0.457319,
+      "min": 0.33258,
+      "p25": 0.437859,
+      "p75": 0.497359
+    },
+    "produce": {
+      "max": 77.749201,
+      "median": 10.190677,
+      "min": 3.330055,
+      "p25": 8.2426535,
+      "p75": 11.474935749999998
+    },
+    "proof_check": {
+      "max": 8.368052,
+      "median": 2.436159,
+      "min": 1.62715,
+      "p25": 2.25292075,
+      "p75": 2.58937425
+    },
+    "recursive_reconstruct": {
+      "max": 2.862201,
+      "median": 1.2704885,
+      "min": 0.612222,
+      "p25": 1.01004825,
+      "p75": 1.4538395
+    },
+    "repeated_correct": {
+      "proof_check": {
+        "median": 2.1095115,
+        "p25": 1.80849575,
+        "p75": 2.5490742500000003
+      },
+      "recursive_reconstruct": {
+        "median": 1.4328675,
+        "p25": 1.2194034999999999,
+        "p75": 1.70861525
+      },
+      "topological_direct": {
+        "median": 1.260208,
+        "p25": 1.0513455,
+        "p75": 1.58192
+      }
+    },
+    "topological_direct": {
+      "max": 49.313981,
+      "median": 1.587992,
+      "min": 1.024002,
+      "p25": 1.47904025,
+      "p75": 1.7045
+    }
+  },
+  "topological_operation_counts_correct": {
+    "topological_cells": 45198
+  },
+  "total_requests": 380,
+  "work_equivalence": {
+    "exact_equal": true,
+    "proof_cells_correct": 45198,
+    "recursive_cells_correct": 309582,
+    "recursive_over_proof_ratio": 6.849462365591398,
+    "topological_direct_cells_correct": 45198
+  }
+}

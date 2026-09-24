@@ -1,0 +1,3602 @@
+[
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 2.039081,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.972735,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 0.918313,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 1.382652,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.801247,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.445797,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 1.562664,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.999666,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.219186,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 1.642383,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.426869,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 3.773844,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 3.59228,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.981167,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.592458,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 2.116237,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.280068,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.419028,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 1.519288,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.086776,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.507701,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 1.850306,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.06262,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.226708,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 2.267715,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.460119,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.264474,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 2.494236,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.479719,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.60666,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 2.251841,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 3.006848,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.418436,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 1.894614,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.177042,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.329452,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 2.031199,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.243933,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.44781,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 1.866982,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.0186,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.969747,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 2.059552,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.094168,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.295256,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 3.026297,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.774813,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.325081,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 2.607677,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.62049,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.430604,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 2.435969,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.723846,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.309097,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 2.483069,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.776081,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 4.676092,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 2.442448,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.311024,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.406278,
+    "repeat": 0
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 1.91878,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.965434,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 3.706753,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 2.234686,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.903923,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.048976,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 1.964538,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.079526,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.112636,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 1.889355,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.919986,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.151123,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 1.522743,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.920416,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.004843,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 1.865088,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.919685,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.106477,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 1.478997,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.904862,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.345707,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 1.890807,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.001388,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 0.999585,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 2.647748,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.496304,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.376392,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 2.501927,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.472047,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.336272,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 1.645088,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.014949,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.232927,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 1.66028,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.284885,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.17513,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 1.720802,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.290394,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.669474,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 2.419344,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.116081,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.412537,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 1.641513,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.001859,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.28809,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 1.904808,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.364555,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.435131,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 2.347386,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.517496,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.319928,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 1.976357,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.322742,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.514931,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 2.033983,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.045925,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.2617,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 1.896706,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.234018,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.194049,
+    "repeat": 1
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 1.406809,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.944392,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.136832,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 1.654241,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.975129,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.146277,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 1.813121,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.957312,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.000577,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 1.516894,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.874567,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.061018,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 1.517986,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.914056,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 0.945083,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 1.466538,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.875349,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.080327,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 1.840551,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.064714,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.112926,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 1.640251,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.067958,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 0.961118,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 2.161786,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.383434,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.581461,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 2.185301,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.703051,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.359517,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 2.2316,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.064033,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 4.591925,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 3.104506,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.079075,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.62028,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 1.868524,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.229502,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.161649,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 2.331751,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.149722,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 3.243434,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 3.808325,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.212116,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.622289,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 2.036867,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.989416,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 3.361883,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 5.253391,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 4.606468,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 5.439913,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 6.59365,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.577115,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 3.248872,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 1.949767,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.794657,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.620972,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 3.1867,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.73277,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 4.308639,
+    "repeat": 2
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 2.136328,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.323463,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.762404,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 2.502399,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.981609,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.902025,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 2.687597,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.363654,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.177089,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 2.477151,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.935088,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.626019,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 2.032421,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.122781,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.1114,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 1.71375,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.041127,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.54077,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 1.524115,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.041048,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.322832,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 1.934794,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.261189,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.079166,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 2.457571,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.450234,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.286838,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 4.691866,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 3.763107,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.969091,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 2.01173,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.203242,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.062991,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 2.016677,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.24792,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.455151,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 2.633916,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.304785,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.164784,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 2.245822,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.217844,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.1554,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 1.729664,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.058114,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.458206,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 2.077148,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.344785,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.390414,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 2.693977,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.639419,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.755424,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 2.256789,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.30857,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.635132,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 1.349112,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.832183,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.283533,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 5.209535,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 9.362901,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.439808,
+    "repeat": 3
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 1.64665,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.944162,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.639188,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 1.45428,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.837882,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.213748,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 1.549243,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.960907,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.039155,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 3.577478,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.080644,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.427089,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 1.543454,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.926355,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.051774,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 1.482443,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.210624,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.959738,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 3.56561,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.500099,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.265816,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 1.908884,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.98241,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.222881,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 4.043599,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.874352,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.466609,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 2.516299,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.48022,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.313087,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 1.745078,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.020066,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 0.964853,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 1.70658,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.111634,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.133457,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 2.438333,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.219446,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.625568,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 2.001014,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.711584,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.123712,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 1.994384,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.999335,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.397144,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 2.014374,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.139922,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.695073,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 2.312712,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.710596,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.363353,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 2.313043,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.293288,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.469092,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 1.716685,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.854066,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.732229,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 3.53953,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.259227,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.262812,
+    "repeat": 4
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 1.604086,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.094538,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.278001,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 1.584326,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 3.31955,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.360529,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 1.581662,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.94315,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.185786,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 2.028825,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.072595,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.189111,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 1.531736,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.051353,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.219476,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 2.543711,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.119913,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.840372,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 2.480776,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.278552,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.178024,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 1.948915,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.037993,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.540626,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 2.922801,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.636335,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.355351,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 2.23825,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.545938,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.253768,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 1.693781,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.367099,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.220308,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 2.005881,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.06278,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.105245,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 2.16475,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.097914,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.116421,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 2.011419,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.070062,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.113727,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 1.902745,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.994448,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.671638,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 2.215206,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.393779,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.420118,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 2.259463,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.548172,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.326287,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 1.856826,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.193628,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.360279,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 1.602693,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.82955,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.178795,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 1.626019,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.271165,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.486118,
+    "repeat": 5
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 2.488278,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.012775,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.32105,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 1.544285,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.857612,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.407029,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 1.770817,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.072585,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.381931,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 2.043227,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.019505,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.339166,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 1.72698,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.563424,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.196819,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 2.15179,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.198165,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.665628,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 1.946,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.26827,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.623015,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 2.19789,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.491637,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.528983,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 2.893458,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.695574,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.451977,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 3.946353,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.82602,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.287109,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 1.76661,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.107518,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.097834,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 1.796516,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.123542,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.112446,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 1.967753,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.249351,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.117853,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 1.980352,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.249742,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.252877,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 2.029156,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.116121,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.460629,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 3.169193,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.503675,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.731348,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 2.413365,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.629875,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.639059,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 3.098156,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.707832,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.549193,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 1.383734,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.873736,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.273608,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 1.644506,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.428742,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.311942,
+    "repeat": 6
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 2.653637,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.324575,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.767402,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 1.482914,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.544486,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.754842,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 3.192338,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.240648,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.246123,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 2.726426,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.573439,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.911128,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 2.82217,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.568863,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.095797,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 4.746629,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.376222,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.280899,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 3.139828,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.879781,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.946651,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 1.667782,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.22194,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.172266,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 4.225603,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.687998,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.093633,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 3.431658,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.85244,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.656815,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 2.391371,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.568292,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.54689,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 2.474426,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.413469,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.421762,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 2.515508,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.729334,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.197243,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 2.019842,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.267188,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.153938,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 2.741949,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.180678,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.654302,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 2.896472,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.293163,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.544426,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 3.801835,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 3.189433,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.635923,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 2.895089,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.744908,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.030137,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 2.221045,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.164594,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.572488,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 1.928855,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.247078,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.472017,
+    "repeat": 7
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 1.99171,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.949456,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.560746,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 2.376299,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.223253,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.209541,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 2.023116,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.99902,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.570455,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 2.12442,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.943351,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.329182,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 2.602249,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.343363,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.611517,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 4.839468,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.844999,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.509354,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 1.602513,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.927046,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.482803,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 1.935144,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.051323,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 0.966646,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 2.599755,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.599849,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.255791,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 2.457391,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.639916,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.691624,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 2.390259,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.042149,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.490014,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 2.320174,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.448832,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.712408,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 2.171831,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.366718,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.256202,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 2.838104,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.225406,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.296322,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 2.102786,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.253999,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.322398,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 2.982472,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.337845,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.484666,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 3.839342,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.208296,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.838528,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 3.451618,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.343629,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 2.496119,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 1.513339,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.844362,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.527751,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 2.429118,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.596335,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.873251,
+    "repeat": 8
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "proof-check",
+    "milliseconds": 2.314536,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.005541,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-01-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 3.184005,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "proof-check",
+    "milliseconds": 2.083298,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.705588,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-02-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.707351,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "proof-check",
+    "milliseconds": 2.883072,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.932741,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-03-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.668523,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "proof-check",
+    "milliseconds": 2.843993,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.071604,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-04-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 5.775028,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "proof-check",
+    "milliseconds": 4.571415,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.104753,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-05-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.159326,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "proof-check",
+    "milliseconds": 1.50075,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.886845,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-06-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.145395,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "proof-check",
+    "milliseconds": 1.465006,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "topological-direct",
+    "milliseconds": 0.897632,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-07-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.298756,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "proof-check",
+    "milliseconds": 3.794986,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.043902,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-08-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.079196,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "proof-check",
+    "milliseconds": 2.197349,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.009707,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-09-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.383113,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "proof-check",
+    "milliseconds": 2.251891,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.421501,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-10-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.912671,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "proof-check",
+    "milliseconds": 2.992827,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.291105,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-11-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.188469,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "proof-check",
+    "milliseconds": 1.812489,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.032825,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-12-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.19532,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "proof-check",
+    "milliseconds": 1.70663,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.078133,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-13-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.106356,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "proof-check",
+    "milliseconds": 1.906842,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.356323,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-14-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.080407,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "proof-check",
+    "milliseconds": 1.981775,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.444735,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-15-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.585188,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "proof-check",
+    "milliseconds": 2.973088,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "topological-direct",
+    "milliseconds": 2.031219,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-16-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.461391,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "proof-check",
+    "milliseconds": 2.45691,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.607521,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-17-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.658828,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "proof-check",
+    "milliseconds": 3.643447,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.87895,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-18-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.801262,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "proof-check",
+    "milliseconds": 1.697757,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.1286,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-19-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.763225,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "proof-check",
+    "milliseconds": 2.565164,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "topological-direct",
+    "milliseconds": 1.802955,
+    "repeat": 9
+  },
+  {
+    "id": "fixture-20-correct",
+    "method": "recursive-reconstruct",
+    "milliseconds": 1.760291,
+    "repeat": 9
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "outcome": "FAILED",
+  "error": "BudgetExceeded: counted operation budget exceeded",
+  "resources": {
+    "work_events": 180001,
+    "counts": {
+      "certificate_steps": 2130,
+      "checker_projected_points": 7280,
+      "checker_source_tokens": 25724,
+      "checker_steps": 137724,
+      "checker_symbolic_nodes": 4362,
+      "counterexample_comparisons": 579,
+      "coverage_cells": 2130,
+      "null_requests": 72
+    },
+    "wall_seconds": 0.320750199000031,
+    "self_cpu_seconds": 0.3205160000000001,
+    "child_cpu_seconds": 0.0,
+    "total_cpu_seconds": 0.3205160000000001,
+    "self_peak_rss_kib": 93616,
+    "largest_child_rss_kib": 768,
+    "workers": 1
+  },
+  "stage": "receiver-only null control; resource admission interrupted at request 72",
+  "partial_scientific_results_retained": false
+}

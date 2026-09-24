@@ -1,0 +1,60 @@
+{
+  "outcome": "PASS_FINITE_STUDY",
+  "totals": {
+    "fixture_families": 20,
+    "requests": 80,
+    "oracle_points": 6480,
+    "accepted_correct": 20,
+    "refuted_mutants": 60,
+    "test_only_accepted_mutants": 60,
+    "unsafe_value_only_accepted_undefined": 20,
+    "semantic_only_noncanonical_refutations": 34,
+    "trace_aware_exact_refutations": 60,
+    "correct_patch_coverage_holes": 20,
+    "invalid_certificate_controls": 160,
+    "public_codeflaws_pairs": 0,
+    "oracle_disagreements": 0
+  },
+  "native": {
+    "unique_functions": 120,
+    "unique_defined_evaluations": 9180,
+    "undefined_candidate_observations_excluded": 540,
+    "return_value_disagreements": 0,
+    "trace_checked_natively": false,
+    "compile_options": [
+      "-std=c11",
+      "-O0"
+    ]
+  },
+  "scope": "designed finite intake fixtures; not a public benchmark or general correctness proof",
+  "resources": {
+    "work_events": 657669,
+    "counts": {
+      "certificate_mutations": 180,
+      "certificate_steps": 8218,
+      "checker_projected_points": 9250,
+      "checker_source_tokens": 46908,
+      "checker_steps": 401637,
+      "checker_symbolic_nodes": 7453,
+      "counterexample_comparisons": 852,
+      "coverage_cells": 8160,
+      "native_defined_evaluations": 9180,
+      "obligation_families": 240,
+      "oracle_rows": 6480,
+      "producer_source_tokens": 14388,
+      "producer_steps": 80036,
+      "projected_points": 9940,
+      "requests": 80,
+      "source_mutations": 60,
+      "support_comparisons": 51840,
+      "symbolic_nodes": 2767
+    },
+    "wall_seconds": 1.4848644539997622,
+    "self_cpu_seconds": 1.0950920000000002,
+    "child_cpu_seconds": 0.38528300000000004,
+    "total_cpu_seconds": 1.4803750000000002,
+    "self_peak_rss_kib": 102324,
+    "largest_child_rss_kib": 102324,
+    "workers": 1
+  }
+}

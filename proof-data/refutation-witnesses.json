@@ -1,0 +1,2282 @@
+[
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.443868,
+    "checked_cells": 30,
+    "full_proof_cells": 2430,
+    "id": "fixture-01-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.4052,
+    "checked_cells": 31,
+    "full_proof_cells": 2511,
+    "id": "fixture-01-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.392591,
+    "checked_cells": 34,
+    "full_proof_cells": 2754,
+    "id": "fixture-01-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.419812,
+    "checked_cells": 29,
+    "full_proof_cells": 2349,
+    "id": "fixture-02-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.41866,
+    "checked_cells": 30,
+    "full_proof_cells": 2430,
+    "id": "fixture-02-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.33258,
+    "checked_cells": 30,
+    "full_proof_cells": 2430,
+    "id": "fixture-02-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.388605,
+    "checked_cells": 31,
+    "full_proof_cells": 2511,
+    "id": "fixture-03-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.485551,
+    "checked_cells": 32,
+    "full_proof_cells": 2592,
+    "id": "fixture-03-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.352842,
+    "checked_cells": 35,
+    "full_proof_cells": 2835,
+    "id": "fixture-03-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.367153,
+    "checked_cells": 30,
+    "full_proof_cells": 2430,
+    "id": "fixture-04-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.417138,
+    "checked_cells": 31,
+    "full_proof_cells": 2511,
+    "id": "fixture-04-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.402636,
+    "checked_cells": 34,
+    "full_proof_cells": 2754,
+    "id": "fixture-04-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.401725,
+    "checked_cells": 31,
+    "full_proof_cells": 2511,
+    "id": "fixture-05-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.465581,
+    "checked_cells": 32,
+    "full_proof_cells": 2592,
+    "id": "fixture-05-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.360393,
+    "checked_cells": 35,
+    "full_proof_cells": 2835,
+    "id": "fixture-05-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.37219,
+    "checked_cells": 30,
+    "full_proof_cells": 2430,
+    "id": "fixture-06-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.41168,
+    "checked_cells": 31,
+    "full_proof_cells": 2511,
+    "id": "fixture-06-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.368976,
+    "checked_cells": 34,
+    "full_proof_cells": 2754,
+    "id": "fixture-06-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 685,
+    "check_ms": 0.376346,
+    "checked_cells": 31,
+    "full_proof_cells": 2511,
+    "id": "fixture-07-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 699,
+    "check_ms": 0.391129,
+    "checked_cells": 32,
+    "full_proof_cells": 2592,
+    "id": "fixture-07-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 677,
+    "check_ms": 0.840967,
+    "checked_cells": 35,
+    "full_proof_cells": 2835,
+    "id": "fixture-07-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 685,
+    "check_ms": 0.396458,
+    "checked_cells": 34,
+    "full_proof_cells": 2754,
+    "id": "fixture-08-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 699,
+    "check_ms": 0.467604,
+    "checked_cells": 36,
+    "full_proof_cells": 2916,
+    "id": "fixture-08-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 677,
+    "check_ms": 0.389016,
+    "checked_cells": 38,
+    "full_proof_cells": 3078,
+    "id": "fixture-08-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.424149,
+    "checked_cells": 46,
+    "full_proof_cells": 3726,
+    "id": "fixture-09-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.527204,
+    "checked_cells": 47,
+    "full_proof_cells": 3807,
+    "id": "fixture-09-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.470689,
+    "checked_cells": 45,
+    "full_proof_cells": 3645,
+    "id": "fixture-09-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.429377,
+    "checked_cells": 46,
+    "full_proof_cells": 3726,
+    "id": "fixture-10-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.459782,
+    "checked_cells": 47,
+    "full_proof_cells": 3807,
+    "id": "fixture-10-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.406402,
+    "checked_cells": 45,
+    "full_proof_cells": 3645,
+    "id": "fixture-10-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.399381,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "fixture-11-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.401164,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "fixture-11-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.370498,
+    "checked_cells": 37,
+    "full_proof_cells": 2997,
+    "id": "fixture-11-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.377379,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "fixture-12-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.493423,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "fixture-12-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.426772,
+    "checked_cells": 37,
+    "full_proof_cells": 2997,
+    "id": "fixture-12-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 673,
+    "check_ms": 0.505141,
+    "checked_cells": 34,
+    "full_proof_cells": 2754,
+    "id": "fixture-13-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 678,
+    "check_ms": 0.48449,
+    "checked_cells": 35,
+    "full_proof_cells": 2835,
+    "id": "fixture-13-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.907206,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "fixture-13-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 673,
+    "check_ms": 0.665682,
+    "checked_cells": 34,
+    "full_proof_cells": 2754,
+    "id": "fixture-14-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 678,
+    "check_ms": 0.435726,
+    "checked_cells": 35,
+    "full_proof_cells": 2835,
+    "id": "fixture-14-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.450589,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "fixture-14-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 673,
+    "check_ms": 0.457029,
+    "checked_cells": 33,
+    "full_proof_cells": 2673,
+    "id": "fixture-15-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 678,
+    "check_ms": 0.457319,
+    "checked_cells": 34,
+    "full_proof_cells": 2754,
+    "id": "fixture-15-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.441175,
+    "checked_cells": 36,
+    "full_proof_cells": 2916,
+    "id": "fixture-15-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 673,
+    "check_ms": 0.639333,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "fixture-16-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 678,
+    "check_ms": 0.505801,
+    "checked_cells": 45,
+    "full_proof_cells": 3645,
+    "id": "fixture-16-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.437859,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "fixture-16-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 673,
+    "check_ms": 0.600815,
+    "checked_cells": 50,
+    "full_proof_cells": 4050,
+    "id": "fixture-17-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 678,
+    "check_ms": 0.600504,
+    "checked_cells": 51,
+    "full_proof_cells": 4131,
+    "id": "fixture-17-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.517038,
+    "checked_cells": 49,
+    "full_proof_cells": 3969,
+    "id": "fixture-17-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 673,
+    "check_ms": 0.555616,
+    "checked_cells": 37,
+    "full_proof_cells": 2997,
+    "id": "fixture-18-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 678,
+    "check_ms": 0.641706,
+    "checked_cells": 38,
+    "full_proof_cells": 3078,
+    "id": "fixture-18-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.585803,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "fixture-18-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.655177,
+    "checked_cells": 30,
+    "full_proof_cells": 2430,
+    "id": "fixture-19-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.422957,
+    "checked_cells": 31,
+    "full_proof_cells": 2511,
+    "id": "fixture-19-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.353923,
+    "checked_cells": 31,
+    "full_proof_cells": 2511,
+    "id": "fixture-19-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 673,
+    "check_ms": 0.826154,
+    "checked_cells": 34,
+    "full_proof_cells": 2754,
+    "id": "fixture-20-overfit",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 678,
+    "check_ms": 0.476688,
+    "checked_cells": 35,
+    "full_proof_cells": 2835,
+    "id": "fixture-20-regression",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.454264,
+    "checked_cells": 37,
+    "full_proof_cells": 2997,
+    "id": "fixture-20-undefined",
+    "population": "fixture"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.532823,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-002-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.555827,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-003-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.4185,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-004-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.469978,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-006-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.471319,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-007-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.444009,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-008-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.478871,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-010-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.510759,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-011-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.412621,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-012-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.446773,
+    "checked_cells": 38,
+    "full_proof_cells": 3078,
+    "id": "stress-014-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.442056,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-015-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.422787,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-016-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.440584,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-018-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.521555,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-019-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.63087,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-020-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.471911,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-022-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.470949,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-023-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.41838,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-024-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.609468,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-026-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.447544,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-027-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.428846,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-028-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.44469,
+    "checked_cells": 38,
+    "full_proof_cells": 3078,
+    "id": "stress-030-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.512402,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-031-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.566023,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-032-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.439712,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-034-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.441675,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-035-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.412682,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "stress-036-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.460764,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-038-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.472091,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-039-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.440173,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-040-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.464229,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-042-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.495306,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-043-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.419803,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-044-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.44446,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-046-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.448676,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-047-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.439562,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-048-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.483458,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-050-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.448606,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-051-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.444239,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-052-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.441345,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-054-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.492883,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-055-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.433373,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-056-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.461425,
+    "checked_cells": 38,
+    "full_proof_cells": 3078,
+    "id": "stress-058-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.499062,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-059-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.43198,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-060-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.4449,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-062-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.456147,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-063-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.425311,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-064-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.636679,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-066-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.478791,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-067-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.529056,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-068-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.478721,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-070-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.481425,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-071-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.45144,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-072-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.454855,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-074-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.638912,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-075-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.43179,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-076-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.468936,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-078-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.525562,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-079-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.45124,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-080-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.91663,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-082-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.49795,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-083-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.517409,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-084-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.440263,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-086-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.904602,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-087-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.430819,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "stress-088-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.754566,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-090-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.454785,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-091-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.722307,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "stress-092-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.535166,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-094-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.459632,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-095-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.463579,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-096-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.445932,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-098-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.474584,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-099-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.463919,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-100-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.432852,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-102-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.648827,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-103-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.499733,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-104-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.47126,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-106-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.467214,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-107-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.419632,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-108-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.468465,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-110-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.449357,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-111-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.594505,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-112-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.442657,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-114-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.448145,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-115-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.542507,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-116-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.44491,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-118-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.63728,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-119-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.445641,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-120-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.460864,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-122-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.514785,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-123-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.461355,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-124-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.465662,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-126-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.494835,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-127-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.415325,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-128-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.443428,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-130-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.469657,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-131-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.456627,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-132-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.479593,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-134-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.440974,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-135-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.437018,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-136-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.445501,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-138-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.589478,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-139-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.529046,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-140-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.522497,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-142-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.653514,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-143-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.420754,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "stress-144-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.445741,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-146-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.505071,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-147-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.463298,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-148-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.49125,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-150-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.448766,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-151-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.437869,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-152-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.437739,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-154-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.486222,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-155-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.510298,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-156-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.495426,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-158-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.447193,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-159-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.474525,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-160-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.483598,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-162-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.443699,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-163-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.593063,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-164-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.43824,
+    "checked_cells": 37,
+    "full_proof_cells": 2997,
+    "id": "stress-166-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.5646,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-167-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.427754,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "stress-168-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.53121,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-170-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.45176,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-171-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.425581,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-172-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.430468,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-174-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.442055,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-175-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.424319,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-176-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.444309,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-178-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.465792,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-179-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.446883,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-180-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.45168,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-182-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 1.327489,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-183-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.429537,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-184-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.450418,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-186-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.588015,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-187-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.421394,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "stress-188-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.99588,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-190-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.452962,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-191-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.4651,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-192-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.481525,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-194-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.800065,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-195-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.497359,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-196-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.551581,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-198-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.456037,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-199-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.599342,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-200-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.442437,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-202-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.623239,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-203-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.449347,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-204-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.474544,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-206-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.466312,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-207-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.494805,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-208-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.434654,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-210-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.49804,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-211-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.419982,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-212-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.540464,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-214-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.466572,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-215-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.509427,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-216-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.497369,
+    "checked_cells": 38,
+    "full_proof_cells": 3078,
+    "id": "stress-218-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.445821,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-219-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.565822,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-220-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.459342,
+    "checked_cells": 38,
+    "full_proof_cells": 3078,
+    "id": "stress-222-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.457459,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-223-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.412541,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-224-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.49113,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-226-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.481344,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-227-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.414764,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-228-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.475636,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-230-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.483227,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-231-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.422156,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-232-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.455736,
+    "checked_cells": 38,
+    "full_proof_cells": 3078,
+    "id": "stress-234-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.569778,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-235-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.420002,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-236-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.449487,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-238-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.498831,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-239-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.448515,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-240-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.437208,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-242-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.534044,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-243-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.447153,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-244-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.771441,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-246-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.488095,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-247-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.474595,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-248-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.475256,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-250-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.454976,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-251-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.470108,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-252-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.665442,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-254-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.473773,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-255-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.410979,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "stress-256-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.571931,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-258-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.494845,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-259-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.436006,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-260-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.440133,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-262-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.453152,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-263-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.424149,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-264-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.441255,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-266-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.4911,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-267-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.441304,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-268-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.52398,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-270-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.44454,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-271-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.424259,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-272-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.466262,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-274-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.624831,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-275-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.456597,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-276-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.475607,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-278-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.448947,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-279-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.414804,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-280-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.488075,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-282-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.462697,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-283-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.423958,
+    "checked_cells": 43,
+    "full_proof_cells": 3483,
+    "id": "stress-284-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.47775,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-286-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.442056,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-287-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.413253,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-288-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.474805,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-290-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.446332,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-291-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.409326,
+    "checked_cells": 44,
+    "full_proof_cells": 3564,
+    "id": "stress-292-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.437399,
+    "checked_cells": 40,
+    "full_proof_cells": 3240,
+    "id": "stress-294-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.440283,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-295-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.421144,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "stress-296-undefined",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 667,
+    "check_ms": 0.540614,
+    "checked_cells": 39,
+    "full_proof_cells": 3159,
+    "id": "stress-298-overfit",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 672,
+    "check_ms": 0.442997,
+    "checked_cells": 41,
+    "full_proof_cells": 3321,
+    "id": "stress-299-regression",
+    "population": "stress"
+  },
+  {
+    "certificate_bytes": 659,
+    "check_ms": 0.474344,
+    "checked_cells": 42,
+    "full_proof_cells": 3402,
+    "id": "stress-300-undefined",
+    "population": "stress"
+  }
+]

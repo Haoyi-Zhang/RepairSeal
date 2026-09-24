@@ -1,0 +1,8177 @@
+[
+  {
+    "certificate_bytes": 11713,
+    "check_ms": 1.935185,
+    "id": "stress-001-correct",
+    "nodes": 32,
+    "points": 81,
+    "produce_ms": 7.935231,
+    "recursive_ms": 1.241069,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.251575,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14907,
+    "check_ms": 2.462698,
+    "id": "stress-002-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.500704,
+    "recursive_ms": 1.104183,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.532823,
+    "status": "REFUTED",
+    "topological_ms": 2.393976,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15173,
+    "check_ms": 2.454737,
+    "id": "stress-003-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.712313,
+    "recursive_ms": 1.370453,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.555827,
+    "status": "REFUTED",
+    "topological_ms": 1.516334,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17308,
+    "check_ms": 2.449549,
+    "id": "stress-004-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.685889,
+    "recursive_ms": 0.792774,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.4185,
+    "status": "REFUTED",
+    "topological_ms": 1.70001,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13105,
+    "check_ms": 2.151971,
+    "id": "stress-005-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.466841,
+    "recursive_ms": 1.250434,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.277073,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15172,
+    "check_ms": 2.306254,
+    "id": "stress-006-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.110847,
+    "recursive_ms": 1.06896,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.469978,
+    "status": "REFUTED",
+    "topological_ms": 1.507931,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15227,
+    "check_ms": 2.300214,
+    "id": "stress-007-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.266591,
+    "recursive_ms": 1.322021,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.471319,
+    "status": "REFUTED",
+    "topological_ms": 1.530334,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17401,
+    "check_ms": 2.63588,
+    "id": "stress-008-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.569153,
+    "recursive_ms": 0.809519,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.444009,
+    "status": "REFUTED",
+    "topological_ms": 1.718108,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12978,
+    "check_ms": 1.980112,
+    "id": "stress-009-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.04097,
+    "recursive_ms": 1.263382,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.399678,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15098,
+    "check_ms": 2.466985,
+    "id": "stress-010-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.091679,
+    "recursive_ms": 1.118975,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.478871,
+    "status": "REFUTED",
+    "topological_ms": 1.460229,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15604,
+    "check_ms": 2.634267,
+    "id": "stress-011-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.126421,
+    "recursive_ms": 1.422843,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.510759,
+    "status": "REFUTED",
+    "topological_ms": 1.543625,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16538,
+    "check_ms": 2.512053,
+    "id": "stress-012-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.809946,
+    "recursive_ms": 0.785624,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.412621,
+    "status": "REFUTED",
+    "topological_ms": 1.837267,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12911,
+    "check_ms": 2.122557,
+    "id": "stress-013-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.241932,
+    "recursive_ms": 1.388301,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.347239,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14068,
+    "check_ms": 2.2771,
+    "id": "stress-014-overfit",
+    "nodes": 38,
+    "points": 81,
+    "produce_ms": 9.653429,
+    "recursive_ms": 1.064343,
+    "refutation_cells": 38,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.446773,
+    "status": "REFUTED",
+    "topological_ms": 1.485938,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15307,
+    "check_ms": 2.362328,
+    "id": "stress-015-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.418471,
+    "recursive_ms": 1.35454,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.442056,
+    "status": "REFUTED",
+    "topological_ms": 1.494862,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16834,
+    "check_ms": 2.59592,
+    "id": "stress-016-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 59.556732,
+    "recursive_ms": 0.86352,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.422787,
+    "status": "REFUTED",
+    "topological_ms": 1.668503,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13555,
+    "check_ms": 2.015596,
+    "id": "stress-017-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 7.794188,
+    "recursive_ms": 1.349722,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.267969,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14937,
+    "check_ms": 2.507516,
+    "id": "stress-018-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.959589,
+    "recursive_ms": 1.057573,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.440584,
+    "status": "REFUTED",
+    "topological_ms": 1.541351,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15470,
+    "check_ms": 2.321106,
+    "id": "stress-019-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.01362,
+    "recursive_ms": 1.652128,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.521555,
+    "status": "REFUTED",
+    "topological_ms": 1.559589,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16456,
+    "check_ms": 2.460546,
+    "id": "stress-020-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.20148,
+    "recursive_ms": 0.932805,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.63087,
+    "status": "REFUTED",
+    "topological_ms": 1.587692,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13351,
+    "check_ms": 2.081735,
+    "id": "stress-021-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.14057,
+    "recursive_ms": 1.325626,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.302601,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15266,
+    "check_ms": 2.493756,
+    "id": "stress-022-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.251619,
+    "recursive_ms": 1.149771,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.471911,
+    "status": "REFUTED",
+    "topological_ms": 2.505183,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 14941,
+    "check_ms": 2.354776,
+    "id": "stress-023-regression",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.039059,
+    "recursive_ms": 1.420149,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.470949,
+    "status": "REFUTED",
+    "topological_ms": 1.532448,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16457,
+    "check_ms": 2.663932,
+    "id": "stress-024-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 12.134875,
+    "recursive_ms": 0.797902,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.41838,
+    "status": "REFUTED",
+    "topological_ms": 1.620431,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12537,
+    "check_ms": 1.99872,
+    "id": "stress-025-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 9.630384,
+    "recursive_ms": 1.608903,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.323473,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15703,
+    "check_ms": 2.311772,
+    "id": "stress-026-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.817345,
+    "recursive_ms": 1.057433,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.609468,
+    "status": "REFUTED",
+    "topological_ms": 1.480911,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 14993,
+    "check_ms": 2.771874,
+    "id": "stress-027-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.470659,
+    "recursive_ms": 1.75302,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.447544,
+    "status": "REFUTED",
+    "topological_ms": 1.68021,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16942,
+    "check_ms": 2.534226,
+    "id": "stress-028-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.636645,
+    "recursive_ms": 0.783079,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.428846,
+    "status": "REFUTED",
+    "topological_ms": 1.675683,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12861,
+    "check_ms": 2.01181,
+    "id": "stress-029-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.360231,
+    "recursive_ms": 1.291555,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.279336,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15514,
+    "check_ms": 2.270269,
+    "id": "stress-030-overfit",
+    "nodes": 38,
+    "points": 81,
+    "produce_ms": 10.018518,
+    "recursive_ms": 1.325467,
+    "refutation_cells": 38,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.44469,
+    "status": "REFUTED",
+    "topological_ms": 1.769635,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15593,
+    "check_ms": 2.494036,
+    "id": "stress-031-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.02661,
+    "recursive_ms": 1.805429,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.512402,
+    "status": "REFUTED",
+    "topological_ms": 1.541161,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16942,
+    "check_ms": 2.437922,
+    "id": "stress-032-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.813391,
+    "recursive_ms": 1.011914,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.566023,
+    "status": "REFUTED",
+    "topological_ms": 1.751658,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12646,
+    "check_ms": 2.149007,
+    "id": "stress-033-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.077044,
+    "recursive_ms": 1.189221,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.31467,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14780,
+    "check_ms": 2.28376,
+    "id": "stress-034-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.098699,
+    "recursive_ms": 1.341431,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.439712,
+    "status": "REFUTED",
+    "topological_ms": 1.447871,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15834,
+    "check_ms": 2.464772,
+    "id": "stress-035-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.228584,
+    "recursive_ms": 1.378266,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.441675,
+    "status": "REFUTED",
+    "topological_ms": 1.508272,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16027,
+    "check_ms": 2.567807,
+    "id": "stress-036-undefined",
+    "nodes": 42,
+    "points": 81,
+    "produce_ms": 11.676244,
+    "recursive_ms": 0.862839,
+    "refutation_cells": 42,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.412682,
+    "status": "REFUTED",
+    "topological_ms": 1.630746,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12752,
+    "check_ms": 1.973512,
+    "id": "stress-037-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.204776,
+    "recursive_ms": 1.373989,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.426959,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15015,
+    "check_ms": 2.292202,
+    "id": "stress-038-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.852898,
+    "recursive_ms": 1.235931,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.460764,
+    "status": "REFUTED",
+    "topological_ms": 1.505948,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16481,
+    "check_ms": 2.352513,
+    "id": "stress-039-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.606003,
+    "recursive_ms": 1.594381,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.472091,
+    "status": "REFUTED",
+    "topological_ms": 2.467656,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16472,
+    "check_ms": 2.479714,
+    "id": "stress-040-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.982326,
+    "recursive_ms": 0.787215,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.440173,
+    "status": "REFUTED",
+    "topological_ms": 1.679519,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12728,
+    "check_ms": 1.994433,
+    "id": "stress-041-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.342654,
+    "recursive_ms": 1.424265,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.356894,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14907,
+    "check_ms": 2.26396,
+    "id": "stress-042-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.169074,
+    "recursive_ms": 1.05623,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.464229,
+    "status": "REFUTED",
+    "topological_ms": 1.76654,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16577,
+    "check_ms": 2.349589,
+    "id": "stress-043-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.295054,
+    "recursive_ms": 1.58744,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.495306,
+    "status": "REFUTED",
+    "topological_ms": 1.690515,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17279,
+    "check_ms": 2.862692,
+    "id": "stress-044-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.573386,
+    "recursive_ms": 0.82958,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.419803,
+    "status": "REFUTED",
+    "topological_ms": 1.718448,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12323,
+    "check_ms": 2.43632,
+    "id": "stress-045-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 9.437303,
+    "recursive_ms": 1.877417,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.338196,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15070,
+    "check_ms": 2.534948,
+    "id": "stress-046-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.325721,
+    "recursive_ms": 1.103852,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.44446,
+    "status": "REFUTED",
+    "topological_ms": 1.57369,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15117,
+    "check_ms": 2.37044,
+    "id": "stress-047-regression",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.075374,
+    "recursive_ms": 1.635904,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.448676,
+    "status": "REFUTED",
+    "topological_ms": 1.492498,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17437,
+    "check_ms": 2.519795,
+    "id": "stress-048-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.80621,
+    "recursive_ms": 1.007937,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.439562,
+    "status": "REFUTED",
+    "topological_ms": 1.641452,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12348,
+    "check_ms": 2.298712,
+    "id": "stress-049-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.242894,
+    "recursive_ms": 1.275541,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.344625,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15178,
+    "check_ms": 2.415908,
+    "id": "stress-050-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 12.605154,
+    "recursive_ms": 1.118575,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.483458,
+    "status": "REFUTED",
+    "topological_ms": 1.838669,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15658,
+    "check_ms": 2.877964,
+    "id": "stress-051-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 11.132556,
+    "recursive_ms": 1.621022,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.448606,
+    "status": "REFUTED",
+    "topological_ms": 1.58042,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17431,
+    "check_ms": 2.592534,
+    "id": "stress-052-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.28805,
+    "recursive_ms": 0.82336,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.444239,
+    "status": "REFUTED",
+    "topological_ms": 1.750396,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12328,
+    "check_ms": 2.016828,
+    "id": "stress-053-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.275222,
+    "recursive_ms": 1.377605,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.256613,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15151,
+    "check_ms": 2.563451,
+    "id": "stress-054-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.534104,
+    "recursive_ms": 1.283613,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.441345,
+    "status": "REFUTED",
+    "topological_ms": 1.556885,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15495,
+    "check_ms": 2.594417,
+    "id": "stress-055-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 13.541654,
+    "recursive_ms": 1.596745,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.492883,
+    "status": "REFUTED",
+    "topological_ms": 1.584777,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16806,
+    "check_ms": 2.486104,
+    "id": "stress-056-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 12.080995,
+    "recursive_ms": 0.808427,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.433373,
+    "status": "REFUTED",
+    "topological_ms": 1.622563,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13492,
+    "check_ms": 2.068084,
+    "id": "stress-057-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.803147,
+    "recursive_ms": 1.195841,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.295491,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14297,
+    "check_ms": 2.245612,
+    "id": "stress-058-overfit",
+    "nodes": 38,
+    "points": 81,
+    "produce_ms": 9.686488,
+    "recursive_ms": 1.450925,
+    "refutation_cells": 38,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.461425,
+    "status": "REFUTED",
+    "topological_ms": 1.502473,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15495,
+    "check_ms": 2.360826,
+    "id": "stress-059-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.359342,
+    "recursive_ms": 1.541722,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.499062,
+    "status": "REFUTED",
+    "topological_ms": 1.992171,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16779,
+    "check_ms": 2.541908,
+    "id": "stress-060-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.655599,
+    "recursive_ms": 1.007277,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.43198,
+    "status": "REFUTED",
+    "topological_ms": 1.688853,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13687,
+    "check_ms": 2.067033,
+    "id": "stress-061-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.438087,
+    "recursive_ms": 1.478977,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.515652,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14593,
+    "check_ms": 2.412984,
+    "id": "stress-062-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.616439,
+    "recursive_ms": 1.085154,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.4449,
+    "status": "REFUTED",
+    "topological_ms": 1.526619,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15848,
+    "check_ms": 2.42329,
+    "id": "stress-063-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 11.163082,
+    "recursive_ms": 1.754172,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.456147,
+    "status": "REFUTED",
+    "topological_ms": 1.529293,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16511,
+    "check_ms": 2.44322,
+    "id": "stress-064-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.611237,
+    "recursive_ms": 0.788388,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.425311,
+    "status": "REFUTED",
+    "topological_ms": 1.609934,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13375,
+    "check_ms": 1.952851,
+    "id": "stress-065-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.76925,
+    "recursive_ms": 1.447179,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.226346,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14527,
+    "check_ms": 2.501577,
+    "id": "stress-066-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 11.485367,
+    "recursive_ms": 1.13537,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.636679,
+    "status": "REFUTED",
+    "topological_ms": 1.518046,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15026,
+    "check_ms": 2.434417,
+    "id": "stress-067-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.404199,
+    "recursive_ms": 1.594761,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.478791,
+    "status": "REFUTED",
+    "topological_ms": 1.517886,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16619,
+    "check_ms": 2.505183,
+    "id": "stress-068-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.972982,
+    "recursive_ms": 1.687862,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.529056,
+    "status": "REFUTED",
+    "topological_ms": 2.042857,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12513,
+    "check_ms": 5.0128,
+    "id": "stress-069-correct",
+    "nodes": 33,
+    "points": 81,
+    "produce_ms": 10.943967,
+    "recursive_ms": 2.620597,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 2.364551,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15853,
+    "check_ms": 2.338292,
+    "id": "stress-070-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 12.335858,
+    "recursive_ms": 1.355261,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.478721,
+    "status": "REFUTED",
+    "topological_ms": 1.611326,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15043,
+    "check_ms": 2.879357,
+    "id": "stress-071-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.333463,
+    "recursive_ms": 1.636585,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.481425,
+    "status": "REFUTED",
+    "topological_ms": 1.614201,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16618,
+    "check_ms": 2.504802,
+    "id": "stress-072-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.696104,
+    "recursive_ms": 0.775959,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.45144,
+    "status": "REFUTED",
+    "topological_ms": 1.637586,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12969,
+    "check_ms": 2.019662,
+    "id": "stress-073-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.332729,
+    "recursive_ms": 1.417835,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.342322,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 16206,
+    "check_ms": 2.635489,
+    "id": "stress-074-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.384309,
+    "recursive_ms": 1.060246,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.454855,
+    "status": "REFUTED",
+    "topological_ms": 1.535182,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 14977,
+    "check_ms": 2.4369,
+    "id": "stress-075-regression",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.495066,
+    "recursive_ms": 1.682674,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.638912,
+    "status": "REFUTED",
+    "topological_ms": 1.522213,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16915,
+    "check_ms": 2.629169,
+    "id": "stress-076-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 13.70836,
+    "recursive_ms": 1.165815,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.43179,
+    "status": "REFUTED",
+    "topological_ms": 2.68916,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12752,
+    "check_ms": 2.088906,
+    "id": "stress-077-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 10.280952,
+    "recursive_ms": 1.481001,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.578357,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15042,
+    "check_ms": 2.361236,
+    "id": "stress-078-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 11.198815,
+    "recursive_ms": 1.278385,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.468936,
+    "status": "REFUTED",
+    "topological_ms": 2.743161,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15185,
+    "check_ms": 2.54331,
+    "id": "stress-079-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 11.079225,
+    "recursive_ms": 1.959721,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.525562,
+    "status": "REFUTED",
+    "topological_ms": 1.577656,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16519,
+    "check_ms": 3.311066,
+    "id": "stress-080-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 77.749201,
+    "recursive_ms": 1.001669,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.45124,
+    "status": "REFUTED",
+    "topological_ms": 1.774433,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12538,
+    "check_ms": 2.102576,
+    "id": "stress-081-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.728124,
+    "recursive_ms": 1.758228,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.478176,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15151,
+    "check_ms": 2.788649,
+    "id": "stress-082-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 14.365925,
+    "recursive_ms": 1.266277,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.91663,
+    "status": "REFUTED",
+    "topological_ms": 1.704087,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16468,
+    "check_ms": 2.627987,
+    "id": "stress-083-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 12.951215,
+    "recursive_ms": 1.479798,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.49795,
+    "status": "REFUTED",
+    "topological_ms": 1.785068,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16816,
+    "check_ms": 2.703771,
+    "id": "stress-084-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 17.124379,
+    "recursive_ms": 0.961167,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.517409,
+    "status": "REFUTED",
+    "topological_ms": 1.87915,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13141,
+    "check_ms": 2.329097,
+    "id": "stress-085-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 12.229678,
+    "recursive_ms": 1.25471,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.346597,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14801,
+    "check_ms": 2.426044,
+    "id": "stress-086-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 11.136211,
+    "recursive_ms": 1.204043,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.440263,
+    "status": "REFUTED",
+    "topological_ms": 1.552438,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16577,
+    "check_ms": 2.485393,
+    "id": "stress-087-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 11.093066,
+    "recursive_ms": 1.475011,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.904602,
+    "status": "REFUTED",
+    "topological_ms": 1.5342,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16186,
+    "check_ms": 2.687227,
+    "id": "stress-088-undefined",
+    "nodes": 42,
+    "points": 81,
+    "produce_ms": 10.97647,
+    "recursive_ms": 0.740846,
+    "refutation_cells": 42,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.430819,
+    "status": "REFUTED",
+    "topological_ms": 1.630305,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12364,
+    "check_ms": 1.972561,
+    "id": "stress-089-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.960389,
+    "recursive_ms": 1.366648,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.284043,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15124,
+    "check_ms": 2.464832,
+    "id": "stress-090-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.614275,
+    "recursive_ms": 1.190523,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.754566,
+    "status": "REFUTED",
+    "topological_ms": 1.685688,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15556,
+    "check_ms": 4.562581,
+    "id": "stress-091-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.213452,
+    "recursive_ms": 1.775824,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.454785,
+    "status": "REFUTED",
+    "topological_ms": 2.997945,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16199,
+    "check_ms": 3.416796,
+    "id": "stress-092-undefined",
+    "nodes": 42,
+    "points": 81,
+    "produce_ms": 13.929768,
+    "recursive_ms": 0.793165,
+    "refutation_cells": 42,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.722307,
+    "status": "REFUTED",
+    "topological_ms": 2.006152,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12435,
+    "check_ms": 2.579945,
+    "id": "stress-093-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.294341,
+    "recursive_ms": 1.361821,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.375081,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14851,
+    "check_ms": 2.377421,
+    "id": "stress-094-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.742272,
+    "recursive_ms": 1.350193,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.535166,
+    "status": "REFUTED",
+    "topological_ms": 1.627741,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15551,
+    "check_ms": 2.706857,
+    "id": "stress-095-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 12.072851,
+    "recursive_ms": 1.406588,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.459632,
+    "status": "REFUTED",
+    "topological_ms": 1.615503,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17511,
+    "check_ms": 3.800022,
+    "id": "stress-096-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 12.507997,
+    "recursive_ms": 0.875018,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.463579,
+    "status": "REFUTED",
+    "topological_ms": 1.742614,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12729,
+    "check_ms": 2.169978,
+    "id": "stress-097-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 10.03328,
+    "recursive_ms": 1.529073,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.318035,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15027,
+    "check_ms": 2.442168,
+    "id": "stress-098-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.392011,
+    "recursive_ms": 1.34783,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.445932,
+    "status": "REFUTED",
+    "topological_ms": 1.649173,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15549,
+    "check_ms": 2.339864,
+    "id": "stress-099-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.653354,
+    "recursive_ms": 1.558016,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.474584,
+    "status": "REFUTED",
+    "topological_ms": 1.624056,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16616,
+    "check_ms": 2.740958,
+    "id": "stress-100-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 12.195556,
+    "recursive_ms": 0.958954,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.463919,
+    "status": "REFUTED",
+    "topological_ms": 1.698528,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12610,
+    "check_ms": 2.029336,
+    "id": "stress-101-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.102463,
+    "recursive_ms": 1.415742,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.268561,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14719,
+    "check_ms": 2.298752,
+    "id": "stress-102-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.344198,
+    "recursive_ms": 1.064453,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.432852,
+    "status": "REFUTED",
+    "topological_ms": 1.523825,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15189,
+    "check_ms": 2.349238,
+    "id": "stress-103-regression",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.430378,
+    "recursive_ms": 1.579889,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.648827,
+    "status": "REFUTED",
+    "topological_ms": 1.531145,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16700,
+    "check_ms": 2.83591,
+    "id": "stress-104-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.825179,
+    "recursive_ms": 0.805483,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.499733,
+    "status": "REFUTED",
+    "topological_ms": 1.803046,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12535,
+    "check_ms": 3.892001,
+    "id": "stress-105-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.637809,
+    "recursive_ms": 1.284695,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.658427,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14746,
+    "check_ms": 2.285011,
+    "id": "stress-106-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.978948,
+    "recursive_ms": 1.078113,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.47126,
+    "status": "REFUTED",
+    "topological_ms": 1.503264,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15974,
+    "check_ms": 2.582609,
+    "id": "stress-107-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.718232,
+    "recursive_ms": 1.454591,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.467214,
+    "status": "REFUTED",
+    "topological_ms": 1.660321,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17078,
+    "check_ms": 2.547877,
+    "id": "stress-108-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.001684,
+    "recursive_ms": 0.923852,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.419632,
+    "status": "REFUTED",
+    "topological_ms": 1.672829,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13458,
+    "check_ms": 2.009937,
+    "id": "stress-109-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 9.146785,
+    "recursive_ms": 1.453299,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.254439,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14907,
+    "check_ms": 2.521257,
+    "id": "stress-110-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 11.264244,
+    "recursive_ms": 1.456633,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.468465,
+    "status": "REFUTED",
+    "topological_ms": 1.76597,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15118,
+    "check_ms": 2.459514,
+    "id": "stress-111-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.552112,
+    "recursive_ms": 1.602934,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.449357,
+    "status": "REFUTED",
+    "topological_ms": 1.549183,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16978,
+    "check_ms": 2.712304,
+    "id": "stress-112-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.957664,
+    "recursive_ms": 0.790089,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.594505,
+    "status": "REFUTED",
+    "topological_ms": 1.619559,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12890,
+    "check_ms": 2.325653,
+    "id": "stress-113-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.00123,
+    "recursive_ms": 1.406318,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.345627,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14770,
+    "check_ms": 2.276769,
+    "id": "stress-114-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.12592,
+    "recursive_ms": 1.286968,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.442657,
+    "status": "REFUTED",
+    "topological_ms": 1.537385,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15227,
+    "check_ms": 2.477892,
+    "id": "stress-115-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.507695,
+    "recursive_ms": 1.622794,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.448145,
+    "status": "REFUTED",
+    "topological_ms": 1.702755,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16938,
+    "check_ms": 2.722079,
+    "id": "stress-116-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.19777,
+    "recursive_ms": 0.788377,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.542507,
+    "status": "REFUTED",
+    "topological_ms": 1.80606,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12969,
+    "check_ms": 1.970708,
+    "id": "stress-117-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.156403,
+    "recursive_ms": 1.192115,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.298836,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14988,
+    "check_ms": 2.270309,
+    "id": "stress-118-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.053941,
+    "recursive_ms": 1.052505,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.44491,
+    "status": "REFUTED",
+    "topological_ms": 1.532749,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15553,
+    "check_ms": 2.41644,
+    "id": "stress-119-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.468476,
+    "recursive_ms": 1.352397,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.63728,
+    "status": "REFUTED",
+    "topological_ms": 1.534081,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16863,
+    "check_ms": 2.495258,
+    "id": "stress-120-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 13.732762,
+    "recursive_ms": 0.810681,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.445641,
+    "status": "REFUTED",
+    "topological_ms": 1.93232,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12963,
+    "check_ms": 1.981604,
+    "id": "stress-121-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.452159,
+    "recursive_ms": 1.667321,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.239827,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14810,
+    "check_ms": 2.475628,
+    "id": "stress-122-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.335886,
+    "recursive_ms": 1.484696,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.460864,
+    "status": "REFUTED",
+    "topological_ms": 1.610576,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15495,
+    "check_ms": 2.761629,
+    "id": "stress-123-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.752644,
+    "recursive_ms": 1.762054,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.514785,
+    "status": "REFUTED",
+    "topological_ms": 2.044579,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16654,
+    "check_ms": 2.604522,
+    "id": "stress-124-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.957738,
+    "recursive_ms": 0.772584,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.461355,
+    "status": "REFUTED",
+    "topological_ms": 1.62689,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13155,
+    "check_ms": 1.979792,
+    "id": "stress-125-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.806473,
+    "recursive_ms": 1.209342,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.362171,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14937,
+    "check_ms": 2.504723,
+    "id": "stress-126-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.309646,
+    "recursive_ms": 1.055639,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.465662,
+    "status": "REFUTED",
+    "topological_ms": 1.580501,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15332,
+    "check_ms": 2.321666,
+    "id": "stress-127-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.19257,
+    "recursive_ms": 1.393599,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.494835,
+    "status": "REFUTED",
+    "topological_ms": 1.765358,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16671,
+    "check_ms": 2.530381,
+    "id": "stress-128-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.966411,
+    "recursive_ms": 0.830842,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.415325,
+    "status": "REFUTED",
+    "topological_ms": 1.597997,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13123,
+    "check_ms": 2.156197,
+    "id": "stress-129-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.867348,
+    "recursive_ms": 1.369573,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.279356,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15314,
+    "check_ms": 2.436229,
+    "id": "stress-130-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.767389,
+    "recursive_ms": 1.545017,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.443428,
+    "status": "REFUTED",
+    "topological_ms": 1.470905,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15519,
+    "check_ms": 2.385553,
+    "id": "stress-131-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.36553,
+    "recursive_ms": 1.556043,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.469657,
+    "status": "REFUTED",
+    "topological_ms": 1.869175,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16457,
+    "check_ms": 2.564783,
+    "id": "stress-132-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 12.298021,
+    "recursive_ms": 0.847636,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.456627,
+    "status": "REFUTED",
+    "topological_ms": 1.646099,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12421,
+    "check_ms": 1.960753,
+    "id": "stress-133-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.164786,
+    "recursive_ms": 1.692139,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.336593,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15355,
+    "check_ms": 2.47662,
+    "id": "stress-134-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 11.068389,
+    "recursive_ms": 1.328711,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.479593,
+    "status": "REFUTED",
+    "topological_ms": 1.503394,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15631,
+    "check_ms": 2.512714,
+    "id": "stress-135-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 12.371522,
+    "recursive_ms": 1.696605,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.440974,
+    "status": "REFUTED",
+    "topological_ms": 1.690446,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16876,
+    "check_ms": 2.597141,
+    "id": "stress-136-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.114885,
+    "recursive_ms": 0.783259,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.437018,
+    "status": "REFUTED",
+    "topological_ms": 1.637886,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12484,
+    "check_ms": 2.121725,
+    "id": "stress-137-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.503006,
+    "recursive_ms": 1.535493,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.246197,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15232,
+    "check_ms": 2.425593,
+    "id": "stress-138-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.11982,
+    "recursive_ms": 1.290904,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.445501,
+    "status": "REFUTED",
+    "topological_ms": 1.539689,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15685,
+    "check_ms": 4.391654,
+    "id": "stress-139-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.975359,
+    "recursive_ms": 2.862201,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.589478,
+    "status": "REFUTED",
+    "topological_ms": 1.808704,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16753,
+    "check_ms": 3.347271,
+    "id": "stress-140-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 12.452303,
+    "recursive_ms": 0.818673,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.529046,
+    "status": "REFUTED",
+    "topological_ms": 1.990568,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12646,
+    "check_ms": 1.949255,
+    "id": "stress-141-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.440531,
+    "recursive_ms": 1.435441,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.401671,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15872,
+    "check_ms": 2.683031,
+    "id": "stress-142-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.404649,
+    "recursive_ms": 1.123372,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.522497,
+    "status": "REFUTED",
+    "topological_ms": 1.511156,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15549,
+    "check_ms": 2.952967,
+    "id": "stress-143-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 74.245204,
+    "recursive_ms": 1.603225,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.653514,
+    "status": "REFUTED",
+    "topological_ms": 1.924739,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15869,
+    "check_ms": 2.709972,
+    "id": "stress-144-undefined",
+    "nodes": 42,
+    "points": 81,
+    "produce_ms": 11.342191,
+    "recursive_ms": 1.000116,
+    "refutation_cells": 42,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.420754,
+    "status": "REFUTED",
+    "topological_ms": 1.681442,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12483,
+    "check_ms": 2.056558,
+    "id": "stress-145-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 9.423882,
+    "recursive_ms": 1.358216,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.350474,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14800,
+    "check_ms": 2.353224,
+    "id": "stress-146-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.47199,
+    "recursive_ms": 1.582082,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.445741,
+    "status": "REFUTED",
+    "topological_ms": 1.745168,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16196,
+    "check_ms": 8.368052,
+    "id": "stress-147-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 34.959975,
+    "recursive_ms": 1.693931,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.505071,
+    "status": "REFUTED",
+    "topological_ms": 5.756549,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17078,
+    "check_ms": 2.486415,
+    "id": "stress-148-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 13.242393,
+    "recursive_ms": 0.788287,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.463298,
+    "status": "REFUTED",
+    "topological_ms": 1.668192,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12592,
+    "check_ms": 2.265181,
+    "id": "stress-149-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 9.01697,
+    "recursive_ms": 1.514911,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.282521,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14907,
+    "check_ms": 2.546695,
+    "id": "stress-150-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 12.334826,
+    "recursive_ms": 1.868444,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.49125,
+    "status": "REFUTED",
+    "topological_ms": 1.659799,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16366,
+    "check_ms": 2.500065,
+    "id": "stress-151-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 12.432484,
+    "recursive_ms": 1.449663,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.448766,
+    "status": "REFUTED",
+    "topological_ms": 1.550305,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17114,
+    "check_ms": 2.6425,
+    "id": "stress-152-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.893792,
+    "recursive_ms": 0.790671,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.437869,
+    "status": "REFUTED",
+    "topological_ms": 1.612879,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12863,
+    "check_ms": 1.964499,
+    "id": "stress-153-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.157485,
+    "recursive_ms": 1.575904,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.330354,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14693,
+    "check_ms": 2.465343,
+    "id": "stress-154-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.839094,
+    "recursive_ms": 1.307279,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.437739,
+    "status": "REFUTED",
+    "topological_ms": 1.536664,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15220,
+    "check_ms": 2.401787,
+    "id": "stress-155-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 11.481862,
+    "recursive_ms": 1.61353,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.486222,
+    "status": "REFUTED",
+    "topological_ms": 1.636434,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17131,
+    "check_ms": 2.507216,
+    "id": "stress-156-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.626805,
+    "recursive_ms": 0.802469,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.510298,
+    "status": "REFUTED",
+    "topological_ms": 1.670176,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12044,
+    "check_ms": 1.94529,
+    "id": "stress-157-correct",
+    "nodes": 33,
+    "points": 81,
+    "produce_ms": 8.219999,
+    "recursive_ms": 1.458847,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.262161,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15124,
+    "check_ms": 2.49616,
+    "id": "stress-158-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.536799,
+    "recursive_ms": 1.502392,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.495426,
+    "status": "REFUTED",
+    "topological_ms": 1.60701,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15529,
+    "check_ms": 2.346033,
+    "id": "stress-159-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.635608,
+    "recursive_ms": 1.576474,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.447193,
+    "status": "REFUTED",
+    "topological_ms": 1.538627,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17187,
+    "check_ms": 2.54317,
+    "id": "stress-160-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 12.547696,
+    "recursive_ms": 1.11571,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.474525,
+    "status": "REFUTED",
+    "topological_ms": 1.877919,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12727,
+    "check_ms": 2.163208,
+    "id": "stress-161-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.465218,
+    "recursive_ms": 1.579639,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.274229,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15151,
+    "check_ms": 2.805255,
+    "id": "stress-162-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.692073,
+    "recursive_ms": 1.183672,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.483598,
+    "status": "REFUTED",
+    "topological_ms": 1.727481,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15604,
+    "check_ms": 2.428557,
+    "id": "stress-163-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 11.10835,
+    "recursive_ms": 1.358957,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.443699,
+    "status": "REFUTED",
+    "topological_ms": 1.54028,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17582,
+    "check_ms": 3.373239,
+    "id": "stress-164-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.24431,
+    "recursive_ms": 0.818783,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.593063,
+    "status": "REFUTED",
+    "topological_ms": 1.814903,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13249,
+    "check_ms": 2.389528,
+    "id": "stress-165-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 10.838984,
+    "recursive_ms": 1.570755,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.44766,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 13955,
+    "check_ms": 2.328116,
+    "id": "stress-166-overfit",
+    "nodes": 37,
+    "points": 81,
+    "produce_ms": 10.26549,
+    "recursive_ms": 1.05599,
+    "refutation_cells": 37,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.43824,
+    "status": "REFUTED",
+    "topological_ms": 1.503825,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15226,
+    "check_ms": 2.352773,
+    "id": "stress-167-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.43779,
+    "recursive_ms": 1.617906,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.5646,
+    "status": "REFUTED",
+    "topological_ms": 1.827372,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16321,
+    "check_ms": 2.799405,
+    "id": "stress-168-undefined",
+    "nodes": 42,
+    "points": 81,
+    "produce_ms": 12.116288,
+    "recursive_ms": 0.786094,
+    "refutation_cells": 42,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.427754,
+    "status": "REFUTED",
+    "topological_ms": 1.671407,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13192,
+    "check_ms": 1.99194,
+    "id": "stress-169-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.693757,
+    "recursive_ms": 1.948324,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.433959,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14552,
+    "check_ms": 2.315768,
+    "id": "stress-170-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.964567,
+    "recursive_ms": 1.416763,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.53121,
+    "status": "REFUTED",
+    "topological_ms": 1.491005,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15335,
+    "check_ms": 2.560275,
+    "id": "stress-171-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.81744,
+    "recursive_ms": 1.421972,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.45176,
+    "status": "REFUTED",
+    "topological_ms": 1.564857,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16671,
+    "check_ms": 2.647737,
+    "id": "stress-172-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 15.785032,
+    "recursive_ms": 0.918132,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.425581,
+    "status": "REFUTED",
+    "topological_ms": 1.764668,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13351,
+    "check_ms": 2.003157,
+    "id": "stress-173-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.636897,
+    "recursive_ms": 1.438567,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.246167,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15280,
+    "check_ms": 2.655388,
+    "id": "stress-174-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.844862,
+    "recursive_ms": 1.146938,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.430468,
+    "status": "REFUTED",
+    "topological_ms": 1.531046,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15848,
+    "check_ms": 2.45026,
+    "id": "stress-175-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 11.06907,
+    "recursive_ms": 1.371125,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.442055,
+    "status": "REFUTED",
+    "topological_ms": 1.597566,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16619,
+    "check_ms": 2.810012,
+    "id": "stress-176-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 12.148555,
+    "recursive_ms": 0.808648,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.424319,
+    "status": "REFUTED",
+    "topological_ms": 1.731207,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12284,
+    "check_ms": 2.298872,
+    "id": "stress-177-correct",
+    "nodes": 33,
+    "points": 81,
+    "produce_ms": 7.779596,
+    "recursive_ms": 1.214529,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.234489,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15610,
+    "check_ms": 2.31746,
+    "id": "stress-178-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.512381,
+    "recursive_ms": 1.039286,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.444309,
+    "status": "REFUTED",
+    "topological_ms": 1.488612,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 14775,
+    "check_ms": 2.349698,
+    "id": "stress-179-regression",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.447294,
+    "recursive_ms": 1.332507,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.465792,
+    "status": "REFUTED",
+    "topological_ms": 1.649323,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16888,
+    "check_ms": 2.463049,
+    "id": "stress-180-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.3443,
+    "recursive_ms": 0.80995,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.446883,
+    "status": "REFUTED",
+    "topological_ms": 1.7996,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12915,
+    "check_ms": 2.077328,
+    "id": "stress-181-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.989468,
+    "recursive_ms": 1.297654,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.28138,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 16046,
+    "check_ms": 2.642589,
+    "id": "stress-182-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.99321,
+    "recursive_ms": 1.149071,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.45168,
+    "status": "REFUTED",
+    "topological_ms": 1.51372,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 14754,
+    "check_ms": 2.591763,
+    "id": "stress-183-regression",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 11.964157,
+    "recursive_ms": 2.505373,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 1.327489,
+    "status": "REFUTED",
+    "topological_ms": 1.761543,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16915,
+    "check_ms": 2.616921,
+    "id": "stress-184-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 13.088084,
+    "recursive_ms": 0.905754,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.429537,
+    "status": "REFUTED",
+    "topological_ms": 1.882535,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12725,
+    "check_ms": 2.199843,
+    "id": "stress-185-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 9.68138,
+    "recursive_ms": 2.508598,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.684366,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15876,
+    "check_ms": 3.398759,
+    "id": "stress-186-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.538581,
+    "recursive_ms": 1.747582,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.450418,
+    "status": "REFUTED",
+    "topological_ms": 1.655953,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16172,
+    "check_ms": 2.55037,
+    "id": "stress-187-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 13.504617,
+    "recursive_ms": 1.745679,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.588015,
+    "status": "REFUTED",
+    "topological_ms": 1.790567,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15921,
+    "check_ms": 5.585522,
+    "id": "stress-188-undefined",
+    "nodes": 42,
+    "points": 81,
+    "produce_ms": 12.238851,
+    "recursive_ms": 0.878443,
+    "refutation_cells": 42,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.421394,
+    "status": "REFUTED",
+    "topological_ms": 1.684506,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12698,
+    "check_ms": 2.03226,
+    "id": "stress-189-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 11.048429,
+    "recursive_ms": 1.758408,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.497325,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14799,
+    "check_ms": 2.698844,
+    "id": "stress-190-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 11.013497,
+    "recursive_ms": 2.019701,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.99588,
+    "status": "REFUTED",
+    "topological_ms": 1.54066,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16372,
+    "check_ms": 2.680137,
+    "id": "stress-191-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 12.658303,
+    "recursive_ms": 1.871449,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.452962,
+    "status": "REFUTED",
+    "topological_ms": 1.557586,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16411,
+    "check_ms": 2.714028,
+    "id": "stress-192-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 13.872702,
+    "recursive_ms": 0.894597,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.4651,
+    "status": "REFUTED",
+    "topological_ms": 1.730507,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12969,
+    "check_ms": 2.060634,
+    "id": "stress-193-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 12.050537,
+    "recursive_ms": 1.293648,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.262972,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14747,
+    "check_ms": 2.365202,
+    "id": "stress-194-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.23919,
+    "recursive_ms": 1.100908,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.481525,
+    "status": "REFUTED",
+    "topological_ms": 1.505787,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16577,
+    "check_ms": 2.475589,
+    "id": "stress-195-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 11.731979,
+    "recursive_ms": 1.783576,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.800065,
+    "status": "REFUTED",
+    "topological_ms": 1.61996,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16270,
+    "check_ms": 2.533145,
+    "id": "stress-196-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.910076,
+    "recursive_ms": 0.832294,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.497359,
+    "status": "REFUTED",
+    "topological_ms": 1.778429,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13105,
+    "check_ms": 2.060423,
+    "id": "stress-197-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.283475,
+    "recursive_ms": 1.519659,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.286828,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15070,
+    "check_ms": 2.393725,
+    "id": "stress-198-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.350568,
+    "recursive_ms": 1.604737,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.551581,
+    "status": "REFUTED",
+    "topological_ms": 1.516194,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15486,
+    "check_ms": 2.404822,
+    "id": "stress-199-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.330878,
+    "recursive_ms": 1.729264,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.456037,
+    "status": "REFUTED",
+    "topological_ms": 1.626931,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17091,
+    "check_ms": 2.444431,
+    "id": "stress-200-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.645689,
+    "recursive_ms": 0.774527,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.599342,
+    "status": "REFUTED",
+    "topological_ms": 1.65313,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12390,
+    "check_ms": 1.977138,
+    "id": "stress-201-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.044836,
+    "recursive_ms": 1.235991,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.251504,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14773,
+    "check_ms": 2.282858,
+    "id": "stress-202-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.742187,
+    "recursive_ms": 1.086717,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.442437,
+    "status": "REFUTED",
+    "topological_ms": 1.631227,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15712,
+    "check_ms": 2.479243,
+    "id": "stress-203-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.54482,
+    "recursive_ms": 1.392307,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.623239,
+    "status": "REFUTED",
+    "topological_ms": 1.530064,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17648,
+    "check_ms": 2.50325,
+    "id": "stress-204-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.743085,
+    "recursive_ms": 0.810431,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.449347,
+    "status": "REFUTED",
+    "topological_ms": 1.657406,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12206,
+    "check_ms": 2.227424,
+    "id": "stress-205-correct",
+    "nodes": 33,
+    "points": 81,
+    "produce_ms": 64.275518,
+    "recursive_ms": 1.270814,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.247208,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15151,
+    "check_ms": 2.378612,
+    "id": "stress-206-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.888812,
+    "recursive_ms": 1.097693,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.474544,
+    "status": "REFUTED",
+    "topological_ms": 1.636554,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15495,
+    "check_ms": 2.353976,
+    "id": "stress-207-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 11.472627,
+    "recursive_ms": 1.547411,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.466312,
+    "status": "REFUTED",
+    "topological_ms": 1.590235,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17402,
+    "check_ms": 3.038727,
+    "id": "stress-208-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.342652,
+    "recursive_ms": 0.815999,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.494805,
+    "status": "REFUTED",
+    "topological_ms": 1.919621,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12530,
+    "check_ms": 2.036958,
+    "id": "stress-209-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.981481,
+    "recursive_ms": 1.403594,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.30788,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14663,
+    "check_ms": 2.27762,
+    "id": "stress-210-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.619487,
+    "recursive_ms": 1.248951,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.434654,
+    "status": "REFUTED",
+    "topological_ms": 1.478447,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15012,
+    "check_ms": 2.328406,
+    "id": "stress-211-regression",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.735701,
+    "recursive_ms": 1.353959,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.49804,
+    "status": "REFUTED",
+    "topological_ms": 1.557866,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16699,
+    "check_ms": 2.690452,
+    "id": "stress-212-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.767721,
+    "recursive_ms": 0.815448,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.419982,
+    "status": "REFUTED",
+    "topological_ms": 1.690095,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13458,
+    "check_ms": 2.036817,
+    "id": "stress-213-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.183805,
+    "recursive_ms": 1.450354,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.271875,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14648,
+    "check_ms": 2.316238,
+    "id": "stress-214-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.779508,
+    "recursive_ms": 1.28768,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.540464,
+    "status": "REFUTED",
+    "topological_ms": 1.527581,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15712,
+    "check_ms": 2.526005,
+    "id": "stress-215-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.993916,
+    "recursive_ms": 1.622824,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.466572,
+    "status": "REFUTED",
+    "topological_ms": 1.57349,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16942,
+    "check_ms": 2.577392,
+    "id": "stress-216-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.738107,
+    "recursive_ms": 1.082961,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.509427,
+    "status": "REFUTED",
+    "topological_ms": 1.937157,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13458,
+    "check_ms": 2.063768,
+    "id": "stress-217-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.099007,
+    "recursive_ms": 1.224414,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.246887,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14386,
+    "check_ms": 2.279162,
+    "id": "stress-218-overfit",
+    "nodes": 38,
+    "points": 81,
+    "produce_ms": 9.97976,
+    "recursive_ms": 1.330994,
+    "refutation_cells": 38,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.497369,
+    "status": "REFUTED",
+    "topological_ms": 1.493839,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15712,
+    "check_ms": 2.629771,
+    "id": "stress-219-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 13.450256,
+    "recursive_ms": 1.556124,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.445821,
+    "status": "REFUTED",
+    "topological_ms": 1.589354,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16888,
+    "check_ms": 2.597392,
+    "id": "stress-220-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.8789,
+    "recursive_ms": 0.8102,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.565822,
+    "status": "REFUTED",
+    "topological_ms": 1.674212,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12789,
+    "check_ms": 1.987103,
+    "id": "stress-221-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.026909,
+    "recursive_ms": 1.432607,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.260158,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14298,
+    "check_ms": 2.328437,
+    "id": "stress-222-overfit",
+    "nodes": 38,
+    "points": 81,
+    "produce_ms": 9.705446,
+    "recursive_ms": 1.12874,
+    "refutation_cells": 38,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.459342,
+    "status": "REFUTED",
+    "topological_ms": 1.44113,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15122,
+    "check_ms": 2.541337,
+    "id": "stress-223-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.337478,
+    "recursive_ms": 1.34764,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.457459,
+    "status": "REFUTED",
+    "topological_ms": 1.688373,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16725,
+    "check_ms": 2.520286,
+    "id": "stress-224-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.618267,
+    "recursive_ms": 0.779204,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.412541,
+    "status": "REFUTED",
+    "topological_ms": 1.603445,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12996,
+    "check_ms": 2.404451,
+    "id": "stress-225-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.025406,
+    "recursive_ms": 1.382402,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.316452,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 16070,
+    "check_ms": 2.320915,
+    "id": "stress-226-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.874811,
+    "recursive_ms": 1.463003,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.49113,
+    "status": "REFUTED",
+    "topological_ms": 1.489734,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15442,
+    "check_ms": 2.421818,
+    "id": "stress-227-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.277637,
+    "recursive_ms": 1.591076,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.481344,
+    "status": "REFUTED",
+    "topological_ms": 1.605688,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16701,
+    "check_ms": 2.519745,
+    "id": "stress-228-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.626699,
+    "recursive_ms": 0.990482,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.414764,
+    "status": "REFUTED",
+    "topological_ms": 1.612279,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12806,
+    "check_ms": 2.056777,
+    "id": "stress-229-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.297256,
+    "recursive_ms": 1.387209,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.323494,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 16043,
+    "check_ms": 2.271,
+    "id": "stress-230-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.909513,
+    "recursive_ms": 1.225505,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.475636,
+    "status": "REFUTED",
+    "topological_ms": 1.510224,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15333,
+    "check_ms": 2.401336,
+    "id": "stress-231-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.909773,
+    "recursive_ms": 1.593721,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.483227,
+    "status": "REFUTED",
+    "topological_ms": 1.562483,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16400,
+    "check_ms": 2.444602,
+    "id": "stress-232-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.164754,
+    "recursive_ms": 0.801527,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.422156,
+    "status": "REFUTED",
+    "topological_ms": 1.669695,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12915,
+    "check_ms": 1.99217,
+    "id": "stress-233-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 7.831254,
+    "recursive_ms": 1.349652,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.262,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14720,
+    "check_ms": 2.234185,
+    "id": "stress-234-overfit",
+    "nodes": 38,
+    "points": 81,
+    "produce_ms": 9.617364,
+    "recursive_ms": 1.144634,
+    "refutation_cells": 38,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.455736,
+    "status": "REFUTED",
+    "topological_ms": 1.761163,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15241,
+    "check_ms": 2.340485,
+    "id": "stress-235-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.994822,
+    "recursive_ms": 1.639329,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.569778,
+    "status": "REFUTED",
+    "topological_ms": 2.060132,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16626,
+    "check_ms": 2.528277,
+    "id": "stress-236-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.650065,
+    "recursive_ms": 0.773495,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.420002,
+    "status": "REFUTED",
+    "topological_ms": 1.692169,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13005,
+    "check_ms": 2.05175,
+    "id": "stress-237-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.331708,
+    "recursive_ms": 1.23522,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.260749,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15314,
+    "check_ms": 2.311421,
+    "id": "stress-238-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.941862,
+    "recursive_ms": 1.096802,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.449487,
+    "status": "REFUTED",
+    "topological_ms": 1.499719,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16363,
+    "check_ms": 2.879386,
+    "id": "stress-239-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.218389,
+    "recursive_ms": 1.370694,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.498831,
+    "status": "REFUTED",
+    "topological_ms": 1.638086,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16450,
+    "check_ms": 2.778685,
+    "id": "stress-240-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.827642,
+    "recursive_ms": 0.811462,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.448515,
+    "status": "REFUTED",
+    "topological_ms": 1.609314,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12805,
+    "check_ms": 1.982886,
+    "id": "stress-241-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.95498,
+    "recursive_ms": 1.355171,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.229281,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14854,
+    "check_ms": 2.298271,
+    "id": "stress-242-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.728751,
+    "recursive_ms": 1.04951,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.437208,
+    "status": "REFUTED",
+    "topological_ms": 1.529182,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15333,
+    "check_ms": 2.407956,
+    "id": "stress-243-regression",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.144999,
+    "recursive_ms": 1.400669,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.534044,
+    "status": "REFUTED",
+    "topological_ms": 1.588292,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16534,
+    "check_ms": 2.458152,
+    "id": "stress-244-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.564336,
+    "recursive_ms": 0.794747,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.447153,
+    "status": "REFUTED",
+    "topological_ms": 1.630315,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12245,
+    "check_ms": 1.934834,
+    "id": "stress-245-correct",
+    "nodes": 33,
+    "points": 81,
+    "produce_ms": 7.980889,
+    "recursive_ms": 1.353689,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.247739,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14818,
+    "check_ms": 2.286644,
+    "id": "stress-246-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.710734,
+    "recursive_ms": 1.059917,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.771441,
+    "status": "REFUTED",
+    "topological_ms": 1.505818,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15685,
+    "check_ms": 2.436089,
+    "id": "stress-247-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.797671,
+    "recursive_ms": 1.649524,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.488095,
+    "status": "REFUTED",
+    "topological_ms": 1.607361,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16652,
+    "check_ms": 2.509599,
+    "id": "stress-248-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.566359,
+    "recursive_ms": 0.789339,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.474595,
+    "status": "REFUTED",
+    "topological_ms": 1.577996,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12646,
+    "check_ms": 1.984549,
+    "id": "stress-249-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.70234,
+    "recursive_ms": 1.363323,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.264565,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15494,
+    "check_ms": 2.316779,
+    "id": "stress-250-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.888291,
+    "recursive_ms": 1.239657,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.475256,
+    "status": "REFUTED",
+    "topological_ms": 1.538957,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15471,
+    "check_ms": 2.340094,
+    "id": "stress-251-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.862203,
+    "recursive_ms": 1.524125,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.454976,
+    "status": "REFUTED",
+    "topological_ms": 1.532918,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17645,
+    "check_ms": 2.495758,
+    "id": "stress-252-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.871138,
+    "recursive_ms": 1.03612,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.470108,
+    "status": "REFUTED",
+    "topological_ms": 1.604596,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12725,
+    "check_ms": 2.009657,
+    "id": "stress-253-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.292768,
+    "recursive_ms": 1.203152,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.333068,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14651,
+    "check_ms": 2.296478,
+    "id": "stress-254-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.807551,
+    "recursive_ms": 1.320429,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.665442,
+    "status": "REFUTED",
+    "topological_ms": 1.477385,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15766,
+    "check_ms": 2.405603,
+    "id": "stress-255-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.380323,
+    "recursive_ms": 1.563524,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.473773,
+    "status": "REFUTED",
+    "topological_ms": 1.56027,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16485,
+    "check_ms": 2.621618,
+    "id": "stress-256-undefined",
+    "nodes": 42,
+    "points": 81,
+    "produce_ms": 10.980276,
+    "recursive_ms": 0.769179,
+    "refutation_cells": 42,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.410979,
+    "status": "REFUTED",
+    "topological_ms": 1.601172,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12537,
+    "check_ms": 2.011109,
+    "id": "stress-257-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.964494,
+    "recursive_ms": 1.369111,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.235641,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14856,
+    "check_ms": 2.302147,
+    "id": "stress-258-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.078328,
+    "recursive_ms": 1.270744,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.571931,
+    "status": "REFUTED",
+    "topological_ms": 1.505407,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15637,
+    "check_ms": 2.353124,
+    "id": "stress-259-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.746133,
+    "recursive_ms": 1.536655,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.494845,
+    "status": "REFUTED",
+    "topological_ms": 1.628823,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17078,
+    "check_ms": 2.481427,
+    "id": "stress-260-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.534801,
+    "recursive_ms": 0.810521,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.436006,
+    "status": "REFUTED",
+    "topological_ms": 1.591517,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12780,
+    "check_ms": 1.977768,
+    "id": "stress-261-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.024665,
+    "recursive_ms": 1.364715,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.291335,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14693,
+    "check_ms": 2.427455,
+    "id": "stress-262-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.206311,
+    "recursive_ms": 1.258415,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.440133,
+    "status": "REFUTED",
+    "topological_ms": 1.478987,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16006,
+    "check_ms": 2.355758,
+    "id": "stress-263-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.052609,
+    "recursive_ms": 1.579389,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.453152,
+    "status": "REFUTED",
+    "topological_ms": 1.56722,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16951,
+    "check_ms": 2.468077,
+    "id": "stress-264-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.332136,
+    "recursive_ms": 0.956109,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.424149,
+    "status": "REFUTED",
+    "topological_ms": 1.645418,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12780,
+    "check_ms": 1.997118,
+    "id": "stress-265-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.109623,
+    "recursive_ms": 1.179006,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.262001,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15070,
+    "check_ms": 2.307896,
+    "id": "stress-266-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.959689,
+    "recursive_ms": 1.063382,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.441255,
+    "status": "REFUTED",
+    "topological_ms": 1.484776,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15234,
+    "check_ms": 2.776912,
+    "id": "stress-267-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.449226,
+    "recursive_ms": 1.358466,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.4911,
+    "status": "REFUTED",
+    "topological_ms": 1.622954,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16727,
+    "check_ms": 2.606625,
+    "id": "stress-268-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 58.112507,
+    "recursive_ms": 0.921158,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.441304,
+    "status": "REFUTED",
+    "topological_ms": 1.618858,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12942,
+    "check_ms": 1.984729,
+    "id": "stress-269-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 7.930263,
+    "recursive_ms": 1.353999,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.25523,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14826,
+    "check_ms": 2.269537,
+    "id": "stress-270-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.300201,
+    "recursive_ms": 1.105686,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.52398,
+    "status": "REFUTED",
+    "topological_ms": 1.495863,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15604,
+    "check_ms": 2.415107,
+    "id": "stress-271-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.136065,
+    "recursive_ms": 1.345796,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.44454,
+    "status": "REFUTED",
+    "topological_ms": 1.691968,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 17372,
+    "check_ms": 2.60337,
+    "id": "stress-272-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.489834,
+    "recursive_ms": 0.815899,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.424259,
+    "status": "REFUTED",
+    "topological_ms": 1.622744,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12728,
+    "check_ms": 1.969386,
+    "id": "stress-273-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.936132,
+    "recursive_ms": 1.385427,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.288651,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14849,
+    "check_ms": 2.564623,
+    "id": "stress-274-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.809754,
+    "recursive_ms": 1.500119,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.466262,
+    "status": "REFUTED",
+    "topological_ms": 1.510314,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15226,
+    "check_ms": 2.47677,
+    "id": "stress-275-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.078629,
+    "recursive_ms": 1.517966,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.624831,
+    "status": "REFUTED",
+    "topological_ms": 1.596775,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16399,
+    "check_ms": 2.558783,
+    "id": "stress-276-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 11.603444,
+    "recursive_ms": 0.798662,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.456597,
+    "status": "REFUTED",
+    "topological_ms": 1.640871,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13195,
+    "check_ms": 2.489969,
+    "id": "stress-277-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 10.079209,
+    "recursive_ms": 1.230513,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.71276,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15092,
+    "check_ms": 2.588578,
+    "id": "stress-278-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 10.283066,
+    "recursive_ms": 1.14913,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.475607,
+    "status": "REFUTED",
+    "topological_ms": 1.588342,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15281,
+    "check_ms": 2.45652,
+    "id": "stress-279-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.563018,
+    "recursive_ms": 1.4149,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.448947,
+    "status": "REFUTED",
+    "topological_ms": 1.641012,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16671,
+    "check_ms": 2.48309,
+    "id": "stress-280-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 12.413915,
+    "recursive_ms": 0.775288,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.414804,
+    "status": "REFUTED",
+    "topological_ms": 1.712099,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12966,
+    "check_ms": 2.394867,
+    "id": "stress-281-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.954299,
+    "recursive_ms": 1.451907,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.304805,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15314,
+    "check_ms": 2.28466,
+    "id": "stress-282-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.684124,
+    "recursive_ms": 1.210363,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.488075,
+    "status": "REFUTED",
+    "topological_ms": 1.484315,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15631,
+    "check_ms": 2.371382,
+    "id": "stress-283-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.117507,
+    "recursive_ms": 1.60737,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.462697,
+    "status": "REFUTED",
+    "topological_ms": 1.522503,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16595,
+    "check_ms": 2.445544,
+    "id": "stress-284-undefined",
+    "nodes": 43,
+    "points": 81,
+    "produce_ms": 10.953055,
+    "recursive_ms": 0.764241,
+    "refutation_cells": 43,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.423958,
+    "status": "REFUTED",
+    "topological_ms": 1.657076,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 13127,
+    "check_ms": 1.98529,
+    "id": "stress-285-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 7.963783,
+    "recursive_ms": 1.381861,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.272437,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15277,
+    "check_ms": 2.405252,
+    "id": "stress-286-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 10.165539,
+    "recursive_ms": 1.288671,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.47775,
+    "status": "REFUTED",
+    "topological_ms": 1.505017,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 14732,
+    "check_ms": 2.326253,
+    "id": "stress-287-regression",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.863875,
+    "recursive_ms": 1.365367,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.442056,
+    "status": "REFUTED",
+    "topological_ms": 1.50048,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16834,
+    "check_ms": 2.493095,
+    "id": "stress-288-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.298816,
+    "recursive_ms": 0.786504,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.413253,
+    "status": "REFUTED",
+    "topological_ms": 1.703405,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12682,
+    "check_ms": 1.972731,
+    "id": "stress-289-correct",
+    "nodes": 34,
+    "points": 81,
+    "produce_ms": 8.06759,
+    "recursive_ms": 1.702143,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.241209,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15279,
+    "check_ms": 2.255357,
+    "id": "stress-290-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.668871,
+    "recursive_ms": 1.292166,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.474805,
+    "status": "REFUTED",
+    "topological_ms": 1.448562,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15470,
+    "check_ms": 2.333805,
+    "id": "stress-291-regression",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.885467,
+    "recursive_ms": 1.530435,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.446332,
+    "status": "REFUTED",
+    "topological_ms": 1.583855,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16779,
+    "check_ms": 2.538333,
+    "id": "stress-292-undefined",
+    "nodes": 44,
+    "points": 81,
+    "produce_ms": 11.610124,
+    "recursive_ms": 0.807596,
+    "refutation_cells": 44,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.409326,
+    "status": "REFUTED",
+    "topological_ms": 1.654481,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12752,
+    "check_ms": 1.991099,
+    "id": "stress-293-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 8.050524,
+    "recursive_ms": 1.219536,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.297864,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 15827,
+    "check_ms": 2.281776,
+    "id": "stress-294-overfit",
+    "nodes": 40,
+    "points": 81,
+    "produce_ms": 9.856223,
+    "recursive_ms": 1.087167,
+    "refutation_cells": 40,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.437399,
+    "status": "REFUTED",
+    "topological_ms": 1.47415,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 15902,
+    "check_ms": 2.389609,
+    "id": "stress-295-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.188784,
+    "recursive_ms": 1.541331,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.440283,
+    "status": "REFUTED",
+    "topological_ms": 1.654431,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16485,
+    "check_ms": 2.619686,
+    "id": "stress-296-undefined",
+    "nodes": 42,
+    "points": 81,
+    "produce_ms": 11.170402,
+    "recursive_ms": 0.755898,
+    "refutation_cells": 42,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.421144,
+    "status": "REFUTED",
+    "topological_ms": 1.631036,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  },
+  {
+    "certificate_bytes": 12698,
+    "check_ms": 2.013202,
+    "id": "stress-297-correct",
+    "nodes": 35,
+    "points": 81,
+    "produce_ms": 7.953667,
+    "recursive_ms": 1.372487,
+    "refutation_cells": null,
+    "refutation_certificate_bytes": null,
+    "refutation_check_ms": null,
+    "status": "ACCEPT",
+    "topological_ms": 1.236933,
+    "variant": "correct",
+    "witness": null
+  },
+  {
+    "certificate_bytes": 14707,
+    "check_ms": 2.596981,
+    "id": "stress-298-overfit",
+    "nodes": 39,
+    "points": 81,
+    "produce_ms": 9.95342,
+    "recursive_ms": 1.401451,
+    "refutation_cells": 39,
+    "refutation_certificate_bytes": 667,
+    "refutation_check_ms": 0.540614,
+    "status": "REFUTED",
+    "topological_ms": 1.583675,
+    "variant": "overfit",
+    "witness": {
+      "input": [
+        0,
+        2,
+        0,
+        1
+      ],
+      "obligation": "repair",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16118,
+    "check_ms": 2.419264,
+    "id": "stress-299-regression",
+    "nodes": 41,
+    "points": 81,
+    "produce_ms": 10.931182,
+    "recursive_ms": 1.596003,
+    "refutation_cells": 41,
+    "refutation_certificate_bytes": 672,
+    "refutation_check_ms": 0.442997,
+    "status": "REFUTED",
+    "topological_ms": 1.590956,
+    "variant": "regression",
+    "witness": {
+      "input": [
+        2,
+        0,
+        2,
+        1
+      ],
+      "obligation": "preserve",
+      "trace": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "certificate_bytes": 16067,
+    "check_ms": 2.460425,
+    "id": "stress-300-undefined",
+    "nodes": 42,
+    "points": 81,
+    "produce_ms": 11.343403,
+    "recursive_ms": 0.793696,
+    "refutation_cells": 42,
+    "refutation_certificate_bytes": 659,
+    "refutation_check_ms": 0.474344,
+    "status": "REFUTED",
+    "topological_ms": 1.634361,
+    "variant": "undefined",
+    "witness": {
+      "input": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "obligation": "defined",
+      "trace": []
+    }
+  }
+]

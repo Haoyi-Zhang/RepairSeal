@@ -1,0 +1,14 @@
+claim_id,claim,evidence,status,boundary
+C1,Full-vector status and canonical witness agree with exhaustive oracle on 380 frozen requests,proof-data/structured-study.json; proof-data/fixture-cases.json; proof-data/stress-cases.json,supported,Finite synthetic core only
+C2,Full-vector corruption rejection is 6000/6000,proof-data/tamper-controls.json; proof-data/structured-study.json,supported,"Thirty targeted mutation classes, not all possible attacks"
+C3,Full-vector proof and topological direct evaluation have identical cell work on 20 accepted fixtures,proof-data/structured-study.json; src/proof_dag_checker.py,supported,Artifact semantic-cell model
+C4,"Recursive 6.85x ratio is repeated recomputation, not certificate benefit",proof-data/structured-study.json; paper Section 4,supported negative result,No claim beyond implemented evaluators
+C5,All 285 frozen compact refutations establish an actual violating point and authentic trace,proof-data/refutation-witnesses.json; src/refutation_witness_checker.py,supported,Does not establish leastness or acceptance
+C6,Compact certificate mutations are rejected 2850/2850,proof-data/refutation-controls.json; proof-data/structured-study.json,supported,Ten targeted mutation classes
+C7,Forged refutations of accepted frozen requests are rejected 95/95,proof-data/acceptance-misuse-controls.json,supported,Population-specific
+C8,Compact witness cell work is 81x smaller on the frozen refuted population,proof-data/structured-study.json,supported,All frozen requests use 81 points; fixed parsing overhead remains
+C9,Post hoc grammar/AST differential agrees on 400/400 cases,proof-data/holdout-differential/summary.json; proof-data/holdout-differential/cases.json; tests/holdout_differential.py,supported audit-stage evidence,Synthetic and post hoc; not preregistered or public
+C10,Grammar compact refutations verify 300/300 and accepted-request forgeries reject 100/100,proof-data/holdout-differential/summary.json; proof-data/holdout-differential/inputs/,supported audit-stage evidence,Same documented fragment
+C11,Codeflaws slice contains 300 unique classified index records,proof-data/codeflaws-archive-audit.json; public-data/codeflaws-first-300.tsv,supported archival audit,No source execution
+C12,The checker is mechanically verified,none,not claimed,Manual conditional proof and empirical falsification only
+C13,The artifact demonstrates public-benchmark repair effectiveness,none,not claimed,Submission-readiness hold

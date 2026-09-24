@@ -1,0 +1,318 @@
+{
+  "runs": [
+    {
+      "stage": "discriminating pilot",
+      "outcome": "PASS_FINITE_PILOT",
+      "resources": {
+        "work_events": 50990,
+        "counts": {
+          "certificate_steps": 188,
+          "checker_projected_points": 324,
+          "checker_steps": 25014,
+          "checker_symbolic_nodes": 325,
+          "counterexample_comparisons": 80,
+          "coverage_cells": 189,
+          "oracle_rows": 324,
+          "producer_steps": 23971,
+          "projected_points": 387,
+          "symbolic_nodes": 188
+        },
+        "wall_seconds": 0.07376224599988745,
+        "self_cpu_seconds": 0.07372799999999996,
+        "child_cpu_seconds": 1.734723475976807e-18,
+        "total_cpu_seconds": 0.07372799999999996,
+        "self_peak_rss_kib": 95796,
+        "largest_child_rss_kib": 768,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "initial finite study",
+      "outcome": "PASS_FINITE_STUDY",
+      "resources": {
+        "work_events": 596073,
+        "counts": {
+          "certificate_mutations": 180,
+          "certificate_steps": 8218,
+          "checker_projected_points": 9250,
+          "checker_steps": 401637,
+          "checker_symbolic_nodes": 7453,
+          "counterexample_comparisons": 852,
+          "coverage_cells": 8160,
+          "native_defined_evaluations": 9180,
+          "oracle_rows": 6480,
+          "producer_steps": 80036,
+          "projected_points": 9940,
+          "requests": 80,
+          "support_comparisons": 51840,
+          "symbolic_nodes": 2767
+        },
+        "wall_seconds": 1.495731018000015,
+        "self_cpu_seconds": 1.1374469999999999,
+        "child_cpu_seconds": 0.356161,
+        "total_cpu_seconds": 1.4936079999999998,
+        "self_peak_rss_kib": 102320,
+        "largest_child_rss_kib": 102320,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "boundary regressions",
+      "outcome": "PASS_LOCAL_REGRESSIONS",
+      "resources": {
+        "work_events": 27702,
+        "counts": {
+          "boundary_oracle_rows": 450,
+          "certificate_steps": 498,
+          "checker_projected_points": 783,
+          "checker_source_tokens": 3011,
+          "checker_steps": 8837,
+          "checker_symbolic_nodes": 438,
+          "counterexample_comparisons": 185,
+          "coverage_cells": 498,
+          "json_controls": 5,
+          "producer_source_tokens": 1307,
+          "producer_steps": 10893,
+          "projected_points": 501,
+          "request_controls": 4,
+          "symbolic_nodes": 232,
+          "syntax_controls": 60
+        },
+        "wall_seconds": 0.0534182830001555,
+        "self_cpu_seconds": 0.05338500000000007,
+        "child_cpu_seconds": 0.0,
+        "total_cpu_seconds": 0.05338500000000007,
+        "self_peak_rss_kib": 96300,
+        "largest_child_rss_kib": 768,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "interrupted null control",
+      "outcome": "FAILED",
+      "resources": {
+        "work_events": 180001,
+        "counts": {
+          "certificate_steps": 2130,
+          "checker_projected_points": 7280,
+          "checker_source_tokens": 25724,
+          "checker_steps": 137724,
+          "checker_symbolic_nodes": 4362,
+          "counterexample_comparisons": 579,
+          "coverage_cells": 2130,
+          "null_requests": 72
+        },
+        "wall_seconds": 0.320750199000031,
+        "self_cpu_seconds": 0.3205160000000001,
+        "child_cpu_seconds": 0.0,
+        "total_cpu_seconds": 0.3205160000000001,
+        "self_peak_rss_kib": 93616,
+        "largest_child_rss_kib": 768,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "completed receiver-only null control",
+      "outcome": "PASS_NULL_CONTROL",
+      "resources": {
+        "work_events": 207440,
+        "counts": {
+          "certificate_steps": 2522,
+          "checker_projected_points": 8356,
+          "checker_source_tokens": 28776,
+          "checker_steps": 159754,
+          "checker_symbolic_nodes": 4806,
+          "counterexample_comparisons": 624,
+          "coverage_cells": 2522,
+          "null_requests": 80
+        },
+        "wall_seconds": 0.4830613789999916,
+        "self_cpu_seconds": 0.481307,
+        "child_cpu_seconds": 0.0,
+        "total_cpu_seconds": 0.481307,
+        "self_peak_rss_kib": 101940,
+        "largest_child_rss_kib": 0,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "repaired finite study",
+      "outcome": "PASS_FINITE_STUDY",
+      "resources": {
+        "work_events": 657669,
+        "counts": {
+          "certificate_mutations": 180,
+          "certificate_steps": 8218,
+          "checker_projected_points": 9250,
+          "checker_source_tokens": 46908,
+          "checker_steps": 401637,
+          "checker_symbolic_nodes": 7453,
+          "counterexample_comparisons": 852,
+          "coverage_cells": 8160,
+          "native_defined_evaluations": 9180,
+          "obligation_families": 240,
+          "oracle_rows": 6480,
+          "producer_source_tokens": 14388,
+          "producer_steps": 80036,
+          "projected_points": 9940,
+          "requests": 80,
+          "source_mutations": 60,
+          "support_comparisons": 51840,
+          "symbolic_nodes": 2767
+        },
+        "wall_seconds": 1.4848644539997622,
+        "self_cpu_seconds": 1.0950920000000002,
+        "child_cpu_seconds": 0.38528300000000004,
+        "total_cpu_seconds": 1.4803750000000002,
+        "self_peak_rss_kib": 102324,
+        "largest_child_rss_kib": 102324,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "publication data reconciliation",
+      "outcome": "PASS_DATA_RECONCILIATION",
+      "resources": {
+        "work_events": 15820,
+        "counts": {
+          "report_cases": 80,
+          "report_native_rows": 9180,
+          "report_null_rows": 80,
+          "report_oracle_observations": 6480
+        },
+        "wall_seconds": 0.0602964790000442,
+        "self_cpu_seconds": 0.0602709999999998,
+        "child_cpu_seconds": 0.0,
+        "total_cpu_seconds": 0.0602709999999998,
+        "self_peak_rss_kib": 97328,
+        "largest_child_rss_kib": 768,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "clean extraction study",
+      "outcome": "PASS_CLEAN_REPRODUCTION_STAGE",
+      "resources": {
+        "work_events": 657669,
+        "counts": {
+          "certificate_mutations": 180,
+          "certificate_steps": 8218,
+          "checker_projected_points": 9250,
+          "checker_source_tokens": 46908,
+          "checker_steps": 401637,
+          "checker_symbolic_nodes": 7453,
+          "counterexample_comparisons": 852,
+          "coverage_cells": 8160,
+          "native_defined_evaluations": 9180,
+          "obligation_families": 240,
+          "oracle_rows": 6480,
+          "producer_source_tokens": 14388,
+          "producer_steps": 80036,
+          "projected_points": 9940,
+          "requests": 80,
+          "source_mutations": 60,
+          "support_comparisons": 51840,
+          "symbolic_nodes": 2767
+        },
+        "wall_seconds": 1.6662759410000945,
+        "self_cpu_seconds": 1.3463029999999998,
+        "child_cpu_seconds": 0.383251,
+        "total_cpu_seconds": 1.7295539999999998,
+        "self_peak_rss_kib": 103336,
+        "largest_child_rss_kib": 103336,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "clean extraction regression",
+      "outcome": "PASS_CLEAN_REPRODUCTION_STAGE",
+      "resources": {
+        "work_events": 27702,
+        "counts": {
+          "boundary_oracle_rows": 450,
+          "certificate_steps": 498,
+          "checker_projected_points": 783,
+          "checker_source_tokens": 3011,
+          "checker_steps": 8837,
+          "checker_symbolic_nodes": 438,
+          "counterexample_comparisons": 185,
+          "coverage_cells": 498,
+          "json_controls": 5,
+          "producer_source_tokens": 1307,
+          "producer_steps": 10893,
+          "projected_points": 501,
+          "request_controls": 4,
+          "symbolic_nodes": 232,
+          "syntax_controls": 60
+        },
+        "wall_seconds": 0.05343913100023201,
+        "self_cpu_seconds": 0.053895000000000026,
+        "child_cpu_seconds": 2.7755575615628914e-17,
+        "total_cpu_seconds": 0.053895000000000054,
+        "self_peak_rss_kib": 103336,
+        "largest_child_rss_kib": 103336,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "clean extraction null-control",
+      "outcome": "PASS_CLEAN_REPRODUCTION_STAGE",
+      "resources": {
+        "work_events": 207440,
+        "counts": {
+          "certificate_steps": 2522,
+          "checker_projected_points": 8356,
+          "checker_source_tokens": 28776,
+          "checker_steps": 159754,
+          "checker_symbolic_nodes": 4806,
+          "counterexample_comparisons": 624,
+          "coverage_cells": 2522,
+          "null_requests": 80
+        },
+        "wall_seconds": 0.4656606169992301,
+        "self_cpu_seconds": 0.47619800000000023,
+        "child_cpu_seconds": 2.7755575615628914e-17,
+        "total_cpu_seconds": 0.47619800000000023,
+        "self_peak_rss_kib": 110120,
+        "largest_child_rss_kib": 103336,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "clean extraction publication",
+      "outcome": "PASS_CLEAN_REPRODUCTION_STAGE",
+      "resources": {
+        "work_events": 15820,
+        "counts": {
+          "report_cases": 80,
+          "report_native_rows": 9180,
+          "report_null_rows": 80,
+          "report_oracle_observations": 6480
+        },
+        "wall_seconds": 0.04445350700007111,
+        "self_cpu_seconds": 0.045412000000000174,
+        "child_cpu_seconds": 2.7755575615628914e-17,
+        "total_cpu_seconds": 0.0454120000000002,
+        "self_peak_rss_kib": 110120,
+        "largest_child_rss_kib": 103336,
+        "workers": 1
+      }
+    },
+    {
+      "stage": "clean extraction scientific file comparison",
+      "outcome": "PASS_EXACT_EVIDENCE_COMPARISON",
+      "resources": {
+        "work_events": 374,
+        "counts": {
+          "scientific_files_compared": 374
+        },
+        "total_cpu_seconds": null,
+        "cpu_note": "Not separately instrumented; omitted from cumulative measured CPU."
+      }
+    }
+  ],
+  "note": "Charged logical events, including a refused admission; not machine instructions. Initial pilot/study counters precede the added token-admission categories.",
+  "cumulative_work_events": 2644700,
+  "cumulative_cpu_seconds": 6.268249,
+  "remaining_events_to_ceiling": 355300
+}
