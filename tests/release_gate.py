@@ -14,9 +14,10 @@ REQUIRED = [
     "public-data/codeflaws-first-300.tsv",
     "proof-data/structured-study.json", "proof-data/security-regression.json",
     "proof-data/codeflaws-archive-audit.json",
+    "proof-data/edge-case-regression.json", "proof-data/disk-replay-audit.json",
     "proof-data/holdout-differential/summary.json",
     "tests/reproduce_all.py", "tests/reproduce_all_core.py",
-    "tests/holdout_differential.py",
+    "tests/holdout_differential.py", "tests/disk_replay.py", "tests/edge_case_regression.py",
     "src/proof_dag_checker.py", "src/refutation_witness_checker.py",
 ]
 FORBIDDEN_NAMES = {"CHECKSUMS.sha256", "MANIFEST.json"}

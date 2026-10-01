@@ -40,9 +40,14 @@ def canonical(value: Any) -> bytes:
     return json.dumps(value, sort_keys=True, separators=(",", ":"), ensure_ascii=True).encode("ascii")
 
 
-def save(path: Path, value: Any) -> None:
+def save(path: Path, value: Any, *, sort_keys: bool = True) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
+    path.write_text(json.dumps(value, indent=2, sort_keys=sort_keys) + "\n")
+
+
+def save_request(path: Path, request: dict[str, Any]) -> None:
+    """Persist the generator-declared coordinate order verbatim."""
+    save(path, request, sort_keys=False)
 
 
 # Expression tuples: (tag, ...).  Sort is implicit by constructor family.
@@ -388,7 +393,7 @@ def main() -> None:
         statuses[actual["status"]] += 1
         max_nodes = max(max_nodes, actual["checked_nodes"])
         max_points = max(max_points, len(cert["points"]))
-        save(out / "inputs" / f"{request['id']}.json", request)
+        save_request(out / "inputs" / f"{request['id']}.json", request)
         records.append({
             "id": request["id"], "seed": seed, "variant": variant,
             "status": actual["status"], "witness": actual["witness"],
@@ -397,7 +402,7 @@ def main() -> None:
         })
     record_digest = hashlib.sha256(canonical(records)).hexdigest()
     summary = {
-        "schema": "holdout-differential-v1",
+        "schema": "holdout-differential-v2",
         "outcome": "PASS",
         "campaign_seed": CAMPAIGN_SEED,
         "cases": args.cases,
@@ -407,7 +412,10 @@ def main() -> None:
         "topological_agreements": len(records),
         "compact_refutations_verified": compact,
         "forged_refutations_rejected": fake_rejections,
+        "min_nodes": min(row["nodes"] for row in records),
         "max_nodes": max_nodes,
+        "point_counts": {str(value): sum(row["points"] == value for row in records) for value in sorted({row["points"] for row in records})},
+        "min_points": min(row["points"] for row in records),
         "max_points": max_points,
         "median_nodes": statistics.median(row["nodes"] for row in records),
         "median_certificate_bytes": statistics.median(row["certificate_bytes"] for row in records),

@@ -31,9 +31,19 @@ from refutation_witness_producer import produce as produce_refutation
 MASK = (1 << 32) - 1
 
 
-def save(path: Path, value) -> None:
+def save(path: Path, value, *, sort_keys: bool = True) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, sort_keys=True) + "\n")
+    path.write_text(json.dumps(value, indent=2, sort_keys=sort_keys) + "\n")
+
+
+def save_request(path: Path, request: dict) -> None:
+    """Persist a receiver request without reordering its authoritative inputs.
+
+    JSON object member order is the request's coordinate order in this artifact.
+    Sorting nested keys would silently turn x,y,z,t into t,x,y,z and therefore
+    change the finite function being checked after reload.
+    """
+    save(path, request, sort_keys=False)
 
 
 def rehash(cert: dict) -> None:
@@ -253,31 +263,33 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--output", type=Path, default=ROOT / "proof-data")
     args = parser.parse_args(); out=args.output.resolve()
-    for d in ("fixture-certificates","stress-certificates","stress-inputs","controls",
-              "refutation-witnesses","refutation-controls"):
+    for d in ("fixture-inputs", "fixture-certificates", "stress-certificates", "stress-inputs", "controls",
+              "refutation-witnesses", "refutation-controls"):
         (out/d).mkdir(parents=True,exist_ok=True)
     fixture_records=[]; stress_records=[]; timing=[]
-    proof_ops_all=Counter(); proof_ops_correct=Counter(); topological_ops_correct=Counter(); rebuild_ops=Counter()
+    proof_ops_all=Counter(); proof_ops_correct=Counter(); topological_ops_correct=Counter()
+    rebuild_internal_ops=Counter(); rebuild_outer_ops=Counter()
     refutation_records=[]; refutation_certificates=[]; acceptance_misuse_controls=[]
     fixture_certs=[]
     for case in range(1,21):
         for variant in VARIANTS:
             req=fixture_request(case,variant); expected=least_violation(exhaustive(case,variant))
+            save_request(out/"fixture-inputs"/(req["id"]+".json"), req)
             t0=time.perf_counter_ns(); cert=produce(req); produce_ns=time.perf_counter_ns()-t0
             save(out/"fixture-certificates"/(req["id"]+".json"),cert)
             proof_counts,tick=counter(); t0=time.perf_counter_ns(); got=proof_check(req,cert,tick); check_ns=time.perf_counter_ns()-t0
             proof_ops_all.update(proof_counts)
             topo_counts,tick=counter(); t0=time.perf_counter_ns(); topological=evaluate_topological(req,tick); topological_ns=time.perf_counter_ns()-t0
-            t0=time.perf_counter_ns(); recursive=direct_result(req); recursive_ns=time.perf_counter_ns()-t0
-            assert got["witness"]==expected and topological["witness"]==expected and recursive["witness"]==expected
-            assert got["status"]==topological["status"]==recursive["status"]
+            t0=time.perf_counter_ns(); session_direct=direct_result(req); session_ns=time.perf_counter_ns()-t0
+            assert got["witness"]==expected and topological["witness"]==expected and session_direct["witness"]==expected
+            assert got["status"]==topological["status"]==session_direct["status"]
             witness_bytes=None; witness_ms=None; witness_cells=None
             if got["status"]=="REFUTED":
                 witness_cert=produce_refutation(req,got["witness"]); save(out/"refutation-witnesses"/(req["id"]+".json"),witness_cert)
                 witness_counts,tick=counter(); t0=time.perf_counter_ns(); witness_result=refutation_check(req,witness_cert,tick); witness_ns=time.perf_counter_ns()-t0
                 assert witness_result["witness"]==got["witness"]
                 witness_bytes=len(canonical_bytes(witness_cert)); witness_ms=witness_ns/1e6; witness_cells=witness_counts["refutation_cells"]
-                refutation_records.append({"id":req["id"],"population":"fixture","certificate_bytes":witness_bytes,
+                refutation_records.append({"id":req["id"],"population":"fixture","certificate_bytes":witness_bytes,"full_certificate_bytes":len(canonical_bytes(cert)),
                     "check_ms":witness_ms,"checked_cells":witness_cells,"full_proof_cells":got["checked_cells"]})
                 refutation_certificates.append((req,witness_cert))
             else:
@@ -291,20 +303,22 @@ def main():
             record={"id":req["id"],"case":case,"variant":variant,"status":got["status"],"witness":got["witness"],
                     "nodes":len(cert["nodes"]),"points":len(cert["points"]),"certificate_bytes":len(canonical_bytes(cert)),
                     "produce_ms":produce_ns/1e6,"check_ms":check_ns/1e6,"topological_ms":topological_ns/1e6,
-                    "recursive_ms":recursive_ns/1e6,"refutation_certificate_bytes":witness_bytes,
+                    "session_direct_ms":session_ns/1e6,"refutation_certificate_bytes":witness_bytes,
                     "refutation_check_ms":witness_ms,"refutation_cells":witness_cells}
             fixture_records.append(record); fixture_certs.append((req,cert))
             timing.extend([{"population":"fixture","id":req["id"],"method":"produce","milliseconds":produce_ns/1e6},
                            {"population":"fixture","id":req["id"],"method":"proof-check","milliseconds":check_ns/1e6},
                            {"population":"fixture","id":req["id"],"method":"topological-direct","milliseconds":topological_ns/1e6},
-                           {"population":"fixture","id":req["id"],"method":"recursive-reconstruct","milliseconds":recursive_ns/1e6}])
+                           {"population":"fixture","id":req["id"],"method":"session-direct-result","milliseconds":session_ns/1e6}])
             if witness_ms is not None:
                 timing.append({"population":"fixture","id":req["id"],"method":"one-point-refutation","milliseconds":witness_ms})
             if variant=="correct":
                 proof_ops_correct.update(proof_counts); topological_ops_correct.update(topo_counts)
                 counts,tick=counter(); t0=time.perf_counter_ns(); rebuilt=proof_check(req,cert,tick,mode="rebuild"); rebuild_ns=time.perf_counter_ns()-t0
-                assert rebuilt["status"]=="ACCEPT"; rebuild_ops.update(counts)
-                record["rebuild_ms"]=rebuild_ns/1e6
+                assert rebuilt["status"]=="ACCEPT"; rebuild_outer_ops["proof_cells"] += counts["proof_cells"]
+                rebuild_internal_ops["rebuild_cells"] += counts["rebuild_cells"]
+                record["certificate_rebuild_ms"]=rebuild_ns/1e6
+                timing.append({"population":"fixture","id":req["id"],"method":"certificate-rebuild","milliseconds":rebuild_ns/1e6})
     # Ten repeat timing block over all twenty correct fixtures.
     repeat_rows=[]
     for repeat in range(10):
@@ -314,7 +328,9 @@ def main():
             t0=time.perf_counter_ns(); evaluate_topological(req); elapsed=(time.perf_counter_ns()-t0)/1e6
             repeat_rows.append({"repeat":repeat,"id":req["id"],"method":"topological-direct","milliseconds":elapsed})
             t0=time.perf_counter_ns(); direct_result(req); elapsed=(time.perf_counter_ns()-t0)/1e6
-            repeat_rows.append({"repeat":repeat,"id":req["id"],"method":"recursive-reconstruct","milliseconds":elapsed})
+            repeat_rows.append({"repeat":repeat,"id":req["id"],"method":"session-direct-result","milliseconds":elapsed})
+            t0=time.perf_counter_ns(); proof_check(req,cert,mode="rebuild"); elapsed=(time.perf_counter_ns()-t0)/1e6
+            repeat_rows.append({"repeat":repeat,"id":req["id"],"method":"certificate-rebuild","milliseconds":elapsed})
     # 6,000 targeted rejection attempts: 20 fixtures x 10 seeds x 30 mutation classes.
     # All but the stale-digest class are rehashed, so deeper checks are exercised.
     controls=[]; kinds=(
@@ -340,21 +356,22 @@ def main():
     # Three hundred deterministic stress requests, generated independently of Codeflaws.
     for index in range(300):
         req,rows=stress_request(index); expected=oracle_witness(rows)
-        save(out/"stress-inputs"/(req["id"]+".json"),req)
+        save_request(out/"stress-inputs"/(req["id"]+".json"),req)
         t0=time.perf_counter_ns(); cert=produce(req); produce_ns=time.perf_counter_ns()-t0
         save(out/"stress-certificates"/(req["id"]+".json"),cert)
-        t0=time.perf_counter_ns(); got=proof_check(req,cert); check_ns=time.perf_counter_ns()-t0
+        proof_counts,tick=counter(); t0=time.perf_counter_ns(); got=proof_check(req,cert,tick); check_ns=time.perf_counter_ns()-t0
+        proof_ops_all.update(proof_counts)
         t0=time.perf_counter_ns(); topological=evaluate_topological(req); topological_ns=time.perf_counter_ns()-t0
-        t0=time.perf_counter_ns(); recursive=direct_result(req); recursive_ns=time.perf_counter_ns()-t0
-        assert got["witness"]==expected and topological["witness"]==expected and recursive["witness"]==expected
-        assert got["status"]==topological["status"]==recursive["status"]
+        t0=time.perf_counter_ns(); session_direct=direct_result(req); session_ns=time.perf_counter_ns()-t0
+        assert got["witness"]==expected and topological["witness"]==expected and session_direct["witness"]==expected
+        assert got["status"]==topological["status"]==session_direct["status"]
         witness_bytes=None; witness_ms=None; witness_cells=None
         if got["status"]=="REFUTED":
             witness_cert=produce_refutation(req,got["witness"]); save(out/"refutation-witnesses"/(req["id"]+".json"),witness_cert)
             witness_counts,tick=counter(); t0=time.perf_counter_ns(); witness_result=refutation_check(req,witness_cert,tick); witness_ns=time.perf_counter_ns()-t0
             assert witness_result["witness"]==got["witness"]
             witness_bytes=len(canonical_bytes(witness_cert)); witness_ms=witness_ns/1e6; witness_cells=witness_counts["refutation_cells"]
-            refutation_records.append({"id":req["id"],"population":"stress","certificate_bytes":witness_bytes,
+            refutation_records.append({"id":req["id"],"population":"stress","certificate_bytes":witness_bytes,"full_certificate_bytes":len(canonical_bytes(cert)),
                 "check_ms":witness_ms,"checked_cells":witness_cells,"full_proof_cells":got["checked_cells"]})
             refutation_certificates.append((req,witness_cert))
         else:
@@ -368,12 +385,12 @@ def main():
         stress_records.append({"id":req["id"],"variant":VARIANTS[index%4],"status":got["status"],"witness":got["witness"],
                                "nodes":len(cert["nodes"]),"points":len(cert["points"]),"certificate_bytes":len(canonical_bytes(cert)),
                                "produce_ms":produce_ns/1e6,"check_ms":check_ns/1e6,"topological_ms":topological_ns/1e6,
-                               "recursive_ms":recursive_ns/1e6,"refutation_certificate_bytes":witness_bytes,
+                               "session_direct_ms":session_ns/1e6,"refutation_certificate_bytes":witness_bytes,
                                "refutation_check_ms":witness_ms,"refutation_cells":witness_cells})
         timing.extend([{"population":"stress","id":req["id"],"method":"produce","milliseconds":produce_ns/1e6},
                        {"population":"stress","id":req["id"],"method":"proof-check","milliseconds":check_ns/1e6},
                        {"population":"stress","id":req["id"],"method":"topological-direct","milliseconds":topological_ns/1e6},
-                       {"population":"stress","id":req["id"],"method":"recursive-reconstruct","milliseconds":recursive_ns/1e6}])
+                       {"population":"stress","id":req["id"],"method":"session-direct-result","milliseconds":session_ns/1e6}])
         if witness_ms is not None:
             timing.append({"population":"stress","id":req["id"],"method":"one-point-refutation","milliseconds":witness_ms})
     assert len(refutation_certificates)==285
@@ -395,9 +412,10 @@ def main():
     all_records=fixture_records+stress_records
     proof_cells_correct=proof_ops_correct["proof_cells"]
     topological_cells_correct=topological_ops_correct["topological_cells"]
-    recursive_cells_correct=rebuild_ops["rebuild_cells"]
+    rebuild_outer_cells_correct=rebuild_outer_ops["proof_cells"]
+    rebuild_internal_cells_correct=rebuild_internal_ops["rebuild_cells"]
     assert proof_cells_correct==topological_cells_correct
-    deterministic_witness_index=[{k:r[k] for k in ("id","population","certificate_bytes","checked_cells","full_proof_cells")} for r in refutation_records]
+    deterministic_witness_index=[{k:r[k] for k in ("id","population","full_certificate_bytes","certificate_bytes","checked_cells","full_proof_cells")} for r in refutation_records]
     result_index=[{k:r[k] for k in ("id","status","witness","nodes","points","certificate_bytes")} for r in all_records]
     witness_index_sha256=hashlib.sha256(canonical_bytes(deterministic_witness_index)).hexdigest()
     refutation_control_index_sha256=hashlib.sha256(canonical_bytes(refutation_controls)).hexdigest()
@@ -420,24 +438,35 @@ def main():
       "acceptance_misuse_attempts":len(acceptance_misuse_controls),
       "acceptance_misuse_rejections":sum(r["status"]=="REJECTED" for r in acceptance_misuse_controls),
       "timing_ms":{"produce":stats("produce_ms"),"proof_check":stats("check_ms"),
-                   "topological_direct":stats("topological_ms"),"recursive_reconstruct":stats("recursive_ms"),
+                   "topological_direct":stats("topological_ms"),"session_direct_result":stats("session_direct_ms"),
+                   "certificate_rebuild_correct":stats("certificate_rebuild_ms",[r for r in fixture_records if r.get("certificate_rebuild_ms") is not None]),
                    "one_point_refutation":stats("check_ms",refutation_records),
                    "repeated_correct":{"proof_check":{"median":statistics.median(repeat_by["proof-check"]),"p25":percentile(repeat_by["proof-check"],.25),"p75":percentile(repeat_by["proof-check"],.75)},
                                        "topological_direct":{"median":statistics.median(repeat_by["topological-direct"]),"p25":percentile(repeat_by["topological-direct"],.25),"p75":percentile(repeat_by["topological-direct"],.75)},
-                                       "recursive_reconstruct":{"median":statistics.median(repeat_by["recursive-reconstruct"]),"p25":percentile(repeat_by["recursive-reconstruct"],.25),"p75":percentile(repeat_by["recursive-reconstruct"],.75)}}},
+                                       "session_direct_result":{"median":statistics.median(repeat_by["session-direct-result"]),"p25":percentile(repeat_by["session-direct-result"],.25),"p75":percentile(repeat_by["session-direct-result"],.75)},
+                                       "certificate_rebuild":{"median":statistics.median(repeat_by["certificate-rebuild"]),"p25":percentile(repeat_by["certificate-rebuild"],.25),"p75":percentile(repeat_by["certificate-rebuild"],.75)}}},
       "certificate_bytes":stats("certificate_bytes"),"node_count":stats("nodes"),
       "refutation_certificate_bytes":stats("certificate_bytes",refutation_records),
+      "refutation_full_certificate_bytes":stats("full_certificate_bytes",refutation_records),
+      "refutation_encoding":{"same_population":len(refutation_records),
+                              "median_full_bytes":statistics.median(r["full_certificate_bytes"] for r in refutation_records),
+                              "median_compact_bytes":statistics.median(r["certificate_bytes"] for r in refutation_records),
+                              "ratio_of_medians":statistics.median(r["full_certificate_bytes"] for r in refutation_records)/statistics.median(r["certificate_bytes"] for r in refutation_records),
+                              "median_paired_ratio":statistics.median(r["full_certificate_bytes"]/r["certificate_bytes"] for r in refutation_records)},
       "refutation_checked_cells":stats("checked_cells",refutation_records),
       "refutation_full_proof_cells":stats("full_proof_cells",refutation_records),
       "proof_operation_counts_all":dict(proof_ops_all),
       "proof_operation_counts_correct":dict(proof_ops_correct),
       "topological_operation_counts_correct":dict(topological_ops_correct),
-      "recursive_rebuild_operation_counts_correct":dict(rebuild_ops),
+      "proof_operation_counts_all_scope":"all 380 frozen-core requests",
+      "certificate_rebuild_operation_counts_correct":{"outer_proof_cells":rebuild_outer_cells_correct,
+                                                        "internal_recursive_cells":rebuild_internal_cells_correct},
       "work_equivalence":{"proof_cells_correct":proof_cells_correct,
                           "topological_direct_cells_correct":topological_cells_correct,
                           "exact_equal":proof_cells_correct==topological_cells_correct,
-                          "recursive_cells_correct":recursive_cells_correct,
-                          "recursive_over_proof_ratio":recursive_cells_correct/proof_cells_correct},
+                          "certificate_rebuild_outer_cells_correct":rebuild_outer_cells_correct,
+                          "certificate_rebuild_internal_recursive_cells_correct":rebuild_internal_cells_correct,
+                          "internal_recursive_over_proof_ratio":rebuild_internal_cells_correct/proof_cells_correct},
       "refutation_work":{"median_cell_reduction_factor":statistics.median(r["full_proof_cells"]/r["checked_cells"] for r in refutation_records),
                          "all_one_point":all(r["full_proof_cells"]//r["checked_cells"]==81 for r in refutation_records)},
       "deterministic_indexes":{"results_sha256":result_index_sha256,

@@ -2799,11 +2799,11 @@
       "coverage_cells": 2522,
       "null_requests": 80
     },
-    "wall_seconds": 0.4830613789999916,
-    "self_cpu_seconds": 0.481307,
+    "wall_seconds": 0.26888900400001603,
+    "self_cpu_seconds": 0.26826400000000017,
     "child_cpu_seconds": 0.0,
-    "total_cpu_seconds": 0.481307,
-    "self_peak_rss_kib": 101940,
+    "total_cpu_seconds": 0.26826400000000017,
+    "self_peak_rss_kib": 101676,
     "largest_child_rss_kib": 0,
     "workers": 1
   }

@@ -63,7 +63,7 @@ def factorization(rows, names, truths, budget):
 
 
 def native_cross_check(records, out, budget):
-    """Only known-defined, self-authored expressions are executed as native C."""
+    """Cross-check all known-defined fixture values with real GCC and Clang runs."""
     functions = {}; evaluations = {}; excluded = 0
     for req, rows in records:
         for role in ('original', 'candidate', 'reference'):
@@ -78,8 +78,12 @@ def native_cross_check(records, out, budget):
                 if key in evaluations: assert evaluations[key] == value
                 else: evaluations[key] = value
     budget.tick('native_defined_evaluations', len(evaluations))
-    cc = shutil.which('cc')
-    if cc is None: raise RuntimeError('native C cross-check requires an existing C11 compiler')
+    compiler_specs = []
+    for compiler_id in ('gcc', 'clang'):
+        executable = shutil.which(compiler_id)
+        if executable is None:
+            raise RuntimeError('native C cross-check requires both GCC and Clang')
+        compiler_specs.append((compiler_id, str(Path(executable).resolve())))
     declarations = [s.replace('unsigned f(', 'unsigned f' + str(i) + '(', 1)
                     for s, i in functions.items()]
     names = ', '.join('f' + str(i) for i in range(len(functions)))
@@ -97,23 +101,62 @@ def native_cross_check(records, out, budget):
                '  printf("%u\\n",functions[p[0]](p[1],p[2],p[3],p[4]));\n'
                ' } return 0;\n}\n')
     source_path = out / 'native-harness.c'; source_path.write_text(harness)
-    with tempfile.TemporaryDirectory(prefix='finite-c-check-') as temporary:
-        binary = Path(temporary) / 'fixture-native'
-        compiled = subprocess.run([cc, '-std=c11', '-O0', str(source_path), '-o', str(binary)],
-                                  capture_output=True, text=True, timeout=45, check=False)
-        if compiled.returncode != 0: raise AssertionError(compiled.stderr)
-        run = subprocess.run([str(binary)], capture_output=True, text=True, timeout=30, check=False)
-        if run.returncode != 0: raise AssertionError(run.stderr)
-    observed = [int(line) for line in run.stdout.splitlines()]
-    assert observed == list(evaluations.values()), 'native C return-value mismatch'
-    with (out / 'native-outputs.csv').open('w', newline='') as f:
-        writer = csv.writer(f); writer.writerow(['function', *NAMES, 'expected', 'observed'])
-        for ((fid, point), expected), actual in zip(evaluations.items(), observed):
-            writer.writerow([fid, *point, expected, actual])
+    expected_values = list(evaluations.values())
+    identities = []
+    observed_by_compiler = {}
+    for compiler_id, executable in compiler_specs:
+        version_command = [executable, '--version']
+        version = subprocess.run(version_command, capture_output=True, text=True,
+                                 timeout=15, check=False)
+        if version.returncode != 0:
+            raise AssertionError(version.stderr)
+        binary_name = 'native-' + compiler_id
+        compile_command = [executable, '-std=c11', '-O0', 'native-harness.c', '-o', binary_name]
+        run_command = ['./' + binary_name]
+        compiled = subprocess.run(compile_command, cwd=out, capture_output=True,
+                                  text=True, timeout=45, check=False)
+        if compiled.returncode != 0:
+            raise AssertionError(compiler_id + ': ' + compiled.stderr)
+        run = subprocess.run(run_command, cwd=out, capture_output=True, text=True,
+                             timeout=30, check=False)
+        (out / binary_name).unlink(missing_ok=True)
+        if run.returncode != 0:
+            raise AssertionError(compiler_id + ': ' + run.stderr)
+        observed = [int(line) for line in run.stdout.splitlines()]
+        if observed != expected_values:
+            raise AssertionError(compiler_id + ': native C return-value mismatch')
+        observed_by_compiler[compiler_id] = observed
+        output_name = 'native-outputs-' + compiler_id + '.csv'
+        with (out / output_name).open('w', newline='') as f:
+            writer = csv.writer(f); writer.writerow(['function', *NAMES, 'expected', 'observed'])
+            for ((fid, point), expected), actual in zip(evaluations.items(), observed):
+                writer.writerow([fid, *point, expected, actual])
+        identities.append({
+            'id': compiler_id,
+            'executable': executable,
+            'version_command': version_command,
+            'version_first_line': version.stdout.splitlines()[0],
+            'compile_command': compile_command,
+            'run_command': run_command,
+            'output_file': output_name,
+            'compile_returncode': compiled.returncode,
+            'run_returncode': run.returncode,
+        })
+    if observed_by_compiler['gcc'] != observed_by_compiler['clang']:
+        raise AssertionError('GCC/Clang native output disagreement')
+    compiler_record = {
+        'schema': 'native-compiler-cross-check-v1',
+        'harness': 'native-harness.c',
+        'compilers': identities,
+        'rows_per_compiler': len(evaluations),
+        'cross_compiler_disagreements': 0,
+    }
+    save(out / 'native-compilers.json', compiler_record)
     return {'unique_functions': len(functions), 'unique_defined_evaluations': len(evaluations),
             'undefined_candidate_observations_excluded': excluded,
-            'return_value_disagreements': 0,
-            'trace_checked_natively': False, 'compile_options': ['-std=c11', '-O0']}
+            'return_value_disagreements': 0, 'cross_compiler_disagreements': 0,
+            'trace_checked_natively': False, 'compiler_count': 2,
+            'compilers': identities, 'compile_options': ['-std=c11', '-O0']}
 
 
 def study(out, budget):

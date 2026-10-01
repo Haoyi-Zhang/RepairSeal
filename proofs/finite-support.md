@@ -8,7 +8,9 @@ The concrete prototype has 32-bit unsigned values, no side effects within expres
 
 ## 1. Authoritative request and outcomes
 
-Let W = {0,...,2^32-1}. Fix an ordered list I = (x_1,...,x_n) and nonempty, finite, ordered subsets D_i of W. The domain is the CARTESIAN product D = product_i D_i. The request is (P,Q,T,R,D), with original P, candidate Q, reference T, and total Boolean selector R. The consumer, not the certificate, chooses this complete request.
+Let W = {0,...,2^32-1}. Fix an ordered list I = (x_1,...,x_n) and nonempty, finite, ordered subsets D_i of W. The domain is the CARTESIAN product D = product_i D_i. The request is (P,Q,T,R,D), with original P, candidate Q, reference T, and a Boolean selector R that is semantically defined at every point of D. The consumer, not the certificate, chooses this complete request and its coordinate order.
+
+The mathematical semantics permits every such total selector. The concrete prototype is deliberately conservative: after parsing R, its reconstructed definedness term must simplify directly to the Boolean constant `true` under the current simplifier. This stronger prototype-admission condition is used by the executable completeness claims. The short-circuit selector `(x == 0u) || ((1u / x) > 0u)` is semantically defined on `{0,1,2}`, but the current simplifier does not establish direct `true`; the producer and both checkers therefore reject it before obligation construction.
 
 For a program F and input u in D, let exec_F(u) = (d_F(u),v_F(u),tau_F(u)). Here d is a Boolean definedness flag, v is the returned unsigned value when d is true and has no semantic meaning otherwise, and tau is the source-if trace up to return or the first undefined operation. The mathematical interpreter stops at undefined division/remainder by zero or a shift by at least 32. This stopping convention supplies a diagnostic prefix; it does not assert that an ISO C implementation must execute such a prefix on an undefined execution.
 

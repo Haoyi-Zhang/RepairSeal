@@ -1,6 +1,6 @@
 {
-  "candidate": "unsigned f(unsigned x, unsigned y, unsigned z) {\n  unsigned a = 4294967295u;\n  unsigned b = (((7u ^ x) + (y << (2147483647u & 31u))) % (((~(z >> (y & 31u))) & 7u) + 1u));\n  unsigned r = (((4294967295u >> (a & 31u)) & (4294967295u & z)) * b);\n  if (((x == 2u) && (y == 1u))) {\n    r = (r + 1u);\n  } else {\n    r = r;\n  }\n  return r;\n}\n",
   "id": "holdout-541bc83f-repair",
+  "word_bits": 32,
   "inputs": {
     "x": [
       0,
@@ -19,7 +19,7 @@
     ]
   },
   "original": "unsigned f(unsigned x, unsigned y, unsigned z) {\n  unsigned a = 4294967295u;\n  unsigned b = (((7u ^ x) + (y << (2147483647u & 31u))) % (((~(z >> (y & 31u))) & 7u) + 1u));\n  unsigned r = (((4294967295u >> (a & 31u)) & (4294967295u & z)) * b);\n  if ((x == 2u)) {\n    r = (r - 1u);\n  } else {\n    r = r;\n  }\n  return r;\n}\n",
+  "candidate": "unsigned f(unsigned x, unsigned y, unsigned z) {\n  unsigned a = 4294967295u;\n  unsigned b = (((7u ^ x) + (y << (2147483647u & 31u))) % (((~(z >> (y & 31u))) & 7u) + 1u));\n  unsigned r = (((4294967295u >> (a & 31u)) & (4294967295u & z)) * b);\n  if (((x == 2u) && (y == 1u))) {\n    r = (r + 1u);\n  } else {\n    r = r;\n  }\n  return r;\n}\n",
   "reference": "unsigned f(unsigned x, unsigned y, unsigned z) {\n  unsigned a = 4294967295u;\n  unsigned b = (((7u ^ x) + (y << (2147483647u & 31u))) % (((~(z >> (y & 31u))) & 7u) + 1u));\n  unsigned r = (((4294967295u >> (a & 31u)) & (4294967295u & z)) * b);\n  return r;\n}\n",
-  "repair_guard": "(x == 2u)",
-  "word_bits": 32
+  "repair_guard": "(x == 2u)"
 }

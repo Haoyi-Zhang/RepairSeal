@@ -2,7 +2,7 @@
 
 ## Objects
 
-Let the receiver fix original program `P`, candidate `Q`, reference `T`, total repair guard `R`, ordered variables `(x1,...,xn)`, and finite sorted domains `D1,...,Dn`. The declared domain is the Cartesian product `D`.
+Let the receiver fix original program `P`, candidate `Q`, reference `T`, a semantically total repair guard `R`, ordered variables `(x1,...,xn)`, and finite sorted domains `D1,...,Dn`. The declared domain is the Cartesian product `D`. The executable prototype admits a conservative subset: the independently reconstructed guard-definedness term must simplify directly to Boolean `true`; certificate fields never determine this admission decision.
 
 For each role and input, source execution yields definedness, a value when defined, and a source-if trace. The obligations are candidate definedness, reference agreement under `R`, and original preservation under `not R`.
 
@@ -40,7 +40,7 @@ If a checked obligation vector contains false cells, each names a real violation
 
 ## Finite format completeness
 
-For every admitted request, a valid certificate exists: use the canonical reconstructed circuit and evaluate every node at every canonical point. Valid evidence may lead to either `ACCEPT` or `REFUTED`; evidence validity is distinct from patch correctness.
+For every prototype-admitted request, a valid certificate exists: use the canonical reconstructed circuit and evaluate every node at every canonical point. Valid evidence may lead to either `ACCEPT` or `REFUTED`; evidence validity is distinct from patch correctness. This is not completeness for all mathematically total selectors: selectors whose definedness is total only through a short-circuit argument that the current simplifier cannot reduce are conservatively rejected.
 
 ## What is not proved
 
@@ -54,4 +54,4 @@ For every admitted request, a valid certificate exists: use the canonical recons
 
 ## Strong-baseline correction
 
-The original recursive comparison is not evidence of certificate-induced work reduction. A memoized topological evaluator that receives no certificate performs exactly one operation per node--point cell, equal to the full-vector checker under the same counting convention. The 6.85x recursive ratio measures repeated recursion. See `refutation-boundary.md` for the exact work-equivalence proposition and the separate one-point refutation theorem.
+The original recursive comparison is not evidence of certificate-induced work reduction. A memoized topological evaluator that receives no certificate performs exactly one operation per node--point cell, equal to the full-vector checker under the same counting convention. The 309,582 count is internal recursion inside a certificate-rebuild diagnostic that also performs 45,198 outer proof-cell checks; it is not the certificate-free `Session/direct_result` timing arm. The 6.85x ratio therefore measures repeated recursion only. See `refutation-boundary.md` for the exact work-equivalence proposition and the separate one-point refutation theorem.

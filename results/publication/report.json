@@ -68,19 +68,19 @@
     }
   },
   "resources": {
-    "work_events": 15820,
+    "work_events": 25000,
     "counts": {
       "report_cases": 80,
-      "report_native_rows": 9180,
+      "report_native_rows": 18360,
       "report_null_rows": 80,
       "report_oracle_observations": 6480
     },
-    "wall_seconds": 0.0602964790000442,
-    "self_cpu_seconds": 0.0602709999999998,
+    "wall_seconds": 0.03569489699998485,
+    "self_cpu_seconds": 0.035679000000000016,
     "child_cpu_seconds": 0.0,
-    "total_cpu_seconds": 0.0602709999999998,
-    "self_peak_rss_kib": 97328,
-    "largest_child_rss_kib": 768,
+    "total_cpu_seconds": 0.035679000000000016,
+    "self_peak_rss_kib": 100400,
+    "largest_child_rss_kib": 0,
     "workers": 1
   }
 }

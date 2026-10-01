@@ -6,4 +6,4 @@ The Codeflaws repository's published LICENSE was inspected: MIT License, Copyrig
 
 The scholarly sources recorded in ../external_resources.csv are cited, not redistributed. Their full text and figures are not embedded in the artifact. No rights to those works are asserted.
 
-The Python standard library and host C compiler are execution dependencies and are not redistributed or modified. The manuscript's separate acmart class and bibliography style are supplied assets, unchanged, accompanied in paper/ by the supplied LPPL license. They are not needed by this standalone repository.
+The Python standard library and host GCC/Clang C11 frontends are execution dependencies and are not redistributed or modified. The manuscript's separate acmart class and bibliography style are supplied assets, unchanged, accompanied in paper/ by the supplied LPPL license. They are not needed by this standalone repository.

@@ -11728,12 +11728,12 @@
       "symbolic_nodes": 232,
       "syntax_controls": 60
     },
-    "wall_seconds": 0.0534182830001555,
-    "self_cpu_seconds": 0.05338500000000007,
+    "wall_seconds": 0.028915998999991643,
+    "self_cpu_seconds": 0.02890299999999993,
     "child_cpu_seconds": 0.0,
-    "total_cpu_seconds": 0.05338500000000007,
-    "self_peak_rss_kib": 96300,
-    "largest_child_rss_kib": 768,
+    "total_cpu_seconds": 0.02890299999999993,
+    "self_peak_rss_kib": 94244,
+    "largest_child_rss_kib": 0,
     "workers": 1
   }
 }

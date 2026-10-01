@@ -114,7 +114,7 @@ def main():
             if name == 'null-control':
                 partial.unlink(missing_ok=True); context.unlink(missing_ok=True)
         names = ['study.json', 'regression.json', 'null-control.json', 'cases.json', 'holes.json', 'tampering.json',
-                 'case-summary.csv', 'native-harness.c', 'native-outputs.csv',
+                 'case-summary.csv', 'native-harness.c', 'native-compilers.json', 'native-outputs-gcc.csv', 'native-outputs-clang.csv',
                  'publication/summary.json', 'publication/report.json', 'publication/families.tex',
                  'publication/outcomes.tex', 'publication/null.tex']
         for dirname in ('certificates', 'controls', 'oracle'):

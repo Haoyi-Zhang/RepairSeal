@@ -23,8 +23,9 @@ Two evidence formats are implemented:
 | Grammar oracle/topological agreement | 400/400 and 400/400 |
 | Grammar compact refutations / rejected forgeries | 300/300 and 100/100 |
 | Full proof / topological-direct cells on 20 correct fixtures | 45,198 / 45,198 |
-| Recursive diagnostic cells | 309,582 (6.85x repeated work, not certificate gain) |
-| Median full / compact bytes in the frozen core | 15,213 / 667 (22.8x) |
+| Certificate-rebuild diagnostic | 45,198 outer proof cells + 309,582 internal recursive visits; still receives the certificate |
+| Full-proof cells across all 380 frozen-core requests | 1,179,684 |
+| Median full / compact bytes on the same 285 refutations | 15,604 / 667 (ratio of medians 23.39x; median paired ratio 23.23x) |
 | Median compact semantic-cell reduction | 81x on the retained 81-point requests |
 
 The exact negative result is central: full-vector checking and a certificate-free memoized topological evaluator perform the same number of local semantic-cell operations. The format supplies auditable source-bound evidence, not semantic-work reduction or an end-to-end speedup. The compact format obtains a real reduction only by certifying the weaker existential rejection claim.
@@ -33,13 +34,13 @@ The 400 grammar-generated requests were added during final blind audit with a se
 
 ## Reproduce everything
 
-Requirements: Python 3.10 or newer, GCC, Clang, and standard POSIX utilities. No network, model API, credentials, private cache, or paper directory is used.
+Requirements: Python 3.10 or newer, GCC, Clang, and standard POSIX utilities. The retained native evidence records GCC 14.2.0 at `/usr/bin/x86_64-linux-gnu-gcc-14` and Clang 17.0.0 at `/usr/local/swift/usr/bin/clang-17`; the reproducer resolves available `gcc` and `clang` frontends, records their identities and commands, and requires two separate matching outputs. No network, model API, credentials, private cache, or paper directory is used.
 
 ```bash
 python3 tests/reproduce_all.py --output ../replayed-results
 ```
 
-The output directory must be absent or empty. The command reruns the replay-table negative baseline, native compiler cross-checks, the 380-request study, 8,945 certificate negative controls, fail-closed security regressions, the 300-row Codeflaws index audit, and the 400-case post hoc grammar differential, then compares deterministic scientific evidence with retained results.
+The output directory must be absent or empty. The command reruns the replay-table negative baseline, two native compiler cross-checks, the 380-request study, 8,945 certificate negative controls, fail-closed security regressions, the 300-row Codeflaws index audit, the 400-case post hoc grammar differential, the producer-complexity regression, the AST/literal safety regressions, and the conservative-selector regression. It then performs a separate disk-replay audit: all 780 retained request files are strict-loaded; authoritative input order is recovered from the fixture/stress generators and retained grammar seeds, never from a certificate; 380 full-vector and 285 compact core certificates are replayed; and all 400 grammar results are revalidated.
 
 For a dependency-closure and packaging check from a clean extraction:
 
@@ -57,14 +58,23 @@ The release gate parses every Python file, rejects nested archives, caches, and 
 - `src/refutation_witness_checker.py`: receiver one-point checker.
 - `tests/structured_study.py`: frozen 380-request study and 8,945 negative controls.
 - `tests/holdout_differential.py`: post hoc 400-case grammar/AST differential audit (the legacy filename is retained for evidence compatibility).
+- `tests/disk_replay.py`: independent retained-file gate for 780 requests, 380 full certificates, 285 compact certificates, and 400 grammar results; it never trusts certificate coordinate order.
+- `tests/edge_case_regression.py`: producer topological-reuse, left-deep AST/literal safety, and conservative selector-admission regressions.
 - `tests/proof_dag_security.py`: malformed requests, strict JSON, type aliases, resource boundaries, and operator probes.
 - `proofs/proof-dag.md`: conditional full-vector soundness argument.
 - `proofs/refutation-boundary.md`: compact-refutation soundness and leastness boundary.
 - `claim_evidence_ledger.csv`: claim-to-proof/code/input/result ledger.
 
+## Audited structural ranges and edge regressions
+
+- The 400 grammar requests use exactly 9, 27, or 81 points: 125, 133, and 142 requests respectively. Their canonical circuits range from 15 to 163 nodes, with median 69.5.
+- The full-vector producer now computes one topological table per point. On a retained 48-term chain (53 nodes, 3 points), it records 159 vector cells; a legacy root-by-root diagnostic traversal records 3,558 recursive visits, while certificate bytes remain identical.
+- An isolated 1,500-term left-deep addition has 3,034 characters, 3,009 tokens, 2,999 AST nodes, and depth 1,500. A diagnostic bypass reaches `RecursionError`; production producer/full/compact paths all reject on `AST depth`. An 11-digit literal is rejected on `literal length`. No wrong acceptance is claimed.
+- `(x == 0u) || ((1u / x) > 0u)` is semantically defined on `{0,1,2}` by short circuit, but the current selector-definedness simplifier cannot prove direct `true`; producer and both checkers reject it consistently.
+
 ## Trust and independence boundary
 
-The receiver validates schemas and limits, computes source bindings, reparses source, reconstructs canonical topology, and checks evidence. The full-vector checker imports no producer module. The compact checker reuses receiver-owned parser/circuit code and imports neither producer. The proofs are manual conditional arguments, not proof-assistant derivations. Differential, native, boundary, and mutation testing reduce implementation risk but do not mechanically prove the receiver.
+The receiver validates schemas and limits, computes source bindings, reparses source, reconstructs canonical topology, and checks evidence. Request JSON preserves the insertion order of the receiver-owned `inputs` map; certificate key sorting is not allowed to redefine that order. The producer and both checkers enforce actual AST depth/node limits before recursive elaboration and check literal digit length before integer conversion. A mathematically total selector is admitted by this prototype only when its reconstructed definedness simplifies directly to Boolean `true`; this is an explicit conservative completeness boundary. The full-vector checker imports no producer module. The compact checker reuses receiver-owned parser/circuit code and imports neither producer. The proofs are manual conditional arguments, not proof-assistant derivations. Differential, native, boundary, and mutation testing reduce implementation risk but do not mechanically prove the receiver.
 
 ## Codeflaws boundary
 

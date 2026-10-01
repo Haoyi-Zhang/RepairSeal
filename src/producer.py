@@ -14,6 +14,9 @@ IDS = ("defined", "repair", "preserve")
 ARITH = {"+", "-", "*", "/", "%", "<<", ">>", "&", "|", "^"}
 REL = {"==", "!=", "<", "<=", ">", ">="}
 RESERVED = set("auto break case char const continue default do double else enum extern float for goto if inline int long register restrict return short signed sizeof static struct switch typedef union unsigned void volatile while _Alignas _Alignof _Atomic _Bool _Complex _Generic _Imaginary _Noreturn _Static_assert _Thread_local".split())
+MAX_AST_DEPTH = 64
+MAX_AST_NODES = 4096
+MAX_LITERAL_DIGITS = 10
 PREC = {"||": 1, "&&": 2, "|": 3, "^": 4, "&": 5,
         "==": 6, "!=": 6, "<": 7, "<=": 7, ">": 7, ">=": 7,
         "<<": 8, ">>": 8, "+": 9, "-": 9, "*": 10, "/": 10, "%": 10}
@@ -23,6 +26,54 @@ class ProducerError(ValueError):
 
 def _noop(kind: str, count: int = 1) -> None:
     pass
+
+def _validate_expression_tree(root) -> tuple[int, int]:
+    stack = [(root, 1)]
+    nodes = 0
+    maximum = 0
+    while stack:
+        expr, depth = stack.pop()
+        nodes += 1
+        maximum = max(maximum, depth)
+        if depth > MAX_AST_DEPTH:
+            raise ProducerError("AST depth")
+        if nodes > MAX_AST_NODES:
+            raise ProducerError("AST node bound")
+        op = expr[0]
+        if op in {"num", "var"}:
+            children = ()
+        elif op in {"!", "~"}:
+            children = (expr[1],)
+        else:
+            children = (expr[1], expr[2])
+        stack.extend((child, depth + 1) for child in children)
+    return nodes, maximum
+
+
+def _validate_program_tree(statements) -> tuple[int, int]:
+    total = 0
+    maximum = 0
+    stack = list(statements)
+    while stack:
+        statement = stack.pop()
+        tag = statement[0]
+        if tag in {"decl", "set"}:
+            expressions = (statement[2],)
+        elif tag == "ret":
+            expressions = (statement[1],)
+        elif tag == "if":
+            expressions = (statement[2],)
+            stack.extend(statement[3])
+            stack.extend(statement[4])
+        else:
+            raise ProducerError("AST statement")
+        for expression in expressions:
+            count, depth = _validate_expression_tree(expression)
+            total += count
+            maximum = max(maximum, depth)
+            if total > MAX_AST_NODES:
+                raise ProducerError("AST node bound")
+    return total, maximum
 
 class Parser:
     def __init__(self, source: str):
@@ -71,8 +122,10 @@ class Parser:
         elif t in {"!", "~"}:
             a = (t, self.expr(11))
         elif re.fullmatch(r"[0-9]+u", t):
-            n = int(t[:-1])
+            digits = t[:-1]
+            if len(digits) > MAX_LITERAL_DIGITS: raise ProducerError("literal length")
             if len(t) > 2 and t[0] == "0": raise ProducerError("no octal literals")
+            n = int(digits)
             if not 0 <= n <= MASK: raise ProducerError("unsigned literal range")
             a = ("num", n)
         elif re.fullmatch(r"[A-Za-z_][A-Za-z_0-9]*", t):
@@ -126,6 +179,7 @@ class Parser:
         body = self.block()
         if self.peek() != "<end>" or not body or body[-1][0] != "ret":
             raise ProducerError("function end")
+        _validate_program_tree(body)
         return params, body
 
 
@@ -296,8 +350,12 @@ class Producer:
                          for role in ("original", "candidate", "reference")}
         gp = Parser(request["repair_guard"]); tick("producer_source_tokens", len(gp.ts)); ge = gp.expr()
         if gp.peek() != "<end>": raise ProducerError("guard end")
-        gv, gd, gt = Translation(d, self.names).expression(ge, {n: d.var(n) for n in self.names})
-        if gt != "b" or gd != d.true: raise ProducerError("selector must be syntactically total")
+        _validate_expression_tree(ge)
+        try:
+            gv, gd, gt = Translation(d, self.names).expression(ge, {n: d.var(n) for n in self.names})
+        except RecursionError as exc:
+            raise ProducerError("AST recursion safety") from exc
+        if gt != "b" or gd != d.true: raise ProducerError("guard totality not simplified to true")
         p, q, r = (self.programs[k] for k in ("original", "candidate", "reference"))
         self.guard = gv
         repair = d.op("and", q.defined, d.op("and", r.defined, d.op("==", q.output, r.output)))

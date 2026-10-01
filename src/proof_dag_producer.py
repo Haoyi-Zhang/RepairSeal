@@ -12,7 +12,7 @@ import json
 from pathlib import Path
 from typing import Any, Callable
 
-from producer import Producer
+from producer import Producer, ProducerError, value as producer_value
 
 SCHEMA = "finite-semantic-proof-dag-v1"
 ROLES = ("original", "candidate", "reference")
@@ -48,9 +48,40 @@ def _node_record(index: int, node: tuple, sort: str, vector: list[Any]) -> dict[
     return record
 
 
+
+def _evaluate_all_nodes(nodes: list[tuple], env: dict[str, int], tick: Callable[[str, int], None]) -> list[Any]:
+    """Evaluate a topologically ordered producer DAG once at one point.
+
+    The previous implementation called ``DAG.evaluate`` separately for every
+    root node, creating a fresh memo table each time.  A left-deep DAG could
+    therefore cause quadratic node visits per point even though the emitted
+    vectors contain only one value per node and point.
+    """
+    values: list[Any] = []
+    for node in nodes:
+        tick("producer_vector_cells", 1)
+        op, *args = node
+        if op in {"b", "u"}:
+            result = args[0]
+        elif op == "input":
+            result = env[args[0]]
+        elif op == "and":
+            result = bool(values[args[0]] and values[args[1]])
+        elif op == "or":
+            result = bool(values[args[0]] or values[args[1]])
+        elif op == "ite":
+            result = values[args[1]] if values[args[0]] else values[args[2]]
+        else:
+            result = producer_value(op, tuple(values[child] for child in args))
+        values.append(result)
+    return values
+
 def produce(request: dict, count: Callable[[str, int], None] | None = None) -> dict:
     tick = count or (lambda _kind, _n=1: None)
-    model = Producer(request, tick)
+    try:
+        model = Producer(request, tick)
+    except RecursionError as exc:
+        raise ProducerError("AST recursion safety") from exc
     names = list(request["inputs"])
     points = [list(p) for p in itertools.product(*(request["inputs"][n] for n in names))]
     if len(points) > 4096:
@@ -59,9 +90,9 @@ def produce(request: dict, count: Callable[[str, int], None] | None = None) -> d
     vectors: list[list[Any]] = [[] for _ in model.dag.nodes]
     for point in points:
         env = dict(zip(names, point))
-        for node_id in range(len(model.dag.nodes)):
-            tick("producer_vector_cells", 1)
-            vectors[node_id].append(model.dag.evaluate(node_id, env))
+        point_values = _evaluate_all_nodes(model.dag.nodes, env, tick)
+        for node_id, node_value in enumerate(point_values):
+            vectors[node_id].append(node_value)
     nodes = [_node_record(i, n, sorts[i], vectors[i]) for i, n in enumerate(model.dag.nodes)]
     role_roots = {
         role: {

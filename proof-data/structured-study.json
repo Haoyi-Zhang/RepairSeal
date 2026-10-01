@@ -9,15 +9,19 @@
     "p25": 13351.0,
     "p75": 16420.75
   },
+  "certificate_rebuild_operation_counts_correct": {
+    "internal_recursive_cells": 309582,
+    "outer_proof_cells": 45198
+  },
   "deterministic_indexes": {
     "acceptance_misuse_sha256": "f049e5dfb7a73ddc963dc35f786b0ea5d4b540070cc127da7f47760c43dceb9c",
     "refutation_controls_sha256": "9deccb661b1d39dac0f10f57cbf6342cad0b15819e27ed0b5da7eda2a7024058",
-    "refutation_witnesses_sha256": "3774490cc45088491befa26e54acd735905a271bba65f44ec08712624a80c151",
+    "refutation_witnesses_sha256": "40a6b9515662d5c266b178226b8201a3bca1d9c9a960c56aee21aa598081c3ad",
     "results_sha256": "98032ba9f56429d651a472e0fd8651d32897b35a7d21d2f37e54c801198c2a81"
   },
   "fixture_families": 20,
   "fixture_requests": 80,
-  "generated_at_utc": "2026-09-19T16:24:07Z",
+  "generated_at_utc": "2026-09-26T02:39:57Z",
   "node_count": {
     "max": 51,
     "median": 40.0,
@@ -28,16 +32,13 @@
   "oracle_agreements": 380,
   "oracle_disagreements": 0,
   "outcome": "PASS",
-  "peak_rss_kib": 105184,
+  "peak_rss_kib": 104620,
   "proof_operation_counts_all": {
-    "proof_cells": 224127
+    "proof_cells": 1179684
   },
+  "proof_operation_counts_all_scope": "all 380 frozen-core requests",
   "proof_operation_counts_correct": {
     "proof_cells": 45198
-  },
-  "recursive_rebuild_operation_counts_correct": {
-    "proof_cells": 45198,
-    "rebuild_cells": 309582
   },
   "refutation_certificate_bytes": {
     "max": 699,
@@ -52,6 +53,20 @@
     "min": 29,
     "p25": 39,
     "p75": 43
+  },
+  "refutation_encoding": {
+    "median_compact_bytes": 667,
+    "median_full_bytes": 15604,
+    "median_paired_ratio": 23.229385307346327,
+    "ratio_of_medians": 23.394302848575713,
+    "same_population": 285
+  },
+  "refutation_full_certificate_bytes": {
+    "max": 22342,
+    "median": 15604,
+    "min": 12191,
+    "p25": 14993,
+    "p75": 16652
   },
   "refutation_full_proof_cells": {
     "max": 4131,
@@ -75,57 +90,69 @@
   "tamper_attempts": 6000,
   "tamper_rejections": 6000,
   "timing_ms": {
+    "certificate_rebuild_correct": {
+      "max": 26.716461,
+      "median": 7.1753745,
+      "min": 3.889031,
+      "p25": 4.86610125,
+      "p75": 9.85398075
+    },
     "one_point_refutation": {
-      "max": 1.327489,
-      "median": 0.457319,
-      "min": 0.33258,
-      "p25": 0.437859,
-      "p75": 0.497359
+      "max": 1.028492,
+      "median": 0.486029,
+      "min": 0.355864,
+      "p25": 0.469554,
+      "p75": 0.510325
     },
     "produce": {
-      "max": 77.749201,
-      "median": 10.190677,
-      "min": 3.330055,
-      "p25": 8.2426535,
-      "p75": 11.474935749999998
+      "max": 3.764124,
+      "median": 1.9409800000000001,
+      "min": 1.074691,
+      "p25": 1.72443075,
+      "p75": 2.00524125
     },
     "proof_check": {
-      "max": 8.368052,
-      "median": 2.436159,
-      "min": 1.62715,
-      "p25": 2.25292075,
-      "p75": 2.58937425
-    },
-    "recursive_reconstruct": {
-      "max": 2.862201,
-      "median": 1.2704885,
-      "min": 0.612222,
-      "p25": 1.01004825,
-      "p75": 1.4538395
+      "max": 5.101369,
+      "median": 2.7411950000000003,
+      "min": 1.478167,
+      "p25": 2.4046555,
+      "p75": 2.899896
     },
     "repeated_correct": {
-      "proof_check": {
-        "median": 2.1095115,
-        "p25": 1.80849575,
-        "p75": 2.5490742500000003
+      "certificate_rebuild": {
+        "median": 5.2900475,
+        "p25": 3.9705015,
+        "p75": 6.79407525
       },
-      "recursive_reconstruct": {
-        "median": 1.4328675,
-        "p25": 1.2194034999999999,
-        "p75": 1.70861525
+      "proof_check": {
+        "median": 1.6771845,
+        "p25": 1.5185345,
+        "p75": 1.93100875
+      },
+      "session_direct_result": {
+        "median": 1.1118475,
+        "p25": 1.0168127500000002,
+        "p75": 1.2302345
       },
       "topological_direct": {
-        "median": 1.260208,
-        "p25": 1.0513455,
-        "p75": 1.58192
+        "median": 1.0526485,
+        "p25": 0.9379867500000001,
+        "p75": 1.2198195
       }
     },
+    "session_direct_result": {
+      "max": 34.081375,
+      "median": 1.1356134999999998,
+      "min": 0.587171,
+      "p25": 0.99025,
+      "p75": 1.47661925
+    },
     "topological_direct": {
-      "max": 49.313981,
-      "median": 1.587992,
-      "min": 1.024002,
-      "p25": 1.47904025,
-      "p75": 1.7045
+      "max": 2.835711,
+      "median": 1.550184,
+      "min": 0.948282,
+      "p25": 1.42867775,
+      "p75": 1.651782
     }
   },
   "topological_operation_counts_correct": {
@@ -133,10 +160,11 @@
   },
   "total_requests": 380,
   "work_equivalence": {
+    "certificate_rebuild_internal_recursive_cells_correct": 309582,
+    "certificate_rebuild_outer_cells_correct": 45198,
     "exact_equal": true,
+    "internal_recursive_over_proof_ratio": 6.849462365591398,
     "proof_cells_correct": 45198,
-    "recursive_cells_correct": 309582,
-    "recursive_over_proof_ratio": 6.849462365591398,
     "topological_direct_cells_correct": 45198
   }
 }

@@ -2,7 +2,7 @@
 
 ## Definitions
 
-For a validated request, the receiver constructs an ordered acyclic circuit `C`, an ordered finite domain `D`, three obligation roots, and the candidate trace events. A compact certificate names an obligation `o`, a point `d in D`, and a trace `t`, while binding all request fields and source texts by exact values and SHA-256 digests.
+For a prototype-admitted request, the receiver constructs an ordered acyclic circuit `C`, an ordered finite domain `D`, three obligation roots, and the candidate trace events. A compact certificate names an obligation `o`, a point `d in D`, and a trace `t`, while binding all request fields and source texts by exact values and SHA-256 digests.
 
 ## Lemma 1: point-evaluation correctness
 
@@ -16,7 +16,7 @@ Reason: before evaluating, the checker validates the closed schema, outer digest
 
 ## Theorem 2: completeness for existence
 
-If an obligation is false at any point in the finite domain, then a certificate containing that point, the correct obligation name, and the receiver-defined trace is accepted, subject to correct bindings and encoding. The checker evaluates the same point and obtains the same false root and trace.
+For a prototype-admitted request, if an obligation is false at any point in the finite domain, then a certificate containing that point, the correct obligation name, and the receiver-defined trace is accepted, subject to correct bindings and encoding. The checker evaluates the same point and obtains the same false root and trace.
 
 ## Proposition 3: no leastness theorem
 
@@ -24,8 +24,13 @@ A single accepted violating point does not establish that earlier points under t
 
 ## Proposition 4: full-vector/topological work equivalence
 
-Under the artifact's cell-count convention, both the full-vector checker and the memoized topological direct evaluator perform one local operation for each `(node, point)` pair. Both therefore perform `|C| x |D|` semantic-cell operations. The recursive evaluator is retained only to quantify repeated recomputation.
+Under the artifact's cell-count convention, both the full-vector checker and the memoized topological direct evaluator perform one local operation for each `(node, point)` pair. Both therefore perform `|C| x |D|` semantic-cell operations. The retained certificate-rebuild diagnostic still receives the certificate: its 309,582 internal recursive visits are separate from its 45,198 outer proof-cell checks and from the certificate-free `Session/direct_result` timing path.
 
 ## Trusted assumptions
 
 The arguments are conditional on correct receiver implementation, the stated finite semantics, and collision resistance of SHA-256. The artifact supplies exhaustive differential checks on its population, strict-boundary tests, and targeted mutation controls; these are evidence, not mechanical proof.
+
+
+## Conservative selector admission
+
+Mathematical totality and executable admission are distinct. The selector `(x == 0u) || ((1u / x) > 0u)` is defined at every point of the retained test domain `{0,1,2}` by short-circuit semantics, but the current simplifier does not reduce its definedness term directly to `true`. Producer, full checker, and compact checker all reject that request before certificate evaluation. This is a conservative incompleteness boundary, not an observed wrong acceptance.

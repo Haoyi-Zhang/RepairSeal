@@ -43,10 +43,16 @@ def build(results, output, budget):
                 break
         assert c['witness'] == expected
         assert c['status'] == ('ACCEPT' if expected is None else 'REFUTED')
-    native = list(csv.DictReader((results / 'native-outputs.csv').open()))
-    budget.tick('report_native_rows', len(native))
-    assert all(r['expected'] == r['observed'] for r in native)
-    assert len(native) == study['native']['unique_defined_evaluations']
+    native_by_compiler = {
+        compiler: list(csv.DictReader((results / ('native-outputs-' + compiler + '.csv')).open()))
+        for compiler in ('gcc', 'clang')
+    }
+    for compiler, rows in native_by_compiler.items():
+        budget.tick('report_native_rows', len(rows))
+        assert all(r['expected'] == r['observed'] for r in rows), compiler
+        assert len(rows) == study['native']['unique_defined_evaluations']
+    assert native_by_compiler['gcc'] == native_by_compiler['clang']
+    native = native_by_compiler['gcc']
     for r in null['records']:
         budget.tick('report_null_rows')
         c = next(c for c in cases if c['id'] == r['id'])

@@ -23,6 +23,9 @@ ROLES = ("original", "candidate", "reference")
 OBLIGATIONS = ("defined", "repair", "preserve")
 MAX_BINDINGS = 72  # At most 8 parameters plus enough outer-block locals to total 72 names.
 MAX_DOMAIN_VALUES = 64
+MAX_AST_DEPTH = 64
+MAX_AST_NODES = 4096
+MAX_LITERAL_DIGITS = 10
 ARITH = {"+", "-", "*", "/", "%", "<<", ">>", "&", "|", "^"}
 REL = {"==", "!=", "<", "<=", ">", ">="}
 RESERVED = set("auto break case char const continue default do double else enum extern float for goto if inline int long register restrict return short signed sizeof static struct switch typedef union unsigned void volatile while _Alignas _Alignof _Atomic _Bool _Complex _Generic _Imaginary _Noreturn _Static_assert _Thread_local".split())
@@ -84,6 +87,55 @@ def load_json_strict(text: str) -> Any:
 def digest(text: str) -> str:
     return hashlib.sha256(text.encode("utf-8")).hexdigest()
 
+def _validate_expression_tree(root) -> tuple[int, int]:
+    """Measure the real tuple-AST without recursive host-language traversal."""
+    stack = [(root, 1)]
+    nodes = 0
+    maximum = 0
+    while stack:
+        expr, depth = stack.pop()
+        nodes += 1
+        maximum = max(maximum, depth)
+        if depth > MAX_AST_DEPTH:
+            raise Unsupported("AST depth")
+        if nodes > MAX_AST_NODES:
+            raise Unsupported("AST node bound")
+        op = expr[0]
+        if op in {"num", "var"}:
+            children = ()
+        elif op in {"!", "~"}:
+            children = (expr[1],)
+        else:
+            children = (expr[1], expr[2])
+        stack.extend((child, depth + 1) for child in children)
+    return nodes, maximum
+
+
+def _validate_program_tree(statements) -> tuple[int, int]:
+    total = 0
+    maximum = 0
+    stack = list(statements)
+    while stack:
+        statement = stack.pop()
+        tag = statement[0]
+        if tag in {"decl", "set"}:
+            expressions = (statement[2],)
+        elif tag == "ret":
+            expressions = (statement[1],)
+        elif tag == "if":
+            expressions = (statement[2],)
+            stack.extend(statement[3])
+            stack.extend(statement[4])
+        else:
+            raise Unsupported("AST statement")
+        for expression in expressions:
+            count, depth = _validate_expression_tree(expression)
+            total += count
+            maximum = max(maximum, depth)
+            if total > MAX_AST_NODES:
+                raise Unsupported("AST node bound")
+    return total, maximum
+
 class Reader:
     def __init__(self, source: str):
         if type(source) is not str or len(source) > 16384 or len(source.splitlines()) > 250:
@@ -119,8 +171,10 @@ class Reader:
         if token == "(": value = self.expression(); self.take(")")
         elif token in {"!", "~"}: value = (token, self.expression(11))
         elif re.fullmatch(r"[0-9]+u", token):
+            digits = token[:-1]
+            if len(digits) > MAX_LITERAL_DIGITS: raise Unsupported("literal length")
             if len(token)>2 and token[0]=="0": raise Unsupported("octal")
-            number = int(token[:-1])
+            number = int(digits)
             if number > MASK: raise Unsupported("literal")
             value = ("num", number)
         elif re.fullmatch(r"[A-Za-z_][A-Za-z_0-9]*", token): value = ("var", token)
@@ -163,6 +217,7 @@ class Reader:
         if not 1 <= len(params) <= 8 or len(set(params)) != len(params): raise Unsupported("parameters")
         body=self.block()
         if self.peek() != "<end>" or not body or body[-1][0] != "ret": raise Unsupported("function end")
+        _validate_program_tree(body)
         return params, body
 
 class Circuit:
@@ -281,22 +336,26 @@ def local_value(op,args):
     raise Invalid("operator")
 
 def build_expected(request):
-    names=list(request["inputs"]); c=Circuit()
-    programs={role:Elaborator(c,names).compile(request[role]) for role in ROLES}
-    reader=Reader(request["repair_guard"]); guard_expr=reader.expression()
-    if reader.peek()!="<end>": raise Invalid("guard end")
-    guard,defined,typ=Elaborator(c,names).expr(guard_expr,{n:c.input(n) for n in names})
-    if typ!="b" or defined!=c.true: raise Unsupported("guard totality")
-    p,q,r=(programs[k] for k in ROLES)
-    repair=c.op("and",q.defined,c.op("and",r.defined,c.op("==",q.output,r.output)))
-    preserve=c.op("and",q.defined,c.op("and",p.defined,c.op("==",q.output,p.output)))
-    roots=[q.defined,c.op("or",c.op("not",guard),repair),c.op("or",guard,preserve)]
-    # The untrusted producer also materializes its explicitly labelled unsafe
-    # value-only negative-control roots.  They are not trusted as obligations,
-    # but reconstructing them keeps the canonical circuit/source binding exact.
-    c.op("or",c.op("not",guard),c.op("==",q.output,r.output))
-    c.op("or",guard,c.op("==",q.output,p.output))
-    return c,programs,guard,roots
+    try:
+        names=list(request["inputs"]); c=Circuit()
+        programs={role:Elaborator(c,names).compile(request[role]) for role in ROLES}
+        reader=Reader(request["repair_guard"]); guard_expr=reader.expression()
+        if reader.peek()!="<end>": raise Invalid("guard end")
+        _validate_expression_tree(guard_expr)
+        guard,defined,typ=Elaborator(c,names).expr(guard_expr,{n:c.input(n) for n in names})
+        if typ!="b" or defined!=c.true: raise Unsupported("guard totality not simplified to true")
+        p,q,r=(programs[k] for k in ROLES)
+        repair=c.op("and",q.defined,c.op("and",r.defined,c.op("==",q.output,r.output)))
+        preserve=c.op("and",q.defined,c.op("and",p.defined,c.op("==",q.output,p.output)))
+        roots=[q.defined,c.op("or",c.op("not",guard),repair),c.op("or",guard,preserve)]
+        # The untrusted producer also materializes its explicitly labelled unsafe
+        # value-only negative-control roots.  They are not trusted as obligations,
+        # but reconstructing them keeps the canonical circuit/source binding exact.
+        c.op("or",c.op("not",guard),c.op("==",q.output,r.output))
+        c.op("or",guard,c.op("==",q.output,p.output))
+        return c,programs,guard,roots
+    except RecursionError as exc:
+        raise Unsupported("AST recursion safety") from exc
 
 def _expected_record(index,key,sort):
     op,*args=key; base={"id":index,"op":op,"sort":sort}

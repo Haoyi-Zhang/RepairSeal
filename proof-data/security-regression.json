@@ -260,7 +260,7 @@
     "early return": 1,
     "expression depth": 2,
     "grammar mismatch": 2,
-    "guard totality": 2,
+    "guard totality not simplified to true": 2,
     "identifier": 1,
     "input name": 2,
     "input schema": 3,
@@ -507,12 +507,12 @@
     },
     {
       "case": "guard-partial",
-      "reason": "guard totality",
+      "reason": "guard totality not simplified to true",
       "status": "REJECTED"
     },
     {
       "case": "guard-not-boolean",
-      "reason": "guard totality",
+      "reason": "guard totality not simplified to true",
       "status": "REJECTED"
     }
   ],
