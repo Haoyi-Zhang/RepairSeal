@@ -254,3 +254,13 @@ normalization, and the exact upstream MIT notice are documented in
 [licenses/Codeflaws-MIT.txt](licenses/Codeflaws-MIT.txt). That repository notice
 does not establish an archive-wide license or rights from every Codeforces
 contestant. Project licensing does not relicense upstream programs or tests.
+
+## Manuscript diagrams
+
+The model and protocol schematics are drawn directly in Python as vector PDFs
+with embedded STIX fonts. They encode the stated relationships, not measured
+performance. To regenerate them with Python 3.9+ and Matplotlib:
+
+```sh
+python -B figures/draw_schematics.py --output figures
+```
