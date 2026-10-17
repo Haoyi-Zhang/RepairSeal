@@ -1,4 +1,4 @@
-"""Artifact-local portable membership conformance for P004.
+"""Artifact-local portable membership conformance for RepairSeal.
 
 Uses the independent product-enumerating test reference.
 Full-certificate checks use the current full receiver plus retained manifests
