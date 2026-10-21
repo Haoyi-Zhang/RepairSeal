@@ -516,7 +516,8 @@ def main():
         # or accepts a producer-supplied replacement for the consumer request.
         if args.request.stat().st_size > 2 * 1024 * 1024 or args.certificate.stat().st_size > 2 * 1024 * 1024:
             raise Invalid("file byte bound")
-        answer = check(decode(args.request.read_text()), decode(args.certificate.read_text()))
+        answer = check(decode(args.request.read_text(encoding="utf-8")),
+                       decode(args.certificate.read_text(encoding="utf-8")))
     except (OSError, UnicodeError, Invalid) as e:
         answer = {"status": "INVALID", "reason": str(e), "witness": None, "checked_rows": 0}
     print(json.dumps(answer, sort_keys=True))

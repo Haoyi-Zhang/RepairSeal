@@ -8,6 +8,7 @@ ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
 from proof_dag_producer import produce
 from refutation_witness_producer import produce as compact_produce
+from producer import Producer
 
 def request(refuted=False):
     source='unsigned f(unsigned x) { return x; }'
@@ -24,6 +25,16 @@ def run(script,*args):
     return result.stdout.decode('utf-8')
 
 class CliUtf8Tests(unittest.TestCase):
+    def test_replay_checker_reads_utf8_request_under_non_utf8_default(self):
+        req=request();req['id']='\u5ba1'*64
+        cert=Producer(req).certificate()
+        with TemporaryDirectory() as folder:
+            rp=Path(folder)/'request.json';cp=Path(folder)/'certificate.json'
+            rp.write_text(json.dumps(req,ensure_ascii=False),encoding='utf-8')
+            cp.write_text(json.dumps(cert,ensure_ascii=False),encoding='utf-8')
+            result=json.loads(run('checker.py','--request',rp,'--certificate',cp))
+            self.assertEqual(result['status'],'ACCEPT')
+
     def test_producer_retains_receiver_owned_request_identifier(self):
         req=request()
         with TemporaryDirectory() as folder:
