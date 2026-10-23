@@ -21,6 +21,37 @@ checking and the certificate-free topological evaluator perform the same local
 semantic-cell work. The one-point reduction corresponds to a different,
 existential obligation.
 
+## Receiver-owned cross-request reuse
+
+The optional `src/reusing_checker.py` checks the same full packets while retaining
+independently established cells in a single-threaded, process-local receiver cache.
+No producer cache or serialized cache is imported. Structural identities include the
+operator, sort, literal or input name, and complete child identities; point identities
+include named unsigned values rather than coordinate offsets. Changed source is rebuilt
+and current bindings/roots/vectors are still checked. A failed packet adds no cell facts.
+At most 65,536 cells and 32,768 structural terms are retained; term-space pressure clears
+the cache, and cell-space pressure merely leaves new cells uncached. This changes reuse
+work, not acceptance. The trusted in-process cache is not an untrusted interchange format.
+
+```sh
+python -B tests/test_receiver_reuse.py -v
+python -O -B tests/test_receiver_reuse.py -v
+python -B tests/receiver_reuse_study.py --output /absolute/fresh/reuse.json --compare results/receiver-reuse.json
+```
+
+In the fixed fixture-then-stress order, all 380 retained requests have identical status
+and canonical witness under cold full/direct and cached full/direct checking. Each cold
+arm evaluates 1,179,684 cells; each equally informed cached arm recomputes 413,944 and
+reuses 765,740. Full-vector checking still compares all 1,179,684 submitted cells, whereas
+the direct arm receives no vectors. There is no new wall-time experiment or claim of a
+certificate-exclusive cache advantage. Eight regression methods cover changed source,
+new domain values, reordered named axes, current packet tampering, invalid packet rollback,
+capacity limits, and undefined candidates in ordinary and optimized Python execution.
+The warm receiver also rejects all 600 retained first-seed full-packet mutations (20
+correct fixtures, 30 classes), with no alteration of previously established cell facts.
+These are replayed controls, not 600 new defects. This is a new owned finite replay,
+not added Codeflaws admission or a rewrite of old runs.
+
 ## Setup and run
 
 Use Python 3.10 or later. Portable receiver and comparison checks need only the
