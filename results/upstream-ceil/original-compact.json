@@ -1,0 +1,41 @@
+{
+  "kind": "finite-semantic-refutation-v1",
+  "request_id": "upstream-ceil-original",
+  "word_bits": 32,
+  "input_order": [
+    "m",
+    "n"
+  ],
+  "domains": {
+    "m": [
+      0,
+      1,
+      2,
+      31,
+      32,
+      4294967294,
+      4294967295
+    ],
+    "n": [
+      1,
+      2,
+      3,
+      7,
+      32,
+      4294967295
+    ]
+  },
+  "source_sha256": {
+    "original": "169456f8c8b37db614df683613bf3bea8a34abdea6f2d6142622812d2f119569",
+    "candidate": "169456f8c8b37db614df683613bf3bea8a34abdea6f2d6142622812d2f119569",
+    "reference": "e32e4a46fff01b82239c2cbda9950733cb79efbb02bfab6af1cc64d4d7128a19",
+    "repair_guard": "d37566c020d205c2309b6c565f6ce5dd77d90c379356fb6e761988e4a306231e"
+  },
+  "obligation": "repair",
+  "input": [
+    2,
+    4294967295
+  ],
+  "trace": [],
+  "certificate_sha256": "5b4fa5bbda55a77d79a74861a725462fd9cee4b4fde15ada9a52c43211170053"
+}

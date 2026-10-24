@@ -1,0 +1,27 @@
+{
+  "id": "upstream-ceil-trace-overfit",
+  "word_bits": 32,
+  "inputs": {
+    "m": [
+      0,
+      1,
+      2,
+      31,
+      32,
+      4294967294,
+      4294967295
+    ],
+    "n": [
+      1,
+      2,
+      3,
+      7,
+      32,
+      4294967295
+    ]
+  },
+  "original": "unsigned f(unsigned m, unsigned n) { return (m + n - 1u) / n; }",
+  "candidate": "unsigned f(unsigned m, unsigned n) { unsigned r = (m + n - 1u) / n; unsigned scratch = 0u; if (m == 2u) { scratch = 1u; } else { scratch = 0u; } if (n == 2u) { if (m % n != 0u) { r = m / n + 1u; } else { r = m / n; } } else { r = r; } return r; }",
+  "reference": "unsigned f(unsigned m, unsigned n) { unsigned r = 0u; if (m == 0u) { r = 0u; } else { r = 1u + (m - 1u) / n; } return r; }",
+  "repair_guard": "m > (4294967295u - (n - 1u))"
+}

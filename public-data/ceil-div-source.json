@@ -1,0 +1,21 @@
+{
+  "repository": "https://github.com/ggml-org/llama.cpp",
+  "pull_request": "https://github.com/ggml-org/llama.cpp/pull/25245",
+  "path": "ggml/src/ggml-vulkan/ggml-vulkan.cpp",
+  "before": {
+    "commit": "d80e87850173a674ea2673fd003ac54ac93774c0",
+    "sha256": "63140287d1ed1722d69d30881e4140da9306b3231bc83b07937bc7bbd30dbc77",
+    "line": "#define CEIL_DIV(M, N) (((M) + (N)-1) / (N))"
+  },
+  "after": {
+    "commit": "86961efd5675279a4ec2f3d1a3c7d6e3803c1935",
+    "sha256": "c542dcf979f6807b56f799bdb14be644836bc1bf3f3dd068ff9bf712da68de27",
+    "line": "#define CEIL_DIV(M, N) (((M) / (N)) + (((M) % (N)) != 0))"
+  },
+  "retrieved": "2026-10-24",
+  "premises": "M and N are pure uint32_t scalar values, N>0, no side effects or repeated macro-argument evaluation effects. The bounded consumer observes the local ceiling-division value, not Vulkan or caller state.",
+  "normalization": "Use m,n as unsigned 32-bit inputs. Expand comparison-to-integer conversion as an if with add-one versus no-add branches. A separate reference returns zero for m=0 and 1+(m-1)/n otherwise. Source-if trace is that of the explicit scalar normalization, not a native macro trace.",
+  "repair_region": "m > UINT32_MAX - (n-1), where the mathematical numerator m+n-1 exceeds UINT32_MAX",
+  "copyright": "Copyright (c) 2023-2026 The ggml authors; MIT, see ceil-div-LICENSE.txt",
+  "boundary": "One actual local arithmetic edit with manual correspondence; all adverse candidate variants are authored controls, not external patches or a sampled dataset."
+}

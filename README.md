@@ -1,12 +1,62 @@
 # RepairSeal
 
 This artifact accompanies *Source-Bound Semantic Certificates for Finite
-Program-Repair Checking: Full-Vector Work Equivalence and Compact Refutations*.
+Program-Repair Checking*, a bounded evidence-design and matched-recalculation
+study of explicit repair policies and canonical diagnostics.
 
 Measurements come from executed artifact workflows; the current complete-JSON
 receiver is not a streaming implementation.
 
 ## Scope
+
+### Source-linked ceiling-division consumer case
+
+The actual upstream llama.cpp macro edit is retained in
+`public-data/ceil-div-source.json`, with immutable before/after revisions,
+full-source fingerprints, exact macro lines and the MIT notice in
+`public-data/ceil-div-LICENSE.txt`. The manual correspondence proof is
+`proofs/ceil-div-correspondence.md`. Only pure unsigned 32-bit scalar arguments
+and a nonzero divisor are in scope; the study executes owned normalized
+functions, not llama.cpp, Vulkan, upstream tests or a vulnerable application.
+
+One command retrieves both original source files as text, checks their byte
+identities and macro lines, then regenerates the finite correspondence and
+consumer decisions in a new directory:
+
+```sh
+python -B tests/upstream_ceil_case.py --verify-upstream --output /new/ceil-result
+```
+
+Omit `--verify-upstream` for the offline model/packet replay. The canonical
+inputs, 210 interpreted candidate-point observations, five full packets, four
+compact packets and outcomes are in `results/upstream-ceil/`. Each request has
+42 points: 12 in the overflow repair region and 30 preservation points. The
+actual replacement is accepted; the unchanged original is refuted. Three
+additional adverse candidates are explicitly authored controls for preservation,
+an unused undefined assignment and trace-priority/overfit behavior, not
+independent upstream fixes. Full and certificate-free direct checking agree
+on every verdict, canonical witness and cell count.
+
+For a separate receiving process:
+
+```sh
+python -B src/proof_dag_checker.py results/upstream-ceil/supplied-request.json results/upstream-ceil/supplied-full.json
+python -B -m unittest discover -s tests -p test_upstream_ceil.py -v
+```
+
+The receiver obtains its authoritative request separately from the packet.
+Full checking authenticates every intermediate value and the declared policy;
+direct recalculation makes the same decision without producer evidence.
+Compact refutation can accept the authentic nonleast point (2,UINT_MAX), while
+the full trace-priority diagnostic is (31,UINT_MAX) for the owned trace control.
+Neither format authenticates external source history or the manual mapping.
+Paper tables are regenerated only after replay of the retained packets.
+
+The older Codeflaws native observations remain derived historical records.
+Their original C and test bytes are not redistributed. The exact-archive and
+four-source fingerprint gates and full opt-in command are documented below
+under **External archive retrieval and identity gate**; offline model replay is
+not a native rerun. No current ceiling-division run changes that evidence.
 
 The receiver checks loop-free scalar unsigned-32 C over explicit finite ordered
 input domains. It owns the original program, candidate, reference and repair
