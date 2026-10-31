@@ -137,6 +137,17 @@ class StreamTests(unittest.TestCase):
         self.assertLess(reader.tell(),header_size+10000)
         self.assertFalse(reader.eof_checked)
 
+    def test_maximum_product_and_full_width_unsigned_records(self):
+        values=list(range(63))+[core.MASK]
+        req=request('return x + 1u;',axes={'x':values,'y':values})
+        packet=produce(req)
+        self.assertEqual(len(packet['points']),4096)
+        result=stream.check_stream(req,BoundedInput(stream.encode_packet(packet)))
+        expected=core.check(req,packet)
+        self.assertEqual((result['status'],result['witness']),
+                         (expected['status'],expected['witness']))
+        self.assertEqual(result['checked_cells'],expected['checked_cells'])
+
     def test_terminal_failure_exposes_no_partial_cli_verdict(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);req=root/'request.json';wire=root/'packet.rows'
