@@ -31,6 +31,38 @@ Canonical construction elaborates original, candidate, and reference in that ord
 
 This format can support universal acceptance and canonical counterexample selection because it covers the complete finite domain. It is not a compressed symbolic proof: completed checking of a locally valid certificate and memoized topological direct evaluation both visit every node--point cell exactly once. The checker computes expected local values and compares submitted cells; malformed or inconsistent evidence can reject early. The current producer also constructs vectors topologically once per point; a retained chain regression confirms byte-identical certificates relative to a legacy recursive construction while eliminating repeated root traversals.
 
+## Bounded framed full-vector interchange
+
+The separate `finite-semantic-vector-stream` protocol has exactly one canonical
+UTF-8 JSON record per newline-terminated line. Its first record has the full
+packet's authoritative header fields, excluding `nodes` and
+`certificate_sha256`; `kind` names this protocol and `node_count` gives the exact
+receiver-reconstructed count. The receiver compares the entire header line
+with its own canonical serialization and does not allocate an untrusted header.
+
+Exactly `node_count` node records follow, in reconstructed topological order.
+Each record has the full format's exact descriptor and complete strictly typed
+vector. A read is bounded by the expected canonical descriptor length plus
+16 plus 11 times the receiver's point count: an unsigned cell has at most ten
+digits and a comma, and a Boolean cell is shorter. The terminal record is
+`{"kind":"end","seal":...}` with the lowercase SHA-256 of all preceding raw
+lines, including newlines. Its line is bounded to 256 bytes. Duplicate keys,
+noncanonical serialization, incorrect descriptors, cell values or types,
+missing records, a bad seal, and any byte after the terminal record are invalid.
+The receiver returns no semantic verdict before the terminal and exact EOF.
+This seal detects changed bytes, not external source provenance or semantic
+truth; each cell is independently recalculated from receiver-owned semantics.
+
+Future-use counts include repeated child references. A checked vector is
+released after its last node consumer unless it is an obligation root or a
+candidate source-if reach/guard root needed for canonical diagnosis. The peak
+counter includes a newly computed parent before its consumed children are
+freed. It excludes the received row, byte buffer, topology and Python object
+overhead; the separate allocation study includes those receiving costs.
+The direct liveness evaluator uses the same rule kernel and release policy.
+The producer-side conversion of a full packet does not validate that packet
+and must not be used as a semantic acceptance result.
+
 ## `finite-semantic-refutation-v1`
 
 The compact format contains exactly:

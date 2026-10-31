@@ -1,0 +1,4826 @@
+{
+  "scope": "50 predetermined retained requests; three repetitions per arm; Python allocations, not RSS",
+  "boundary": "same decoded request; certificate file decoding, reconstruction and validation included; producer conversion excluded",
+  "selection": "20 correct fixtures plus stress manifest offsets 0,10,...,290",
+  "runtime": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "implementation": "CPython",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "summary": {
+    "requests": 50,
+    "measurements": 600,
+    "median_stream_to_full": 0.4931636609566229,
+    "median_live_to_direct": 0.6692367538596118,
+    "median_stream_to_matched_direct": 1.5908665530978832
+  },
+  "source_bindings": {
+    "src/vector_stream.py": "f94dc016107cdb163c61570660b579c51173465fc3bb758d424b85af4cba33e3",
+    "src/proof_dag_checker.py": "6b111e898f3999929f7e28f39fde127b4e8fc4139bcf9f5a8afd82527e458a01",
+    "tests/vector_stream_study.py": "0148493630b111b43adcfb8624d764bfd6c08ca4c9f449ac5c7d630b79211b60"
+  },
+  "paired": [
+    {
+      "request": "fixture-01-correct",
+      "median_peak_python_bytes": {
+        "full-json": 79662,
+        "direct-full": 36326,
+        "framed-stream": 45557,
+        "direct-liveness": 26754
+      },
+      "stream_to_full": 0.5718786874544952,
+      "live_to_direct": 0.736497274679293,
+      "stream_to_matched_direct": 1.7028107946475293
+    },
+    {
+      "request": "fixture-02-correct",
+      "median_peak_python_bytes": {
+        "full-json": 78407,
+        "direct-full": 35342,
+        "framed-stream": 43811,
+        "direct-liveness": 25798
+      },
+      "stream_to_full": 0.5587638858775364,
+      "live_to_direct": 0.7299530303887726,
+      "stream_to_matched_direct": 1.698232421117916
+    },
+    {
+      "request": "fixture-03-correct",
+      "median_peak_python_bytes": {
+        "full-json": 83610,
+        "direct-full": 37982,
+        "framed-stream": 46113,
+        "direct-liveness": 27586
+      },
+      "stream_to_full": 0.5515249372084678,
+      "live_to_direct": 0.7262914011900374,
+      "stream_to_matched_direct": 1.671608787065903
+    },
+    {
+      "request": "fixture-04-correct",
+      "median_peak_python_bytes": {
+        "full-json": 80702,
+        "direct-full": 36758,
+        "framed-stream": 43887,
+        "direct-liveness": 26966
+      },
+      "stream_to_full": 0.543815518822334,
+      "live_to_direct": 0.7336090102834757,
+      "stream_to_matched_direct": 1.6274938811837127
+    },
+    {
+      "request": "fixture-05-correct",
+      "median_peak_python_bytes": {
+        "full-json": 85291,
+        "direct-full": 38846,
+        "framed-stream": 45842,
+        "direct-liveness": 28206
+      },
+      "stream_to_full": 0.537477576766599,
+      "live_to_direct": 0.7260979251402976,
+      "stream_to_matched_direct": 1.6252570375097497
+    },
+    {
+      "request": "fixture-06-correct",
+      "median_peak_python_bytes": {
+        "full-json": 79503,
+        "direct-full": 36182,
+        "framed-stream": 43585,
+        "direct-liveness": 26634
+      },
+      "stream_to_full": 0.548218306227438,
+      "live_to_direct": 0.7361118788347797,
+      "stream_to_matched_direct": 1.6364421416234887
+    },
+    {
+      "request": "fixture-07-correct",
+      "median_peak_python_bytes": {
+        "full-json": 105083,
+        "direct-full": 44742,
+        "framed-stream": 50679,
+        "direct-liveness": 30718
+      },
+      "stream_to_full": 0.4822759152289143,
+      "live_to_direct": 0.6865584909034017,
+      "stream_to_matched_direct": 1.6498144410443387
+    },
+    {
+      "request": "fixture-08-correct",
+      "median_peak_python_bytes": {
+        "full-json": 109429,
+        "direct-full": 46761,
+        "framed-stream": 50181,
+        "direct-liveness": 30329
+      },
+      "stream_to_full": 0.45857131107841614,
+      "live_to_direct": 0.648596052265777,
+      "stream_to_matched_direct": 1.6545550463252992
+    },
+    {
+      "request": "fixture-09-correct",
+      "median_peak_python_bytes": {
+        "full-json": 109662,
+        "direct-full": 49534,
+        "framed-stream": 50941,
+        "direct-liveness": 31766
+      },
+      "stream_to_full": 0.46452736590614796,
+      "live_to_direct": 0.6412968869867162,
+      "stream_to_matched_direct": 1.6036328149593906
+    },
+    {
+      "request": "fixture-10-correct",
+      "median_peak_python_bytes": {
+        "full-json": 112194,
+        "direct-full": 50974,
+        "framed-stream": 50883,
+        "direct-liveness": 32630
+      },
+      "stream_to_full": 0.45352692657361354,
+      "live_to_direct": 0.640130262486758,
+      "stream_to_matched_direct": 1.5593931964449892
+    },
+    {
+      "request": "fixture-11-correct",
+      "median_peak_python_bytes": {
+        "full-json": 91702,
+        "direct-full": 41873,
+        "framed-stream": 46617,
+        "direct-liveness": 27493
+      },
+      "stream_to_full": 0.5083531438790866,
+      "live_to_direct": 0.6565806128053877,
+      "stream_to_matched_direct": 1.6955952424253447
+    },
+    {
+      "request": "fixture-12-correct",
+      "median_peak_python_bytes": {
+        "full-json": 93477,
+        "direct-full": 42737,
+        "framed-stream": 47564,
+        "direct-liveness": 28113
+      },
+      "stream_to_full": 0.5088310493490378,
+      "live_to_direct": 0.6578140721154971,
+      "stream_to_matched_direct": 1.6918863159392452
+    },
+    {
+      "request": "fixture-13-correct",
+      "median_peak_python_bytes": {
+        "full-json": 92962,
+        "direct-full": 43086,
+        "framed-stream": 47740,
+        "direct-liveness": 29982
+      },
+      "stream_to_full": 0.513543168176244,
+      "live_to_direct": 0.6958640857819245,
+      "stream_to_matched_direct": 1.5922887065572677
+    },
+    {
+      "request": "fixture-14-correct",
+      "median_peak_python_bytes": {
+        "full-json": 90035,
+        "direct-full": 41934,
+        "framed-stream": 47207,
+        "direct-liveness": 29074
+      },
+      "stream_to_full": 0.5243183206530794,
+      "live_to_direct": 0.6933276100538942,
+      "stream_to_matched_direct": 1.62368439155259
+    },
+    {
+      "request": "fixture-15-correct",
+      "median_peak_python_bytes": {
+        "full-json": 88842,
+        "direct-full": 41401,
+        "framed-stream": 45671,
+        "direct-liveness": 27633
+      },
+      "stream_to_full": 0.5140699218837937,
+      "live_to_direct": 0.6674476461921209,
+      "stream_to_matched_direct": 1.6527702384829732
+    },
+    {
+      "request": "fixture-16-correct",
+      "median_peak_python_bytes": {
+        "full-json": 100803,
+        "direct-full": 46497,
+        "framed-stream": 49768,
+        "direct-liveness": 31225
+      },
+      "stream_to_full": 0.4937154648175153,
+      "live_to_direct": 0.6715487020668001,
+      "stream_to_matched_direct": 1.5938510808646917
+    },
+    {
+      "request": "fixture-17-correct",
+      "median_peak_python_bytes": {
+        "full-json": 111752,
+        "direct-full": 51681,
+        "framed-stream": 53851,
+        "direct-liveness": 32301
+      },
+      "stream_to_full": 0.48187951893478415,
+      "live_to_direct": 0.6250072560515469,
+      "stream_to_matched_direct": 1.667162007368193
+    },
+    {
+      "request": "fixture-18-correct",
+      "median_peak_python_bytes": {
+        "full-json": 93816,
+        "direct-full": 44073,
+        "framed-stream": 49519,
+        "direct-liveness": 30177
+      },
+      "stream_to_full": 0.5278310735908587,
+      "live_to_direct": 0.684704921380437,
+      "stream_to_matched_direct": 1.640951718195977
+    },
+    {
+      "request": "fixture-19-correct",
+      "median_peak_python_bytes": {
+        "full-json": 75790,
+        "direct-full": 34726,
+        "framed-stream": 43803,
+        "direct-liveness": 26066
+      },
+      "stream_to_full": 0.5779522364428025,
+      "live_to_direct": 0.750619132638369,
+      "stream_to_matched_direct": 1.6804649735287347
+    },
+    {
+      "request": "fixture-20-correct",
+      "median_peak_python_bytes": {
+        "full-json": 86822,
+        "direct-full": 40321,
+        "framed-stream": 46093,
+        "direct-liveness": 27533
+      },
+      "stream_to_full": 0.5308907880491119,
+      "live_to_direct": 0.6828451675305672,
+      "stream_to_matched_direct": 1.6741001707042458
+    },
+    {
+      "request": "stress-001-correct",
+      "median_peak_python_bytes": {
+        "full-json": 96582,
+        "direct-full": 44382,
+        "framed-stream": 48081,
+        "direct-liveness": 29818
+      },
+      "stream_to_full": 0.4978256818040629,
+      "live_to_direct": 0.6718489477716191,
+      "stream_to_matched_direct": 1.6124823931853243
+    },
+    {
+      "request": "stress-011-regression",
+      "median_peak_python_bytes": {
+        "full-json": 116041,
+        "direct-full": 54772,
+        "framed-stream": 53870,
+        "direct-liveness": 35108
+      },
+      "stream_to_full": 0.4642324695581734,
+      "live_to_direct": 0.6409844446067333,
+      "stream_to_matched_direct": 1.5344081121111997
+    },
+    {
+      "request": "stress-021-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99806,
+        "direct-full": 45982,
+        "framed-stream": 49386,
+        "direct-liveness": 31630
+      },
+      "stream_to_full": 0.49481995070436646,
+      "live_to_direct": 0.6878778652516202,
+      "stream_to_matched_direct": 1.561365791969649
+    },
+    {
+      "request": "stress-031-regression",
+      "median_peak_python_bytes": {
+        "full-json": 113789,
+        "direct-full": 53636,
+        "framed-stream": 53469,
+        "direct-liveness": 35236
+      },
+      "stream_to_full": 0.4698960356449217,
+      "live_to_direct": 0.6569468267581475,
+      "stream_to_matched_direct": 1.517453740492678
+    },
+    {
+      "request": "stress-041-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99806,
+        "direct-full": 45982,
+        "framed-stream": 49558,
+        "direct-liveness": 31630
+      },
+      "stream_to_full": 0.49654329399034125,
+      "live_to_direct": 0.6878778652516202,
+      "stream_to_matched_direct": 1.566803667404363
+    },
+    {
+      "request": "stress-051-regression",
+      "median_peak_python_bytes": {
+        "full-json": 116041,
+        "direct-full": 54772,
+        "framed-stream": 54091,
+        "direct-liveness": 35108
+      },
+      "stream_to_full": 0.4661369688299825,
+      "live_to_direct": 0.6409844446067333,
+      "stream_to_matched_direct": 1.5407029736812123
+    },
+    {
+      "request": "stress-061-correct",
+      "median_peak_python_bytes": {
+        "full-json": 101566,
+        "direct-full": 46830,
+        "framed-stream": 50073,
+        "direct-liveness": 31274
+      },
+      "stream_to_full": 0.49300947167359155,
+      "live_to_direct": 0.6678197736493701,
+      "stream_to_matched_direct": 1.601106350322952
+    },
+    {
+      "request": "stress-071-regression",
+      "median_peak_python_bytes": {
+        "full-json": 113731,
+        "direct-full": 53636,
+        "framed-stream": 52745,
+        "direct-liveness": 34444
+      },
+      "stream_to_full": 0.46376977253343415,
+      "live_to_direct": 0.6421806249533896,
+      "stream_to_matched_direct": 1.5313262106607828
+    },
+    {
+      "request": "stress-081-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99650,
+        "direct-full": 46038,
+        "framed-stream": 49322,
+        "direct-liveness": 31742
+      },
+      "stream_to_full": 0.4949523331660813,
+      "live_to_direct": 0.6894739128545984,
+      "stream_to_matched_direct": 1.5538403377228909
+    },
+    {
+      "request": "stress-091-regression",
+      "median_peak_python_bytes": {
+        "full-json": 113845,
+        "direct-full": 53692,
+        "framed-stream": 52757,
+        "direct-liveness": 34500
+      },
+      "stream_to_full": 0.4634107778119373,
+      "live_to_direct": 0.6425538255233554,
+      "stream_to_matched_direct": 1.5291884057971015
+    },
+    {
+      "request": "stress-101-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99862,
+        "direct-full": 46038,
+        "framed-stream": 49245,
+        "direct-liveness": 30950
+      },
+      "stream_to_full": 0.49313052011776254,
+      "live_to_direct": 0.6722707328728442,
+      "stream_to_matched_direct": 1.5911147011308562
+    },
+    {
+      "request": "stress-111-regression",
+      "median_peak_python_bytes": {
+        "full-json": 114365,
+        "direct-full": 53828,
+        "framed-stream": 52982,
+        "direct-liveness": 34636
+      },
+      "stream_to_full": 0.4632711056704411,
+      "live_to_direct": 0.6434569369101583,
+      "stream_to_matched_direct": 1.5296801016283637
+    },
+    {
+      "request": "stress-121-correct",
+      "median_peak_python_bytes": {
+        "full-json": 101572,
+        "direct-full": 46830,
+        "framed-stream": 49745,
+        "direct-liveness": 31274
+      },
+      "stream_to_full": 0.48975111251132203,
+      "live_to_direct": 0.6678197736493701,
+      "stream_to_matched_direct": 1.5906184050649101
+    },
+    {
+      "request": "stress-131-regression",
+      "median_peak_python_bytes": {
+        "full-json": 113789,
+        "direct-full": 53636,
+        "framed-stream": 52646,
+        "direct-liveness": 34444
+      },
+      "stream_to_full": 0.46266335058749086,
+      "live_to_direct": 0.6421806249533896,
+      "stream_to_matched_direct": 1.5284519800255487
+    },
+    {
+      "request": "stress-141-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99806,
+        "direct-full": 45982,
+        "framed-stream": 49294,
+        "direct-liveness": 30838
+      },
+      "stream_to_full": 0.49389816243512413,
+      "live_to_direct": 0.6706537340698534,
+      "stream_to_matched_direct": 1.598482391854206
+    },
+    {
+      "request": "stress-151-regression",
+      "median_peak_python_bytes": {
+        "full-json": 116041,
+        "direct-full": 54772,
+        "framed-stream": 53866,
+        "direct-liveness": 35108
+      },
+      "stream_to_full": 0.46419799898311803,
+      "live_to_direct": 0.6409844446067333,
+      "stream_to_matched_direct": 1.5342941779651362
+    },
+    {
+      "request": "stress-161-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99806,
+        "direct-full": 45982,
+        "framed-stream": 49724,
+        "direct-liveness": 31630
+      },
+      "stream_to_full": 0.4982065206500611,
+      "live_to_direct": 0.6878778652516202,
+      "stream_to_matched_direct": 1.572051849509959
+    },
+    {
+      "request": "stress-171-regression",
+      "median_peak_python_bytes": {
+        "full-json": 113789,
+        "direct-full": 53636,
+        "framed-stream": 53521,
+        "direct-liveness": 35236
+      },
+      "stream_to_full": 0.4703530218210899,
+      "live_to_direct": 0.6569468267581475,
+      "stream_to_matched_direct": 1.518929503916449
+    },
+    {
+      "request": "stress-181-correct",
+      "median_peak_python_bytes": {
+        "full-json": 101674,
+        "direct-full": 46830,
+        "framed-stream": 50568,
+        "direct-liveness": 31274
+      },
+      "stream_to_full": 0.4973542891988119,
+      "live_to_direct": 0.6678197736493701,
+      "stream_to_matched_direct": 1.6169341945385944
+    },
+    {
+      "request": "stress-191-regression",
+      "median_peak_python_bytes": {
+        "full-json": 116041,
+        "direct-full": 54772,
+        "framed-stream": 53865,
+        "direct-liveness": 35108
+      },
+      "stream_to_full": 0.46418938133935417,
+      "live_to_direct": 0.6409844446067333,
+      "stream_to_matched_direct": 1.5342656944286202
+    },
+    {
+      "request": "stress-201-correct",
+      "median_peak_python_bytes": {
+        "full-json": 100150,
+        "direct-full": 46134,
+        "framed-stream": 49409,
+        "direct-liveness": 31046
+      },
+      "stream_to_full": 0.4933499750374438,
+      "live_to_direct": 0.6729527029956215,
+      "stream_to_matched_direct": 1.5914771629195388
+    },
+    {
+      "request": "stress-211-regression",
+      "median_peak_python_bytes": {
+        "full-json": 111921,
+        "direct-full": 52788,
+        "framed-stream": 52571,
+        "direct-liveness": 34444
+      },
+      "stream_to_full": 0.46971524557500377,
+      "live_to_direct": 0.6524967795711146,
+      "stream_to_matched_direct": 1.5262745325746139
+    },
+    {
+      "request": "stress-221-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99806,
+        "direct-full": 45982,
+        "framed-stream": 49224,
+        "direct-liveness": 31630
+      },
+      "stream_to_full": 0.49319680179548325,
+      "live_to_direct": 0.6878778652516202,
+      "stream_to_matched_direct": 1.5562440720834652
+    },
+    {
+      "request": "stress-231-regression",
+      "median_peak_python_bytes": {
+        "full-json": 114133,
+        "direct-full": 53788,
+        "framed-stream": 53121,
+        "direct-liveness": 34596
+      },
+      "stream_to_full": 0.4654306817484864,
+      "live_to_direct": 0.6431917899903324,
+      "stream_to_matched_direct": 1.5354665279223032
+    },
+    {
+      "request": "stress-241-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99806,
+        "direct-full": 45982,
+        "framed-stream": 49665,
+        "direct-liveness": 31630
+      },
+      "stream_to_full": 0.4976153738252209,
+      "live_to_direct": 0.6878778652516202,
+      "stream_to_matched_direct": 1.5701865317736325
+    },
+    {
+      "request": "stress-251-regression",
+      "median_peak_python_bytes": {
+        "full-json": 113845,
+        "direct-full": 53692,
+        "framed-stream": 53608,
+        "direct-liveness": 35292
+      },
+      "stream_to_full": 0.47088585357284024,
+      "live_to_direct": 0.6573046263875437,
+      "stream_to_matched_direct": 1.5189844724016774
+    },
+    {
+      "request": "stress-261-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99806,
+        "direct-full": 45982,
+        "framed-stream": 49141,
+        "direct-liveness": 31630
+      },
+      "stream_to_full": 0.4923651884656233,
+      "live_to_direct": 0.6878778652516202,
+      "stream_to_matched_direct": 1.553619981030667
+    },
+    {
+      "request": "stress-271-regression",
+      "median_peak_python_bytes": {
+        "full-json": 116041,
+        "direct-full": 54772,
+        "framed-stream": 53729,
+        "direct-liveness": 35108
+      },
+      "stream_to_full": 0.46301738178747165,
+      "live_to_direct": 0.6409844446067333,
+      "stream_to_matched_direct": 1.5303919334624587
+    },
+    {
+      "request": "stress-281-correct",
+      "median_peak_python_bytes": {
+        "full-json": 99704,
+        "direct-full": 45982,
+        "framed-stream": 48399,
+        "direct-liveness": 30838
+      },
+      "stream_to_full": 0.4854268635160074,
+      "live_to_direct": 0.6706537340698534,
+      "stream_to_matched_direct": 1.569459757442117
+    },
+    {
+      "request": "stress-291-regression",
+      "median_peak_python_bytes": {
+        "full-json": 113789,
+        "direct-full": 53636,
+        "framed-stream": 53838,
+        "direct-liveness": 35236
+      },
+      "stream_to_full": 0.47313887985657666,
+      "live_to_direct": 0.6569468267581475,
+      "stream_to_matched_direct": 1.5279259847882847
+    }
+  ],
+  "raw": [
+    {
+      "request": "fixture-01-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 80062
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 36590
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45825
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26866
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 36326
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 44877
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26754
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 79662
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45557
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26730
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 79638
+    },
+    {
+      "request": "fixture-01-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 36254
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 35374
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 43673
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 25814
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 78306
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 43811
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 25798
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 78407
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 35342
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 25798
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 78466
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 35342
+    },
+    {
+      "request": "fixture-02-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 44026
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45675
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27586
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 83610
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 37982
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27586
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 83610
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 37982
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 46113
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 83508
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 37982
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 46183
+    },
+    {
+      "request": "fixture-03-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27586
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26966
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 80702
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 36758
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 43657
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 80655
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 36758
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45396
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26966
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 36758
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 43887
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26966
+    },
+    {
+      "request": "fixture-04-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 80702
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 85126
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 38846
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45895
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 28206
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 38846
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45633
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 28206
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 85291
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45842
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 28206
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 85338
+    },
+    {
+      "request": "fixture-05-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 38846
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 36182
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 43563
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26634
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 79550
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 43585
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26634
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 79448
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 36182
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26634
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 79503
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 36182
+    },
+    {
+      "request": "fixture-06-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 43672
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50633
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30718
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 105083
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 44742
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30718
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 105083
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 44742
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50680
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 105083
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 44742
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50679
+    },
+    {
+      "request": "fixture-07-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30718
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30329
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 109429
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 46761
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50181
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 109429
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 46761
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50065
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30329
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 46761
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50274
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30329
+    },
+    {
+      "request": "fixture-08-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 109429
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 109662
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 49534
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50941
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31766
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 49534
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50930
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31766
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 109662
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52972
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31766
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 109662
+    },
+    {
+      "request": "fixture-09-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 49534
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 50974
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50823
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 32630
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 112194
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50883
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 32630
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 112194
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 50974
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 32630
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 112194
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 50974
+    },
+    {
+      "request": "fixture-10-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52003
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45534
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27493
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 91702
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 41873
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27493
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 91702
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 41873
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47252
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 91749
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 41873
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 46617
+    },
+    {
+      "request": "fixture-11-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27493
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 28113
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 93477
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 42737
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47564
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 93270
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 42737
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 46325
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 28113
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 42737
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47884
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 28113
+    },
+    {
+      "request": "fixture-12-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 93477
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 92962
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 43086
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47826
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 29982
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 43086
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47643
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 29982
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 92962
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47740
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 29982
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 92962
+    },
+    {
+      "request": "fixture-13-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 43086
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 41934
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47270
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 29074
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 90035
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47046
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 29074
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 89870
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 41934
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 29074
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 90082
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 41934
+    },
+    {
+      "request": "fixture-14-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47207
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45520
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27633
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 88842
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 41401
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27633
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 88842
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 41401
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45682
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 88740
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 41401
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45671
+    },
+    {
+      "request": "fixture-15-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27633
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31225
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 100803
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 46497
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49856
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 100803
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 46497
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49768
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31225
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 46497
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49756
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31225
+    },
+    {
+      "request": "fixture-16-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 100803
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 111752
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 51681
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 54232
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 32301
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 51681
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53822
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 32301
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 111752
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53851
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 32301
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 111752
+    },
+    {
+      "request": "fixture-17-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 51681
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 44073
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49538
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30177
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 93769
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49519
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30177
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 93816
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 44073
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30177
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 93816
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 44073
+    },
+    {
+      "request": "fixture-18-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 48539
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 45607
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26066
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 75790
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 34726
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26066
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 75790
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 34726
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 43803
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 75790
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 34726
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 43420
+    },
+    {
+      "request": "fixture-19-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 26066
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27533
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 86775
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 40321
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 46224
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 86822
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 40321
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 46093
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27533
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 40321
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 46083
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 27533
+    },
+    {
+      "request": "fixture-20-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 86822
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 96582
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 44382
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 48081
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 29818
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 44382
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 48322
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 29818
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 96582
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 47994
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 29818
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 96535
+    },
+    {
+      "request": "stress-001-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 44382
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53808
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 54813
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-011-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53870
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49386
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49230
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49652
+    },
+    {
+      "request": "stress-021-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35236
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53490
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53437
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35236
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53469
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35236
+    },
+    {
+      "request": "stress-031-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49558
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49198
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50118
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-041-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 54606
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 54091
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 115829
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-051-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53939
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50349
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31274
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 101462
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 46830
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31274
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 101674
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 46830
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50073
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 101566
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 46830
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49794
+    },
+    {
+      "request": "stress-061-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31274
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34444
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 113731
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52764
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 113577
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52745
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34444
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52694
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34444
+    },
+    {
+      "request": "stress-071-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99650
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 46038
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49322
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31742
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 46038
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49322
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31742
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 99760
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49207
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31742
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99650
+    },
+    {
+      "request": "stress-081-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 46038
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 53692
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52663
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34500
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 113845
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53137
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34500
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 113845
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 53692
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34500
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 113633
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 53692
+    },
+    {
+      "request": "stress-091-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52757
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49245
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30950
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99812
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 46038
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30950
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 99862
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 46038
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49298
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99862
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 46038
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49078
+    },
+    {
+      "request": "stress-101-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30950
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34636
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 114365
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 53828
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52997
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 114153
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 53828
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52982
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34636
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 53828
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52940
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34636
+    },
+    {
+      "request": "stress-111-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 114365
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 101674
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 46830
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49745
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31274
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 46830
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49797
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31274
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 101514
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49744
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31274
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 101572
+    },
+    {
+      "request": "stress-121-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 46830
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52701
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34444
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52646
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34444
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34444
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-131-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52629
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 48493
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30838
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30838
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49637
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49294
+    },
+    {
+      "request": "stress-141-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30838
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 54870
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53866
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53850
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-151-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49768
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49724
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49527
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-161-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53521
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35236
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53459
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35236
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35236
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-171-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53673
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50568
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31274
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 101674
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 46830
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31274
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 101674
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 46830
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 50788
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 101674
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 46830
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49883
+    },
+    {
+      "request": "stress-181-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31274
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 55698
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53865
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53782
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-191-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 100150
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 46134
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49985
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31046
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 46134
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49189
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31046
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 100150
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49409
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31046
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 100150
+    },
+    {
+      "request": "stress-201-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 46134
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 52788
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52331
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34444
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 111921
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53447
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34444
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 111819
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 52788
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34444
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 111921
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 52788
+    },
+    {
+      "request": "stress-211-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52571
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49057
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99704
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49611
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49224
+    },
+    {
+      "request": "stress-221-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34596
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 114133
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 53788
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 52858
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 114133
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 53788
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53246
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34596
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 53788
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53121
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 34596
+    },
+    {
+      "request": "stress-231-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 114133
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49665
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49098
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49895
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-241-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 53692
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53608
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35292
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 113845
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53702
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35292
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 113845
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 53692
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35292
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 113845
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 53692
+    },
+    {
+      "request": "stress-251-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53572
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49135
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99704
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49391
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 49141
+    },
+    {
+      "request": "stress-261-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 31630
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53761
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 116041
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53719
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 54772
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53729
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35108
+    },
+    {
+      "request": "stress-271-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 115881
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 0,
+      "position": 0,
+      "arm": "full-json",
+      "peak_python_bytes": 99806
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 0,
+      "position": 1,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 0,
+      "position": 2,
+      "arm": "framed-stream",
+      "peak_python_bytes": 48368
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 0,
+      "position": 3,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30838
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 1,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 1,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 48576
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 1,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30838
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 1,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 99704
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 2,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 48399
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 2,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 30838
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 2,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 99646
+    },
+    {
+      "request": "stress-281-correct",
+      "repetition": 2,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 45982
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 0,
+      "position": 0,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 0,
+      "position": 1,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53599
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 0,
+      "position": 2,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35236
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 0,
+      "position": 3,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 1,
+      "position": 0,
+      "arm": "framed-stream",
+      "peak_python_bytes": 54123
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 1,
+      "position": 1,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35236
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 1,
+      "position": 2,
+      "arm": "full-json",
+      "peak_python_bytes": 113629
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 1,
+      "position": 3,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 2,
+      "position": 0,
+      "arm": "direct-liveness",
+      "peak_python_bytes": 35236
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 2,
+      "position": 1,
+      "arm": "full-json",
+      "peak_python_bytes": 113789
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 2,
+      "position": 2,
+      "arm": "direct-full",
+      "peak_python_bytes": 53636
+    },
+    {
+      "request": "stress-291-regression",
+      "repetition": 2,
+      "position": 3,
+      "arm": "framed-stream",
+      "peak_python_bytes": 53838
+    }
+  ]
+}

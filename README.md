@@ -4,8 +4,8 @@ This artifact accompanies *Source-Bound Semantic Certificates for Finite
 Program-Repair Checking*, a bounded evidence-design and matched-recalculation
 study of explicit repair policies and canonical diagnostics.
 
-Measurements come from executed artifact workflows; the current complete-JSON
-receiver is not a streaming implementation.
+Measurements come from executed artifact workflows. Complete-JSON and bounded
+framed-stream receivers implement the same full-domain decision contract.
 
 ## Scope
 
@@ -101,6 +101,46 @@ The warm receiver also rejects all 600 retained first-seed full-packet mutations
 correct fixtures, 30 classes), with no alteration of previously established cell facts.
 These are replayed controls, not 600 new defects. This is a new owned finite replay,
 not added Codeflaws admission or a rewrite of old runs.
+
+## Bounded vector reception and matched storage baselines
+
+`src/vector_stream.py` receives one canonical node record per line. It rebuilds
+the header from the authoritative request, bounds each read using the expected
+descriptor and finite point count, checks every cell, and releases computed
+vectors after their last use. Obligation and candidate trace roots stay live.
+No verdict is returned until the terminal integrity seal and exact EOF pass.
+This bounds receiving records, not request admission or producer conversion.
+Conversion starts from a complete producer packet and is not a streaming
+generation algorithm. The full JSON protocol remains supported.
+
+```sh
+python -B src/vector_stream.py encode /path/full.json /fresh/packet.rows
+python -B src/vector_stream.py check /path/request.json /fresh/packet.rows
+python -B src/vector_stream.py direct /path/request.json
+python -B -m unittest discover -s tests -p test_vector_stream.py -v
+python -O -B -m unittest discover -s tests -p test_vector_stream.py -v
+python -B tests/vector_stream_study.py --output /fresh/logical.json --compare results/vector-stream.json
+python -B tests/vector_stream_study.py --allocations --output /fresh/allocations.json
+```
+
+All 380 frozen requests preserve the status, canonical witness and 1,179,684
+semantic cells per arm. The median peak retained-vector fraction is 0.400;
+this is a within-request residency ratio, not a whole-runtime allocation ratio.
+The matched direct method has the same last-use schedule, and a full-residency
+direct baseline has the same prepared operator kernel without reclamation.
+
+The allocation study fixes 50 requests before measurement: all 20 correct
+fixtures and stress-manifest offsets 0,10,...,290. Three rotated-order repeats
+per arm give 600 measurements. Every arm gets the same decoded authoritative
+request. Certificate file decoding, reconstruction, validation and diagnosis
+are measured; producer conversion and request loading are excluded. On the
+recorded Windows CPython runtime, median paired peak-allocation ratios are
+0.493 for framed/full-JSON reception, 0.669 for liveness/full-residency direct
+evaluation, and 1.591 for framed/matched-liveness direct evaluation. Thus
+reclamation is available without a certificate; certificate reception still
+has extra allocation costs. These are traced Python allocations, not RSS,
+throughput, independent real-world programs, or a claim of general compression.
+Raw observations and environment are in `results/vector-allocation.json`.
 
 ## Setup and run
 

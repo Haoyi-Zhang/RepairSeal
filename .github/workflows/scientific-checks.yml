@@ -27,6 +27,11 @@ jobs:
           python -B tests/test_receiver_reuse.py -v
           python -O -B tests/test_receiver_reuse.py -v
           python -B tests/receiver_reuse_study.py --output "$RUNNER_TEMP/repair-reuse-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.json" --compare results/receiver-reuse.json
+      - name: Bounded vector stream and matched liveness conformance
+        run: |
+          python -B -m unittest discover -s tests -p test_vector_stream.py -v
+          python -O -B -m unittest discover -s tests -p test_vector_stream.py -v
+          python -B tests/vector_stream_study.py --output "$RUNNER_TEMP/repair-stream-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.json" --compare results/vector-stream.json
       - name: Offline Codeflaws finite-model regressions
         run: python -B tests/test_codeflaws_cases.py
       - name: Offline Codeflaws model replay

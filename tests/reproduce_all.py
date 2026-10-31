@@ -29,6 +29,26 @@ def main() -> None:
         raise SystemExit(proc.returncode)
     result_path = args.output / "complete-reproduction.json"
     result = json.loads(result_path.read_text())
+    root=Path(__file__).resolve().parents[1]
+    stream_commands=[
+        [sys.executable,'-B','-m','unittest','discover','-s','tests','-p','test_vector_stream.py','-v'],
+        [sys.executable,'-O','-B','-m','unittest','discover','-s','tests','-p','test_vector_stream.py','-v'],
+        [sys.executable,'-B',str(root/'tests/vector_stream_study.py'),'--output',
+         str(args.output.resolve()/'vector-stream.json'),'--compare',str(root/'results/vector-stream.json')],
+    ]
+    for index,command in enumerate(stream_commands):
+        check=subprocess.run(command,cwd=root,capture_output=True,text=True,
+                             env={**os.environ,'PYTHONDONTWRITEBYTECODE':'1'},timeout=120)
+        (args.output/('vector-stream-check-'+str(index)+'.txt')).write_text(
+            check.stdout+check.stderr,encoding='utf-8')
+        if check.returncode:
+            raise SystemExit('bounded vector stream reproduction failed: '+str(index))
+    stream_result=json.loads((args.output/'vector-stream.json').read_text(encoding='utf-8'))
+    result['vector_stream_agreement']={
+        'requests':stream_result['requests'],'semantic_cells_per_arm':stream_result['totals']['checked_cells_per_arm'],
+        'ordinary_and_optimized_conformance':True,
+        'allocation_measurement':'retained separate runtime-specific study; not rerun by deterministic gate',
+    }
     candidates = list(args.output.rglob("structured-study.json"))
     if len(candidates) != 1:
         raise SystemExit(f"expected one structured-study.json, found {len(candidates)}")

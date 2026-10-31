@@ -20,6 +20,8 @@ REQUIRED = [
     "tests/reproduce_all.py", "tests/reproduce_all_core.py",
     "tests/holdout_differential.py", "tests/disk_replay.py", "tests/edge_case_regression.py",
     "src/proof_dag_checker.py", "src/refutation_witness_checker.py",
+    "src/vector_stream.py", "tests/test_vector_stream.py",
+    "tests/vector_stream_study.py", "results/vector-stream.json", "results/vector-allocation.json",
 ]
 FORBIDDEN_NAMES = {"CHECKSUMS.sha256", "MANIFEST.json"}
 FORBIDDEN_SUFFIXES = {".zip", ".tar", ".gz", ".bz2", ".xz", ".pyc"}
