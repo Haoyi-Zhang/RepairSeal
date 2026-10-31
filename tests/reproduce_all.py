@@ -49,6 +49,23 @@ def main() -> None:
         'ordinary_and_optimized_conformance':True,
         'allocation_measurement':'retained separate runtime-specific study; not rerun by deterministic gate',
     }
+    macro_commands=[
+        [sys.executable,'-B','-m','unittest','discover','-s','tests','-p','test_macro_bridge.py','-v'],
+        [sys.executable,'-O','-B','-m','unittest','discover','-s','tests','-p','test_macro_bridge.py','-v'],
+        [sys.executable,'-B',str(root/'tests/macro_transfer_study.py'),'--native','--output',
+         str(args.output.resolve()/'macro-transfer')],
+    ]
+    for index,command in enumerate(macro_commands):
+        check=subprocess.run(command,cwd=root,capture_output=True,text=True,
+                             env={**os.environ,'PYTHONDONTWRITEBYTECODE':'1'},timeout=120)
+        (args.output/('macro-transfer-check-'+str(index)+'.txt')).write_text(
+            check.stdout+check.stderr,encoding='utf-8')
+        if check.returncode:raise SystemExit('typed macro transfer reproduction failed: '+str(index))
+    macro=json.loads((args.output/'macro-transfer/summary.json').read_text(encoding='utf-8'))
+    result['typed_macro_transfer']={k:macro[k] for k in
+        ('upstream_changes','inputs','repair_inputs','preserved_inputs','status',
+         'cells_per_full_or_direct_arm','native_input_rows','native_scalar_observations',
+         'upstream_application_executed')}
     candidates = list(args.output.rglob("structured-study.json"))
     if len(candidates) != 1:
         raise SystemExit(f"expected one structured-study.json, found {len(candidates)}")

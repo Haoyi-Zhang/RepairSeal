@@ -1,5 +1,36 @@
 # Source-linked ceiling division and its policy
 
+## Selected-expression transfer
+
+The optional typed bridge consumes the authoritative selected macro definition,
+not a producer's normalized function. It admits pure unsigned word parameters,
+nonnegative decimal literals, arithmetic with a word operand, and comparisons.
+Arithmetic without a word operand is refused because C's signed intermediate
+semantics would need a separate range argument. Calls, side effects, casts,
+short-circuit operators and preprocessing are outside this bridge.
+
+Under the caller-supplied pure unsigned-32 premise, structural induction gives
+value and definedness correspondence. A parameter denotes its supplied word;
+a permitted literal has its stated C value. With a word operand, usual
+arithmetic conversions give unsigned word arithmetic, including conversion of
+nonnegative literals and comparison results. Comparison operands in the
+admitted vocabulary have nonnegative integer values, so Boolean promotion
+preserves their comparison. A comparison used as a word is lowered to an
+outer-block unsigned temporary set to zero or one by an explicit conditional.
+That temporary equals the C/C++ comparison's numeric conversion. Division and
+remainder keep the zero-divisor definedness condition. Other arithmetic is
+modulo 2^32. Induction therefore relates the generated function's word result
+to the selected macro expression wherever defined; it does not justify caller
+types, select an active preprocessor branch, or preserve native execution traces.
+
+The native retained check compares the original and replacement macros and
+their generated lowerings at the existing 42 pure-argument points under both
+GCC and Clang. The mathematical reference is calculated separately. It is a
+bounded check of this translation argument for one upstream edit, not a new
+source population or a mechanically verified compiler.
+
+## Repair policy and mathematical correspondence
+
 The source identity and exact before/after macro definitions are in
 `public-data/ceil-div-source.json`. They come from llama.cpp PR 25245,
 before revision d80e87850173a674ea2673fd003ac54ac93774c0 and after revision

@@ -34,6 +34,10 @@ jobs:
           python -B tests/vector_stream_study.py --output "$RUNNER_TEMP/repair-stream-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.json" --compare results/vector-stream.json
       - name: Offline Codeflaws finite-model regressions
         run: python -B tests/test_codeflaws_cases.py
+      - name: Typed selected-macro lowering conformance
+        run: |
+          python -B -m unittest discover -s tests -p test_macro_bridge.py -v
+          python -O -B -m unittest discover -s tests -p test_macro_bridge.py -v
       - name: Offline Codeflaws model replay
         shell: bash
         run: |

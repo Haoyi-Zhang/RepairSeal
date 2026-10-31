@@ -1,0 +1,32 @@
+{
+  "before": {
+    "macro": "CEIL_DIV",
+    "parameters": [
+      "M",
+      "N"
+    ],
+    "input_order": [
+      "m",
+      "n"
+    ],
+    "expression": "(((M) + (N)-1) / (N))",
+    "source": "unsigned f(unsigned m, unsigned n) { return (((m + n) - 1u) / n); }",
+    "premises": "Pure unsigned-32 arguments supplied by the receiver; selected definition and caller applicability are not inferred",
+    "trace": "Source-if events refer only to this deterministic normalization"
+  },
+  "after": {
+    "macro": "CEIL_DIV",
+    "parameters": [
+      "M",
+      "N"
+    ],
+    "input_order": [
+      "m",
+      "n"
+    ],
+    "expression": "(((M) / (N)) + (((M) % (N)) != 0))",
+    "source": "unsigned f(unsigned m, unsigned n) { unsigned rs_generated0 = 0u; if (((m % n) != 0u)) { rs_generated0 = 1u; } else { rs_generated0 = 0u; } return ((m / n) + rs_generated0); }",
+    "premises": "Pure unsigned-32 arguments supplied by the receiver; selected definition and caller applicability are not inferred",
+    "trace": "Source-if events refer only to this deterministic normalization"
+  }
+}

@@ -52,6 +52,36 @@ the full trace-priority diagnostic is (31,UINT_MAX) for the owned trace control.
 Neither format authenticates external source history or the manual mapping.
 Paper tables are regenerated only after replay of the retained packets.
 
+### Typed transfer of the selected macro expressions
+
+`src/macro_bridge.py` now lowers the selected before/after expression text rather
+than requiring handwritten scalar bodies. Its bounded parser admits pure word
+arithmetic, comparisons and explicit Boolean-to-word conversion; unsupported
+syntax, signed intermediate arithmetic, calls, side effects and preprocessing
+ambiguity fail closed. The receiver still supplies the selected definition,
+unsigned-32 pure-argument premise, reference, repair selector and finite domain.
+The bridge does not infer real caller types, evaluate arbitrary macro arguments,
+or parse/preprocess the containing C++ application.
+
+```sh
+python -B -m unittest discover -s tests -p test_macro_bridge.py -v
+python -O -B -m unittest discover -s tests -p test_macro_bridge.py -v
+python -B tests/macro_transfer_study.py --native --verify-upstream --output /fresh/macro-transfer
+```
+
+The retained `results/macro-transfer/` run verifies the two complete immutable
+upstream source files as text, derives both scalar models and checks the same
+42 inputs (12 repair, 30 preservation). GCC and Clang execute only a small,
+reviewed pure-arithmetic harness containing the selected expressions and their
+generated lowerings. All 84 paired compiler/input rows agree with the literal
+mathematical reference, comprising 336 scalar outputs, not 336 independent
+programs. Full and direct checking accept the generated request with 1,680
+cells each. The upstream application and its tests are not built or executed.
+Without `--verify-upstream`, replay uses the retained selected definitions;
+it does not claim fresh source acquisition. Without `--native`, it is model-only.
+The complete Linux reproducer runs the native harness without network retrieval.
+Inserted trace events belong to the normalization, not native macro execution.
+
 The older Codeflaws native observations remain derived historical records.
 Their original C and test bytes are not redistributed. The exact-archive and
 four-source fingerprint gates and full opt-in command are documented below

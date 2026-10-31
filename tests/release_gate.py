@@ -22,6 +22,8 @@ REQUIRED = [
     "src/proof_dag_checker.py", "src/refutation_witness_checker.py",
     "src/vector_stream.py", "tests/test_vector_stream.py",
     "tests/vector_stream_study.py", "results/vector-stream.json", "results/vector-allocation.json",
+    "src/macro_bridge.py", "tests/test_macro_bridge.py", "tests/macro_transfer_study.py",
+    "results/macro-transfer/summary.json",
 ]
 FORBIDDEN_NAMES = {"CHECKSUMS.sha256", "MANIFEST.json"}
 FORBIDDEN_SUFFIXES = {".zip", ".tar", ".gz", ".bz2", ".xz", ".pyc"}
