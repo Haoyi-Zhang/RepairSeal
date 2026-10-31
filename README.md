@@ -132,11 +132,12 @@ direct baseline has the same prepared operator kernel without reclamation.
 The allocation study fixes 50 requests before measurement: all 20 correct
 fixtures and stress-manifest offsets 0,10,...,290. Three rotated-order repeats
 per arm give 600 measurements. Every arm gets the same decoded authoritative
-request. Certificate file decoding, reconstruction, validation and diagnosis
+request; both wire formats use canonical compact JSON. Certificate file
+decoding, reconstruction, validation and diagnosis
 are measured; producer conversion and request loading are excluded. On the
 recorded Windows CPython runtime, median paired peak-allocation ratios are
-0.493 for framed/full-JSON reception, 0.669 for liveness/full-residency direct
-evaluation, and 1.591 for framed/matched-liveness direct evaluation. Thus
+0.490 for framed/full-JSON reception, 0.669 for liveness/full-residency direct
+evaluation, and 1.577 for framed/matched-liveness direct evaluation. Thus
 reclamation is available without a certificate; certificate reception still
 has extra allocation costs. These are traced Python allocations, not RSS,
 throughput, independent real-world programs, or a claim of general compression.

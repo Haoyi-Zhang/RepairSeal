@@ -3,7 +3,7 @@
   "source_bindings": {
     "src/vector_stream.py": "f94dc016107cdb163c61570660b579c51173465fc3bb758d424b85af4cba33e3",
     "src/proof_dag_checker.py": "6b111e898f3999929f7e28f39fde127b4e8fc4139bcf9f5a8afd82527e458a01",
-    "tests/vector_stream_study.py": "0148493630b111b43adcfb8624d764bfd6c08ca4c9f449ac5c7d630b79211b60"
+    "tests/vector_stream_study.py": "ffc9654ebd51bbbf476480506668f1d47cd3dcb5029cfc8b5b6fc765d2525399"
   },
   "requests": 380,
   "accepted": 95,
@@ -12,7 +12,7 @@
     "full_vector_comparisons": 1179684,
     "direct_vector_comparisons": 0,
     "peak_live_cells_per_streaming_arm": 466884,
-    "json_bytes": 18806394,
+    "json_bytes": 5729376,
     "framed_bytes": 5732796
   },
   "median_live_to_all_vectors": 0.4,
@@ -32,7 +32,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 32739,
+      "json_bytes": 9934,
       "framed_bytes": 9943
     },
     {
@@ -68,7 +68,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 39893,
+      "json_bytes": 12193,
       "framed_bytes": 12202
     },
     {
@@ -104,7 +104,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 41239,
+      "json_bytes": 12728,
       "framed_bytes": 12737
     },
     {
@@ -131,7 +131,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 45008,
+      "json_bytes": 14118,
       "framed_bytes": 14127
     },
     {
@@ -149,7 +149,7 @@
       "peak_live_vectors_per_streaming_arm": 9,
       "peak_live_cells_per_streaming_arm": 729,
       "retained_diagnostic_vectors": 3,
-      "json_bytes": 30035,
+      "json_bytes": 9663,
       "framed_bytes": 9672
     },
     {
@@ -185,7 +185,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 40154,
+      "json_bytes": 13265,
       "framed_bytes": 13274
     },
     {
@@ -221,7 +221,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 41500,
+      "json_bytes": 13800,
       "framed_bytes": 13809
     },
     {
@@ -248,7 +248,7 @@
       "peak_live_vectors_per_streaming_arm": 11,
       "peak_live_cells_per_streaming_arm": 891,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 40997,
+      "json_bytes": 13351,
       "framed_bytes": 13360
     },
     {
@@ -266,7 +266,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 34137,
+      "json_bytes": 10521,
       "framed_bytes": 10530
     },
     {
@@ -302,7 +302,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 41310,
+      "json_bytes": 12799,
       "framed_bytes": 12808
     },
     {
@@ -338,7 +338,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 42655,
+      "json_bytes": 13333,
       "framed_bytes": 13342
     },
     {
@@ -365,7 +365,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 46407,
+      "json_bytes": 14706,
       "framed_bytes": 14715
     },
     {
@@ -383,7 +383,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 32901,
+      "json_bytes": 10096,
       "framed_bytes": 10105
     },
     {
@@ -419,7 +419,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 40055,
+      "json_bytes": 12355,
       "framed_bytes": 12364
     },
     {
@@ -455,7 +455,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 41401,
+      "json_bytes": 12890,
       "framed_bytes": 12899
     },
     {
@@ -482,7 +482,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 45170,
+      "json_bytes": 14280,
       "framed_bytes": 14289
     },
     {
@@ -500,7 +500,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 34344,
+      "json_bytes": 10728,
       "framed_bytes": 10737
     },
     {
@@ -536,7 +536,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 41499,
+      "json_bytes": 12988,
       "framed_bytes": 12997
     },
     {
@@ -572,7 +572,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 42844,
+      "json_bytes": 13522,
       "framed_bytes": 13531
     },
     {
@@ -599,7 +599,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 46614,
+      "json_bytes": 14913,
       "framed_bytes": 14922
     },
     {
@@ -617,7 +617,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 32739,
+      "json_bytes": 9934,
       "framed_bytes": 9943
     },
     {
@@ -653,7 +653,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 39893,
+      "json_bytes": 12193,
       "framed_bytes": 12202
     },
     {
@@ -689,7 +689,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 41239,
+      "json_bytes": 12728,
       "framed_bytes": 12737
     },
     {
@@ -716,7 +716,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 45008,
+      "json_bytes": 14118,
       "framed_bytes": 14127
     },
     {
@@ -734,7 +734,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 38224,
+      "json_bytes": 14633,
       "framed_bytes": 14642
     },
     {
@@ -770,7 +770,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 46513,
+      "json_bytes": 18027,
       "framed_bytes": 18036
     },
     {
@@ -806,7 +806,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 47939,
+      "json_bytes": 18642,
       "framed_bytes": 18651
     },
     {
@@ -833,7 +833,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 50494,
+      "json_bytes": 18818,
       "framed_bytes": 18827
     },
     {
@@ -851,7 +851,7 @@
       "peak_live_vectors_per_streaming_arm": 11,
       "peak_live_cells_per_streaming_arm": 891,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 41180,
+      "json_bytes": 15206,
       "framed_bytes": 15215
     },
     {
@@ -887,7 +887,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49307,
+      "json_bytes": 18438,
       "framed_bytes": 18447
     },
     {
@@ -923,7 +923,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52391,
+      "json_bytes": 19925,
       "framed_bytes": 19934
     },
     {
@@ -950,7 +950,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53450,
+      "json_bytes": 19391,
       "framed_bytes": 19400
     },
     {
@@ -968,7 +968,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49904,
+      "json_bytes": 15770,
       "framed_bytes": 15779
     },
     {
@@ -1004,7 +1004,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 59784,
+      "json_bytes": 19133,
       "framed_bytes": 19142
     },
     {
@@ -1040,7 +1040,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 61147,
+      "json_bytes": 19685,
       "framed_bytes": 19694
     },
     {
@@ -1067,7 +1067,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 58332,
+      "json_bytes": 18546,
       "framed_bytes": 18555
     },
     {
@@ -1085,7 +1085,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50444,
+      "json_bytes": 16310,
       "framed_bytes": 16319
     },
     {
@@ -1121,7 +1121,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 60270,
+      "json_bytes": 19619,
       "framed_bytes": 19628
     },
     {
@@ -1157,7 +1157,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 61633,
+      "json_bytes": 20171,
       "framed_bytes": 20180
     },
     {
@@ -1184,7 +1184,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 58872,
+      "json_bytes": 19086,
       "framed_bytes": 19095
     },
     {
@@ -1202,7 +1202,7 @@
       "peak_live_vectors_per_streaming_arm": 11,
       "peak_live_cells_per_streaming_arm": 891,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 39677,
+      "json_bytes": 12842,
       "framed_bytes": 12851
     },
     {
@@ -1238,7 +1238,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 54639,
+      "json_bytes": 18043,
       "framed_bytes": 18052
     },
     {
@@ -1274,7 +1274,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 56002,
+      "json_bytes": 18595,
       "framed_bytes": 18604
     },
     {
@@ -1301,7 +1301,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49388,
+      "json_bytes": 16090,
       "framed_bytes": 16099
     },
     {
@@ -1319,7 +1319,7 @@
       "peak_live_vectors_per_streaming_arm": 11,
       "peak_live_cells_per_streaming_arm": 891,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 39893,
+      "json_bytes": 13058,
       "framed_bytes": 13067
     },
     {
@@ -1355,7 +1355,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 54837,
+      "json_bytes": 18241,
       "framed_bytes": 18250
     },
     {
@@ -1391,7 +1391,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 56200,
+      "json_bytes": 18793,
       "framed_bytes": 18802
     },
     {
@@ -1418,7 +1418,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49604,
+      "json_bytes": 16306,
       "framed_bytes": 16315
     },
     {
@@ -1436,7 +1436,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 38786,
+      "json_bytes": 12568,
       "framed_bytes": 12577
     },
     {
@@ -1476,7 +1476,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 45942,
+      "json_bytes": 14829,
       "framed_bytes": 14838
     },
     {
@@ -1516,7 +1516,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 47287,
+      "json_bytes": 15363,
       "framed_bytes": 15372
     },
     {
@@ -1543,7 +1543,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 53728,
+      "json_bytes": 17803,
       "framed_bytes": 17812
     },
     {
@@ -1561,7 +1561,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 38300,
+      "json_bytes": 12082,
       "framed_bytes": 12091
     },
     {
@@ -1601,7 +1601,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 45456,
+      "json_bytes": 14343,
       "framed_bytes": 14352
     },
     {
@@ -1641,7 +1641,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 46801,
+      "json_bytes": 14877,
       "framed_bytes": 14886
     },
     {
@@ -1668,7 +1668,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 53242,
+      "json_bytes": 17317,
       "framed_bytes": 17326
     },
     {
@@ -1686,7 +1686,7 @@
       "peak_live_vectors_per_streaming_arm": 10,
       "peak_live_cells_per_streaming_arm": 810,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 34784,
+      "json_bytes": 10999,
       "framed_bytes": 11008
     },
     {
@@ -1726,7 +1726,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 44501,
+      "json_bytes": 14199,
       "framed_bytes": 14208
     },
     {
@@ -1766,7 +1766,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 45846,
+      "json_bytes": 14733,
       "framed_bytes": 14742
     },
     {
@@ -1793,7 +1793,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 48417,
+      "json_bytes": 15736,
       "framed_bytes": 15745
     },
     {
@@ -1811,7 +1811,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 43928,
+      "json_bytes": 14457,
       "framed_bytes": 14466
     },
     {
@@ -1851,7 +1851,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 7,
-      "json_bytes": 58877,
+      "json_bytes": 19645,
       "framed_bytes": 19654
     },
     {
@@ -1891,7 +1891,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 7,
-      "json_bytes": 60240,
+      "json_bytes": 20197,
       "framed_bytes": 20206
     },
     {
@@ -1918,7 +1918,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 56306,
+      "json_bytes": 18750,
       "framed_bytes": 18759
     },
     {
@@ -1936,7 +1936,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 7,
-      "json_bytes": 50949,
+      "json_bytes": 16603,
       "framed_bytes": 16612
     },
     {
@@ -1976,7 +1976,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 8,
-      "json_bytes": 65897,
+      "json_bytes": 21790,
       "framed_bytes": 21799
     },
     {
@@ -2016,7 +2016,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 8,
-      "json_bytes": 67260,
+      "json_bytes": 22342,
       "framed_bytes": 22351
     },
     {
@@ -2043,7 +2043,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 7,
-      "json_bytes": 64635,
+      "json_bytes": 21393,
       "framed_bytes": 21402
     },
     {
@@ -2061,7 +2061,7 @@
       "peak_live_vectors_per_streaming_arm": 12,
       "peak_live_cells_per_streaming_arm": 972,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 39016,
+      "json_bytes": 11816,
       "framed_bytes": 11825
     },
     {
@@ -2101,7 +2101,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 48733,
+      "json_bytes": 15016,
       "framed_bytes": 15025
     },
     {
@@ -2141,7 +2141,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 50078,
+      "json_bytes": 15550,
       "framed_bytes": 15559
     },
     {
@@ -2168,7 +2168,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 55355,
+      "json_bytes": 17637,
       "framed_bytes": 17646
     },
     {
@@ -2186,7 +2186,7 @@
       "peak_live_vectors_per_streaming_arm": 11,
       "peak_live_cells_per_streaming_arm": 891,
       "retained_diagnostic_vectors": 3,
-      "json_bytes": 30177,
+      "json_bytes": 8994,
       "framed_bytes": 9003
     },
     {
@@ -2222,7 +2222,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 39891,
+      "json_bytes": 12191,
       "framed_bytes": 12200
     },
     {
@@ -2258,7 +2258,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 41237,
+      "json_bytes": 12726,
       "framed_bytes": 12735
     },
     {
@@ -2285,7 +2285,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 41139,
+      "json_bytes": 12682,
       "framed_bytes": 12691
     },
     {
@@ -2303,7 +2303,7 @@
       "peak_live_vectors_per_streaming_arm": 10,
       "peak_live_cells_per_streaming_arm": 810,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 35222,
+      "json_bytes": 10626,
       "framed_bytes": 10635
     },
     {
@@ -2343,7 +2343,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 44938,
+      "json_bytes": 13825,
       "framed_bytes": 13834
     },
     {
@@ -2383,7 +2383,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 6,
-      "json_bytes": 46283,
+      "json_bytes": 14359,
       "framed_bytes": 14368
     },
     {
@@ -2410,7 +2410,7 @@
       "peak_live_vectors_per_streaming_arm": 13,
       "peak_live_cells_per_streaming_arm": 1053,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 48855,
+      "json_bytes": 15363,
       "framed_bytes": 15372
     },
     {
@@ -2428,7 +2428,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 41006,
+      "json_bytes": 11713,
       "framed_bytes": 11722
     },
     {
@@ -2464,7 +2464,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50667,
+      "json_bytes": 14907,
       "framed_bytes": 14916
     },
     {
@@ -2500,7 +2500,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50958,
+      "json_bytes": 15173,
       "framed_bytes": 15182
     },
     {
@@ -2527,7 +2527,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56258,
+      "json_bytes": 17308,
       "framed_bytes": 17317
     },
     {
@@ -2545,7 +2545,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44756,
+      "json_bytes": 13105,
       "framed_bytes": 13114
     },
     {
@@ -2581,7 +2581,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50932,
+      "json_bytes": 15172,
       "framed_bytes": 15181
     },
     {
@@ -2617,7 +2617,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51012,
+      "json_bytes": 15227,
       "framed_bytes": 15236
     },
     {
@@ -2644,7 +2644,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56351,
+      "json_bytes": 17401,
       "framed_bytes": 17410
     },
     {
@@ -2662,7 +2662,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44629,
+      "json_bytes": 12978,
       "framed_bytes": 12987
     },
     {
@@ -2698,7 +2698,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50072,
+      "json_bytes": 15098,
       "framed_bytes": 15107
     },
     {
@@ -2734,7 +2734,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52175,
+      "json_bytes": 15604,
       "framed_bytes": 15613
     },
     {
@@ -2761,7 +2761,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54702,
+      "json_bytes": 16538,
       "framed_bytes": 16547
     },
     {
@@ -2779,7 +2779,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43776,
+      "json_bytes": 12911,
       "framed_bytes": 12920
     },
     {
@@ -2815,7 +2815,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 48256,
+      "json_bytes": 14068,
       "framed_bytes": 14077
     },
     {
@@ -2851,7 +2851,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51092,
+      "json_bytes": 15307,
       "framed_bytes": 15316
     },
     {
@@ -2878,7 +2878,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55784,
+      "json_bytes": 16834,
       "framed_bytes": 16843
     },
     {
@@ -2896,7 +2896,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 45206,
+      "json_bytes": 13555,
       "framed_bytes": 13564
     },
     {
@@ -2932,7 +2932,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49911,
+      "json_bytes": 14937,
       "framed_bytes": 14946
     },
     {
@@ -2968,7 +2968,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51255,
+      "json_bytes": 15470,
       "framed_bytes": 15479
     },
     {
@@ -2995,7 +2995,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54620,
+      "json_bytes": 16456,
       "framed_bytes": 16465
     },
     {
@@ -3013,7 +3013,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44216,
+      "json_bytes": 13351,
       "framed_bytes": 13360
     },
     {
@@ -3049,7 +3049,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50240,
+      "json_bytes": 15266,
       "framed_bytes": 15275
     },
     {
@@ -3085,7 +3085,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49940,
+      "json_bytes": 14941,
       "framed_bytes": 14950
     },
     {
@@ -3112,7 +3112,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54621,
+      "json_bytes": 16457,
       "framed_bytes": 16466
     },
     {
@@ -3130,7 +3130,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43402,
+      "json_bytes": 12537,
       "framed_bytes": 12546
     },
     {
@@ -3166,7 +3166,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51463,
+      "json_bytes": 15703,
       "framed_bytes": 15712
     },
     {
@@ -3202,7 +3202,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50778,
+      "json_bytes": 14993,
       "framed_bytes": 15002
     },
     {
@@ -3229,7 +3229,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55892,
+      "json_bytes": 16942,
       "framed_bytes": 16951
     },
     {
@@ -3247,7 +3247,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44512,
+      "json_bytes": 12861,
       "framed_bytes": 12870
     },
     {
@@ -3283,7 +3283,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49702,
+      "json_bytes": 15514,
       "framed_bytes": 15523
     },
     {
@@ -3319,7 +3319,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51378,
+      "json_bytes": 15593,
       "framed_bytes": 15602
     },
     {
@@ -3346,7 +3346,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55892,
+      "json_bytes": 16942,
       "framed_bytes": 16951
     },
     {
@@ -3364,7 +3364,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43511,
+      "json_bytes": 12646,
       "framed_bytes": 12655
     },
     {
@@ -3400,7 +3400,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49754,
+      "json_bytes": 14780,
       "framed_bytes": 14789
     },
     {
@@ -3436,7 +3436,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51619,
+      "json_bytes": 15834,
       "framed_bytes": 15843
     },
     {
@@ -3463,7 +3463,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53405,
+      "json_bytes": 16027,
       "framed_bytes": 16036
     },
     {
@@ -3481,7 +3481,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44403,
+      "json_bytes": 12752,
       "framed_bytes": 12761
     },
     {
@@ -3517,7 +3517,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50775,
+      "json_bytes": 15015,
       "framed_bytes": 15024
     },
     {
@@ -3553,7 +3553,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 53052,
+      "json_bytes": 16481,
       "framed_bytes": 16490
     },
     {
@@ -3580,7 +3580,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54636,
+      "json_bytes": 16472,
       "framed_bytes": 16481
     },
     {
@@ -3598,7 +3598,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43593,
+      "json_bytes": 12728,
       "framed_bytes": 12737
     },
     {
@@ -3634,7 +3634,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50667,
+      "json_bytes": 14907,
       "framed_bytes": 14916
     },
     {
@@ -3670,7 +3670,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 53148,
+      "json_bytes": 16577,
       "framed_bytes": 16586
     },
     {
@@ -3697,7 +3697,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56229,
+      "json_bytes": 17279,
       "framed_bytes": 17288
     },
     {
@@ -3715,7 +3715,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43188,
+      "json_bytes": 12323,
       "framed_bytes": 12332
     },
     {
@@ -3751,7 +3751,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50830,
+      "json_bytes": 15070,
       "framed_bytes": 15079
     },
     {
@@ -3787,7 +3787,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50116,
+      "json_bytes": 15117,
       "framed_bytes": 15126
     },
     {
@@ -3814,7 +3814,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56387,
+      "json_bytes": 17437,
       "framed_bytes": 17446
     },
     {
@@ -3832,7 +3832,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43213,
+      "json_bytes": 12348,
       "framed_bytes": 12357
     },
     {
@@ -3868,7 +3868,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50938,
+      "json_bytes": 15178,
       "framed_bytes": 15187
     },
     {
@@ -3904,7 +3904,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52229,
+      "json_bytes": 15658,
       "framed_bytes": 15667
     },
     {
@@ -3931,7 +3931,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55595,
+      "json_bytes": 17431,
       "framed_bytes": 17440
     },
     {
@@ -3949,7 +3949,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43193,
+      "json_bytes": 12328,
       "framed_bytes": 12337
     },
     {
@@ -3985,7 +3985,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50911,
+      "json_bytes": 15151,
       "framed_bytes": 15160
     },
     {
@@ -4021,7 +4021,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52066,
+      "json_bytes": 15495,
       "framed_bytes": 15504
     },
     {
@@ -4048,7 +4048,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54970,
+      "json_bytes": 16806,
       "framed_bytes": 16815
     },
     {
@@ -4066,7 +4066,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 45143,
+      "json_bytes": 13492,
       "framed_bytes": 13501
     },
     {
@@ -4102,7 +4102,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 48485,
+      "json_bytes": 14297,
       "framed_bytes": 14306
     },
     {
@@ -4138,7 +4138,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52066,
+      "json_bytes": 15495,
       "framed_bytes": 15504
     },
     {
@@ -4165,7 +4165,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55729,
+      "json_bytes": 16779,
       "framed_bytes": 16788
     },
     {
@@ -4183,7 +4183,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 45338,
+      "json_bytes": 13687,
       "framed_bytes": 13696
     },
     {
@@ -4219,7 +4219,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49567,
+      "json_bytes": 14593,
       "framed_bytes": 14602
     },
     {
@@ -4255,7 +4255,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52419,
+      "json_bytes": 15848,
       "framed_bytes": 15857
     },
     {
@@ -4282,7 +4282,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54675,
+      "json_bytes": 16511,
       "framed_bytes": 16520
     },
     {
@@ -4300,7 +4300,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44240,
+      "json_bytes": 13375,
       "framed_bytes": 13384
     },
     {
@@ -4336,7 +4336,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49501,
+      "json_bytes": 14527,
       "framed_bytes": 14536
     },
     {
@@ -4372,7 +4372,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50811,
+      "json_bytes": 15026,
       "framed_bytes": 15035
     },
     {
@@ -4399,7 +4399,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54783,
+      "json_bytes": 16619,
       "framed_bytes": 16628
     },
     {
@@ -4417,7 +4417,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 42592,
+      "json_bytes": 12513,
       "framed_bytes": 12522
     },
     {
@@ -4453,7 +4453,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51613,
+      "json_bytes": 15853,
       "framed_bytes": 15862
     },
     {
@@ -4489,7 +4489,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50828,
+      "json_bytes": 15043,
       "framed_bytes": 15052
     },
     {
@@ -4516,7 +4516,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54782,
+      "json_bytes": 16618,
       "framed_bytes": 16627
     },
     {
@@ -4534,7 +4534,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44620,
+      "json_bytes": 12969,
       "framed_bytes": 12978
     },
     {
@@ -4570,7 +4570,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51966,
+      "json_bytes": 16206,
       "framed_bytes": 16215
     },
     {
@@ -4606,7 +4606,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49976,
+      "json_bytes": 14977,
       "framed_bytes": 14986
     },
     {
@@ -4633,7 +4633,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55865,
+      "json_bytes": 16915,
       "framed_bytes": 16924
     },
     {
@@ -4651,7 +4651,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44403,
+      "json_bytes": 12752,
       "framed_bytes": 12761
     },
     {
@@ -4687,7 +4687,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50016,
+      "json_bytes": 15042,
       "framed_bytes": 15051
     },
     {
@@ -4723,7 +4723,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50970,
+      "json_bytes": 15185,
       "framed_bytes": 15194
     },
     {
@@ -4750,7 +4750,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54683,
+      "json_bytes": 16519,
       "framed_bytes": 16528
     },
     {
@@ -4768,7 +4768,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43403,
+      "json_bytes": 12538,
       "framed_bytes": 12547
     },
     {
@@ -4804,7 +4804,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50911,
+      "json_bytes": 15151,
       "framed_bytes": 15160
     },
     {
@@ -4840,7 +4840,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 53039,
+      "json_bytes": 16468,
       "framed_bytes": 16477
     },
     {
@@ -4867,7 +4867,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55766,
+      "json_bytes": 16816,
       "framed_bytes": 16825
     },
     {
@@ -4885,7 +4885,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44792,
+      "json_bytes": 13141,
       "framed_bytes": 13150
     },
     {
@@ -4921,7 +4921,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49775,
+      "json_bytes": 14801,
       "framed_bytes": 14810
     },
     {
@@ -4957,7 +4957,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 53148,
+      "json_bytes": 16577,
       "framed_bytes": 16586
     },
     {
@@ -4984,7 +4984,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53564,
+      "json_bytes": 16186,
       "framed_bytes": 16195
     },
     {
@@ -5002,7 +5002,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43229,
+      "json_bytes": 12364,
       "framed_bytes": 12373
     },
     {
@@ -5038,7 +5038,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50884,
+      "json_bytes": 15124,
       "framed_bytes": 15133
     },
     {
@@ -5074,7 +5074,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51341,
+      "json_bytes": 15556,
       "framed_bytes": 15565
     },
     {
@@ -5101,7 +5101,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53577,
+      "json_bytes": 16199,
       "framed_bytes": 16208
     },
     {
@@ -5119,7 +5119,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43300,
+      "json_bytes": 12435,
       "framed_bytes": 12444
     },
     {
@@ -5155,7 +5155,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49825,
+      "json_bytes": 14851,
       "framed_bytes": 14860
     },
     {
@@ -5191,7 +5191,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51336,
+      "json_bytes": 15551,
       "framed_bytes": 15560
     },
     {
@@ -5218,7 +5218,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55675,
+      "json_bytes": 17511,
       "framed_bytes": 17520
     },
     {
@@ -5236,7 +5236,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44380,
+      "json_bytes": 12729,
       "framed_bytes": 12738
     },
     {
@@ -5272,7 +5272,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50001,
+      "json_bytes": 15027,
       "framed_bytes": 15036
     },
     {
@@ -5308,7 +5308,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52120,
+      "json_bytes": 15549,
       "framed_bytes": 15558
     },
     {
@@ -5335,7 +5335,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54780,
+      "json_bytes": 16616,
       "framed_bytes": 16625
     },
     {
@@ -5353,7 +5353,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43475,
+      "json_bytes": 12610,
       "framed_bytes": 12619
     },
     {
@@ -5389,7 +5389,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49693,
+      "json_bytes": 14719,
       "framed_bytes": 14728
     },
     {
@@ -5425,7 +5425,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50188,
+      "json_bytes": 15189,
       "framed_bytes": 15198
     },
     {
@@ -5452,7 +5452,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54864,
+      "json_bytes": 16700,
       "framed_bytes": 16709
     },
     {
@@ -5470,7 +5470,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43400,
+      "json_bytes": 12535,
       "framed_bytes": 12544
     },
     {
@@ -5506,7 +5506,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49720,
+      "json_bytes": 14746,
       "framed_bytes": 14755
     },
     {
@@ -5542,7 +5542,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52545,
+      "json_bytes": 15974,
       "framed_bytes": 15983
     },
     {
@@ -5569,7 +5569,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56028,
+      "json_bytes": 17078,
       "framed_bytes": 17087
     },
     {
@@ -5587,7 +5587,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44323,
+      "json_bytes": 13458,
       "framed_bytes": 13467
     },
     {
@@ -5623,7 +5623,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50667,
+      "json_bytes": 14907,
       "framed_bytes": 14916
     },
     {
@@ -5659,7 +5659,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50903,
+      "json_bytes": 15118,
       "framed_bytes": 15127
     },
     {
@@ -5686,7 +5686,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55928,
+      "json_bytes": 16978,
       "framed_bytes": 16987
     },
     {
@@ -5704,7 +5704,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43755,
+      "json_bytes": 12890,
       "framed_bytes": 12899
     },
     {
@@ -5740,7 +5740,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49744,
+      "json_bytes": 14770,
       "framed_bytes": 14779
     },
     {
@@ -5776,7 +5776,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51012,
+      "json_bytes": 15227,
       "framed_bytes": 15236
     },
     {
@@ -5803,7 +5803,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55888,
+      "json_bytes": 16938,
       "framed_bytes": 16947
     },
     {
@@ -5821,7 +5821,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44620,
+      "json_bytes": 12969,
       "framed_bytes": 12978
     },
     {
@@ -5857,7 +5857,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49962,
+      "json_bytes": 14988,
       "framed_bytes": 14997
     },
     {
@@ -5893,7 +5893,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52124,
+      "json_bytes": 15553,
       "framed_bytes": 15562
     },
     {
@@ -5920,7 +5920,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55027,
+      "json_bytes": 16863,
       "framed_bytes": 16872
     },
     {
@@ -5938,7 +5938,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44614,
+      "json_bytes": 12963,
       "framed_bytes": 12972
     },
     {
@@ -5974,7 +5974,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49784,
+      "json_bytes": 14810,
       "framed_bytes": 14819
     },
     {
@@ -6010,7 +6010,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52066,
+      "json_bytes": 15495,
       "framed_bytes": 15504
     },
     {
@@ -6037,7 +6037,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54818,
+      "json_bytes": 16654,
       "framed_bytes": 16663
     },
     {
@@ -6055,7 +6055,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44806,
+      "json_bytes": 13155,
       "framed_bytes": 13164
     },
     {
@@ -6091,7 +6091,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49911,
+      "json_bytes": 14937,
       "framed_bytes": 14946
     },
     {
@@ -6127,7 +6127,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51117,
+      "json_bytes": 15332,
       "framed_bytes": 15341
     },
     {
@@ -6154,7 +6154,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55621,
+      "json_bytes": 16671,
       "framed_bytes": 16680
     },
     {
@@ -6172,7 +6172,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43988,
+      "json_bytes": 13123,
       "framed_bytes": 13132
     },
     {
@@ -6208,7 +6208,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51074,
+      "json_bytes": 15314,
       "framed_bytes": 15323
     },
     {
@@ -6244,7 +6244,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51304,
+      "json_bytes": 15519,
       "framed_bytes": 15528
     },
     {
@@ -6271,7 +6271,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54621,
+      "json_bytes": 16457,
       "framed_bytes": 16466
     },
     {
@@ -6289,7 +6289,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43286,
+      "json_bytes": 12421,
       "framed_bytes": 12430
     },
     {
@@ -6325,7 +6325,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51115,
+      "json_bytes": 15355,
       "framed_bytes": 15364
     },
     {
@@ -6361,7 +6361,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51416,
+      "json_bytes": 15631,
       "framed_bytes": 15640
     },
     {
@@ -6388,7 +6388,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55826,
+      "json_bytes": 16876,
       "framed_bytes": 16885
     },
     {
@@ -6406,7 +6406,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43349,
+      "json_bytes": 12484,
       "framed_bytes": 12493
     },
     {
@@ -6442,7 +6442,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50206,
+      "json_bytes": 15232,
       "framed_bytes": 15241
     },
     {
@@ -6478,7 +6478,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52256,
+      "json_bytes": 15685,
       "framed_bytes": 15694
     },
     {
@@ -6505,7 +6505,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54917,
+      "json_bytes": 16753,
       "framed_bytes": 16762
     },
     {
@@ -6523,7 +6523,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43511,
+      "json_bytes": 12646,
       "framed_bytes": 12655
     },
     {
@@ -6559,7 +6559,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51632,
+      "json_bytes": 15872,
       "framed_bytes": 15881
     },
     {
@@ -6595,7 +6595,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51334,
+      "json_bytes": 15549,
       "framed_bytes": 15558
     },
     {
@@ -6622,7 +6622,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53247,
+      "json_bytes": 15869,
       "framed_bytes": 15878
     },
     {
@@ -6640,7 +6640,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43348,
+      "json_bytes": 12483,
       "framed_bytes": 12492
     },
     {
@@ -6676,7 +6676,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49774,
+      "json_bytes": 14800,
       "framed_bytes": 14809
     },
     {
@@ -6712,7 +6712,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52767,
+      "json_bytes": 16196,
       "framed_bytes": 16205
     },
     {
@@ -6739,7 +6739,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56028,
+      "json_bytes": 17078,
       "framed_bytes": 17087
     },
     {
@@ -6757,7 +6757,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43457,
+      "json_bytes": 12592,
       "framed_bytes": 12601
     },
     {
@@ -6793,7 +6793,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50667,
+      "json_bytes": 14907,
       "framed_bytes": 14916
     },
     {
@@ -6829,7 +6829,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52937,
+      "json_bytes": 16366,
       "framed_bytes": 16375
     },
     {
@@ -6856,7 +6856,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56064,
+      "json_bytes": 17114,
       "framed_bytes": 17123
     },
     {
@@ -6874,7 +6874,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43728,
+      "json_bytes": 12863,
       "framed_bytes": 12872
     },
     {
@@ -6910,7 +6910,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49667,
+      "json_bytes": 14693,
       "framed_bytes": 14702
     },
     {
@@ -6946,7 +6946,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51005,
+      "json_bytes": 15220,
       "framed_bytes": 15229
     },
     {
@@ -6973,7 +6973,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56081,
+      "json_bytes": 17131,
       "framed_bytes": 17140
     },
     {
@@ -6991,7 +6991,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 42123,
+      "json_bytes": 12044,
       "framed_bytes": 12053
     },
     {
@@ -7027,7 +7027,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50884,
+      "json_bytes": 15124,
       "framed_bytes": 15133
     },
     {
@@ -7063,7 +7063,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52100,
+      "json_bytes": 15529,
       "framed_bytes": 15538
     },
     {
@@ -7090,7 +7090,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55351,
+      "json_bytes": 17187,
       "framed_bytes": 17196
     },
     {
@@ -7108,7 +7108,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43592,
+      "json_bytes": 12727,
       "framed_bytes": 12736
     },
     {
@@ -7144,7 +7144,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50911,
+      "json_bytes": 15151,
       "framed_bytes": 15160
     },
     {
@@ -7180,7 +7180,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52175,
+      "json_bytes": 15604,
       "framed_bytes": 15613
     },
     {
@@ -7207,7 +7207,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56532,
+      "json_bytes": 17582,
       "framed_bytes": 17591
     },
     {
@@ -7225,7 +7225,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44900,
+      "json_bytes": 13249,
       "framed_bytes": 13258
     },
     {
@@ -7261,7 +7261,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 47357,
+      "json_bytes": 13955,
       "framed_bytes": 13964
     },
     {
@@ -7297,7 +7297,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51011,
+      "json_bytes": 15226,
       "framed_bytes": 15235
     },
     {
@@ -7324,7 +7324,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53699,
+      "json_bytes": 16321,
       "framed_bytes": 16330
     },
     {
@@ -7342,7 +7342,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44057,
+      "json_bytes": 13192,
       "framed_bytes": 13201
     },
     {
@@ -7378,7 +7378,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49526,
+      "json_bytes": 14552,
       "framed_bytes": 14561
     },
     {
@@ -7414,7 +7414,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51120,
+      "json_bytes": 15335,
       "framed_bytes": 15344
     },
     {
@@ -7441,7 +7441,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55621,
+      "json_bytes": 16671,
       "framed_bytes": 16680
     },
     {
@@ -7459,7 +7459,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44216,
+      "json_bytes": 13351,
       "framed_bytes": 13360
     },
     {
@@ -7495,7 +7495,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51040,
+      "json_bytes": 15280,
       "framed_bytes": 15289
     },
     {
@@ -7531,7 +7531,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52419,
+      "json_bytes": 15848,
       "framed_bytes": 15857
     },
     {
@@ -7558,7 +7558,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54783,
+      "json_bytes": 16619,
       "framed_bytes": 16628
     },
     {
@@ -7576,7 +7576,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 42363,
+      "json_bytes": 12284,
       "framed_bytes": 12293
     },
     {
@@ -7612,7 +7612,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51370,
+      "json_bytes": 15610,
       "framed_bytes": 15619
     },
     {
@@ -7648,7 +7648,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49774,
+      "json_bytes": 14775,
       "framed_bytes": 14784
     },
     {
@@ -7675,7 +7675,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55838,
+      "json_bytes": 16888,
       "framed_bytes": 16897
     },
     {
@@ -7693,7 +7693,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44566,
+      "json_bytes": 12915,
       "framed_bytes": 12924
     },
     {
@@ -7729,7 +7729,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51806,
+      "json_bytes": 16046,
       "framed_bytes": 16055
     },
     {
@@ -7765,7 +7765,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49753,
+      "json_bytes": 14754,
       "framed_bytes": 14763
     },
     {
@@ -7792,7 +7792,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55865,
+      "json_bytes": 16915,
       "framed_bytes": 16924
     },
     {
@@ -7810,7 +7810,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44376,
+      "json_bytes": 12725,
       "framed_bytes": 12734
     },
     {
@@ -7846,7 +7846,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50850,
+      "json_bytes": 15876,
       "framed_bytes": 15885
     },
     {
@@ -7882,7 +7882,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52743,
+      "json_bytes": 16172,
       "framed_bytes": 16181
     },
     {
@@ -7909,7 +7909,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53299,
+      "json_bytes": 15921,
       "framed_bytes": 15930
     },
     {
@@ -7927,7 +7927,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44349,
+      "json_bytes": 12698,
       "framed_bytes": 12707
     },
     {
@@ -7963,7 +7963,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49773,
+      "json_bytes": 14799,
       "framed_bytes": 14808
     },
     {
@@ -7999,7 +7999,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52943,
+      "json_bytes": 16372,
       "framed_bytes": 16381
     },
     {
@@ -8026,7 +8026,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54575,
+      "json_bytes": 16411,
       "framed_bytes": 16420
     },
     {
@@ -8044,7 +8044,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44620,
+      "json_bytes": 12969,
       "framed_bytes": 12978
     },
     {
@@ -8080,7 +8080,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49721,
+      "json_bytes": 14747,
       "framed_bytes": 14756
     },
     {
@@ -8116,7 +8116,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 53148,
+      "json_bytes": 16577,
       "framed_bytes": 16586
     },
     {
@@ -8143,7 +8143,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54434,
+      "json_bytes": 16270,
       "framed_bytes": 16279
     },
     {
@@ -8161,7 +8161,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44756,
+      "json_bytes": 13105,
       "framed_bytes": 13114
     },
     {
@@ -8197,7 +8197,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50830,
+      "json_bytes": 15070,
       "framed_bytes": 15079
     },
     {
@@ -8233,7 +8233,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51271,
+      "json_bytes": 15486,
       "framed_bytes": 15495
     },
     {
@@ -8260,7 +8260,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55255,
+      "json_bytes": 17091,
       "framed_bytes": 17100
     },
     {
@@ -8278,7 +8278,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43255,
+      "json_bytes": 12390,
       "framed_bytes": 12399
     },
     {
@@ -8314,7 +8314,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49747,
+      "json_bytes": 14773,
       "framed_bytes": 14782
     },
     {
@@ -8350,7 +8350,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52283,
+      "json_bytes": 15712,
       "framed_bytes": 15721
     },
     {
@@ -8377,7 +8377,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56598,
+      "json_bytes": 17648,
       "framed_bytes": 17657
     },
     {
@@ -8395,7 +8395,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 42285,
+      "json_bytes": 12206,
       "framed_bytes": 12215
     },
     {
@@ -8431,7 +8431,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50911,
+      "json_bytes": 15151,
       "framed_bytes": 15160
     },
     {
@@ -8467,7 +8467,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52066,
+      "json_bytes": 15495,
       "framed_bytes": 15504
     },
     {
@@ -8494,7 +8494,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55566,
+      "json_bytes": 17402,
       "framed_bytes": 17411
     },
     {
@@ -8512,7 +8512,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43395,
+      "json_bytes": 12530,
       "framed_bytes": 12539
     },
     {
@@ -8548,7 +8548,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49637,
+      "json_bytes": 14663,
       "framed_bytes": 14672
     },
     {
@@ -8584,7 +8584,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50011,
+      "json_bytes": 15012,
       "framed_bytes": 15021
     },
     {
@@ -8611,7 +8611,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54863,
+      "json_bytes": 16699,
       "framed_bytes": 16708
     },
     {
@@ -8629,7 +8629,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 45109,
+      "json_bytes": 13458,
       "framed_bytes": 13467
     },
     {
@@ -8665,7 +8665,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49622,
+      "json_bytes": 14648,
       "framed_bytes": 14657
     },
     {
@@ -8701,7 +8701,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52283,
+      "json_bytes": 15712,
       "framed_bytes": 15721
     },
     {
@@ -8728,7 +8728,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55892,
+      "json_bytes": 16942,
       "framed_bytes": 16951
     },
     {
@@ -8746,7 +8746,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44323,
+      "json_bytes": 13458,
       "framed_bytes": 13467
     },
     {
@@ -8782,7 +8782,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 48574,
+      "json_bytes": 14386,
       "framed_bytes": 14395
     },
     {
@@ -8818,7 +8818,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52283,
+      "json_bytes": 15712,
       "framed_bytes": 15721
     },
     {
@@ -8845,7 +8845,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55838,
+      "json_bytes": 16888,
       "framed_bytes": 16897
     },
     {
@@ -8863,7 +8863,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43654,
+      "json_bytes": 12789,
       "framed_bytes": 12798
     },
     {
@@ -8899,7 +8899,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 48486,
+      "json_bytes": 14298,
       "framed_bytes": 14307
     },
     {
@@ -8935,7 +8935,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50907,
+      "json_bytes": 15122,
       "framed_bytes": 15131
     },
     {
@@ -8962,7 +8962,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55675,
+      "json_bytes": 16725,
       "framed_bytes": 16734
     },
     {
@@ -8980,7 +8980,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44647,
+      "json_bytes": 12996,
       "framed_bytes": 13005
     },
     {
@@ -9016,7 +9016,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51830,
+      "json_bytes": 16070,
       "framed_bytes": 16079
     },
     {
@@ -9052,7 +9052,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52013,
+      "json_bytes": 15442,
       "framed_bytes": 15451
     },
     {
@@ -9079,7 +9079,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54865,
+      "json_bytes": 16701,
       "framed_bytes": 16710
     },
     {
@@ -9097,7 +9097,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44457,
+      "json_bytes": 12806,
       "framed_bytes": 12815
     },
     {
@@ -9133,7 +9133,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51803,
+      "json_bytes": 16043,
       "framed_bytes": 16052
     },
     {
@@ -9169,7 +9169,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51118,
+      "json_bytes": 15333,
       "framed_bytes": 15342
     },
     {
@@ -9196,7 +9196,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54564,
+      "json_bytes": 16400,
       "framed_bytes": 16409
     },
     {
@@ -9214,7 +9214,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44566,
+      "json_bytes": 12915,
       "framed_bytes": 12924
     },
     {
@@ -9250,7 +9250,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 48908,
+      "json_bytes": 14720,
       "framed_bytes": 14729
     },
     {
@@ -9286,7 +9286,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51026,
+      "json_bytes": 15241,
       "framed_bytes": 15250
     },
     {
@@ -9313,7 +9313,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55576,
+      "json_bytes": 16626,
       "framed_bytes": 16635
     },
     {
@@ -9331,7 +9331,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44656,
+      "json_bytes": 13005,
       "framed_bytes": 13014
     },
     {
@@ -9367,7 +9367,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51074,
+      "json_bytes": 15314,
       "framed_bytes": 15323
     },
     {
@@ -9403,7 +9403,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52148,
+      "json_bytes": 16363,
       "framed_bytes": 16372
     },
     {
@@ -9430,7 +9430,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54614,
+      "json_bytes": 16450,
       "framed_bytes": 16459
     },
     {
@@ -9448,7 +9448,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43670,
+      "json_bytes": 12805,
       "framed_bytes": 12814
     },
     {
@@ -9484,7 +9484,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49828,
+      "json_bytes": 14854,
       "framed_bytes": 14863
     },
     {
@@ -9520,7 +9520,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50332,
+      "json_bytes": 15333,
       "framed_bytes": 15342
     },
     {
@@ -9547,7 +9547,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54698,
+      "json_bytes": 16534,
       "framed_bytes": 16543
     },
     {
@@ -9565,7 +9565,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 42324,
+      "json_bytes": 12245,
       "framed_bytes": 12254
     },
     {
@@ -9601,7 +9601,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49792,
+      "json_bytes": 14818,
       "framed_bytes": 14827
     },
     {
@@ -9637,7 +9637,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52256,
+      "json_bytes": 15685,
       "framed_bytes": 15694
     },
     {
@@ -9664,7 +9664,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54816,
+      "json_bytes": 16652,
       "framed_bytes": 16661
     },
     {
@@ -9682,7 +9682,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43511,
+      "json_bytes": 12646,
       "framed_bytes": 12655
     },
     {
@@ -9718,7 +9718,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51254,
+      "json_bytes": 15494,
       "framed_bytes": 15503
     },
     {
@@ -9754,7 +9754,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51256,
+      "json_bytes": 15471,
       "framed_bytes": 15480
     },
     {
@@ -9781,7 +9781,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56595,
+      "json_bytes": 17645,
       "framed_bytes": 17654
     },
     {
@@ -9799,7 +9799,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44376,
+      "json_bytes": 12725,
       "framed_bytes": 12734
     },
     {
@@ -9835,7 +9835,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49625,
+      "json_bytes": 14651,
       "framed_bytes": 14660
     },
     {
@@ -9871,7 +9871,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52337,
+      "json_bytes": 15766,
       "framed_bytes": 15775
     },
     {
@@ -9898,7 +9898,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53863,
+      "json_bytes": 16485,
       "framed_bytes": 16494
     },
     {
@@ -9916,7 +9916,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43402,
+      "json_bytes": 12537,
       "framed_bytes": 12546
     },
     {
@@ -9952,7 +9952,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50616,
+      "json_bytes": 14856,
       "framed_bytes": 14865
     },
     {
@@ -9988,7 +9988,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51422,
+      "json_bytes": 15637,
       "framed_bytes": 15646
     },
     {
@@ -10015,7 +10015,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56028,
+      "json_bytes": 17078,
       "framed_bytes": 17087
     },
     {
@@ -10033,7 +10033,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43645,
+      "json_bytes": 12780,
       "framed_bytes": 12789
     },
     {
@@ -10069,7 +10069,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49667,
+      "json_bytes": 14693,
       "framed_bytes": 14702
     },
     {
@@ -10105,7 +10105,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52577,
+      "json_bytes": 16006,
       "framed_bytes": 16015
     },
     {
@@ -10132,7 +10132,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55901,
+      "json_bytes": 16951,
       "framed_bytes": 16960
     },
     {
@@ -10150,7 +10150,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43645,
+      "json_bytes": 12780,
       "framed_bytes": 12789
     },
     {
@@ -10186,7 +10186,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50830,
+      "json_bytes": 15070,
       "framed_bytes": 15079
     },
     {
@@ -10222,7 +10222,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51019,
+      "json_bytes": 15234,
       "framed_bytes": 15243
     },
     {
@@ -10249,7 +10249,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54891,
+      "json_bytes": 16727,
       "framed_bytes": 16736
     },
     {
@@ -10267,7 +10267,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44593,
+      "json_bytes": 12942,
       "framed_bytes": 12951
     },
     {
@@ -10303,7 +10303,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49800,
+      "json_bytes": 14826,
       "framed_bytes": 14835
     },
     {
@@ -10339,7 +10339,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52175,
+      "json_bytes": 15604,
       "framed_bytes": 15613
     },
     {
@@ -10366,7 +10366,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 56322,
+      "json_bytes": 17372,
       "framed_bytes": 17381
     },
     {
@@ -10384,7 +10384,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43593,
+      "json_bytes": 12728,
       "framed_bytes": 12737
     },
     {
@@ -10420,7 +10420,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49823,
+      "json_bytes": 14849,
       "framed_bytes": 14858
     },
     {
@@ -10456,7 +10456,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51011,
+      "json_bytes": 15226,
       "framed_bytes": 15235
     },
     {
@@ -10483,7 +10483,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54563,
+      "json_bytes": 16399,
       "framed_bytes": 16408
     },
     {
@@ -10501,7 +10501,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44846,
+      "json_bytes": 13195,
       "framed_bytes": 13204
     },
     {
@@ -10537,7 +10537,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50066,
+      "json_bytes": 15092,
       "framed_bytes": 15101
     },
     {
@@ -10573,7 +10573,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51066,
+      "json_bytes": 15281,
       "framed_bytes": 15290
     },
     {
@@ -10600,7 +10600,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55621,
+      "json_bytes": 16671,
       "framed_bytes": 16680
     },
     {
@@ -10618,7 +10618,7 @@
       "peak_live_vectors_per_streaming_arm": 14,
       "peak_live_cells_per_streaming_arm": 1134,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43831,
+      "json_bytes": 12966,
       "framed_bytes": 12975
     },
     {
@@ -10654,7 +10654,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51074,
+      "json_bytes": 15314,
       "framed_bytes": 15323
     },
     {
@@ -10690,7 +10690,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51416,
+      "json_bytes": 15631,
       "framed_bytes": 15640
     },
     {
@@ -10717,7 +10717,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 54759,
+      "json_bytes": 16595,
       "framed_bytes": 16604
     },
     {
@@ -10735,7 +10735,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43992,
+      "json_bytes": 13127,
       "framed_bytes": 13136
     },
     {
@@ -10771,7 +10771,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51037,
+      "json_bytes": 15277,
       "framed_bytes": 15286
     },
     {
@@ -10807,7 +10807,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49731,
+      "json_bytes": 14732,
       "framed_bytes": 14741
     },
     {
@@ -10834,7 +10834,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55784,
+      "json_bytes": 16834,
       "framed_bytes": 16843
     },
     {
@@ -10852,7 +10852,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 43547,
+      "json_bytes": 12682,
       "framed_bytes": 12691
     },
     {
@@ -10888,7 +10888,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 50253,
+      "json_bytes": 15279,
       "framed_bytes": 15288
     },
     {
@@ -10924,7 +10924,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51255,
+      "json_bytes": 15470,
       "framed_bytes": 15479
     },
     {
@@ -10951,7 +10951,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 55729,
+      "json_bytes": 16779,
       "framed_bytes": 16788
     },
     {
@@ -10969,7 +10969,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44403,
+      "json_bytes": 12752,
       "framed_bytes": 12761
     },
     {
@@ -11005,7 +11005,7 @@
       "peak_live_vectors_per_streaming_arm": 16,
       "peak_live_cells_per_streaming_arm": 1296,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 51587,
+      "json_bytes": 15827,
       "framed_bytes": 15836
     },
     {
@@ -11041,7 +11041,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52473,
+      "json_bytes": 15902,
       "framed_bytes": 15911
     },
     {
@@ -11068,7 +11068,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53863,
+      "json_bytes": 16485,
       "framed_bytes": 16494
     },
     {
@@ -11086,7 +11086,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 44349,
+      "json_bytes": 12698,
       "framed_bytes": 12707
     },
     {
@@ -11122,7 +11122,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 49681,
+      "json_bytes": 14707,
       "framed_bytes": 14716
     },
     {
@@ -11158,7 +11158,7 @@
       "peak_live_vectors_per_streaming_arm": 17,
       "peak_live_cells_per_streaming_arm": 1377,
       "retained_diagnostic_vectors": 5,
-      "json_bytes": 52689,
+      "json_bytes": 16118,
       "framed_bytes": 16127
     },
     {
@@ -11185,7 +11185,7 @@
       "peak_live_vectors_per_streaming_arm": 15,
       "peak_live_cells_per_streaming_arm": 1215,
       "retained_diagnostic_vectors": 4,
-      "json_bytes": 53445,
+      "json_bytes": 16067,
       "framed_bytes": 16076
     }
   ]

@@ -66,7 +66,7 @@ def logical_study():
                          peak_live_vectors_per_streaming_arm=live['peak_live_vectors'],
                          peak_live_cells_per_streaming_arm=live['peak_live_cells'],
                          retained_diagnostic_vectors=live['retained_diagnostic_vectors'],
-                         json_bytes=packet_path.stat().st_size,framed_bytes=len(wire)))
+                         json_bytes=len(core.canonical_bytes(packet)),framed_bytes=len(wire)))
     if len(rows)!=380 or sum(r['checked_cells_per_arm'] for r in rows)!=1179684:
         raise core.Invalid('frozen cohort changed')
     return dict(scope='retained authored finite cohort; no new source-program admission',
@@ -91,11 +91,15 @@ def allocation_study():
     raw=[]
     with tempfile.TemporaryDirectory(prefix='repairseal-vector-stream-') as directory:
         framed_path=Path(directory)/'certificate.rows'
+        full_path=Path(directory)/'certificate.json'
         for case,(_population,item,request_path,packet_path) in enumerate(selected):
             request=load(request_path)
-            with framed_path.open('wb') as output:stream.write_packet(load(packet_path),output)
+            packet=load(packet_path)
+            full_path.write_bytes(core.canonical_bytes(packet))
+            with framed_path.open('wb') as output:stream.write_packet(packet,output)
+            del packet
             def run(arm):
-                if arm=='full-json':return core.check(request,load(packet_path))
+                if arm=='full-json':return core.check(request,load(full_path))
                 if arm=='direct-full':return stream.direct_full(request)
                 if arm=='direct-liveness':return stream.direct_liveness(request)
                 with framed_path.open('rb') as source:return stream.check_stream(request,source)
@@ -125,7 +129,7 @@ def allocation_study():
                            live_to_direct=medians['direct-liveness']/medians['direct-full'],
                            stream_to_matched_direct=medians['framed-stream']/medians['direct-liveness']))
     return dict(scope='50 predetermined retained requests; three repetitions per arm; Python allocations, not RSS',
-                boundary='same decoded request; certificate file decoding, reconstruction and validation included; producer conversion excluded',
+                boundary='same decoded request; both wire encodings canonical and compact; certificate file decoding, reconstruction and validation included; producer conversion excluded',
                 selection='20 correct fixtures plus stress manifest offsets 0,10,...,290',
                 runtime=dict(python=sys.version,implementation=platform.python_implementation(),platform=platform.platform()),
                 summary=dict(requests=len(selected),measurements=len(raw),
