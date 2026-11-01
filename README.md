@@ -9,6 +9,34 @@ framed-stream receivers implement the same full-domain decision contract.
 
 ## Scope
 
+### Identity-scoped approval journal
+
+`src/admission_journal.py` is an owned durable application consumer. The
+receiver registers its request separately from incoming packets, records a
+checked semantic decision, and answers approval queries only for an explicit
+current request identity. Replacing a candidate advances its revision; an old
+receipt cannot approve that replacement. A valid refutation remains a negative
+decision. An exhausted work allowance or malformed packet commits no receipt.
+The equally informed certificate-free path offers the same decisions.
+
+```sh
+python -B -m unittest discover -s tests -p test_admission_journal.py -v
+python -B tests/check_admission_results.py
+python -B tests/admission_journal_study.py --output /fresh/owned-approval
+python -B tests/report_admission_results.py --output ../paper/admission-results.tex
+```
+
+The retained `results/admission-journal` activity contains 28 clean receiver
+processes, five separately registered requests, one approval and four
+refutations. All full/direct decisions, canonical witnesses and checked-cell
+counts agree. Receiver sandboxes contain no producer module. Five closed
+SQLite journals retain the actual receipts; request replacement invalidates
+the old approval and stale evidence rejects. This is one source-derived repair
+and four existing controls, not five independent upstream applications. It
+does not measure review effort, latency or a new memory advantage. The journal
+assumes owned local storage and SQLite's serialized durability contract; it
+does not authenticate the external source correspondence or a live deployment.
+
 ### Source-linked ceiling-division consumer case
 
 The actual upstream llama.cpp macro edit is retained in

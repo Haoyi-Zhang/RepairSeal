@@ -1,0 +1,745 @@
+{
+  "raw_processes": [
+    {
+      "arguments": [
+        "register",
+        "original-request.json"
+      ],
+      "database": "original.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"request_id\": \"upstream-ceil-original\", \"request_identity\": \"1485dd05b5f2a4373f981fdbf67e52d70c274e54f3f88c834bd52ad5d9d974ef\", \"revision\": 1}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-original",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "original-full.json"
+      ],
+      "database": "original.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 1176, \"mode\": \"proof\", \"packet_identity\": \"1ba82c6f8fb3fe375a61d33222710fa72b5ba8cda18417d251f39d7651bbf904\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-original\", \"request_identity\": \"1485dd05b5f2a4373f981fdbf67e52d70c274e54f3f88c834bd52ad5d9d974ef\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [2, 4294967295], \"obligation\": \"repair\", \"trace\": []}}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-original",
+        "direct",
+        "--mode",
+        "direct"
+      ],
+      "database": "original.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 1176, \"mode\": \"direct\", \"packet_identity\": \"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-original\", \"request_identity\": \"1485dd05b5f2a4373f981fdbf67e52d70c274e54f3f88c834bd52ad5d9d974ef\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [2, 4294967295], \"obligation\": \"repair\", \"trace\": []}}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-original",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "original-full.json"
+      ],
+      "database": "original.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 1176, \"mode\": \"proof\", \"packet_identity\": \"1ba82c6f8fb3fe375a61d33222710fa72b5ba8cda18417d251f39d7651bbf904\", \"replayed_receipt\": true, \"request_id\": \"upstream-ceil-original\", \"request_identity\": \"1485dd05b5f2a4373f981fdbf67e52d70c274e54f3f88c834bd52ad5d9d974ef\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [2, 4294967295], \"obligation\": \"repair\", \"trace\": []}}\n"
+    },
+    {
+      "arguments": [
+        "approved",
+        "upstream-ceil-original",
+        "1485dd05b5f2a4373f981fdbf67e52d70c274e54f3f88c834bd52ad5d9d974ef"
+      ],
+      "database": "original.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false}\n"
+    },
+    {
+      "arguments": [
+        "register",
+        "supplied-request.json"
+      ],
+      "database": "supplied.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"request_id\": \"upstream-ceil-supplied\", \"request_identity\": \"b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e\", \"revision\": 1}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-supplied",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "supplied-full.json"
+      ],
+      "database": "supplied.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": true, \"checked_cells\": 1680, \"mode\": \"proof\", \"packet_identity\": \"ae8a324716801ed9484ed5fb2df1c49f5db54a204d9ecd5e73996e857c16aa69\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-supplied\", \"request_identity\": \"b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e\", \"revision\": 1, \"semantic_status\": \"ACCEPT\", \"witness\": null}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-supplied",
+        "direct",
+        "--mode",
+        "direct"
+      ],
+      "database": "supplied.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": true, \"checked_cells\": 1680, \"mode\": \"direct\", \"packet_identity\": \"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-supplied\", \"request_identity\": \"b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e\", \"revision\": 1, \"semantic_status\": \"ACCEPT\", \"witness\": null}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-supplied",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "supplied-full.json"
+      ],
+      "database": "supplied.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": true, \"checked_cells\": 1680, \"mode\": \"proof\", \"packet_identity\": \"ae8a324716801ed9484ed5fb2df1c49f5db54a204d9ecd5e73996e857c16aa69\", \"replayed_receipt\": true, \"request_id\": \"upstream-ceil-supplied\", \"request_identity\": \"b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e\", \"revision\": 1, \"semantic_status\": \"ACCEPT\", \"witness\": null}\n"
+    },
+    {
+      "arguments": [
+        "approved",
+        "upstream-ceil-supplied",
+        "b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e"
+      ],
+      "database": "supplied.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": true}\n"
+    },
+    {
+      "arguments": [
+        "register",
+        "regression-request.json"
+      ],
+      "database": "regression.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"request_id\": \"upstream-ceil-regression\", \"request_identity\": \"e643d3e16ba67352dc23b993d9828aebc45f27e0a562c7403007fa23da0f6882\", \"revision\": 1}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-regression",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "regression-full.json"
+      ],
+      "database": "regression.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 1806, \"mode\": \"proof\", \"packet_identity\": \"079ac4deea79b3ae3e500c80575b17e6a794d99a3faf0e5a5d9b39f4033ad3ba\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-regression\", \"request_identity\": \"e643d3e16ba67352dc23b993d9828aebc45f27e0a562c7403007fa23da0f6882\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [0, 1], \"obligation\": \"preserve\", \"trace\": [[0, 0], [1, 1]]}}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-regression",
+        "direct",
+        "--mode",
+        "direct"
+      ],
+      "database": "regression.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 1806, \"mode\": \"direct\", \"packet_identity\": \"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-regression\", \"request_identity\": \"e643d3e16ba67352dc23b993d9828aebc45f27e0a562c7403007fa23da0f6882\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [0, 1], \"obligation\": \"preserve\", \"trace\": [[0, 0], [1, 1]]}}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-regression",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "regression-full.json"
+      ],
+      "database": "regression.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 1806, \"mode\": \"proof\", \"packet_identity\": \"079ac4deea79b3ae3e500c80575b17e6a794d99a3faf0e5a5d9b39f4033ad3ba\", \"replayed_receipt\": true, \"request_id\": \"upstream-ceil-regression\", \"request_identity\": \"e643d3e16ba67352dc23b993d9828aebc45f27e0a562c7403007fa23da0f6882\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [0, 1], \"obligation\": \"preserve\", \"trace\": [[0, 0], [1, 1]]}}\n"
+    },
+    {
+      "arguments": [
+        "approved",
+        "upstream-ceil-regression",
+        "e643d3e16ba67352dc23b993d9828aebc45f27e0a562c7403007fa23da0f6882"
+      ],
+      "database": "regression.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false}\n"
+    },
+    {
+      "arguments": [
+        "register",
+        "definedness-request.json"
+      ],
+      "database": "definedness.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"request_id\": \"upstream-ceil-definedness\", \"request_identity\": \"3e467d4f763402286eebd3cd6de23e8c32d49c1b4d636915557ab84888c1db42\", \"revision\": 1}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-definedness",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "definedness-full.json"
+      ],
+      "database": "definedness.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 1848, \"mode\": \"proof\", \"packet_identity\": \"89dd843ec8db4684751ffd5a55f07d68f78468e77604534c67b39dbceff0ca2f\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-definedness\", \"request_identity\": \"3e467d4f763402286eebd3cd6de23e8c32d49c1b4d636915557ab84888c1db42\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [0, 1], \"obligation\": \"defined\", \"trace\": []}}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-definedness",
+        "direct",
+        "--mode",
+        "direct"
+      ],
+      "database": "definedness.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 1848, \"mode\": \"direct\", \"packet_identity\": \"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-definedness\", \"request_identity\": \"3e467d4f763402286eebd3cd6de23e8c32d49c1b4d636915557ab84888c1db42\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [0, 1], \"obligation\": \"defined\", \"trace\": []}}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-definedness",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "definedness-full.json"
+      ],
+      "database": "definedness.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 1848, \"mode\": \"proof\", \"packet_identity\": \"89dd843ec8db4684751ffd5a55f07d68f78468e77604534c67b39dbceff0ca2f\", \"replayed_receipt\": true, \"request_id\": \"upstream-ceil-definedness\", \"request_identity\": \"3e467d4f763402286eebd3cd6de23e8c32d49c1b4d636915557ab84888c1db42\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [0, 1], \"obligation\": \"defined\", \"trace\": []}}\n"
+    },
+    {
+      "arguments": [
+        "approved",
+        "upstream-ceil-definedness",
+        "3e467d4f763402286eebd3cd6de23e8c32d49c1b4d636915557ab84888c1db42"
+      ],
+      "database": "definedness.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false}\n"
+    },
+    {
+      "arguments": [
+        "register",
+        "trace-overfit-request.json"
+      ],
+      "database": "trace-overfit.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"request_id\": \"upstream-ceil-trace-overfit\", \"request_identity\": \"f3a5ddbc589cda69ea7b40f60cd55f5f7cca68566bee57117197ae46c05ec399\", \"revision\": 1}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-trace-overfit",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "trace-overfit-full.json"
+      ],
+      "database": "trace-overfit.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 2268, \"mode\": \"proof\", \"packet_identity\": \"875d163b42f280dad9595cc1ab4f755e0f94e873ac5a0d33fbfd126b81bc4af6\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-trace-overfit\", \"request_identity\": \"f3a5ddbc589cda69ea7b40f60cd55f5f7cca68566bee57117197ae46c05ec399\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [31, 4294967295], \"obligation\": \"repair\", \"trace\": [[0, 0], [1, 0]]}}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-trace-overfit",
+        "direct",
+        "--mode",
+        "direct"
+      ],
+      "database": "trace-overfit.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 2268, \"mode\": \"direct\", \"packet_identity\": \"74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b\", \"replayed_receipt\": false, \"request_id\": \"upstream-ceil-trace-overfit\", \"request_identity\": \"f3a5ddbc589cda69ea7b40f60cd55f5f7cca68566bee57117197ae46c05ec399\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [31, 4294967295], \"obligation\": \"repair\", \"trace\": [[0, 0], [1, 0]]}}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-trace-overfit",
+        "proof",
+        "--mode",
+        "proof",
+        "--packet",
+        "trace-overfit-full.json"
+      ],
+      "database": "trace-overfit.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false, \"checked_cells\": 2268, \"mode\": \"proof\", \"packet_identity\": \"875d163b42f280dad9595cc1ab4f755e0f94e873ac5a0d33fbfd126b81bc4af6\", \"replayed_receipt\": true, \"request_id\": \"upstream-ceil-trace-overfit\", \"request_identity\": \"f3a5ddbc589cda69ea7b40f60cd55f5f7cca68566bee57117197ae46c05ec399\", \"revision\": 1, \"semantic_status\": \"REFUTED\", \"witness\": {\"input\": [31, 4294967295], \"obligation\": \"repair\", \"trace\": [[0, 0], [1, 0]]}}\n"
+    },
+    {
+      "arguments": [
+        "approved",
+        "upstream-ceil-trace-overfit",
+        "f3a5ddbc589cda69ea7b40f60cd55f5f7cca68566bee57117197ae46c05ec399"
+      ],
+      "database": "trace-overfit.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false}\n"
+    },
+    {
+      "arguments": [
+        "register",
+        "changed-request.json",
+        "--expected-identity",
+        "b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e"
+      ],
+      "database": "supplied.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"request_id\": \"upstream-ceil-supplied\", \"request_identity\": \"9c9aee0443785c47a232573a7845d829ef8e441fa2cc79321c0f94f51c85ee63\", \"revision\": 2}\n"
+    },
+    {
+      "arguments": [
+        "approved",
+        "upstream-ceil-supplied",
+        "b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e"
+      ],
+      "database": "supplied.sqlite",
+      "returncode": 0,
+      "stderr": "",
+      "stdout": "{\"approved\": false}\n"
+    },
+    {
+      "arguments": [
+        "decide",
+        "upstream-ceil-supplied",
+        "stale-packet",
+        "--mode",
+        "proof",
+        "--packet",
+        "supplied-full.json"
+      ],
+      "database": "supplied.sqlite",
+      "returncode": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 1, in <module>\n  File \"<frozen runpy>\", line 286, in run_path\n  File \"<frozen runpy>\", line 98, in _run_module_code\n  File \"<frozen runpy>\", line 88, in _run_code\n  File \"<OUTPUT>/receiver/admission_journal.py\", line 116, in <module>\n    if __name__=='__main__':main()\n                            ^^^^^^\n  File \"<OUTPUT>/receiver/admission_journal.py\", line 113, in main\n    else:result=owner.decide(a.request_id,a.token,a.mode,read_json(a.packet) if a.packet else None)\n                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<OUTPUT>/receiver/admission_journal.py\", line 82, in decide\n    result=core.check(request,packet,count=tick) if mode=='proof' else core.evaluate_topological(request,count=tick)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<OUTPUT>/receiver/proof_dag_checker.py\", line 453, in check\n    if not exact_equal(certificate[\"source_sha256\"],hashes): raise Invalid(\"source binding\")\n                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nproof_dag_checker.Invalid: source binding\n",
+      "stdout": ""
+    }
+  ],
+  "revised_request": {
+    "request_id": "upstream-ceil-supplied",
+    "request_identity": "9c9aee0443785c47a232573a7845d829ef8e441fa2cc79321c0f94f51c85ee63",
+    "revision": 2
+  },
+  "rows": [
+    {
+      "case": "original",
+      "direct": {
+        "approved": false,
+        "checked_cells": 1176,
+        "mode": "direct",
+        "packet_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-original",
+        "request_identity": "1485dd05b5f2a4373f981fdbf67e52d70c274e54f3f88c834bd52ad5d9d974ef",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            2,
+            4294967295
+          ],
+          "obligation": "repair",
+          "trace": []
+        }
+      },
+      "identity_scoped_approval": {
+        "approved": false
+      },
+      "proof": {
+        "approved": false,
+        "checked_cells": 1176,
+        "mode": "proof",
+        "packet_identity": "1ba82c6f8fb3fe375a61d33222710fa72b5ba8cda18417d251f39d7651bbf904",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-original",
+        "request_identity": "1485dd05b5f2a4373f981fdbf67e52d70c274e54f3f88c834bd52ad5d9d974ef",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            2,
+            4294967295
+          ],
+          "obligation": "repair",
+          "trace": []
+        }
+      },
+      "registration": {
+        "request_id": "upstream-ceil-original",
+        "request_identity": "1485dd05b5f2a4373f981fdbf67e52d70c274e54f3f88c834bd52ad5d9d974ef",
+        "revision": 1
+      },
+      "replayed": {
+        "approved": false,
+        "checked_cells": 1176,
+        "mode": "proof",
+        "packet_identity": "1ba82c6f8fb3fe375a61d33222710fa72b5ba8cda18417d251f39d7651bbf904",
+        "replayed_receipt": true,
+        "request_id": "upstream-ceil-original",
+        "request_identity": "1485dd05b5f2a4373f981fdbf67e52d70c274e54f3f88c834bd52ad5d9d974ef",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            2,
+            4294967295
+          ],
+          "obligation": "repair",
+          "trace": []
+        }
+      }
+    },
+    {
+      "case": "supplied",
+      "direct": {
+        "approved": true,
+        "checked_cells": 1680,
+        "mode": "direct",
+        "packet_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-supplied",
+        "request_identity": "b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e",
+        "revision": 1,
+        "semantic_status": "ACCEPT",
+        "witness": null
+      },
+      "identity_scoped_approval": {
+        "approved": true
+      },
+      "proof": {
+        "approved": true,
+        "checked_cells": 1680,
+        "mode": "proof",
+        "packet_identity": "ae8a324716801ed9484ed5fb2df1c49f5db54a204d9ecd5e73996e857c16aa69",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-supplied",
+        "request_identity": "b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e",
+        "revision": 1,
+        "semantic_status": "ACCEPT",
+        "witness": null
+      },
+      "registration": {
+        "request_id": "upstream-ceil-supplied",
+        "request_identity": "b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e",
+        "revision": 1
+      },
+      "replayed": {
+        "approved": true,
+        "checked_cells": 1680,
+        "mode": "proof",
+        "packet_identity": "ae8a324716801ed9484ed5fb2df1c49f5db54a204d9ecd5e73996e857c16aa69",
+        "replayed_receipt": true,
+        "request_id": "upstream-ceil-supplied",
+        "request_identity": "b6003161bf7f19f74e6986966f0dada97143b52419ea1c141299e342e0ed331e",
+        "revision": 1,
+        "semantic_status": "ACCEPT",
+        "witness": null
+      }
+    },
+    {
+      "case": "regression",
+      "direct": {
+        "approved": false,
+        "checked_cells": 1806,
+        "mode": "direct",
+        "packet_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-regression",
+        "request_identity": "e643d3e16ba67352dc23b993d9828aebc45f27e0a562c7403007fa23da0f6882",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            0,
+            1
+          ],
+          "obligation": "preserve",
+          "trace": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "identity_scoped_approval": {
+        "approved": false
+      },
+      "proof": {
+        "approved": false,
+        "checked_cells": 1806,
+        "mode": "proof",
+        "packet_identity": "079ac4deea79b3ae3e500c80575b17e6a794d99a3faf0e5a5d9b39f4033ad3ba",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-regression",
+        "request_identity": "e643d3e16ba67352dc23b993d9828aebc45f27e0a562c7403007fa23da0f6882",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            0,
+            1
+          ],
+          "obligation": "preserve",
+          "trace": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      },
+      "registration": {
+        "request_id": "upstream-ceil-regression",
+        "request_identity": "e643d3e16ba67352dc23b993d9828aebc45f27e0a562c7403007fa23da0f6882",
+        "revision": 1
+      },
+      "replayed": {
+        "approved": false,
+        "checked_cells": 1806,
+        "mode": "proof",
+        "packet_identity": "079ac4deea79b3ae3e500c80575b17e6a794d99a3faf0e5a5d9b39f4033ad3ba",
+        "replayed_receipt": true,
+        "request_id": "upstream-ceil-regression",
+        "request_identity": "e643d3e16ba67352dc23b993d9828aebc45f27e0a562c7403007fa23da0f6882",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            0,
+            1
+          ],
+          "obligation": "preserve",
+          "trace": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "case": "definedness",
+      "direct": {
+        "approved": false,
+        "checked_cells": 1848,
+        "mode": "direct",
+        "packet_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-definedness",
+        "request_identity": "3e467d4f763402286eebd3cd6de23e8c32d49c1b4d636915557ab84888c1db42",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            0,
+            1
+          ],
+          "obligation": "defined",
+          "trace": []
+        }
+      },
+      "identity_scoped_approval": {
+        "approved": false
+      },
+      "proof": {
+        "approved": false,
+        "checked_cells": 1848,
+        "mode": "proof",
+        "packet_identity": "89dd843ec8db4684751ffd5a55f07d68f78468e77604534c67b39dbceff0ca2f",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-definedness",
+        "request_identity": "3e467d4f763402286eebd3cd6de23e8c32d49c1b4d636915557ab84888c1db42",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            0,
+            1
+          ],
+          "obligation": "defined",
+          "trace": []
+        }
+      },
+      "registration": {
+        "request_id": "upstream-ceil-definedness",
+        "request_identity": "3e467d4f763402286eebd3cd6de23e8c32d49c1b4d636915557ab84888c1db42",
+        "revision": 1
+      },
+      "replayed": {
+        "approved": false,
+        "checked_cells": 1848,
+        "mode": "proof",
+        "packet_identity": "89dd843ec8db4684751ffd5a55f07d68f78468e77604534c67b39dbceff0ca2f",
+        "replayed_receipt": true,
+        "request_id": "upstream-ceil-definedness",
+        "request_identity": "3e467d4f763402286eebd3cd6de23e8c32d49c1b4d636915557ab84888c1db42",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            0,
+            1
+          ],
+          "obligation": "defined",
+          "trace": []
+        }
+      }
+    },
+    {
+      "case": "trace-overfit",
+      "direct": {
+        "approved": false,
+        "checked_cells": 2268,
+        "mode": "direct",
+        "packet_identity": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-trace-overfit",
+        "request_identity": "f3a5ddbc589cda69ea7b40f60cd55f5f7cca68566bee57117197ae46c05ec399",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            31,
+            4294967295
+          ],
+          "obligation": "repair",
+          "trace": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      "identity_scoped_approval": {
+        "approved": false
+      },
+      "proof": {
+        "approved": false,
+        "checked_cells": 2268,
+        "mode": "proof",
+        "packet_identity": "875d163b42f280dad9595cc1ab4f755e0f94e873ac5a0d33fbfd126b81bc4af6",
+        "replayed_receipt": false,
+        "request_id": "upstream-ceil-trace-overfit",
+        "request_identity": "f3a5ddbc589cda69ea7b40f60cd55f5f7cca68566bee57117197ae46c05ec399",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            31,
+            4294967295
+          ],
+          "obligation": "repair",
+          "trace": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        }
+      },
+      "registration": {
+        "request_id": "upstream-ceil-trace-overfit",
+        "request_identity": "f3a5ddbc589cda69ea7b40f60cd55f5f7cca68566bee57117197ae46c05ec399",
+        "revision": 1
+      },
+      "replayed": {
+        "approved": false,
+        "checked_cells": 2268,
+        "mode": "proof",
+        "packet_identity": "875d163b42f280dad9595cc1ab4f755e0f94e873ac5a0d33fbfd126b81bc4af6",
+        "replayed_receipt": true,
+        "request_id": "upstream-ceil-trace-overfit",
+        "request_identity": "f3a5ddbc589cda69ea7b40f60cd55f5f7cca68566bee57117197ae46c05ec399",
+        "revision": 1,
+        "semantic_status": "REFUTED",
+        "witness": {
+          "input": [
+            31,
+            4294967295
+          ],
+          "obligation": "repair",
+          "trace": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ]
+        }
+      }
+    }
+  ],
+  "stale_approval": {
+    "approved": false
+  }
+}

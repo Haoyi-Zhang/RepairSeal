@@ -50,6 +50,11 @@ jobs:
           python -B -m unittest discover -s tests -p test_descriptor_consumer.py -v
           python -O -B -m unittest discover -s tests -p test_descriptor_consumer.py -v
           python -B tests/descriptor_consumer_study.py --native --output "$RUNNER_TEMP/descriptor-consumer-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" --compare results/descriptor-consumer
+      - name: Identity-scoped receiving workflow and retained journal bytes
+        run: |
+          python -B -m unittest discover -s tests -p test_admission_journal.py -v
+          python -O -B -m unittest discover -s tests -p test_admission_journal.py -v
+          python -B tests/check_admission_results.py
       - name: Offline Codeflaws model replay
         shell: bash
         run: |
