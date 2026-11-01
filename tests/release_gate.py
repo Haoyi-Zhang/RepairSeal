@@ -5,7 +5,7 @@ This deliberately checks dependency closure by running the public reproducer;
 it does not rely on a generated checksum or inventory manifest.
 """
 from __future__ import annotations
-import argparse, ast, json, os, subprocess, sys, tempfile
+import argparse, ast, hashlib, json, os, subprocess, sys, tempfile
 from contextlib import contextmanager
 from pathlib import Path
 
@@ -24,9 +24,22 @@ REQUIRED = [
     "tests/vector_stream_study.py", "results/vector-stream.json", "results/vector-allocation.json",
     "src/macro_bridge.py", "tests/test_macro_bridge.py", "tests/macro_transfer_study.py",
     "results/macro-transfer/summary.json",
+    "tests/vector_rss_study.py", "tests/verify_vector_rss.py",
+    "results/vector-rss/summary.json", "results/vector-rss/observations.zip",
 ]
 FORBIDDEN_NAMES = {"CHECKSUMS.sha256", "MANIFEST.json"}
 FORBIDDEN_SUFFIXES = {".zip", ".tar", ".gz", ".bz2", ".xz", ".pyc"}
+REVIEWED_DATA_ARCHIVES = {
+    "results/vector-rss/observations.zip": "388139aca1b8227686d82ceb9da1faa85e1cf5d1e84981b000fb50a1e4451b9c",
+}
+
+def reviewed_data_archive(path):
+    """One exact retained data payload, never a generic ZIP exception."""
+    try:
+        expected = REVIEWED_DATA_ARCHIVES.get(path.relative_to(ROOT).as_posix())
+    except ValueError:
+        return False
+    return expected is not None and path.is_file() and hashlib.sha256(path.read_bytes()).hexdigest() == expected
 
 @contextmanager
 def reproduction_output(keep_output: Path | None):
@@ -51,7 +64,7 @@ def main() -> None:
         raise SystemExit("missing required files: " + ", ".join(missing))
     forbidden = []
     for path in ROOT.rglob("*"):
-        if "__pycache__" in path.parts or path.name in FORBIDDEN_NAMES or path.suffix in FORBIDDEN_SUFFIXES:
+        if "__pycache__" in path.parts or path.name in FORBIDDEN_NAMES or (path.suffix in FORBIDDEN_SUFFIXES and not reviewed_data_archive(path)):
             forbidden.append(str(path.relative_to(ROOT)))
         if path.suffix == ".py":
             ast.parse(path.read_text(encoding="utf-8"), filename=str(path))
