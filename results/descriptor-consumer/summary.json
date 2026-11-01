@@ -1,0 +1,191 @@
+{
+  "cells_per_full_or_direct_arm": 1680,
+  "compilers": [
+    {
+      "compile_returncode": 0,
+      "compiler": "gcc",
+      "executable": "/usr/bin/x86_64-linux-gnu-gcc-13",
+      "flags": [
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror"
+      ],
+      "run_returncode": 0,
+      "version_first_line": "gcc (Ubuntu 13.3.0-6ubuntu2~24.04.1) 13.3.0"
+    },
+    {
+      "compile_returncode": 0,
+      "compiler": "clang",
+      "executable": "/usr/lib/llvm-18/bin/clang",
+      "flags": [
+        "-std=c11",
+        "-O2",
+        "-Wall",
+        "-Wextra",
+        "-Werror"
+      ],
+      "run_returncode": 0,
+      "version_first_line": "Ubuntu clang version 18.1.3 (1ubuntu1)"
+    }
+  ],
+  "excluded_pairs": 10,
+  "full_certificate_status": "ACCEPT",
+  "initial_state": {
+    "allocated": 4,
+    "consumed": 4,
+    "requested": 4
+  },
+  "input_pairs": 42,
+  "maximum_dispatches_per_pair": 64,
+  "native_executed": true,
+  "native_loop_admitted_pairs": 32,
+  "native_role_rows": 128,
+  "new_consumer_success_pairs": 32,
+  "new_independent_programs": 0,
+  "old_consumer_failed_pairs": 5,
+  "old_under_reserved_pairs": 5,
+  "scope": "Owned source-derived local accounting abstraction. Exact unchanged caller anchors and conditional loop correspondence, not a general source translator or local reproduction of the upstream device report.",
+  "source_bindings": {
+    "public-data/ceil-div-source.json": "10c4adf3d5948fae9589cc48c9c2eff95fc86c223f7a210f5a40d5c5f245f357",
+    "public-data/descriptor-context.json": "630be59d0327be08f7738dd785a2830e986eca3d2f85b058d1b5af316f4c9796",
+    "src/macro_bridge.py": "44f63553e9f232dd9c762f071cb337d8139dc4d7abd095460f6c4ccefa70bd80",
+    "tests/descriptor_consumer_study.py": "a12511e88688c665368aa21698f12f279b1ca45dc082c20e0dd81729de822f5d"
+  },
+  "source_context": {
+    "fresh_whole_source_verified": true,
+    "general_callsite_inference": false,
+    "mode": "exact selected anchors in both complete immutable sources",
+    "sources": [
+      {
+        "anchors": [
+          {
+            "line": 8265,
+            "text": "static void ggml_vk_matmul("
+          },
+          {
+            "line": 8270,
+            "text": "uint32_t split_k, uint32_t batch, uint32_t ne02, uint32_t ne12, uint32_t broadcast2, uint32_t broadcast3,"
+          },
+          {
+            "line": 8273,
+            "text": "if (split_k == 1) {"
+          },
+          {
+            "line": 8274,
+            "text": "ggml_pipeline_request_descriptor_sets(ctx, pipeline, CEIL_DIV(batch, ctx->device->properties.limits.maxComputeWorkGroupCount[2]));"
+          },
+          {
+            "line": 8276,
+            "text": "uint32_t base_work_group_z = 0;"
+          },
+          {
+            "line": 8277,
+            "text": "while (base_work_group_z < batch) {"
+          },
+          {
+            "line": 8278,
+            "text": "uint32_t groups_z = std::min(batch - base_work_group_z, ctx->device->properties.limits.maxComputeWorkGroupCount[2]);"
+          },
+          {
+            "line": 8281,
+            "text": "ggml_vk_dispatch_pipeline(ctx, subctx, pipeline, { a, b, d }, pc, { m, n, groups_z });"
+          },
+          {
+            "line": 8282,
+            "text": "base_work_group_z += groups_z;"
+          },
+          {
+            "line": 2805,
+            "text": "ctx->pipeline_descriptor_set_requirements += n;"
+          },
+          {
+            "line": 2814,
+            "text": "if (ctx->descriptor_sets.size() >= ctx->pipeline_descriptor_set_requirements) {"
+          },
+          {
+            "line": 2822,
+            "text": "uint32_t needed = std::max(3 * ctx->descriptor_sets.size() / 2, size_t{ctx->pipeline_descriptor_set_requirements});"
+          },
+          {
+            "line": 7632,
+            "text": "GGML_ASSERT(ctx->descriptor_set_idx < ctx->descriptor_sets.size());"
+          },
+          {
+            "line": 7637,
+            "text": "vk::DescriptorSet& descriptor_set = ctx->descriptor_sets[ctx->descriptor_set_idx++];"
+          }
+        ],
+        "bytes": 967377,
+        "role": "before",
+        "sha256": "63140287d1ed1722d69d30881e4140da9306b3231bc83b07937bc7bbd30dbc77"
+      },
+      {
+        "anchors": [
+          {
+            "line": 8265,
+            "text": "static void ggml_vk_matmul("
+          },
+          {
+            "line": 8270,
+            "text": "uint32_t split_k, uint32_t batch, uint32_t ne02, uint32_t ne12, uint32_t broadcast2, uint32_t broadcast3,"
+          },
+          {
+            "line": 8273,
+            "text": "if (split_k == 1) {"
+          },
+          {
+            "line": 8274,
+            "text": "ggml_pipeline_request_descriptor_sets(ctx, pipeline, CEIL_DIV(batch, ctx->device->properties.limits.maxComputeWorkGroupCount[2]));"
+          },
+          {
+            "line": 8276,
+            "text": "uint32_t base_work_group_z = 0;"
+          },
+          {
+            "line": 8277,
+            "text": "while (base_work_group_z < batch) {"
+          },
+          {
+            "line": 8278,
+            "text": "uint32_t groups_z = std::min(batch - base_work_group_z, ctx->device->properties.limits.maxComputeWorkGroupCount[2]);"
+          },
+          {
+            "line": 8281,
+            "text": "ggml_vk_dispatch_pipeline(ctx, subctx, pipeline, { a, b, d }, pc, { m, n, groups_z });"
+          },
+          {
+            "line": 8282,
+            "text": "base_work_group_z += groups_z;"
+          },
+          {
+            "line": 2805,
+            "text": "ctx->pipeline_descriptor_set_requirements += n;"
+          },
+          {
+            "line": 2814,
+            "text": "if (ctx->descriptor_sets.size() >= ctx->pipeline_descriptor_set_requirements) {"
+          },
+          {
+            "line": 2822,
+            "text": "uint32_t needed = std::max(3 * ctx->descriptor_sets.size() / 2, size_t{ctx->pipeline_descriptor_set_requirements});"
+          },
+          {
+            "line": 7632,
+            "text": "GGML_ASSERT(ctx->descriptor_set_idx < ctx->descriptor_sets.size());"
+          },
+          {
+            "line": 7637,
+            "text": "vk::DescriptorSet& descriptor_set = ctx->descriptor_sets[ctx->descriptor_set_idx++];"
+          }
+        ],
+        "bytes": 967390,
+        "role": "after",
+        "sha256": "c542dcf979f6807b56f799bdb14be644836bc1bf3f3dd068ff9bf712da68de27"
+      }
+    ],
+    "upstream_application_executed": false
+  },
+  "upstream_application_or_gpu_executed": false
+}

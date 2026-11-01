@@ -1,0 +1,62 @@
+[
+  {
+    "batch": 4294967294,
+    "limit": 1,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 4294967294
+  },
+  {
+    "batch": 4294967294,
+    "limit": 2,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 2147483647
+  },
+  {
+    "batch": 4294967294,
+    "limit": 3,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 1431655765
+  },
+  {
+    "batch": 4294967294,
+    "limit": 7,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 613566757
+  },
+  {
+    "batch": 4294967294,
+    "limit": 32,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 134217728
+  },
+  {
+    "batch": 4294967295,
+    "limit": 1,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 4294967295
+  },
+  {
+    "batch": 4294967295,
+    "limit": 2,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 2147483648
+  },
+  {
+    "batch": 4294967295,
+    "limit": 3,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 1431655765
+  },
+  {
+    "batch": 4294967295,
+    "limit": 7,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 613566757
+  },
+  {
+    "batch": 4294967295,
+    "limit": 32,
+    "reason": "predeclared loop budget",
+    "required_dispatches": 134217728
+  }
+]

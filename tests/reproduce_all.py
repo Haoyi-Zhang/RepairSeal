@@ -66,6 +66,21 @@ def main() -> None:
         ('upstream_changes','inputs','repair_inputs','preserved_inputs','status',
          'cells_per_full_or_direct_arm','native_input_rows','native_scalar_observations',
          'upstream_application_executed')}
+    descriptor_commands=[
+        [sys.executable,'-B','-m','unittest','discover','-s','tests','-p','test_descriptor_consumer.py','-v'],
+        [sys.executable,'-O','-B','-m','unittest','discover','-s','tests','-p','test_descriptor_consumer.py','-v'],
+        [sys.executable,'-B',str(root/'tests/descriptor_consumer_study.py'),'--native','--output',
+         str(args.output.resolve()/'descriptor-consumer'),'--compare',str(root/'results/descriptor-consumer')],
+    ]
+    for index,command in enumerate(descriptor_commands):
+        check=subprocess.run(command,cwd=root,capture_output=True,text=True,
+                             env={**os.environ,'PYTHONDONTWRITEBYTECODE':'1'},timeout=120)
+        (args.output/('descriptor-consumer-check-'+str(index)+'.txt')).write_text(check.stdout+check.stderr,encoding='utf-8')
+        if check.returncode:raise SystemExit('descriptor consumer reproduction failed: '+str(index))
+    descriptor=json.loads((args.output/'descriptor-consumer/summary.json').read_text(encoding='utf-8'))
+    result['descriptor_consumer']={k:descriptor[k] for k in
+        ('input_pairs','native_loop_admitted_pairs','excluded_pairs','old_under_reserved_pairs',
+         'new_consumer_success_pairs','native_role_rows','upstream_application_or_gpu_executed')}
     candidates = list(args.output.rglob("structured-study.json"))
     if len(candidates) != 1:
         raise SystemExit(f"expected one structured-study.json, found {len(candidates)}")

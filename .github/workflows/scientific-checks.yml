@@ -38,6 +38,11 @@ jobs:
         run: |
           python -B -m unittest discover -s tests -p test_macro_bridge.py -v
           python -O -B -m unittest discover -s tests -p test_macro_bridge.py -v
+      - name: Source-derived descriptor consumer
+        run: |
+          python -B -m unittest discover -s tests -p test_descriptor_consumer.py -v
+          python -O -B -m unittest discover -s tests -p test_descriptor_consumer.py -v
+          python -B tests/descriptor_consumer_study.py --native --output "$RUNNER_TEMP/descriptor-consumer-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}" --compare results/descriptor-consumer
       - name: Offline Codeflaws model replay
         shell: bash
         run: |

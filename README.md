@@ -82,6 +82,47 @@ it does not claim fresh source acquisition. Without `--native`, it is model-only
 The complete Linux reproducer runs the native harness without network retrieval.
 Inserted trace events belong to the normalization, not native macro execution.
 
+### Descriptor-allocation consumer
+
+The source-derived consumer connects the selected repaired value to the
+reservation/consumption path of the matrix-multiplication caller. Both complete
+immutable source files are checked against their existing identities, including
+the batch declaration, reservation, loop, allocation update and consumption
+guard. The authoritative limit type is recorded from the Vulkan specification.
+This is a selected manual context correspondence, not generic C++ analysis.
+
+```sh
+python -B -m unittest discover -s tests -p test_descriptor_consumer.py -v
+python -O -B -m unittest discover -s tests -p test_descriptor_consumer.py -v
+python -B tests/descriptor_consumer_study.py --native --output /fresh/descriptor-consumer --compare results/descriptor-consumer
+```
+
+The existing 42 batch/limit pairs are retained. A predeclared limit of 64 loop
+iterations admits 32 pairs and explicitly excludes 10. Starting with requested,
+allocated and consumed counts all equal to four, the old expression
+under-reserves on five admitted pairs; the replacement fits every dispatch.
+Two native compilers agree with the accounting model on 128 role/input/compiler
+rows. Spare pool capacity can mask under-reservation, so the model distinguishes
+an incorrect requested increment from an actually denied dispatch.
+Seven admitted pairs use the reported maximum device limit; the smaller limits
+are arithmetic stress controls, not claimed conforming device configurations.
+
+For an independently acquired exact pair of upstream files, add
+`--source-before /private/before.cpp --source-after /private/after.cpp`.
+Without these options, the command replays the retained context and does not
+claim fresh upstream acquisition. The retained source check is in
+`results/descriptor-consumer/summary.json`; the device report remains attributed
+to the upstream issue. No GPU, shader, complete Vulkan application or new
+independently sampled program is executed by this local consumer. The
+conditional invariant and its assumptions are explained in
+`proofs/ceil-div-correspondence.md`.
+
+The paper reads generated counts from the same bound observations:
+
+```sh
+python -B tests/report_descriptor_consumer.py --output ../paper/descriptor-consumer-results.tex
+```
+
 The older Codeflaws native observations remain derived historical records.
 Their original C and test bytes are not redistributed. The exact-archive and
 four-source fingerprint gates and full opt-in command are documented below

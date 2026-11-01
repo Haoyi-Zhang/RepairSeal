@@ -1,0 +1,930 @@
+[
+  {
+    "batch": 0,
+    "limit": 1,
+    "new": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "new_reservation": 0,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "old_reservation": 0,
+    "required_dispatches": 0
+  },
+  {
+    "batch": 0,
+    "limit": 2,
+    "new": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "new_reservation": 0,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "old_reservation": 0,
+    "required_dispatches": 0
+  },
+  {
+    "batch": 0,
+    "limit": 3,
+    "new": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "new_reservation": 0,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "old_reservation": 0,
+    "required_dispatches": 0
+  },
+  {
+    "batch": 0,
+    "limit": 7,
+    "new": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "new_reservation": 0,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "old_reservation": 0,
+    "required_dispatches": 0
+  },
+  {
+    "batch": 0,
+    "limit": 32,
+    "new": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "new_reservation": 0,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "old_reservation": 0,
+    "required_dispatches": 0
+  },
+  {
+    "batch": 0,
+    "limit": 4294967295,
+    "new": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "new_reservation": 0,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": true,
+      "final_base": 0,
+      "first_unreserved_dispatch": null,
+      "requested": 4,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 0
+    },
+    "old_reservation": 0,
+    "required_dispatches": 0
+  },
+  {
+    "batch": 1,
+    "limit": 1,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 1,
+    "limit": 2,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 1,
+    "limit": 3,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 1,
+    "limit": 7,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 1,
+    "limit": 32,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 1,
+    "limit": 4294967295,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 1,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 2,
+    "limit": 1,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 2,
+      "consumed": 6,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 6,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 2
+    },
+    "new_reservation": 2,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 2,
+      "consumed": 6,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 6,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 2
+    },
+    "old_reservation": 2,
+    "required_dispatches": 2
+  },
+  {
+    "batch": 2,
+    "limit": 2,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 2,
+    "limit": 3,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 2,
+    "limit": 7,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 2,
+    "limit": 32,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 2,
+    "limit": 4294967295,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 2,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": false,
+      "final_base": 0,
+      "first_unreserved_dispatch": 0,
+      "requested": 4,
+      "requested_increment_covers_loop": false,
+      "required_dispatches": 1
+    },
+    "old_reservation": 0,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 31,
+    "limit": 1,
+    "new": {
+      "allocated": 35,
+      "completed_dispatches": 31,
+      "consumed": 35,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 35,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 31
+    },
+    "new_reservation": 31,
+    "old": {
+      "allocated": 35,
+      "completed_dispatches": 31,
+      "consumed": 35,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 35,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 31
+    },
+    "old_reservation": 31,
+    "required_dispatches": 31
+  },
+  {
+    "batch": 31,
+    "limit": 2,
+    "new": {
+      "allocated": 20,
+      "completed_dispatches": 16,
+      "consumed": 20,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 20,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 16
+    },
+    "new_reservation": 16,
+    "old": {
+      "allocated": 20,
+      "completed_dispatches": 16,
+      "consumed": 20,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 20,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 16
+    },
+    "old_reservation": 16,
+    "required_dispatches": 16
+  },
+  {
+    "batch": 31,
+    "limit": 3,
+    "new": {
+      "allocated": 15,
+      "completed_dispatches": 11,
+      "consumed": 15,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 15,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 11
+    },
+    "new_reservation": 11,
+    "old": {
+      "allocated": 15,
+      "completed_dispatches": 11,
+      "consumed": 15,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 15,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 11
+    },
+    "old_reservation": 11,
+    "required_dispatches": 11
+  },
+  {
+    "batch": 31,
+    "limit": 7,
+    "new": {
+      "allocated": 9,
+      "completed_dispatches": 5,
+      "consumed": 9,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 9,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 5
+    },
+    "new_reservation": 5,
+    "old": {
+      "allocated": 9,
+      "completed_dispatches": 5,
+      "consumed": 9,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 9,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 5
+    },
+    "old_reservation": 5,
+    "required_dispatches": 5
+  },
+  {
+    "batch": 31,
+    "limit": 32,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 31,
+    "limit": 4294967295,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 31,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": false,
+      "final_base": 0,
+      "first_unreserved_dispatch": 0,
+      "requested": 4,
+      "requested_increment_covers_loop": false,
+      "required_dispatches": 1
+    },
+    "old_reservation": 0,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 32,
+    "limit": 1,
+    "new": {
+      "allocated": 36,
+      "completed_dispatches": 32,
+      "consumed": 36,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 36,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 32
+    },
+    "new_reservation": 32,
+    "old": {
+      "allocated": 36,
+      "completed_dispatches": 32,
+      "consumed": 36,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 36,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 32
+    },
+    "old_reservation": 32,
+    "required_dispatches": 32
+  },
+  {
+    "batch": 32,
+    "limit": 2,
+    "new": {
+      "allocated": 20,
+      "completed_dispatches": 16,
+      "consumed": 20,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 20,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 16
+    },
+    "new_reservation": 16,
+    "old": {
+      "allocated": 20,
+      "completed_dispatches": 16,
+      "consumed": 20,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 20,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 16
+    },
+    "old_reservation": 16,
+    "required_dispatches": 16
+  },
+  {
+    "batch": 32,
+    "limit": 3,
+    "new": {
+      "allocated": 15,
+      "completed_dispatches": 11,
+      "consumed": 15,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 15,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 11
+    },
+    "new_reservation": 11,
+    "old": {
+      "allocated": 15,
+      "completed_dispatches": 11,
+      "consumed": 15,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 15,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 11
+    },
+    "old_reservation": 11,
+    "required_dispatches": 11
+  },
+  {
+    "batch": 32,
+    "limit": 7,
+    "new": {
+      "allocated": 9,
+      "completed_dispatches": 5,
+      "consumed": 9,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 9,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 5
+    },
+    "new_reservation": 5,
+    "old": {
+      "allocated": 9,
+      "completed_dispatches": 5,
+      "consumed": 9,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 9,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 5
+    },
+    "old_reservation": 5,
+    "required_dispatches": 5
+  },
+  {
+    "batch": 32,
+    "limit": 32,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "old_reservation": 1,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 32,
+    "limit": 4294967295,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 32,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": false,
+      "final_base": 0,
+      "first_unreserved_dispatch": 0,
+      "requested": 4,
+      "requested_increment_covers_loop": false,
+      "required_dispatches": 1
+    },
+    "old_reservation": 0,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 4294967294,
+    "limit": 4294967295,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 4294967294,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": false,
+      "final_base": 0,
+      "first_unreserved_dispatch": 0,
+      "requested": 4,
+      "requested_increment_covers_loop": false,
+      "required_dispatches": 1
+    },
+    "old_reservation": 0,
+    "required_dispatches": 1
+  },
+  {
+    "batch": 4294967295,
+    "limit": 4294967295,
+    "new": {
+      "allocated": 6,
+      "completed_dispatches": 1,
+      "consumed": 5,
+      "dispatches_fit": true,
+      "final_base": 4294967295,
+      "first_unreserved_dispatch": null,
+      "requested": 5,
+      "requested_increment_covers_loop": true,
+      "required_dispatches": 1
+    },
+    "new_reservation": 1,
+    "old": {
+      "allocated": 4,
+      "completed_dispatches": 0,
+      "consumed": 4,
+      "dispatches_fit": false,
+      "final_base": 0,
+      "first_unreserved_dispatch": 0,
+      "requested": 4,
+      "requested_increment_covers_loop": false,
+      "required_dispatches": 1
+    },
+    "old_reservation": 0,
+    "required_dispatches": 1
+  }
+]

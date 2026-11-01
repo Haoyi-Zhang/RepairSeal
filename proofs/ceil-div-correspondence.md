@@ -89,3 +89,46 @@ work and every identical verdict/witness. Full packets instead carry values
 that a recipient authenticates under that policy; they do not supply extra
 semantic information, prove their own source history, or accelerate ordinary
 complete-domain decision.
+
+## Selected caller's allocation-consumption obligation
+
+The fixed source anchors in `public-data/descriptor-context.json` identify the
+single-dispatch-family branch, unsigned batch declaration, request accumulation,
+pool growth and descriptor consumption. The optional whole-source check verifies
+these anchors in both complete immutable files. Vulkan's physical-device-limits
+declaration gives the dispatch limit an unsigned32 type. This correspondence was
+inspected for the selected context; a string-anchor check is not a general
+control-flow or type-analysis algorithm.
+
+Let the fixed batch and positive limit be b and l. After j loop iterations,
+the mathematical invariant is a_j=min(b,j*l). Each machine update adds
+min(b-a_j,l), so a_j stays in [0,b] and does not wrap. The loop therefore makes
+q=ceil(b/l) dispatches, including zero when b=0. This is an unbounded algebraic
+argument under these scalar conditions, not a claim obtained from the32 runs.
+
+Let I<=R<=C be initial consumed, requested and allocated counts. Suppose adding
+q does not wrap the cumulative counter, allocation succeeds with representable
+counts, the limit remains fixed and there is no intervening consumer. Reserving
+q gives C'>=R+q. Before dispatch j<q, its index is I+j<I+q<=R+q<=C'. Thus the
+checked scalar result discharges this selected availability obligation. Other
+GPU assertions, shader behavior, resource failures and concurrent mutation are
+not part of that proposition.
+
+The explicit starting state I=R=C=4 follows the accounting pattern reported
+by the upstream contributor. At b=2,l=UINT32_MAX, the old count is zero and the
+first dispatch lacks a slot. The new count is one; the selected 50-percent
+growth rule raises capacity to six and the dispatch fits. The upstream report
+is a reported device observation; the local execution is a source-derived,
+project-authored accounting abstraction. An existing pool with spare capacity
+can conceal the old under-request, as a separate regression demonstrates.
+
+The same42 pairs as the expression study are filtered before native execution
+by q<=64. All10 excluded pairs are retained as exclusions, not successes. The32
+admitted pairs and two roles under two compilers give128 observed rows. The
+seven pairs at the reported maximum limit are distinguished from the smaller
+positive limits, which are arithmetic stress controls rather than claimed
+device configurations. The
+source-bound full certificate and equally informed direct receiver still
+accept the42-point request with1680 cells each. This adds an application-level
+consequence and its conditional proof, not new independent applications,
+automated general caller admission, or a local Vulkan-device reproduction.

@@ -1,0 +1,1922 @@
+[
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      2,
+      6,
+      6,
+      6,
+      2,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      2,
+      6,
+      6,
+      6,
+      2,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      31,
+      35,
+      35,
+      35,
+      31,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      31,
+      35,
+      35,
+      35,
+      31,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      16,
+      20,
+      20,
+      20,
+      16,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      16,
+      20,
+      20,
+      20,
+      16,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      11,
+      15,
+      15,
+      15,
+      11,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      11,
+      15,
+      15,
+      15,
+      11,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      5,
+      9,
+      9,
+      9,
+      5,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      5,
+      9,
+      9,
+      9,
+      5,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      32,
+      36,
+      36,
+      36,
+      32,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      32,
+      36,
+      36,
+      36,
+      32,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      16,
+      20,
+      20,
+      20,
+      16,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      16,
+      20,
+      20,
+      20,
+      16,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      11,
+      15,
+      15,
+      15,
+      11,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      11,
+      15,
+      15,
+      15,
+      11,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      5,
+      9,
+      9,
+      9,
+      5,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      5,
+      9,
+      9,
+      9,
+      5,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 4294967294,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 4294967294,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      4294967294
+    ]
+  },
+  {
+    "batch": 4294967295,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 4294967295,
+    "compiler": "gcc",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      4294967295
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 0,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      0,
+      0
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 1,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      1
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      2,
+      6,
+      6,
+      6,
+      2,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      2,
+      6,
+      6,
+      6,
+      2,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 2,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      2
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      31,
+      35,
+      35,
+      35,
+      31,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      31,
+      35,
+      35,
+      35,
+      31,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      16,
+      20,
+      20,
+      20,
+      16,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      16,
+      20,
+      20,
+      20,
+      16,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      11,
+      15,
+      15,
+      15,
+      11,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      11,
+      15,
+      15,
+      15,
+      11,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      5,
+      9,
+      9,
+      9,
+      5,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      5,
+      9,
+      9,
+      9,
+      5,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 31,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      31
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "old",
+    "values": [
+      32,
+      36,
+      36,
+      36,
+      32,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 1,
+    "role": "new",
+    "values": [
+      32,
+      36,
+      36,
+      36,
+      32,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "old",
+    "values": [
+      16,
+      20,
+      20,
+      20,
+      16,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 2,
+    "role": "new",
+    "values": [
+      16,
+      20,
+      20,
+      20,
+      16,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "old",
+    "values": [
+      11,
+      15,
+      15,
+      15,
+      11,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 3,
+    "role": "new",
+    "values": [
+      11,
+      15,
+      15,
+      15,
+      11,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "old",
+    "values": [
+      5,
+      9,
+      9,
+      9,
+      5,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 7,
+    "role": "new",
+    "values": [
+      5,
+      9,
+      9,
+      9,
+      5,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "old",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 32,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 32,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      32
+    ]
+  },
+  {
+    "batch": 4294967294,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 4294967294,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      4294967294
+    ]
+  },
+  {
+    "batch": 4294967295,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "old",
+    "values": [
+      0,
+      4,
+      4,
+      4,
+      0,
+      1,
+      0
+    ]
+  },
+  {
+    "batch": 4294967295,
+    "compiler": "clang",
+    "limit": 4294967295,
+    "role": "new",
+    "values": [
+      1,
+      5,
+      6,
+      5,
+      1,
+      0,
+      4294967295
+    ]
+  }
+]

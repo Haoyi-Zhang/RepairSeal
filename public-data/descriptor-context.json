@@ -1,0 +1,30 @@
+{
+  "source_identity": "ceil-div-source.json",
+  "selected_branch": "The split_k==1 branch in the retained matrix-multiplication caller",
+  "caller_anchors": [
+    "static void ggml_vk_matmul(",
+    "uint32_t split_k, uint32_t batch, uint32_t ne02, uint32_t ne12, uint32_t broadcast2, uint32_t broadcast3,",
+    "if (split_k == 1) {",
+    "ggml_pipeline_request_descriptor_sets(ctx, pipeline, CEIL_DIV(batch, ctx->device->properties.limits.maxComputeWorkGroupCount[2]));",
+    "uint32_t base_work_group_z = 0;",
+    "while (base_work_group_z < batch) {",
+    "uint32_t groups_z = std::min(batch - base_work_group_z, ctx->device->properties.limits.maxComputeWorkGroupCount[2]);",
+    "ggml_vk_dispatch_pipeline(ctx, subctx, pipeline, { a, b, d }, pc, { m, n, groups_z });",
+    "base_work_group_z += groups_z;"
+  ],
+  "accounting_anchors": [
+    "ctx->pipeline_descriptor_set_requirements += n;",
+    "if (ctx->descriptor_sets.size() >= ctx->pipeline_descriptor_set_requirements) {",
+    "uint32_t needed = std::max(3 * ctx->descriptor_sets.size() / 2, size_t{ctx->pipeline_descriptor_set_requirements});",
+    "GGML_ASSERT(ctx->descriptor_set_idx < ctx->descriptor_sets.size());",
+    "vk::DescriptorSet& descriptor_set = ctx->descriptor_sets[ctx->descriptor_set_idx++];"
+  ],
+  "limit_type_source": "https://docs.vulkan.org/refpages/latest/refpages/source/VkPhysicalDeviceLimits.html",
+  "limit_type": "uint32_t maxComputeWorkGroupCount[3]",
+  "upstream_report": "https://github.com/ggml-org/llama.cpp/issues/23057",
+  "upstream_report_locator": "2026-07-02 comments by hokanosekai and jeffbolznv",
+  "obligation": "For a fixed positive limit, no intervening descriptor consumers, successful allocation and nonwrapping cumulative accounting, reserve at least ceil(batch/limit) new entries for this selected loop.",
+  "initial_state": {"requested": 4, "allocated": 4, "consumed": 4},
+  "iteration_limit": 64,
+  "scope": "Project-authored accounting abstraction of the selected source; not automatic C++ call-site inference, a complete backend, a GPU execution or a new external defect. The existing MIT source notice also covers the short source anchors."
+}
