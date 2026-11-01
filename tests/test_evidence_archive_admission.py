@@ -16,10 +16,14 @@ class ArchiveAdmission(unittest.TestCase):
 
     def test_changed_archive_at_reviewed_name_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:
-            root=Path(directory);path=root/'results/vector-rss/observations.zip'
-            path.parent.mkdir(parents=True);path.write_bytes(b'not the reviewed observations')
-            with mock.patch.object(release_gate,'ROOT',root):
-                self.assertFalse(release_gate.reviewed_data_archive(path))
+            root=Path(directory)
+            for rel in release_gate.REVIEWED_DATA_ARCHIVES:
+                with self.subTest(path=rel):
+                    path=root/rel
+                    path.parent.mkdir(parents=True,exist_ok=True)
+                    path.write_bytes(b'not the reviewed observations')
+                    with mock.patch.object(release_gate,'ROOT',root):
+                        self.assertFalse(release_gate.reviewed_data_archive(path))
 
     def test_same_bytes_under_another_name_are_rejected(self):
         with tempfile.TemporaryDirectory() as directory:

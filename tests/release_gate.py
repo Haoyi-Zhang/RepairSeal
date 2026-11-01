@@ -35,6 +35,7 @@ FORBIDDEN_SUFFIXES = {".zip", ".tar", ".gz", ".bz2", ".xz", ".pyc"}
 REVIEWED_DATA_ARCHIVES = {
     "results/vector-rss/observations.zip": "388139aca1b8227686d82ceb9da1faa85e1cf5d1e84981b000fb50a1e4451b9c",
     "results/vector-rss/replication.zip": "40b28fea88e09912bcc21fe193e06820bf3273de21cc1afd0bf2d04669332a03",
+    "results/admission-journal/journals.zip": "50dbe537c930320b6aa58194ee1433f9234dfab5ceb280d36b4af3acf4c23d71",
 }
 
 def reviewed_data_archive(path):
