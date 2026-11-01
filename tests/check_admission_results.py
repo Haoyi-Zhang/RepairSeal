@@ -12,8 +12,13 @@ from proof_dag_checker import check,evaluate_topological
 def run():
     data=ROOT/'results/admission-journal';registration=json.loads((data/'registration.json').read_text())
     records=json.loads((data/'records.json').read_text());summary=json.loads((data/'summary.json').read_text())
+    changed=[]
     for rel,digest in registration['source_bindings'].items():
-        if hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()!=digest:raise ValueError('execution input differs')
+        if hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()!=digest:
+            captured=data/'source-preimage'/rel
+            if not captured.is_file() or hashlib.sha256(captured.read_bytes()).hexdigest()!=digest:
+                raise ValueError('measured execution preimage missing or differs')
+            changed.append(rel)
     approved=0
     for row in records['rows']:
         name=row['case'];request=json.loads((ROOT/'results/upstream-ceil'/str(name+'-request.json')).read_text())
@@ -41,5 +46,6 @@ def run():
                 if revision!=wanted:raise ValueError('current request revision')
                 if wanted==2 and identity(json.loads(body))!=records['revised_request']['request_identity']:raise ValueError('stale approval not invalidated')
             finally:db.close()
-    print(json.dumps(dict(status='PASS',requests=5,approvals=1,refutations=4,closed_journals=5)))
+    print(json.dumps(dict(status='PASS',requests=5,approvals=1,refutations=4,closed_journals=5,
+        measured_sources_differ_from_current=changed,new_execution_claimed=False)))
 if __name__=='__main__':run()

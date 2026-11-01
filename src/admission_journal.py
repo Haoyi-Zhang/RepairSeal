@@ -16,6 +16,14 @@ LIMIT=32*1024*1024
 
 def canonical(value):return core.canonical_bytes(value)
 def identity(value):return hashlib.sha256(canonical(value)).hexdigest()
+def request_identity(request):
+    # Mapping order is semantic: it binds source parameters, coordinates and
+    # witness rows. Sorted JSON alone cannot distinguish a reordered domain.
+    return identity(dict(input_order=list(request['inputs']), request=request))
+
+def request_bytes(request):
+    # Preserve the receiver's declared coordinate order across SQLite reloads.
+    return json.dumps(request,ensure_ascii=False,allow_nan=False,separators=(',',':')).encode('utf-8')
 def read_json(path):
     with Path(path).open('rb') as f:raw=f.read(LIMIT+1)
     if len(raw)>LIMIT:raise ValueError('bounded input exceeded')
@@ -39,8 +47,9 @@ class AdmissionJournal:
 
     def register(self,request,expected_identity=None):
         core.validate_request(request)
-        if len(canonical(request))>LIMIT:raise ValueError('request byte bound')
-        digest=identity(request);key=request['id']
+        body=request_bytes(request)
+        if len(body)>LIMIT:raise ValueError('request byte bound')
+        digest=request_identity(request);key=request['id']
         try:
             self.db.execute('BEGIN IMMEDIATE')
             old=self.db.execute('SELECT revision,identity FROM requests WHERE id=?',(key,)).fetchone()
@@ -51,7 +60,7 @@ class AdmissionJournal:
                 if expected_identity!=old[1]:raise ValueError('request replacement requires current identity')
                 revision=old[0]+1
             self.db.execute('INSERT INTO requests VALUES(?,?,?,?) ON CONFLICT(id) DO UPDATE SET revision=excluded.revision,identity=excluded.identity,body=excluded.body',
-                (key,revision,digest,canonical(request).decode('utf-8')))
+                (key,revision,digest,body.decode('utf-8')))
             self.db.commit()
             return dict(request_id=key,revision=revision,request_identity=digest)
         except BaseException:
@@ -73,7 +82,7 @@ class AdmissionJournal:
                 if previous[:5]!=(key,revision,digest,mode,packet_id):raise ValueError('receipt token belongs to another request or payload')
                 self.db.commit();return dict(json.loads(previous[5]),replayed_receipt=True)
             request=core.load_json_strict(body)
-            if identity(request)!=digest:raise ValueError('authoritative request identity changed')
+            if request_identity(request)!=digest:raise ValueError('authoritative request identity changed')
             remaining=self.work_limit
             def tick(category,n):
                 nonlocal remaining

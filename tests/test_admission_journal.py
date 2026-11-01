@@ -6,9 +6,9 @@ import tempfile
 import unittest
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/'src'))
-from admission_journal import AdmissionJournal, identity
+from admission_journal import AdmissionJournal, request_identity as identity
 from proof_dag_producer import produce
-from proof_dag_checker import Invalid
+from proof_dag_checker import Invalid, check, evaluate_topological
 
 class AdmissionJournalTests(unittest.TestCase):
     def setUp(self):
@@ -57,5 +57,32 @@ class AdmissionJournalTests(unittest.TestCase):
         self.owner.register(self.request);self.owner.work_limit=0
         for mode,packet in [('proof',self.packet),('direct',None)]:
             with self.assertRaises(RuntimeError):self.owner.decide(self.request['id'],mode,mode,packet)
+        self.assertEqual(self.owner.db.execute('SELECT COUNT(*) FROM receipts').fetchone()[0],0)
+    def test_declared_coordinate_order_survives_reopen(self):
+        request=json.loads((ROOT/'proof-data/fixture-inputs/fixture-01-correct.json').read_text())
+        packet=json.loads((ROOT/'proof-data/fixture-certificates/fixture-01-correct.json').read_text())
+        expected=check(request,packet)
+        self.assertEqual(list(request['inputs']),['x','y','z','t'])
+        registered=self.owner.register(request)
+        self.owner.close();self.owner=AdmissionJournal(self.path)
+        body=self.owner.db.execute('SELECT body FROM requests WHERE id=?',(request['id'],)).fetchone()[0]
+        self.assertEqual(list(json.loads(body)['inputs']),list(request['inputs']))
+        for mode,payload in (('proof',packet),('direct',None)):
+            actual=self.owner.decide(request['id'],mode,mode,payload)
+            direct=evaluate_topological(request)
+            self.assertEqual((actual['semantic_status'],actual['witness'],actual['checked_cells']),
+                             (expected['status'],expected['witness'],expected['checked_cells']))
+            self.assertEqual(actual['semantic_status'],direct['status'])
+            self.assertEqual(actual['request_identity'],registered['request_identity'])
+        reordered=copy.deepcopy(request)
+        reordered['inputs']=dict(reversed(list(request['inputs'].items())))
+        self.assertNotEqual(identity(request),identity(reordered))
+    def test_storage_order_tampering_is_rejected(self):
+        self.owner.register(self.request)
+        reordered=copy.deepcopy(self.request)
+        reordered['inputs']=dict(reversed(list(reordered['inputs'].items())))
+        self.owner.db.execute('UPDATE requests SET body=? WHERE id=?',(json.dumps(reordered),self.request['id']))
+        with self.assertRaisesRegex(ValueError,'request identity changed'):
+            self.owner.decide(self.request['id'],'changed-order','proof',self.packet)
         self.assertEqual(self.owner.db.execute('SELECT COUNT(*) FROM receipts').fetchone()[0],0)
 if __name__=='__main__':unittest.main()
