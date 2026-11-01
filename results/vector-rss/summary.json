@@ -1,0 +1,619 @@
+{
+  "status": "INCOMPLETE_BUDGET_STOP",
+  "planned_requests": 50,
+  "planned_measurements": 600,
+  "recorded_measurements": 584,
+  "complete_paired_requests": 48,
+  "incomplete_requests": [
+    {
+      "request": "stress-281-correct",
+      "completed": 8,
+      "planned": 12
+    },
+    {
+      "request": "stress-291-regression",
+      "completed": 0,
+      "planned": 12
+    }
+  ],
+  "error": "ValueError('declared activity budget exhausted; no retry')",
+  "declared_wall_limit_seconds": 110,
+  "observed_completed_child_cpu_seconds": 97.57069,
+  "selection": "Unfiltered prefix of the frozen case/repetition/rotated-arm order; budget interruption, not outcome selection. Two requests incomplete/unobserved; never called full-cohort completion.",
+  "analysis": "Post-stop descriptive medians on complete pairs only. All unmatched observations retained. No confidence intervals or universal memory benefit.",
+  "boundary": "whole fresh interpreter including imports and decoded authoritative request; file decoding, reconstruction and checking included; producer conversion excluded",
+  "source_bindings": {
+    "src/proof_dag_checker.py": "6b111e898f3999929f7e28f39fde127b4e8fc4139bcf9f5a8afd82527e458a01",
+    "src/vector_stream.py": "f94dc016107cdb163c61570660b579c51173465fc3bb758d424b85af4cba33e3",
+    "tests/vector_rss_study.py": "6bfc99d19a4b59f57d1e58a81789719f44276b05e01bc167f1460bea88a5d3d7"
+  },
+  "median_peak_rss_kib": {
+    "full-json": 22688.0,
+    "direct-full": 22692.0,
+    "framed-stream": 22692.0,
+    "direct-liveness": 22694.0
+  },
+  "median_stream_to_full": 1.0000878117316474,
+  "median_live_to_direct": 1.0000881057268722,
+  "median_stream_to_matched_direct": 1.0001759486397763,
+  "protocol_sha256": "b29345178b42bb7a2be737110c954884a7e44e3a084c8c82fd0c309ac38f54e2",
+  "incomplete_raw_sha256": "d9a4d55a737ef466c1a29b986a2d879b9c43bd928c991eb3a0168f61f04d76d7",
+  "paired": [
+    {
+      "request": "fixture-01-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22804,
+        "direct-full": 22692,
+        "framed-stream": 22784,
+        "direct-liveness": 22704
+      },
+      "stream_to_full": 0.9991229608840554,
+      "live_to_direct": 1.0005288207297727,
+      "stream_to_matched_direct": 1.003523608174771
+    },
+    {
+      "request": "fixture-02-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22788,
+        "direct-full": 22680,
+        "framed-stream": 22684,
+        "direct-liveness": 22704
+      },
+      "stream_to_full": 0.9954361944883272,
+      "live_to_direct": 1.001058201058201,
+      "stream_to_matched_direct": 0.9991190979563073
+    },
+    {
+      "request": "fixture-03-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22684,
+        "direct-full": 22692,
+        "framed-stream": 22756,
+        "direct-liveness": 22692
+      },
+      "stream_to_full": 1.003174043378593,
+      "live_to_direct": 1.0,
+      "stream_to_matched_direct": 1.0028203772254538
+    },
+    {
+      "request": "fixture-04-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22808,
+        "direct-full": 22796,
+        "framed-stream": 22692,
+        "direct-liveness": 22688
+      },
+      "stream_to_full": 0.9949140652402666,
+      "live_to_direct": 0.9952623267239866,
+      "stream_to_matched_direct": 1.000176304654443
+    },
+    {
+      "request": "fixture-05-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22684,
+        "direct-full": 22688,
+        "framed-stream": 22792,
+        "direct-liveness": 22688
+      },
+      "stream_to_full": 1.0047610650678893,
+      "live_to_direct": 1.0,
+      "stream_to_matched_direct": 1.0045839210155147
+    },
+    {
+      "request": "fixture-06-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22680,
+        "direct-full": 22704,
+        "framed-stream": 22688,
+        "direct-liveness": 22832
+      },
+      "stream_to_full": 1.000352733686067,
+      "live_to_direct": 1.0056377730796335,
+      "stream_to_matched_direct": 0.9936930623686054
+    },
+    {
+      "request": "fixture-07-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22680,
+        "direct-full": 22688,
+        "framed-stream": 22804,
+        "direct-liveness": 22688
+      },
+      "stream_to_full": 1.0054673721340388,
+      "live_to_direct": 1.0,
+      "stream_to_matched_direct": 1.0051128349788434
+    },
+    {
+      "request": "fixture-08-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22684,
+        "direct-full": 22676,
+        "framed-stream": 22680,
+        "direct-liveness": 22692
+      },
+      "stream_to_full": 0.9998236642567448,
+      "live_to_direct": 1.0007055918151349,
+      "stream_to_matched_direct": 0.9994711792702274
+    },
+    {
+      "request": "fixture-09-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22680,
+        "direct-full": 22780,
+        "framed-stream": 22684,
+        "direct-liveness": 22544
+      },
+      "stream_to_full": 1.0001763668430335,
+      "live_to_direct": 0.989640035118525,
+      "stream_to_matched_direct": 1.0062100780695529
+    },
+    {
+      "request": "fixture-10-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22660,
+        "direct-full": 22788,
+        "framed-stream": 22688,
+        "direct-liveness": 22788
+      },
+      "stream_to_full": 1.0012356575463373,
+      "live_to_direct": 1.0,
+      "stream_to_matched_direct": 0.9956117254695454
+    },
+    {
+      "request": "fixture-11-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22776,
+        "direct-full": 22680,
+        "framed-stream": 22804,
+        "direct-liveness": 22684
+      },
+      "stream_to_full": 1.001229364243063,
+      "live_to_direct": 1.0001763668430335,
+      "stream_to_matched_direct": 1.0052900722976548
+    },
+    {
+      "request": "fixture-12-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22688,
+        "direct-full": 22704,
+        "framed-stream": 22780,
+        "direct-liveness": 22752
+      },
+      "stream_to_full": 1.004055007052186,
+      "live_to_direct": 1.0021141649048626,
+      "stream_to_matched_direct": 1.0012306610407877
+    },
+    {
+      "request": "fixture-13-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22836,
+        "direct-full": 22684,
+        "framed-stream": 22692,
+        "direct-liveness": 22804
+      },
+      "stream_to_full": 0.9936941671045717,
+      "live_to_direct": 1.0052900722976548,
+      "stream_to_matched_direct": 0.9950885809507104
+    },
+    {
+      "request": "fixture-14-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22780,
+        "direct-full": 22808,
+        "framed-stream": 22792,
+        "direct-liveness": 22776
+      },
+      "stream_to_full": 1.0005267778753293,
+      "live_to_direct": 0.9985969835145563,
+      "stream_to_matched_direct": 1.0007024938531788
+    },
+    {
+      "request": "fixture-15-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22688,
+        "direct-full": 22780,
+        "framed-stream": 22776,
+        "direct-liveness": 22768
+      },
+      "stream_to_full": 1.0038787023977433,
+      "live_to_direct": 0.9994732221246707,
+      "stream_to_matched_direct": 1.000351370344343
+    },
+    {
+      "request": "fixture-16-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22776,
+        "direct-full": 22676,
+        "framed-stream": 22780,
+        "direct-liveness": 22668
+      },
+      "stream_to_full": 1.0001756234632948,
+      "live_to_direct": 0.9996472040924326,
+      "stream_to_matched_direct": 1.0049408858302453
+    },
+    {
+      "request": "fixture-17-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22688,
+        "direct-full": 22692,
+        "framed-stream": 22692,
+        "direct-liveness": 22680
+      },
+      "stream_to_full": 1.000176304654443,
+      "live_to_direct": 0.9994711792702274,
+      "stream_to_matched_direct": 1.0005291005291006
+    },
+    {
+      "request": "fixture-18-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22780,
+        "direct-full": 22736,
+        "framed-stream": 22616,
+        "direct-liveness": 22780
+      },
+      "stream_to_full": 0.9928007023705004,
+      "live_to_direct": 1.0019352568613653,
+      "stream_to_matched_direct": 0.9928007023705004
+    },
+    {
+      "request": "fixture-19-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22804,
+        "direct-full": 22680,
+        "framed-stream": 22780,
+        "direct-liveness": 22672
+      },
+      "stream_to_full": 0.9989475530608665,
+      "live_to_direct": 0.999647266313933,
+      "stream_to_matched_direct": 1.0047635850388144
+    },
+    {
+      "request": "fixture-20-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22688,
+        "direct-full": 22836,
+        "framed-stream": 22832,
+        "direct-liveness": 22812
+      },
+      "stream_to_full": 1.0063469675599437,
+      "live_to_direct": 0.998949027850762,
+      "stream_to_matched_direct": 1.000876731544801
+    },
+    {
+      "request": "stress-001-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22688,
+        "direct-full": 22624,
+        "framed-stream": 22692,
+        "direct-liveness": 22684
+      },
+      "stream_to_full": 1.000176304654443,
+      "live_to_direct": 1.0026520509193777,
+      "stream_to_matched_direct": 1.0003526714865103
+    },
+    {
+      "request": "stress-011-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22684,
+        "direct-full": 22688,
+        "framed-stream": 22780,
+        "direct-liveness": 22804
+      },
+      "stream_to_full": 1.0042320578381239,
+      "live_to_direct": 1.0051128349788434,
+      "stream_to_matched_direct": 0.9989475530608665
+    },
+    {
+      "request": "stress-021-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22840,
+        "direct-full": 22808,
+        "framed-stream": 22804,
+        "direct-liveness": 22696
+      },
+      "stream_to_full": 0.9984238178633975,
+      "live_to_direct": 0.9950894423009471,
+      "stream_to_matched_direct": 1.00475854776172
+    },
+    {
+      "request": "stress-031-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22688,
+        "direct-full": 22780,
+        "framed-stream": 22772,
+        "direct-liveness": 22672
+      },
+      "stream_to_full": 1.0037023977433004,
+      "live_to_direct": 0.9952589991220369,
+      "stream_to_matched_direct": 1.004410726887791
+    },
+    {
+      "request": "stress-041-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22812,
+        "direct-full": 22672,
+        "framed-stream": 22680,
+        "direct-liveness": 22884
+      },
+      "stream_to_full": 0.9942135718043135,
+      "live_to_direct": 1.0093507410021172,
+      "stream_to_matched_direct": 0.9910854745673833
+    },
+    {
+      "request": "stress-051-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22688,
+        "direct-full": 22504,
+        "framed-stream": 22688,
+        "direct-liveness": 22704
+      },
+      "stream_to_full": 1.0,
+      "live_to_direct": 1.008887308922858,
+      "stream_to_matched_direct": 0.9992952783650458
+    },
+    {
+      "request": "stress-061-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22680,
+        "direct-full": 22672,
+        "framed-stream": 22692,
+        "direct-liveness": 22692
+      },
+      "stream_to_full": 1.0005291005291006,
+      "live_to_direct": 1.0008821453775583,
+      "stream_to_matched_direct": 1.0
+    },
+    {
+      "request": "stress-071-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22692,
+        "direct-full": 22700,
+        "framed-stream": 22676,
+        "direct-liveness": 22804
+      },
+      "stream_to_full": 0.9992949056936365,
+      "live_to_direct": 1.0045814977973568,
+      "stream_to_matched_direct": 0.9943869496579547
+    },
+    {
+      "request": "stress-081-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22676,
+        "direct-full": 22676,
+        "framed-stream": 22676,
+        "direct-liveness": 22688
+      },
+      "stream_to_full": 1.0,
+      "live_to_direct": 1.0005291938613512,
+      "stream_to_matched_direct": 0.9994710860366713
+    },
+    {
+      "request": "stress-091-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22688,
+        "direct-full": 22780,
+        "framed-stream": 22812,
+        "direct-liveness": 22812
+      },
+      "stream_to_full": 1.005465444287729,
+      "live_to_direct": 1.001404741000878,
+      "stream_to_matched_direct": 1.0
+    },
+    {
+      "request": "stress-101-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22804,
+        "direct-full": 22684,
+        "framed-stream": 22688,
+        "direct-liveness": 22684
+      },
+      "stream_to_full": 0.9949131731275215,
+      "live_to_direct": 1.0,
+      "stream_to_matched_direct": 1.0001763357432552
+    },
+    {
+      "request": "stress-111-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22772,
+        "direct-full": 22808,
+        "framed-stream": 22688,
+        "direct-liveness": 22688
+      },
+      "stream_to_full": 0.9963112594414193,
+      "live_to_direct": 0.9947386881795861,
+      "stream_to_matched_direct": 1.0
+    },
+    {
+      "request": "stress-121-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22836,
+        "direct-full": 22804,
+        "framed-stream": 22704,
+        "direct-liveness": 22804
+      },
+      "stream_to_full": 0.9942196531791907,
+      "live_to_direct": 1.0,
+      "stream_to_matched_direct": 0.9956148044202772
+    },
+    {
+      "request": "stress-131-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22700,
+        "direct-full": 22700,
+        "framed-stream": 22688,
+        "direct-liveness": 22704
+      },
+      "stream_to_full": 0.9994713656387665,
+      "live_to_direct": 1.0001762114537445,
+      "stream_to_matched_direct": 0.9992952783650458
+    },
+    {
+      "request": "stress-141-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22700,
+        "direct-full": 22680,
+        "framed-stream": 22784,
+        "direct-liveness": 22780
+      },
+      "stream_to_full": 1.0037004405286343,
+      "live_to_direct": 1.0044091710758378,
+      "stream_to_matched_direct": 1.0001755926251097
+    },
+    {
+      "request": "stress-151-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22684,
+        "direct-full": 22704,
+        "framed-stream": 22700,
+        "direct-liveness": 22692
+      },
+      "stream_to_full": 1.0007053429730206,
+      "live_to_direct": 0.9994714587737844,
+      "stream_to_matched_direct": 1.0003525471531818
+    },
+    {
+      "request": "stress-161-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22684,
+        "direct-full": 22672,
+        "framed-stream": 22684,
+        "direct-liveness": 22684
+      },
+      "stream_to_full": 1.0,
+      "live_to_direct": 1.000529287226535,
+      "stream_to_matched_direct": 1.0
+    },
+    {
+      "request": "stress-171-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22684,
+        "direct-full": 22772,
+        "framed-stream": 22676,
+        "direct-liveness": 22668
+      },
+      "stream_to_full": 0.9996473285134897,
+      "live_to_direct": 0.9954329878798525,
+      "stream_to_matched_direct": 1.000352920416446
+    },
+    {
+      "request": "stress-181-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22780,
+        "direct-full": 22692,
+        "framed-stream": 22692,
+        "direct-liveness": 22732
+      },
+      "stream_to_full": 0.9961369622475856,
+      "live_to_direct": 1.0017627357659087,
+      "stream_to_matched_direct": 0.9982403660038712
+    },
+    {
+      "request": "stress-191-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22804,
+        "direct-full": 22840,
+        "framed-stream": 22676,
+        "direct-liveness": 22784
+      },
+      "stream_to_full": 0.9943869496579547,
+      "live_to_direct": 0.9975481611208407,
+      "stream_to_matched_direct": 0.9952598314606742
+    },
+    {
+      "request": "stress-201-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22680,
+        "direct-full": 22680,
+        "framed-stream": 22804,
+        "direct-liveness": 22788
+      },
+      "stream_to_full": 1.0054673721340388,
+      "live_to_direct": 1.0047619047619047,
+      "stream_to_matched_direct": 1.0007021239248728
+    },
+    {
+      "request": "stress-211-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22788,
+        "direct-full": 22776,
+        "framed-stream": 22704,
+        "direct-liveness": 22684
+      },
+      "stream_to_full": 0.9963138493944181,
+      "live_to_direct": 0.995960660344222,
+      "stream_to_matched_direct": 1.0008816787162758
+    },
+    {
+      "request": "stress-221-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22692,
+        "direct-full": 22672,
+        "framed-stream": 22688,
+        "direct-liveness": 22688
+      },
+      "stream_to_full": 0.9998237264234091,
+      "live_to_direct": 1.0007057163020465,
+      "stream_to_matched_direct": 1.0
+    },
+    {
+      "request": "stress-231-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22680,
+        "direct-full": 22784,
+        "framed-stream": 22804,
+        "direct-liveness": 22688
+      },
+      "stream_to_full": 1.0054673721340388,
+      "live_to_direct": 0.9957865168539326,
+      "stream_to_matched_direct": 1.0051128349788434
+    },
+    {
+      "request": "stress-241-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22684,
+        "direct-full": 22680,
+        "framed-stream": 22676,
+        "direct-liveness": 22776
+      },
+      "stream_to_full": 0.9996473285134897,
+      "live_to_direct": 1.0042328042328041,
+      "stream_to_matched_direct": 0.9956094134176326
+    },
+    {
+      "request": "stress-251-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22780,
+        "direct-full": 22780,
+        "framed-stream": 22688,
+        "direct-liveness": 22688
+      },
+      "stream_to_full": 0.9959613696224758,
+      "live_to_direct": 0.9959613696224758,
+      "stream_to_matched_direct": 1.0
+    },
+    {
+      "request": "stress-261-correct",
+      "median_peak_rss_kib": {
+        "full-json": 22692,
+        "direct-full": 22692,
+        "framed-stream": 22704,
+        "direct-liveness": 22804
+      },
+      "stream_to_full": 1.0005288207297727,
+      "live_to_direct": 1.0049356601445443,
+      "stream_to_matched_direct": 0.9956148044202772
+    },
+    {
+      "request": "stress-271-regression",
+      "median_peak_rss_kib": {
+        "full-json": 22684,
+        "direct-full": 22708,
+        "framed-stream": 22812,
+        "direct-liveness": 22688
+      },
+      "stream_to_full": 1.005642743784165,
+      "live_to_direct": 0.9991192531266514,
+      "stream_to_matched_direct": 1.005465444287729
+    }
+  ]
+}

@@ -214,6 +214,18 @@ has extra allocation costs. These are traced Python allocations, not RSS,
 throughput, independent real-world programs, or a claim of general compression.
 Raw observations and environment are in `results/vector-allocation.json`.
 
+A separate opt-in Linux fresh-process RSS activity stopped at its fixed
+110-second limit after 584/600 planned measurements. Forty-eight of the 50
+predetermined requests have complete four-arm/three-repeat pairs; the other
+two are explicitly incomplete or unobserved, not replaced. Complete-prefix
+medians are about 22.2 MiB for each arm, with all three paired ratios rounding
+to 1.000: this does not establish a process-memory benefit. Raw and unmatched
+records, the frozen protocol and the budget-stop error are retained losslessly
+in `results/vector-rss/observations.zip`; `summary.json` labels the analysis
+incomplete. `python -B tests/verify_vector_rss.py` verifies retained bytes and
+arithmetic without running another memory measurement. See `resources.md` for
+the boundary and limits. This activity is not part of the default reproducer.
+
 ## Setup and run
 
 Use Python 3.10 or later. Portable receiver and comparison checks need only the

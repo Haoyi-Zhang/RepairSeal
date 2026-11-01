@@ -43,6 +43,28 @@ These are environment-specific descriptive measurements, not portable performanc
 
 Peak RSS, wall-clock time, and timestamps are regenerated and intentionally excluded from deterministic scientific-field comparisons.
 
+## Fresh-process resident-memory evidence
+
+The opt-in Linux resident-memory activity used the same 50 predetermined
+requests as the allocation study, three rotated repeats and four fresh-process
+arms. Its fixed 110-second wall limit was reached after 584 of 600 planned
+measurements; 48 requests have complete pairs, one has eight measurements, and
+one was unobserved. The completed children used 97.571 CPU seconds in total.
+The activity is incomplete and was not retried or granted a replacement budget.
+Post-stop medians for the complete prefix are approximately 22.2 MiB per arm,
+with all three paired comparison ratios rounding to 1.000. They provide no
+whole-process memory advantage at this scale and are not a completed result
+for all 50 requests. Interpreter/import/request memory is included; producer
+conversion is excluded. All raw records, including unmatched observations and
+the budget-stop error, are losslessly retained in `results/vector-rss`.
+
+`python -B tests/verify_vector_rss.py` checks those retained bytes and arithmetic
+without running new measurements. `tests/vector_rss_study.py` contains the
+frozen preparation/measurement procedure; it is not part of the default
+reproducer or CI, and executing a new campaign requires a separately admitted
+resource plan. These are process RSS observations, not device-memory, energy
+or whole-application results.
+
 ## Optional Codeflaws source study
 
 This is separate from the frozen core and its authored native harness. The

@@ -20,6 +20,8 @@ jobs:
           python-version: '3.12'
       - name: Coordinate membership conformance
         run: python -B tests/test_coordinate_membership.py
+      - name: Verify retained interrupted RSS records without another measurement
+        run: python -B tests/verify_vector_rss.py
       - name: Prepared full-vector cell conformance
         run: python -B tests/test_prepared_cells.py
       - name: Receiver-owned cross-request reuse conformance
