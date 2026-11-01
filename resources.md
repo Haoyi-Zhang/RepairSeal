@@ -65,6 +65,26 @@ reproducer or CI, and executing a new campaign requires a separately admitted
 resource plan. These are process RSS observations, not device-memory, energy
 or whole-application results.
 
+The subsequent explicit request to complete RSS was admitted as one independent
+full-cohort replication, not a reset or continuation of the stopped activity.
+Its frozen plan fixes the same50requests, four arms and three rotated repeats,
+with300seconds wall,180aggregate child CPU seconds, one worker,1GiB address
+space and3CPU seconds per child. The attempt sentinel prevents re-entry; a
+failure would retain all partial data without retry. Preparation and certificate
+production stay outside the measurement boundary, exactly as before.
+The attempt completed600/600measurements and50/50pairs in27.750wall seconds and
+27.533child CPU seconds. Every expected outcome and matched semantic-work count
+agreed. Median RSS is approximately22.0--22.2MiB; paired framed/JSON,
+liveness/full-direct and framed/liveness-direct median ratios are1.000177,
+1.000000 and1.006571. No whole-process RSS saving is established.
+`results/vector-rss/replication.zip` retains the protocol, attempt sentinel and
+all600raw observations. The previous584records and budget-stop error remain
+separate and unchanged; neither sample is pooled or selected for a benefit.
+`tests/verify_vector_rss_replication.py` re-derives every pair and statistic
+without executing a measurement. Timers enforce admission only; differing host
+load between the two runs precludes a cross-run latency claim. No API, external
+application, device-memory or energy result follows from this completion.
+
 ## Optional Codeflaws source study
 
 This is separate from the frozen core and its authored native harness. The

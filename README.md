@@ -222,9 +222,26 @@ medians are about 22.2 MiB for each arm, with all three paired ratios rounding
 to 1.000: this does not establish a process-memory benefit. Raw and unmatched
 records, the frozen protocol and the budget-stop error are retained losslessly
 in `results/vector-rss/observations.zip`; `summary.json` labels the analysis
-incomplete. `python -B tests/verify_vector_rss.py` verifies retained bytes and
-arithmetic without running another memory measurement. See `resources.md` for
-the boundary and limits. This activity is not part of the default reproducer.
+incomplete. It is not relabeled or pooled with later data.
+
+An independently frozen full-cohort replication completes all 600 measurements:
+the same 50 requests, four fresh-process arms and three rotated repeats. All
+outcomes match their fixed expectations and semantic cell work agrees within
+every pair. Arm medians are 22,688 / 22,532 / 22,684 / 22,542 KiB for complete
+JSON, full direct, framed stream and liveness direct, respectively. Medians of
+the paired framed/JSON, liveness/full-direct and framed/liveness-direct ratios
+are 1.000177, 1.000000 and 1.006571. These complete observations do not demonstrate
+a framed-process RSS advantage. The declared 300-second/180-child-CPU-second
+limits were respected (27.750 seconds wall, 27.533 child CPU); those resource
+clocks are not a cross-run latency comparison. Full raw records and the frozen
+plan are in `results/vector-rss/replication.zip`, with descriptive statistics in
+`replication-summary.json`. Original incomplete and new complete records remain
+separate. This closes the RSS population-coverage gap, not a claim of benefit.
+
+`python -B tests/verify_vector_rss.py` and
+`python -B tests/verify_vector_rss_replication.py` verify both retained payloads
+without new memory measurements. See `resources.md` for boundaries and limits.
+Neither measurement activity is part of the default reproducer or CI.
 
 ## Setup and run
 

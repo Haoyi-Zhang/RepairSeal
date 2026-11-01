@@ -10,8 +10,9 @@ import release_gate
 
 class ArchiveAdmission(unittest.TestCase):
     def test_reviewed_archive_is_accepted(self):
-        self.assertTrue(release_gate.reviewed_data_archive(
-            release_gate.ROOT/'results/vector-rss/observations.zip'))
+        for rel in release_gate.REVIEWED_DATA_ARCHIVES:
+            with self.subTest(path=rel):
+                self.assertTrue(release_gate.reviewed_data_archive(release_gate.ROOT/rel))
 
     def test_changed_archive_at_reviewed_name_is_rejected(self):
         with tempfile.TemporaryDirectory() as directory:

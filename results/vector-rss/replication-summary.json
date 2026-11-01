@@ -1,0 +1,28 @@
+{
+  "status": "COMPLETE_FULL_COHORT_REPLICATION",
+  "prior_activity_status": "INCOMPLETE_BUDGET_STOP",
+  "records_merged_with_prior": false,
+  "statistics": {
+    "requests": 50,
+    "measurements": 600,
+    "median_peak_rss_kib": {
+      "full-json": 22688.0,
+      "direct-full": 22532.0,
+      "framed-stream": 22684.0,
+      "direct-liveness": 22542.0
+    },
+    "median_stream_to_full": 1.0001769614316145,
+    "median_live_to_direct": 1.0,
+    "median_stream_to_matched_direct": 1.0065707689575565
+  },
+  "resources": {
+    "wall_seconds": 27.749700344000004,
+    "child_cpu_seconds": 27.533362,
+    "workers": 1
+  },
+  "boundary": "whole fresh interpreter including imports and decoded authoritative request; file decoding, reconstruction and checking included; producer conversion excluded",
+  "protocol_sha256": "de3d6e3cf1edbe705061f72204bccd7c5a1cd47e39b014e273813414339d6979",
+  "results_sha256": "dabac489845af52b22648eb85f6006cba82952328263a31515093bd457989d17",
+  "inference": "Descriptive whole-process paired medians for the fixed50-request cohort; no demonstrated framed-process RSS benefit, no universal memory/throughput claim",
+  "prior_record": "observations.zip retains all584 original observations and its110-second budget stop; not relabeled as completion"
+}

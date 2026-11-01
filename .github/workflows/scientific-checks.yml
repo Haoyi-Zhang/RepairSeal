@@ -20,9 +20,12 @@ jobs:
           python-version: '3.12'
       - name: Coordinate membership conformance
         run: python -B tests/test_coordinate_membership.py
-      - name: Verify retained interrupted RSS records without another measurement
+      - name: Verify interrupted and full-cohort RSS records without another measurement
         run: |
           python -B tests/verify_vector_rss.py
+          python -B tests/verify_vector_rss_replication.py
+          python -B tests/test_vector_rss_replication.py -v
+          python -O -B tests/test_vector_rss_replication.py -v
           python -B tests/test_evidence_archive_admission.py -v
       - name: Prepared full-vector cell conformance
         run: python -B tests/test_prepared_cells.py

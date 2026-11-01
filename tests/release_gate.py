@@ -26,11 +26,15 @@ REQUIRED = [
     "results/macro-transfer/summary.json",
     "tests/vector_rss_study.py", "tests/verify_vector_rss.py",
     "results/vector-rss/summary.json", "results/vector-rss/observations.zip",
+    "tests/vector_rss_replication.py", "tests/verify_vector_rss_replication.py",
+    "tests/test_vector_rss_replication.py", "results/vector-rss/replication.zip",
+    "results/vector-rss/replication-summary.json",
 ]
 FORBIDDEN_NAMES = {"CHECKSUMS.sha256", "MANIFEST.json"}
 FORBIDDEN_SUFFIXES = {".zip", ".tar", ".gz", ".bz2", ".xz", ".pyc"}
 REVIEWED_DATA_ARCHIVES = {
     "results/vector-rss/observations.zip": "388139aca1b8227686d82ceb9da1faa85e1cf5d1e84981b000fb50a1e4451b9c",
+    "results/vector-rss/replication.zip": "40b28fea88e09912bcc21fe193e06820bf3273de21cc1afd0bf2d04669332a03",
 }
 
 def reviewed_data_archive(path):
