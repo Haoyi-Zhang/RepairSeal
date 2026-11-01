@@ -101,9 +101,13 @@ The retained `results/macro-transfer/` run verifies the two complete immutable
 upstream source files as text, derives both scalar models and checks the same
 42 inputs (12 repair, 30 preservation). GCC and Clang execute only a small,
 reviewed pure-arithmetic harness containing the selected expressions and their
-generated lowerings. All 84 paired compiler/input rows agree with the literal
-mathematical reference, comprising 336 scalar outputs, not 336 independent
-programs. Full and direct checking accept the generated request with 1,680
+generated lowerings. All 84 paired compiler/input rows preserve the respective
+old modular and new ceiling formulas, comprising 336 scalar outputs, not 336
+independent programs. For each compiler, the old formula differs from ceiling
+on 12 of 42 points; the new formula matches ceiling on all 42. The retained
+summary field `lowered_models_match_mathematical_reference` denotes the two
+version-specific formulas, not agreement of both versions with ceiling.
+Full and direct checking accept the generated request with 1,680
 cells each. The upstream application and its tests are not built or executed.
 Without `--verify-upstream`, replay uses the retained selected definitions;
 it does not claim fresh source acquisition. Without `--native`, it is model-only.

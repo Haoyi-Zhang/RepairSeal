@@ -37,7 +37,7 @@ The integrated reproducer uses at most three concurrent local subprocesses and n
 The retained core run reports:
 
 - repeated-correct medians: full proof 1.677 ms, topological direct 1.053 ms, certificate rebuild 5.290 ms, and certificate-free `Session/direct_result` 1.112 ms;
-- all-request medians: full proof 2.741 ms, topological direct 1.550 ms, `Session/direct_result` 1.136 ms, and one-point refutation 0.486 ms.
+- historical one-shot medians: full proof 2.741 ms, topological direct 1.550 ms, `Session/direct_result` 1.136 ms, and one-point refutation 0.486 ms. These arms did not use matched instrumentation: the 300 stress full-proof timings include per-cell counting, while the direct arms do not; the 80 fixture arms are counted. These descriptive values must not be used to estimate certificate overhead or a same-work timing ratio. The repeated-correct block above disables counting in every arm.
 
 These are environment-specific descriptive measurements, not portable performance bounds. The 309,582 count belongs only to the internal recursive phase of the certificate-rebuild diagnostic, which also performs 45,198 outer proof-cell checks; it does not correspond to the `Session/direct_result` timing. The decisive implementation-independent result within the stated counter model is 45,198 full-vector cells = 45,198 topological-direct cells.
 
