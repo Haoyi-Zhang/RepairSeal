@@ -222,7 +222,7 @@ python -B src/vector_stream.py check /path/request.json /fresh/packet.rows
 python -B src/vector_stream.py direct /path/request.json
 python -B -m unittest discover -s tests -p test_vector_stream.py -v
 python -O -B -m unittest discover -s tests -p test_vector_stream.py -v
-python -B tests/vector_stream_study.py --output /fresh/logical.json --compare results/vector-stream.json
+python -B tests/check_vector_stream_replay.py --output /fresh/logical.json --compare results/vector-stream.json
 python -B tests/vector_stream_study.py --allocations --output /fresh/allocations.json
 ```
 
@@ -528,5 +528,9 @@ verifiers check the exact recorded source inventory and, when current checker
 code differs, its preserved preimage in `results/vector-rss/source-preimage/`.
 They report that difference explicitly; these records are not a new measurement
 of the current checker, and their negative whole-process memory result is unchanged.
+The finite logical replay likewise checks the full original producer map and
+all scientific rows/counts, separately reporting current-source differences.
+The frozen study driver and allocation records remain unchanged; the current
+comparison command is an unmeasured receiver, not another allocation campaign.
 
 Published execution records use `<PYTHON_ROOT>`, `<NODE_ROOT>` and `<RUNTIME_ROOT>` for local tool installations, `<DEPENDENCIES_ROOT>` for local dependencies, and `<PROJECTS_ROOT>`, `<ARTIFACT_ROOT>`, `<SOURCE_ROOT>` and `<WORK_ROOT>` for the workspace, artifact checkout, source checkout and temporary work directory of the recorded run. These are path aliases, not literal directories or claims that historical temporary files are included in this bundle. Substitute the corresponding local roots when replaying a command. Recorded tool versions, source/input identities, measurements, outcomes and failures are unchanged. Current file inventories bind the portable published bytes; any `recorded_` identity denotes pre-normalization bytes.

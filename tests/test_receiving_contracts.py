@@ -116,4 +116,20 @@ class ReceivingContracts(unittest.TestCase):
         with patch.object(Path,'read_bytes',lambda p:b'wrong' if 'source-preimage' in p.parts else original(p)),self.assertRaises(ValueError):
             verify_sources(dict(EXPECTED))
 
+    def test_logical_comparison_keeps_identity_and_semantic_guards_separate(self):
+        import check_vector_stream_replay as logical
+        retained=json.loads((ROOT/'results/vector-stream.json').read_text())
+        current=copy.deepcopy(retained)
+        current['source_bindings']={name:logical.study.binding(ROOT/name) for name in logical.RECORDED}
+        self.assertTrue(logical.compare(current,retained)['scientific_rows_and_counts_equal'])
+        for mutation in ('empty-old-map','wrong-old-map','wrong-current-map','count','row','bool-count'):
+            old=copy.deepcopy(retained);now=copy.deepcopy(current)
+            if mutation=='empty-old-map':old['source_bindings']={}
+            elif mutation=='wrong-old-map':old['source_bindings']['src/proof_dag_checker.py']='0'*64
+            elif mutation=='wrong-current-map':now['source_bindings']['src/proof_dag_checker.py']='0'*64
+            elif mutation=='count':now['requests']-=1
+            elif mutation=='row':now['rows'][0]['checked_cells_per_arm']+=1
+            elif mutation=='bool-count':now['rows'][0]['points']=True
+            with self.subTest(mutation=mutation),self.assertRaises(ValueError):logical.compare(now,old)
+
 if __name__=='__main__':unittest.main()
