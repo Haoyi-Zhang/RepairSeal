@@ -519,6 +519,33 @@ performance. To regenerate them with Python 3.9+ and Matplotlib:
 python -B figures/draw_schematics.py --output figures
 ```
 
+## Measured source versions
+
+Source maps in retained run records identify the bytes used in those runs.
+An `unchanged` result means unchanged during that execution, not identical to
+every later checkout. In the natural-source correspondence record, the driver
+and four of its six imported scientific files still match; the full and compact
+checkers have later encoding/CLI changes. Historical timings, observations,
+source maps and negative results are not rewritten to bind those later files.
+
+The exact measured source bytes are retained as data:
+
+| Measured file | Recorded SHA-256 | Exact preimage |
+|---|---|---|
+| `src/proof_dag_checker.py` | `6b111e898f3999929f7e28f39fde127b4e8fc4139bcf9f5a8afd82527e458a01` | `results/vector-rss/source-preimage/src/proof_dag_checker.py` |
+| `src/refutation_witness_checker.py` | `99585772675d31b2bec49534715fc4177898da847dd410d0f7bb4e1e52f08740` | `results/source-preimage/src/refutation_witness_checker.py` |
+| `src/admission_journal.py` | `f11f086eb35c789cdf00e368a276bb311cac08cf9c32803c6a42fcf9c60f10eb` | `results/admission-journal/source-preimage/src/admission_journal.py` |
+
+The compact-checker preimage is an unmodified copy of the original input file,
+accepted only after its bytes matched the recorded digest. These preimages are
+not substituted into the current receiver or relabeled as new measurements.
+
+The 28-process approval-journal summary binds the measured journal source
+preserved at the existing path above. Its exact digest and receipts remain
+intact. The later coordinate-order regression and current journal are distinct
+from that cohort; preserving the measured bytes does not establish a new
+process-cohort result or a measurement of the later revision.
+
 ## Portable path notation
 
 Checker CLIs return zero for valid evidence (including a valid refutation) and
