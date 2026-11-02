@@ -124,20 +124,22 @@ def check(request: dict, certificate: dict, count: Callable[[str, int], None] | 
     }
 
 
-def main() -> None:
+def main() -> int:
     import argparse
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("request", type=Path)
     parser.add_argument("certificate", type=Path)
     args = parser.parse_args()
     try:
-        request = load_json_strict(args.request.read_text(encoding="utf-8"))
-        certificate = load_json_strict(args.certificate.read_text(encoding="utf-8"))
+        from proof_dag_checker import read_utf8_file
+        request = load_json_strict(read_utf8_file(args.request))
+        certificate = load_json_strict(read_utf8_file(args.certificate))
         result = check(request, certificate)
     except (Invalid, Unsupported) as exc:
         result = {"status": "INVALID", "reason": str(exc)}
     print(json.dumps(result, indent=2))
+    return 2 if result["status"] == "INVALID" else 0
 
 
 if __name__ == "__main__":
-    main()
+    raise SystemExit(main())

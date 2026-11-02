@@ -7,6 +7,7 @@ import statistics
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
+from retained_rss_sources import verify_sources
 def main():
     directory=ROOT/'results/vector-rss'
     summary=json.loads((directory/'summary.json').read_text(encoding='utf-8'))
@@ -20,9 +21,7 @@ def main():
                 raise ValueError('raw identity differs')
         protocol=json.loads(archive.read('protocol.json'))
         incomplete=json.loads(archive.read('incomplete.json'))
-    for rel,digest in protocol['source_bindings'].items():
-        if hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()!=digest:
-            raise ValueError('scientific source differs')
+    changed=verify_sources(protocol['source_bindings'])
     raw=incomplete['raw'];arms=('full-json','direct-full','framed-stream','direct-liveness')
     if summary['status']!='INCOMPLETE_BUDGET_STOP' or len(raw)!=584 or len(protocol['order'])!=600:
         raise ValueError('interrupted population concealed')
@@ -48,7 +47,8 @@ def main():
         if statistics.median(p[key] for p in complete)!=summary['median_'+key]:
             raise ValueError('paired median differs')
     print(json.dumps(dict(recorded_measurements=len(raw),complete_paired_requests=len(complete),
-        status='VERIFIED_INCOMPLETE',new_process_measurements=0)))
+        status='VERIFIED_INCOMPLETE',new_process_measurements=0,
+        measured_sources_differ_from_current=changed)))
 
 if __name__=='__main__':main()
 

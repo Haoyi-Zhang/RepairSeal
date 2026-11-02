@@ -521,4 +521,12 @@ python -B figures/draw_schematics.py --output figures
 
 ## Portable path notation
 
+Checker CLIs return zero for valid evidence (including a valid refutation) and
+nonzero for `INVALID`, with one JSON result for expected input/encoding errors.
+Retained RSS observations bind their original producer bytes. The read-only
+verifiers check the exact recorded source inventory and, when current checker
+code differs, its preserved preimage in `results/vector-rss/source-preimage/`.
+They report that difference explicitly; these records are not a new measurement
+of the current checker, and their negative whole-process memory result is unchanged.
+
 Published execution records use `<PYTHON_ROOT>`, `<NODE_ROOT>` and `<RUNTIME_ROOT>` for local tool installations, `<DEPENDENCIES_ROOT>` for local dependencies, and `<PROJECTS_ROOT>`, `<ARTIFACT_ROOT>`, `<SOURCE_ROOT>` and `<WORK_ROOT>` for the workspace, artifact checkout, source checkout and temporary work directory of the recorded run. These are path aliases, not literal directories or claims that historical temporary files are included in this bundle. Substitute the corresponding local roots when replaying a command. Recorded tool versions, source/input identities, measurements, outcomes and failures are unchanged. Current file inventories bind the portable published bytes; any `recorded_` identity denotes pre-normalization bytes.

@@ -6,6 +6,7 @@ import statistics
 import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
+from retained_rss_sources import verify_sources
 ARMS=('full-json','direct-full','framed-stream','direct-liveness')
 def require(ok,message):
     if not ok:raise ValueError(message)
@@ -26,8 +27,7 @@ def verify(protocol,result,summary,prior):
         child_address_bytes=1073741824,child_cpu_seconds=3,workers=1,subprocesses=600),'resource plan')
     require(protocol['cases']==prior['cases'] and protocol['order']==prior['order'],'same full cohort/order')
     require(protocol['prior_activity']['recorded_measurements']==584 and not protocol['prior_activity']['records_merged'],'old activity concealed')
-    for rel,digest in protocol['source_bindings'].items():
-        require(hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()==digest,'scientific source changed')
+    verify_sources(protocol['source_bindings'],replication=True)
     raw=result['raw'];require(len(raw)==600 and len(protocol['cases'])==50,'incomplete population')
     for i,row in enumerate(raw):
         job=protocol['order'][i];case=protocol['cases'][job['case']]
@@ -66,6 +66,7 @@ def main():
     prior=read_archive(directory/'observations.zip')['protocol.json']
     summary=json.loads((directory/'replication-summary.json').read_text(encoding='utf-8'))
     derived=verify(protocol,result,summary,prior)
-    print(json.dumps(dict(status='VERIFIED_COMPLETE',requests=50,measurements=600,new_measurement_processes=0,statistics=derived)))
+    print(json.dumps(dict(status='VERIFIED_COMPLETE',requests=50,measurements=600,new_measurement_processes=0,
+        measured_sources_differ_from_current=verify_sources(protocol['source_bindings'],replication=True),statistics=derived)))
 
 if __name__=='__main__':main()

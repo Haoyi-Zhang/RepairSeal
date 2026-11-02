@@ -88,7 +88,21 @@ def load_json_strict(text: str) -> Any:
 
 
 def digest(text: str) -> str:
-    return hashlib.sha256(text.encode("utf-8")).hexdigest()
+    try:
+        return hashlib.sha256(text.encode("utf-8")).hexdigest()
+    except UnicodeError as exc:
+        raise Unsupported("source encoding") from exc
+
+
+def read_utf8_file(path: Path) -> str:
+    try:
+        return path.read_text(encoding="utf-8")
+    except (OSError, UnicodeError) as exc:
+        raise Invalid("request or certificate file is not readable UTF-8") from exc
+
+
+def load_json_file(path: Path) -> Any:
+    return load_json_strict(read_utf8_file(path))
 
 def _validate_expression_tree(root) -> tuple[int, int]:
     """Measure the real tuple-AST without recursive host-language traversal."""
@@ -503,10 +517,11 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__); parser.add_argument("request",type=Path); parser.add_argument("certificate",type=Path); parser.add_argument("--mode",choices=["proof","rebuild"],default="proof")
     args=parser.parse_args()
     try:
-        request=load_json_strict(args.request.read_text(encoding="utf-8"))
-        certificate=load_json_strict(args.certificate.read_text(encoding="utf-8"))
+        request=load_json_file(args.request)
+        certificate=load_json_file(args.certificate)
         result=check(request,certificate,mode=args.mode)
     except (Invalid,Unsupported) as exc: result={"status":"INVALID","reason":str(exc)}
     print(json.dumps(result,indent=2))
+    return 2 if result["status"] == "INVALID" else 0
 
-if __name__=="__main__": main()
+if __name__=="__main__": raise SystemExit(main())

@@ -20,6 +20,10 @@ jobs:
           python-version: '3.12'
       - name: Coordinate membership conformance
         run: python -B tests/test_coordinate_membership.py
+      - name: Receiving boundaries and retained native records
+        run: |
+          python -B tests/test_receiving_contracts.py -v
+          python -O -B tests/test_receiving_contracts.py -v
       - name: Current evidence-ledger companion paths
         run: |
           python -B tests/test_claim_ledger.py -v

@@ -16,6 +16,8 @@ def run():
     for rel,digest in registration['source_bindings'].items():
         if hashlib.sha256((ROOT/rel).read_bytes()).hexdigest()!=digest:
             captured=data/'source-preimage'/rel
+            if rel=='src/proof_dag_checker.py':
+                captured=ROOT/'results/vector-rss/source-preimage'/rel
             if not captured.is_file() or hashlib.sha256(captured.read_bytes()).hexdigest()!=digest:
                 raise ValueError('measured execution preimage missing or differs')
             changed.append(rel)
