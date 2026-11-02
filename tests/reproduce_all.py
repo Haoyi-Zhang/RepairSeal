@@ -33,7 +33,7 @@ def main() -> None:
     stream_commands=[
         [sys.executable,'-B','-m','unittest','discover','-s','tests','-p','test_vector_stream.py','-v'],
         [sys.executable,'-O','-B','-m','unittest','discover','-s','tests','-p','test_vector_stream.py','-v'],
-        [sys.executable,'-B',str(root/'tests/vector_stream_study.py'),'--output',
+        [sys.executable,'-B',str(root/'tests/check_vector_stream_replay.py'),'--output',
          str(args.output.resolve()/'vector-stream.json'),'--compare',str(root/'results/vector-stream.json')],
     ]
     for index,command in enumerate(stream_commands):
@@ -43,11 +43,13 @@ def main() -> None:
             check.stdout+check.stderr,encoding='utf-8')
         if check.returncode:
             raise SystemExit('bounded vector stream reproduction failed: '+str(index))
-    stream_result=json.loads((args.output/'vector-stream.json').read_text(encoding='utf-8'))
+    stream_packet=json.loads((args.output/'vector-stream.json').read_text(encoding='utf-8'))
+    stream_result=stream_packet['current_logical_replay']
     result['vector_stream_agreement']={
         'requests':stream_result['requests'],'semantic_cells_per_arm':stream_result['totals']['checked_cells_per_arm'],
         'ordinary_and_optimized_conformance':True,
         'allocation_measurement':'retained separate runtime-specific study; not rerun by deterministic gate',
+        'retained_source_comparison':stream_packet['retained_comparison'],
     }
     macro_commands=[
         [sys.executable,'-B','-m','unittest','discover','-s','tests','-p','test_macro_bridge.py','-v'],
