@@ -1,18 +1,16 @@
-"""Compatibility command for the canonical journal schematics."""
+"""Render the manuscript schematics as vector PDFs."""
 import argparse
 from pathlib import Path
 
-from figure_style import paper_style
-from publication_figures import boundary, receiver
-
-
 def draw(out):
-    paper_style('tosem')
-    for fn in (boundary, receiver):
-        fn(out,None)
+    from validation_panels import repair_boundary, repair_control
+    repair_boundary(out/'checking-boundary.pdf')
+    repair_control(out/'trust-boundary.pdf')
 
 
-if __name__=='__main__':
-    parser=argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--output',type=Path,default=Path(__file__).resolve().parent)
-    draw(parser.parse_args().output)
+if __name__ == "__main__":
+    parser=argparse.ArgumentParser()
+    parser.add_argument("--output",type=Path,default=Path(__file__).resolve().parent)
+    output=parser.parse_args().output
+    output.mkdir(parents=True,exist_ok=True)
+    draw(output)

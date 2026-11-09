@@ -1,0 +1,92 @@
+{
+  "project": "RepairSeal_TOSEM",
+  "figures": [
+    {
+      "asset": "checking-boundary",
+      "media": [
+        428.0,
+        147.0
+      ],
+      "width": 402.7,
+      "trim": [
+        0,
+        9,
+        0,
+        9
+      ],
+      "targets": [
+        "artifact/figures/illustrations/checking-boundary.pdf",
+        "artifact/figures/checking-boundary.pdf"
+      ]
+    },
+    {
+      "asset": "definedness-rule-tree",
+      "media": [
+        408.0,
+        85.0
+      ],
+      "width": 364.2,
+      "trim": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        "artifact/figures/definedness-rule-tree.pdf"
+      ]
+    },
+    {
+      "asset": "trust-boundary",
+      "media": [
+        428.0,
+        146.0
+      ],
+      "width": 402.7,
+      "trim": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        "artifact/figures/illustrations/trust-boundary.pdf",
+        "artifact/figures/trust-boundary.pdf"
+      ]
+    },
+    {
+      "asset": "receiver-owned-cache",
+      "media": [
+        426.0,
+        112.0
+      ],
+      "width": 428.4,
+      "trim": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        "artifact/figures/receiver-owned-cache.pdf"
+      ]
+    },
+    {
+      "asset": "one-point-refutation",
+      "media": [
+        426.0,
+        55.0
+      ],
+      "width": 428.4,
+      "trim": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "targets": [
+        "artifact/figures/one-point-refutation.pdf"
+      ]
+    }
+  ]
+}
