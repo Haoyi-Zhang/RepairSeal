@@ -511,12 +511,13 @@ contestant. Project licensing does not relicense upstream programs or tests.
 
 ## Manuscript diagrams
 
-The model and protocol schematics are drawn directly in Python as vector PDFs
-with embedded STIX fonts. They encode the stated relationships, not measured
-performance. To regenerate them with Python 3.9+ and Matplotlib:
+The protocol drawings and the paired RSS panel are native Python vector PDFs.
+The RSS panel reads the completed replication archive; it does not run the checker
+or use the incomplete activity. The renderer locates the paper's Linux Libertine O
+faces through `kpsewhich` or `FIGURE_TEX_FONT_DIR`. Regenerate with Matplotlib:
 
 ```sh
-python -B figures/draw_schematics.py --output figures
+python -B figures/publication_figures.py
 ```
 
 ## Measured source versions
