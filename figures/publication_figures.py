@@ -150,13 +150,14 @@ def residency(out,preview):
         a.tick_params(labelsize=9.2)
         if i==0:a.set_ylabel('Peak live vectors',fontsize=9.5)
         else:a.tick_params(labelleft=False,left=False)
-    cax=fig.add_axes([.405,.078,.20,.032])
+    cax=fig.add_axes([.405,.108,.20,.028])
     ticks=[k for k in (1,2,5,10,20,50,100) if k<=norm.vmax and k in (1,5,20,100)]
     cb=fig.colorbar(heat,cax=cax,orientation='horizontal',ticks=ticks)
     cb.solids.set_rasterized(False)
     cb.ax.minorticks_off()
+    cb.ax.tick_params(pad=1.7)
     cb.ax.set_xticklabels([str(k) for k in ticks],fontsize=9)
-    fig.text(.112,.085,'Requests per cell',fontsize=8.7)
+    fig.text(.112,.108,'Requests per cell',fontsize=9.2)
     fig.text(.36,.152,'All vectors ($N$)',ha='center',fontsize=9.3)
     b=axes[2]
     vals=Counter(ratio)

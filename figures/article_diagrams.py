@@ -69,16 +69,19 @@ def diagnostic_order():
 
 def reuse_boundary():
     d=Diagram(420,69)
-    d.mark('keyed',27,34,23);d.txt(43,34,'Term + input',9.2,ha='left')
-    d.wire((108,34),(142,34),c=S)
-    d.diamond(150,34,7);d.txt(150,13,'Cache?',8.9)
-    d.wire((157,34),(169,34),(169,54),(206,54),c=T)
-    d.wire((169,34),(169,14),(206,14),c=A)
-    d.mark('store',221,54,20,T);d.txt(237,54,'Reuse value',9,ha='left')
-    d.mark('graph',221,14,19,A);d.txt(237,14,'Evaluate',9,ha='left')
-    d.wire((298,54),(314,54),(314,34),(339,34),c=T)
-    d.wire((284,14),(314,14),(314,34),c=A,arrow=False)
-    d.mark('check',352,34,19,T);d.txt(366,34,'Compare',9.2,ha='left')
+    d.txt(9,35,'Term + input',9.6,ha='left')
+    d.wire((70,35),(103,35),c=S)
+    d.diamond(111,35,6);d.txt(111,17,'Cache?',9.2)
+    d.wire((117,35),(136,35),(136,55),(165,55),c=T)
+    d.wire((136,35),(136,15),(165,15),c=A)
+    d.txt(172,55,'Hit: reuse value',9.4,ha='left',color=T)
+    d.txt(172,15,'Miss: evaluate',9.4,ha='left',color=A)
+    d.wire((244,55),(260,55),(260,34),(297,34),c=T)
+    d.wire((244,15),(260,15),(260,34),c=A,arrow=False)
+    d.diamond(306,34,6,T)
+    d.txt(326,34,'Compare',9.5,ha='left')
+    d.txt(306,60,'Submitted cell',9.2,color=S)
+    d.wire((306,51),(306,42),c=S)
     return d
 
 
@@ -89,8 +92,8 @@ def framed_retention():
     d.mark('check',153,34,17,T);d.txt(165,34,'Compare',9.3,ha='left')
     d.wire((210,34),(247,34),(247,53),(283,53),c=T)
     d.wire((247,34),(247,15),(283,15),c=S)
-    d.mark('clock',296,53,19,T);d.txt(312,53,'Free at last use',9.1,ha='left')
-    d.mark('pin',296,15,18,S);d.txt(312,15,'Retain diagnostic roots',9.0,ha='left')
+    d.txt(291,53,'Free at last use',9.4,ha='left',color=T)
+    d.txt(291,15,'Retain diagnostic roots',9.4,ha='left',color=S)
     return d
 
 
@@ -105,9 +108,9 @@ def refutation_scope():
     d.txt(232,55,'All points',9.1,ha='left',color=S)
     d.txt(232,19,'Claimed point',9.1,ha='left',color=A)
     d.wire((290,55),(319,55),c=T)
-    d.wire((290,19),(319,19),c=A)
-    d.mark('trace',333,55,18,T);d.txt(346,55,'Least witness',8.8,ha='left')
-    d.mark('reject',333,19,18,A);d.txt(346,19,'One violation',8.8,ha='left')
+    d.wire((298,19),(319,19),c=A)
+    d.txt(330,55,'Least witness',9.2,ha='left',color=T)
+    d.txt(330,19,'One violation',9.2,ha='left',color=A)
     return d
 
 
