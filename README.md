@@ -7,6 +7,14 @@ study of explicit repair policies and canonical diagnostics.
 Measurements come from executed artifact workflows. Complete-JSON and bounded
 framed-stream receivers implement the same full-domain decision contract.
 
+## Rebuilding the explanatory diagrams
+
+Create an output directory, then run `python -B figures/rebuild_diagrams.py --output /path/to/figures`
+from the artifact root. This regenerates the explanatory vector PDFs without
+running an experiment or requiring the manuscript. In the collaboration bundle,
+the same command without `--output` updates the diagram targets consumed by the
+sibling `paper/` directory. Other plots have their own generators and inputs.
+
 ## Scope
 
 ### Identity-scoped approval journal
