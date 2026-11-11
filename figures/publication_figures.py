@@ -43,7 +43,8 @@ def obligations(out,preview):
     assert (tuple(a['input']),a['obligation'])==((2,U),'repair')
     assert (tuple(b['input']),b['obligation'])==((0,1),'preserve')
     assert cases['supplied']['status']=='ACCEPT'
-    d=Plate(426,112)
+    from diagram_ink import Diagram
+    d=Diagram(426,112)
     d.head(8,102,'(a) Input grid')
     d.head(228,102,'(b) Obligation by region')
     d.rule(215,10,215,103)
@@ -60,8 +61,8 @@ def obligations(out,preview):
             repair=(m,n) in repaired
             d.frame(x-10,y-4,20,8,SAND if repair else MINT,AMBER if repair else TEAL,
                     dash=repair)
-            if [m,n]==a['input']:d.text(x,y,'A',7.8,color=AMBER,weight='bold')
-            if [m,n]==b['input']:d.text(x,y,'B',7.8,color=TEAL,weight='bold')
+            if [m,n]==a['input']:d.node_label(x,y,'A',8.1,color=AMBER)
+            if [m,n]==b['input']:d.node_label(x,y,'B',8.1,color=TEAL)
     for y,title,count,target,tone,fill in [(79,'Repair',12,'Reference',AMBER,SAND),
                                          (58,'Preserve',30,'Original',TEAL,MINT)]:
         d.frame(231,y-4.5,14,9,fill,tone,dash=title=='Repair')
@@ -132,6 +133,7 @@ def residency(out,preview):
     assert statistics.median(ratio)==summary['median_live_to_all_vectors']==.4
     import numpy as np
     from matplotlib.colors import LogNorm, ListedColormap
+    from matplotlib.patches import Rectangle
     fig=plt.figure(figsize=(426/72,169/72))
     axes=[fig.add_axes([x,.31,w,.49]) for x,w in ((.108,.23),(.385,.23),(.716,.23))]
     for i,(a, (cohort,n)) in enumerate(zip(axes, [('fixture',80),('stress',300)])):
@@ -146,19 +148,24 @@ def residency(out,preview):
         heat=a.pcolormesh(np.arange(17.5,55.5),np.arange(6.5,21.5),np.ma.masked_equal(mat,0),
                           cmap=cmap,norm=norm,edgecolors='none')
         a.set(xlim=(17.5,54.5),ylim=(6.5,20.5),xticks=(20,35,50),yticks=(8,12,16,20))
-        a.set_title(f"({chr(97+i)}) {cohort.title()} ({n})",loc='left',pad=5,fontsize=10.4)
+        a.set_title(f"({chr(97+i)}) {cohort.title()} ({n})",loc='center',pad=5,fontsize=10.4)
         a.tick_params(labelsize=9.2)
         if i==0:a.set_ylabel('Peak live vectors',fontsize=9.5)
         else:a.tick_params(labelleft=False,left=False)
     cax=fig.add_axes([.405,.108,.20,.028])
     ticks=[k for k in (1,2,5,10,20,50,100) if k<=norm.vmax and k in (1,5,20,100)]
     cb=fig.colorbar(heat,cax=cax,orientation='horizontal',ticks=ticks)
-    cb.solids.set_rasterized(False)
+    cb.solids.set_visible(False)
+    # The colorbar position is normalized after applying LogNorm.
+    # Draw opaque, slightly overlapping vector bands to avoid viewer seams.
+    for i in range(cmap.N):
+        cax.add_patch(Rectangle((i/cmap.N,0),1/cmap.N+.012,1,
+                      transform=cax.transAxes,facecolor=cmap((i+.5)/cmap.N),linewidth=0))
     cb.ax.minorticks_off()
     cb.ax.tick_params(pad=1.7)
     cb.ax.set_xticklabels([str(k) for k in ticks],fontsize=9)
-    fig.text(.112,.108,'Requests per cell',fontsize=9.2)
-    fig.text(.36,.152,'All vectors ($N$)',ha='center',fontsize=9.3)
+    fig.text(.391,.122,'Requests per cell',ha='right',va='center',fontsize=9.2)
+    fig.text(.36,.175,'All vectors ($N$)',ha='center',fontsize=9.3)
     b=axes[2]
     vals=Counter(ratio)
     xs=sorted(vals)
@@ -172,7 +179,7 @@ def residency(out,preview):
     b.axvline(.4,color=AMBER,ls='--',lw=.55)
     b.set(xlim=(.18,.82),ylim=(-3,103),xticks=(.2,.4,.6,.8),yticks=(0,50,100),
           xlabel='Peak live / all vectors',ylabel='Cumulative (%)')
-    b.set_title('(c) Pooled distribution',loc='left',pad=5,fontsize=10.4)
+    b.set_title('(c) Pooled distribution',loc='center',pad=5,fontsize=10.4)
     b.tick_params(labelsize=9.2)
     b.annotate('Median 0.40',(.45,24),fontsize=9.1,color=AMBER)
     grid(b);save(fig,out,'vector-residency',preview)
