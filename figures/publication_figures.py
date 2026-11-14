@@ -47,7 +47,6 @@ def obligations(out,preview):
     d=Diagram(426,112)
     d.head(8,102,'(a) Input grid')
     d.head(228,102,'(b) Obligation by region')
-    d.rule(215,10,215,103)
     d.text(20,52,r'$n$',8.2)
     d.text(123,88,r'$m$',8.2)
     label=lambda x: r'$U$' if x==U else (r'$U-1$' if x==U-1 else str(x))
@@ -103,16 +102,16 @@ def rss(out,preview):
         v=sorted((p[k]-1)*100 for p in pairs)
         assert abs(statistics.median(v)-(r['summary'][mkey]-1)*100)<1e-9
         y=2-i
-        a.vlines(v,y+.13,y+.32,color=BLUE,linewidth=.68,alpha=.84,zorder=2)
+        a.vlines(v,y+.16,y+.28,color=MUTED,linewidth=.64,alpha=.64,zorder=2)
         lo,_,hi=statistics.quantiles(v,n=4,method='inclusive')
-        a.hlines(y-.11,lo,hi,color=BLUE,linewidth=1.15,zorder=3)
-        a.scatter(statistics.median(v),y-.11,marker='D',s=25,c=AMBER,zorder=4,
+        a.hlines(y-.08,lo,hi,color=BLUE,linewidth=2.2,zorder=3)
+        a.scatter(statistics.median(v),y-.08,marker='D',s=27,c=AMBER,zorder=4,
                   edgecolors='white',linewidths=.5)
     a.axvline(0,color=MUTED,lw=.85,ls='--')
     a.set(yticks=[2,1,0],yticklabels=labels,ylim=(-.48,2.48),xlabel='Peak RSS change vs. each row’s baseline (%)')
     keys=[
-        Line2D([],[],color=BLUE,marker='|',markersize=7,linestyle='none',label='Request'),
-        Line2D([],[],color=BLUE,lw=1.15,label='Middle 50%'),
+        Line2D([],[],color=MUTED,marker='|',markersize=7,linestyle='none',label='Request'),
+        Line2D([],[],color=BLUE,lw=2.2,label='Middle 50%'),
         Line2D([],[],color=AMBER,marker='D',markersize=4,linestyle='none',label='Median'),
         Line2D([],[],color=MUTED,lw=.85,ls='--',label='0% parity'),
     ]
@@ -130,29 +129,32 @@ def residency(out,preview):
     assert {r['points'] for r in rows}=={81}
     assert sum(r['checked_cells_per_arm'] for r in rows)==1179684
     ratio=[r['peak_live_vectors_per_streaming_arm']/r['nodes'] for r in rows]
-    assert statistics.median(ratio)==summary['median_live_to_all_vectors']==.4
+    median_ratio=statistics.median(ratio)
+    assert median_ratio==summary['median_live_to_all_vectors']==.4
     import numpy as np
     from matplotlib.colors import LogNorm, ListedColormap
     from matplotlib.patches import Rectangle
     fig=plt.figure(figsize=(426/72,169/72))
     axes=[fig.add_axes([x,.31,w,.49]) for x,w in ((.108,.23),(.385,.23),(.716,.23))]
+    peak_cell=max(Counter((r['population'],r['nodes'],r['peak_live_vectors_per_streaming_arm'])
+                          for r in rows).values())
+    norm=LogNorm(vmin=1,vmax=peak_cell)
     for i,(a, (cohort,n)) in enumerate(zip(axes, [('fixture',80),('stress',300)])):
         pts=Counter((r['nodes'],r['peak_live_vectors_per_streaming_arm']) for r in rows if r['population']==cohort)
         assert sum(pts.values())==n
         assert all(18<=x<=54 and 7<=y<=20 for x,y in pts)
         mat=np.array([[pts[x,y] for x in range(18,55)] for y in range(7,21)])
-        norm=LogNorm(vmin=1,vmax=max(Counter((r['population'],r['nodes'],r['peak_live_vectors_per_streaming_arm'])
-                                             for r in rows).values()))
         # Rectangles mark occupied integer coordinates; blank means zero.
-        cmap=ListedColormap(plt.get_cmap('Blues')(np.linspace(.26,1,128)))
+        cmap=ListedColormap(plt.get_cmap('Blues')(np.linspace(.34,1,128)))
         heat=a.pcolormesh(np.arange(17.5,55.5),np.arange(6.5,21.5),np.ma.masked_equal(mat,0),
                           cmap=cmap,norm=norm,edgecolors='none')
         a.set(xlim=(17.5,54.5),ylim=(6.5,20.5),xticks=(20,35,50),yticks=(8,12,16,20))
-        a.set_title(f"({chr(97+i)}) {cohort.title()} ({n})",loc='center',pad=5,fontsize=10.4)
+        title=('Fixtures','Stress')[i]
+        a.set_title(f"({chr(97+i)}) {title} ($n={n}$)",loc='center',pad=5,fontsize=10.4)
         a.tick_params(labelsize=9.2)
         if i==0:a.set_ylabel('Peak live vectors',fontsize=9.5)
         else:a.tick_params(labelleft=False,left=False)
-    cax=fig.add_axes([.405,.108,.20,.028])
+    cax=fig.add_axes([.266,.101,.20,.028])
     ticks=[k for k in (1,2,5,10,20,50,100) if k<=norm.vmax and k in (1,5,20,100)]
     cb=fig.colorbar(heat,cax=cax,orientation='horizontal',ticks=ticks)
     cb.solids.set_visible(False)
@@ -164,7 +166,7 @@ def residency(out,preview):
     cb.ax.minorticks_off()
     cb.ax.tick_params(pad=1.7)
     cb.ax.set_xticklabels([str(k) for k in ticks],fontsize=9)
-    fig.text(.391,.122,'Requests per cell',ha='right',va='center',fontsize=9.2)
+    fig.text(.254,.115,'Requests per cell',ha='right',va='center',fontsize=9.2)
     fig.text(.36,.175,'All vectors ($N$)',ha='center',fontsize=9.3)
     b=axes[2]
     vals=Counter(ratio)
@@ -176,12 +178,15 @@ def residency(out,preview):
         total+=vals[x]
         ys.append(100*total/len(rows))
     b.step([.18,*xs,.82],[0,*ys,100],where='post',color=TEAL,lw=.72)
-    b.axvline(.4,color=AMBER,ls='--',lw=.55)
+    at_median=100*sum(v for x,v in vals.items() if x<=median_ratio)/len(rows)
+    b.vlines(median_ratio,0,at_median,color=AMBER,ls='--',lw=.7)
+    b.scatter([median_ratio],[at_median],s=14,marker='D',color=AMBER,
+              edgecolors='white',linewidth=.4,zorder=4)
     b.set(xlim=(.18,.82),ylim=(-3,103),xticks=(.2,.4,.6,.8),yticks=(0,50,100),
           xlabel='Peak live / all vectors',ylabel='Cumulative (%)')
-    b.set_title('(c) Pooled distribution',loc='center',pad=5,fontsize=10.4)
+    b.set_title(f'(c) Pooled ($n={len(rows)}$)',loc='center',pad=5,fontsize=10.4)
     b.tick_params(labelsize=9.2)
-    b.annotate('Median 0.40',(.45,24),fontsize=9.1,color=AMBER)
+    b.annotate(f'Median {median_ratio:.2f}',(.43,21),fontsize=9.0,color=AMBER)
     grid(b);save(fig,out,'vector-residency',preview)
 
 def diagnostic_order(out,preview):
